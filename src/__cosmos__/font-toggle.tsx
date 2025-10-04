@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
 export function FontToggle() {
   const [font, setFont] = React.useState<'mono' | 'sans' | 'serif'>('mono');
@@ -12,41 +13,22 @@ export function FontToggle() {
   return (
     <div className="flex items-center space-x-2">
       <span className="text-sm">Font:</span>
-      <div className="flex space-x-1">
-        <button
-          type="button"
-          onClick={() => setFont('mono')}
-          className={`px-2 py-1 text-xs border ${
-            font === 'mono'
-              ? 'bg-[rgb(var(--lsd-surface-secondary))]'
-              : 'bg-transparent'
-          }`}
-        >
+      <ToggleGroup
+        type="single"
+        value={font}
+        onValueChange={(value) => setFont(value as 'mono' | 'sans' | 'serif')}
+        aria-label="Font toggle"
+      >
+        <ToggleGroupItem value="mono" aria-label="Mono font">
           Mono
-        </button>
-        <button
-          type="button"
-          onClick={() => setFont('sans')}
-          className={`px-2 py-1 text-xs border ${
-            font === 'sans'
-              ? 'bg-[rgb(var(--lsd-surface-secondary))]'
-              : 'bg-transparent'
-          }`}
-        >
+        </ToggleGroupItem>
+        <ToggleGroupItem value="sans" aria-label="Sans font">
           Sans
-        </button>
-        <button
-          type="button"
-          onClick={() => setFont('serif')}
-          className={`px-2 py-1 text-xs border ${
-            font === 'serif'
-              ? 'bg-[rgb(var(--lsd-surface-secondary))]'
-              : 'bg-transparent'
-          }`}
-        >
+        </ToggleGroupItem>
+        <ToggleGroupItem value="serif" aria-label="Serif font">
           Serif
-        </button>
-      </div>
+        </ToggleGroupItem>
+      </ToggleGroup>
     </div>
   );
 }
