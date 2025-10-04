@@ -5,12 +5,16 @@ import { ThemeToggle } from '../theme-toggle';
 export default function ButtonFixture() {
   return (
     <div className="p-8 space-y-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Button Component</h1>
-        <div className="flex gap-4">
-          <ThemeToggle />
-          <FontToggle />
-        </div>
+      <div className="flex justify-end gap-4">
+        <ThemeToggle />
+        <FontToggle />
+      </div>
+
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Button Component</h2>
+        <p className="text-muted-foreground">
+          A button component that allows users to perform actions.
+        </p>
       </div>
 
       <div className="space-y-4">

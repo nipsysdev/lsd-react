@@ -5,12 +5,16 @@ import { ThemeToggle } from '../theme-toggle';
 export default function BadgeFixture() {
   return (
     <div className="p-8 space-y-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Badge Component</h1>
-        <div className="flex gap-4">
-          <ThemeToggle />
-          <FontToggle />
-        </div>
+      <div className="flex justify-end gap-4">
+        <ThemeToggle />
+        <FontToggle />
+      </div>
+
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold">Badge Component</h2>
+        <p className="text-muted-foreground">
+          A badge component that displays small pieces of information.
+        </p>
       </div>
 
       <div className="space-y-4">
