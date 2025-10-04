@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
-import path from 'path'
-import react from '@vitejs/plugin-react-swc'
-import tailwindcss from '@tailwindcss/vite'
-import dts from 'vite-plugin-dts'
-import { fileURLToPath } from 'node:url'
-import { globSync } from 'glob'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import { fileURLToPath } from 'node:url';
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react-swc';
+import { globSync } from 'glob';
+import path from 'path';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 export default defineConfig(({ mode }) => {
   const config = {
@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, './src'),
       },
     },
-  }
+  };
 
   if (mode === 'lib') {
     return {
@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
         tailwindcss(),
         libInjectCss(),
         dts({
-          exclude: ['src/index.tsx', 'src/__fixtures__/**/*'],
+          exclude: ['src/index.tsx', 'src/__cosmos__/**/*'],
           tsconfigPath: 'tsconfig.app.json',
         }),
       ],
@@ -47,11 +47,11 @@ export default defineConfig(({ mode }) => {
               const entryName = path.relative(
                 'src',
                 file.slice(0, file.length - path.extname(file).length),
-              )
+              );
               // This expands the relative paths to absolute paths, so e.g.
               // src/nested/foo becomes /project/src/nested/foo.js
-              const entryUrl = fileURLToPath(new URL(file, import.meta.url))
-              return [entryName, entryUrl]
+              const entryUrl = fileURLToPath(new URL(file, import.meta.url));
+              return [entryName, entryUrl];
             }),
           ),
           output: {
@@ -66,11 +66,11 @@ export default defineConfig(({ mode }) => {
           },
         },
       },
-    }
+    };
   }
 
   return {
     ...config,
     plugins: [react(), tailwindcss()],
-  }
-})
+  };
+});
