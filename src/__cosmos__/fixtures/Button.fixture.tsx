@@ -16,8 +16,8 @@ export default function ButtonFixture() {
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Variants</h2>
         <div className="flex gap-4">
-          <Button>Default</Button>
-          <Button variant="secondary">Secondary</Button>
+          <Button variant="filled">Filled</Button>
+          <Button variant="outlined">Outlined</Button>
         </div>
       </div>
 
@@ -41,21 +41,21 @@ export default function ButtonFixture() {
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">All Combinations</h2>
         <div className="grid grid-cols-3 gap-4">
-          <Button size="sm">Small Default</Button>
-          <Button size="sm" variant="secondary">
-            Small Secondary
+          <Button size="sm">Small Filled</Button>
+          <Button size="sm" variant="outlined">
+            Small Outlined
           </Button>
           <Button size="sm" disabled>
             Small Disabled
           </Button>
 
-          <Button>Default</Button>
-          <Button variant="secondary">Secondary</Button>
+          <Button>Filled</Button>
+          <Button variant="outlined">Outlined</Button>
           <Button disabled>Disabled</Button>
 
-          <Button size="lg">Large Default</Button>
-          <Button size="lg" variant="secondary">
-            Large Secondary
+          <Button size="lg">Large Filled</Button>
+          <Button size="lg" variant="outlined">
+            Large Outlined
           </Button>
           <Button size="lg" disabled>
             Large Disabled
