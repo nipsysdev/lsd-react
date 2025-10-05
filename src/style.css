@@ -64,7 +64,7 @@
   /* LSD Design Tokens - Light Theme */
   --lsd-text: 0 0 0;
   --lsd-text-primary: 0 0 0;
-  --lsd-text-secondary: 255 255 255;
+  --lsd-text-secondary: 128 128 128;
   --lsd-border: 0 0 0;
   --lsd-border-primary: 0 0 0;
   --lsd-icon-primary: 0 0 0;
@@ -110,7 +110,7 @@
   /* LSD Design Tokens - Dark Theme */
   --lsd-text: 255 255 255;
   --lsd-text-primary: 255 255 255;
-  --lsd-text-secondary: 0 0 0;
+  --lsd-text-secondary: 170 170 170;
   --lsd-border: 255 255 255;
   --lsd-border-primary: 255 255 255;
   --lsd-icon-primary: 255 255 255;
