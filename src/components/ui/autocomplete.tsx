@@ -206,6 +206,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 placeholder={placeholder}
                 onChange={(e) => setSearchText(e.target.value)}
                 disabled={disabled}
+                readOnly
                 className={cn(
                   'border-none outline-none bg-none w-full text-[14px]',
                   currentSize.input,
