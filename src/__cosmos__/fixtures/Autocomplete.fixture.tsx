@@ -115,6 +115,7 @@ export default () => (
       <div className="space-y-2">
         <h3 className="text-lg font-semibold">Disabled State</h3>
         <Autocomplete
+          label="Disabled state"
           options={frameworks}
           placeholder="Disabled autocomplete"
           disabled={true}
@@ -150,6 +151,44 @@ export default () => (
               placeholder="Select a framework..."
               defaultValue="1"
               clearable={true}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Async Options</h3>
+        <div className="flex flex-wrap gap-4">
+          <div>
+            <h4 className="text-sm font-medium mb-1">With Async Loading</h4>
+            <Autocomplete
+              placeholder="Search for a country..."
+              loadingText="Loading countries..."
+              onOptionsFetch={async (searchText) => {
+                // Simulate API call delay
+                await new Promise((resolve) => setTimeout(resolve, 500));
+
+                const countries = [
+                  { value: 'us', label: 'United States' },
+                  { value: 'ca', label: 'Canada' },
+                  { value: 'uk', label: 'United Kingdom' },
+                  { value: 'fr', label: 'France' },
+                  { value: 'de', label: 'Germany' },
+                  { value: 'jp', label: 'Japan' },
+                  { value: 'au', label: 'Australia' },
+                  { value: 'br', label: 'Brazil' },
+                  { value: 'in', label: 'India' },
+                  { value: 'cn', label: 'China' },
+                ];
+
+                if (!searchText) return countries;
+
+                return countries.filter((country) =>
+                  country.label
+                    .toLowerCase()
+                    .includes(searchText.toLowerCase()),
+                );
+              }}
             />
           </div>
         </div>

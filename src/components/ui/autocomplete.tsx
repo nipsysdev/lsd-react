@@ -26,11 +26,14 @@ export interface AutocompleteProps
     React.InputHTMLAttributes<HTMLInputElement>,
     'onChange' | 'value' | 'size'
   > {
-  options: AutocompleteOption[];
+  options?: AutocompleteOption[];
+  onOptionsFetch?: (searchText: string) => Promise<AutocompleteOption[]>;
   placeholder?: string;
   emptyText?: string;
+  loadingText?: string;
   className?: string;
   onValueChange?: (value: string) => void;
+  onClear?: () => void;
   disabled?: boolean;
   label?: string;
   size?: 'large' | 'medium' | 'small';
@@ -44,10 +47,13 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
   (
     {
       options,
+      onOptionsFetch,
       placeholder = 'Search...',
       emptyText = 'No results found.',
+      loadingText = 'Loading...',
       className,
       onValueChange,
+      onClear,
       disabled = false,
       label,
       size = 'large',
@@ -62,6 +68,10 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     const [open, setOpen] = React.useState(false);
     const [value, setValue] = React.useState('');
     const [searchText, setSearchText] = React.useState('');
+    const [asyncOptions, setAsyncOptions] = React.useState<
+      AutocompleteOption[]
+    >([]);
+    const [isLoading, setIsLoading] = React.useState(false);
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     // Forward ref to inputRef
@@ -80,16 +90,49 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     const onCancel = () => {
       setValue('');
       setSearchText('');
-      inputRef.current?.focus();
+      onValueChange?.('');
+      onClear?.();
     };
+
+    // Fetch options asynchronously when onOptionsFetch is provided
+    React.useEffect(() => {
+      if (onOptionsFetch && open) {
+        setIsLoading(true);
+        const fetchOptions = async () => {
+          try {
+            const fetchedOptions = await onOptionsFetch(searchText);
+            setAsyncOptions(fetchedOptions);
+          } catch (error) {
+            console.error('Error fetching options:', error);
+            setAsyncOptions([]);
+          } finally {
+            setIsLoading(false);
+          }
+        };
+
+        // Debounce the fetch to avoid excessive API calls
+        const timer = setTimeout(() => {
+          fetchOptions();
+        }, 300);
+
+        return () => clearTimeout(timer);
+      }
+    }, [onOptionsFetch, searchText, open]);
 
     // Filter options based on search text
     const filteredOptions = React.useMemo(() => {
+      if (onOptionsFetch) {
+        // For async options, we don't filter locally as the server should handle it
+        return asyncOptions;
+      }
+
+      if (!options) return [];
+
       if (!searchText) return options;
       return options.filter((option) =>
         option.label.toLowerCase().startsWith(searchText.toLowerCase()),
       );
-    }, [options, searchText]);
+    }, [options, asyncOptions, searchText, onOptionsFetch]);
 
     const inputId = props.id || 'autocomplete-input';
 
@@ -128,7 +171,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
             className={cn(
               'block text-sm',
               currentSize.label,
-              'text-lsd-text-primary',
+              disabled ? 'text-lsd-text-secondary' : 'text-lsd-text-primary',
             )}
           >
             {label}
@@ -141,8 +184,13 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 'flex justify-between',
                 currentSize.inputContainer,
                 variant === 'outlined'
-                  ? 'border border-lsd-border-primary'
-                  : 'border border-transparent border-b-lsd-border-primary',
+                  ? disabled
+                    ? 'border border-lsd-text-secondary'
+                    : 'border border-lsd-border-primary'
+                  : disabled
+                    ? 'border border-transparent border-b-lsd-text-secondary'
+                    : 'border border-transparent border-b-lsd-border-primary',
+                disabled ? 'cursor-not-allowed' : 'cursor-pointer',
               )}
             >
               <input
@@ -150,19 +198,20 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 id={inputId}
                 value={
                   value
-                    ? options.find((opt) => opt.value === value)?.label || ''
+                    ? options?.find((opt) => opt.value === value)?.label ||
+                      asyncOptions.find((opt) => opt.value === value)?.label ||
+                      ''
                     : ''
                 }
                 placeholder={placeholder}
-                onChange={(e) => {
-                  setValue('');
-                  setSearchText(e.target.value);
-                }}
+                onChange={(e) => setSearchText(e.target.value)}
                 disabled={disabled}
                 className={cn(
                   'border-none outline-none bg-none w-full text-[14px]',
                   currentSize.input,
-                  'text-lsd-text-primary',
+                  disabled
+                    ? 'text-lsd-text-secondary'
+                    : 'text-lsd-text-primary',
                   error && 'line-through',
                   '[&::placeholder]:text-lsd-text-primary [&::placeholder]:opacity-30',
                 )}
@@ -177,12 +226,21 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 <button
                   type="button"
                   onClick={onCancel}
+                  disabled={disabled}
                   className={cn(
-                    'cursor-pointer flex items-center',
+                    'flex items-center',
                     currentSize.icon,
+                    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
                   )}
                 >
-                  <XIcon className="h-4 w-4 text-lsd-icon-primary" />
+                  <XIcon
+                    className={cn(
+                      'h-4 w-4',
+                      disabled
+                        ? 'text-lsd-text-secondary'
+                        : 'text-lsd-icon-primary',
+                    )}
+                  />
                 </button>
               )}
             </div>
@@ -203,29 +261,40 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 placeholder={placeholder}
               />
               <CommandList>
-                <CommandEmpty>{emptyText}</CommandEmpty>
-                {filteredOptions.map((option) => {
-                  const inputValue = searchText;
-                  const matchedPart = option.label.slice(0, inputValue.length);
-                  const remainingPart = option.label.slice(inputValue.length);
+                {isLoading ? (
+                  <CommandEmpty>{loadingText}</CommandEmpty>
+                ) : (
+                  <>
+                    <CommandEmpty>{emptyText}</CommandEmpty>
+                    {filteredOptions?.map((option) => {
+                      const inputValue = searchText;
+                      const matchedPart = option.label.slice(
+                        0,
+                        inputValue.length,
+                      );
+                      const remainingPart = option.label.slice(
+                        inputValue.length,
+                      );
 
-                  return (
-                    <CommandItem
-                      key={option.value}
-                      value={option.value}
-                      keywords={[option.label]}
-                      onSelect={() => handleSelect(option.value)}
-                      className="hover:underline focus:underline"
-                    >
-                      <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
-                        {matchedPart}
-                        <span className="opacity-50 whitespace-pre">
-                          {remainingPart}
-                        </span>
-                      </span>
-                    </CommandItem>
-                  );
-                })}
+                      return (
+                        <CommandItem
+                          key={option.value}
+                          value={option.value}
+                          keywords={[option.label]}
+                          onSelect={() => handleSelect(option.value)}
+                          className="hover:underline focus:underline cursor-pointer"
+                        >
+                          <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
+                            {matchedPart}
+                            <span className="opacity-50 whitespace-pre">
+                              {remainingPart}
+                            </span>
+                          </span>
+                        </CommandItem>
+                      );
+                    })}
+                  </>
+                )}
               </CommandList>
             </Command>
           </PopoverContent>
