@@ -5,8 +5,6 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function InputFixture() {
   const [value, setValue] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
   return (
     <div className="p-8 space-y-8">

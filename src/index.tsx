@@ -1,3 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-createRoot(document.getElementById('root')!).render(<></>);
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  createRoot(rootElement).render(null);
+}
