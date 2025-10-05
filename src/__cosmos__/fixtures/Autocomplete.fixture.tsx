@@ -1,14 +1,15 @@
+import { SearchIcon } from 'lucide-react';
 import { Autocomplete } from '@/components/ui/autocomplete';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
 
 const frameworks = [
-  { value: 'react', label: 'React' },
-  { value: 'vue', label: 'Vue' },
-  { value: 'angular', label: 'Angular' },
-  { value: 'svelte', label: 'Svelte' },
-  { value: 'solid', label: 'Solid' },
-  { value: 'qwik', label: 'Qwik' },
+  { value: '1', label: 'React' },
+  { value: '2', label: 'Vue' },
+  { value: '4', label: 'Angular' },
+  { value: '5', label: 'Svelte' },
+  { value: '6', label: 'Solid' },
+  { value: '7', label: 'Qwik' },
 ];
 
 export default () => (
@@ -31,24 +32,24 @@ export default () => (
         <h3 className="text-lg font-semibold">Sizes</h3>
         <div className="flex flex-wrap gap-4">
           <div>
-            <h4 className="text-sm font-medium mb-1">Large</h4>
             <Autocomplete
+              label="Large"
               options={frameworks}
               placeholder="Large size..."
               size="large"
             />
           </div>
           <div>
-            <h4 className="text-sm font-medium mb-1">Medium</h4>
             <Autocomplete
+              label="Medium"
               options={frameworks}
               placeholder="Medium size..."
               size="medium"
             />
           </div>
           <div>
-            <h4 className="text-sm font-medium mb-1">Small</h4>
             <Autocomplete
+              label="Small"
               options={frameworks}
               placeholder="Small size..."
               size="small"
@@ -61,31 +62,22 @@ export default () => (
         <h3 className="text-lg font-semibold">Variants</h3>
         <div className="flex flex-wrap gap-4">
           <div>
-            <h4 className="text-sm font-medium mb-1">Outlined</h4>
             <Autocomplete
+              label="Outlined"
               options={frameworks}
               placeholder="Outlined variant..."
               variant="outlined"
             />
           </div>
           <div>
-            <h4 className="text-sm font-medium mb-1">Underlined</h4>
             <Autocomplete
+              label="Underlined"
               options={frameworks}
               placeholder="Underlined variant..."
               variant="underlined"
             />
           </div>
         </div>
-      </div>
-
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">With Label</h3>
-        <Autocomplete
-          options={frameworks}
-          placeholder="Select a framework..."
-          label="Framework"
-        />
       </div>
 
       <div className="space-y-2">
@@ -96,7 +88,7 @@ export default () => (
             <Autocomplete
               options={frameworks}
               placeholder="Search..."
-              withIcon={true}
+              icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
             />
           </div>
           <div>
@@ -104,7 +96,7 @@ export default () => (
             <Autocomplete
               options={frameworks}
               placeholder="Type to see clear icon..."
-              withIcon={true}
+              icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
               defaultValue="react"
             />
           </div>
@@ -136,6 +128,31 @@ export default () => (
           placeholder="Select a framework..."
           onValueChange={(value) => console.log('Selected:', value)}
         />
+      </div>
+
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Clearable Prop</h3>
+        <div className="flex flex-wrap gap-4">
+          <div>
+            <h4 className="text-sm font-medium mb-1">
+              Not Clearable (default)
+            </h4>
+            <Autocomplete
+              options={frameworks}
+              placeholder="Select a framework..."
+              defaultValue="1"
+            />
+          </div>
+          <div>
+            <h4 className="text-sm font-medium mb-1">Clearable</h4>
+            <Autocomplete
+              options={frameworks}
+              placeholder="Select a framework..."
+              defaultValue="1"
+              clearable={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>

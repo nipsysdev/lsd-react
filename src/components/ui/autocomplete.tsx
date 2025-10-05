@@ -34,9 +34,10 @@ export interface AutocompleteProps
   disabled?: boolean;
   label?: string;
   size?: 'large' | 'medium' | 'small';
-  withIcon?: boolean;
+  icon?: React.ReactNode;
   error?: boolean;
   variant?: 'outlined' | 'underlined';
+  clearable?: boolean;
 }
 
 const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
@@ -50,15 +51,17 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
       disabled = false,
       label,
       size = 'large',
-      withIcon = false,
+      icon,
       error = false,
       variant = 'outlined',
+      clearable = false,
       ...props
     },
     ref,
   ) => {
     const [open, setOpen] = React.useState(false);
     const [value, setValue] = React.useState('');
+    const [searchText, setSearchText] = React.useState('');
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     // Forward ref to inputRef
@@ -67,6 +70,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     const handleSelect = React.useCallback(
       (currentValue: string) => {
         setValue(currentValue);
+        setSearchText('');
         setOpen(false);
         onValueChange?.(currentValue);
       },
@@ -75,16 +79,17 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
 
     const onCancel = () => {
       setValue('');
+      setSearchText('');
       inputRef.current?.focus();
     };
 
-    // Filter options based on input value
+    // Filter options based on search text
     const filteredOptions = React.useMemo(() => {
-      if (!value) return options;
+      if (!searchText) return options;
       return options.filter((option) =>
-        option.label.toLowerCase().startsWith(value.toLowerCase()),
+        option.label.toLowerCase().startsWith(searchText.toLowerCase()),
       );
-    }, [options, value]);
+    }, [options, searchText]);
 
     const inputId = props.id || 'autocomplete-input';
 
@@ -92,7 +97,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     const sizeClasses = {
       large: {
         container: 'w-[208px]',
-        label: 'mb-1.5 ml-[18px]',
+        label: 'mb-1.5 ml-[14px]',
         inputContainer: 'h-[40px]',
         input: 'px-[17px] py-[9px]',
         icon: 'px-[13px] py-[12px]',
@@ -143,9 +148,16 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
               <input
                 ref={inputRef}
                 id={inputId}
-                value={value}
+                value={
+                  value
+                    ? options.find((opt) => opt.value === value)?.label || ''
+                    : ''
+                }
                 placeholder={placeholder}
-                onChange={(e) => setValue(e.target.value)}
+                onChange={(e) => {
+                  setValue('');
+                  setSearchText(e.target.value);
+                }}
                 disabled={disabled}
                 className={cn(
                   'border-none outline-none bg-none w-full text-[14px]',
@@ -156,7 +168,12 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 )}
                 {...props}
               />
-              {withIcon && value ? (
+              {icon && (
+                <div className={cn('flex items-center', currentSize.icon)}>
+                  {icon}
+                </div>
+              )}
+              {value && clearable && (
                 <button
                   type="button"
                   onClick={onCancel}
@@ -167,11 +184,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 >
                   <XIcon className="h-4 w-4 text-lsd-icon-primary" />
                 </button>
-              ) : withIcon && !value ? (
-                <div className={cn('flex items-center', currentSize.icon)}>
-                  <SearchIcon className="h-4 w-4 text-lsd-icon-primary" />
-                </div>
-              ) : null}
+              )}
             </div>
           </PopoverTrigger>
           <PopoverContent
@@ -184,15 +197,15 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
           >
             <Command className="rounded-none border-none shadow-none">
               <CommandInput
-                value={value}
-                onValueChange={setValue}
+                value={searchText}
+                onValueChange={setSearchText}
                 className="h-9 border-none"
                 placeholder={placeholder}
               />
               <CommandList>
                 <CommandEmpty>{emptyText}</CommandEmpty>
                 {filteredOptions.map((option) => {
-                  const inputValue = value;
+                  const inputValue = searchText;
                   const matchedPart = option.label.slice(0, inputValue.length);
                   const remainingPart = option.label.slice(inputValue.length);
 
@@ -200,6 +213,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                     <CommandItem
                       key={option.value}
                       value={option.value}
+                      keywords={[option.label]}
                       onSelect={() => handleSelect(option.value)}
                       className="hover:underline focus:underline"
                     >
