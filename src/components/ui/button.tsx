@@ -8,13 +8,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        filled: 'bg-lsd-primary text-lsd-surface-primary',
-        outlined: 'bg-transparent text-lsd-text',
+        filled: 'bg-primary text-primary-foreground',
+        outlined: 'bg-transparent text-foreground',
       },
       size: {
-        default: 'h-10 px-6 py-[6px]',
-        sm: 'h-8 px-3 py-[6px] text-[0.75rem]',
-        lg: 'h-12 px-8 py-[10px] text-[0.875rem]',
+        default: 'h-[34px] px-6 py-2 text-base',
+        sm: 'h-8 px-3 py-[6px] text-sm',
+        lg: 'h-12 px-8 py-[10px] text-lg',
       },
     },
     defaultVariants: {
@@ -33,7 +33,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          'text-lsd-text border-lsd-border hover:underline disabled:opacity-34 disabled:cursor-not-allowed disabled:no-underline',
+          'text-foreground border hover:underline disabled:opacity-34 disabled:cursor-not-allowed disabled:no-underline',
           buttonVariants({ variant, size }),
           className,
         )}
