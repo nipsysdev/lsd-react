@@ -26,3 +26,4 @@ dist-ssr
 lsd_docs
 *_PLAN.md
 .kilocode
+*.tgz
