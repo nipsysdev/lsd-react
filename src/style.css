@@ -183,3 +183,20 @@
     }
   }
 }
+
+/* Sonner Toast Styles */
+[data-sonner-toaster] [data-sonner-toast] {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid rgb(var(--lsd-border)) !important;
+}
+
+[data-sonner-toaster] [data-sonner-toast] [data-content] {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-sonner-toaster] [data-sonner-toast] button {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}

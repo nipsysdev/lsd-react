@@ -9,6 +9,7 @@ export * from '@/components/ui/dialog';
 export * from '@/components/ui/input';
 export * from '@/components/ui/popover';
 export * from '@/components/ui/separator';
+export * from '@/components/ui/sonner';
 export * from '@/components/ui/switch';
 export * from '@/components/ui/toggle';
 export * from '@/components/ui/toggle-group';
