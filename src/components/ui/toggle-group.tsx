@@ -49,7 +49,7 @@ const ToggleGroupItem = React.forwardRef<
         toggleVariants({
           size: context.size || size,
         }),
-        'min-w-0 flex-1 shrink-0 rounded-none shadow-none focus:z-10 focus-visible:z-10 border-l-0 first:border-l',
+        'min-w-0 flex-1 shrink-0 rounded-none shadow-none focus:z-10 focus-visible:z-10 border-l-0 first:border-l cursor-pointer disabled:cursor-not-allowed',
         className,
       )}
       {...props}

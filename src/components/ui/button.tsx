@@ -33,7 +33,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          'text-foreground border hover:underline disabled:opacity-34 disabled:cursor-not-allowed disabled:no-underline',
+          'text-foreground border hover:underline cursor-pointer disabled:opacity-34 disabled:cursor-not-allowed disabled:no-underline',
           buttonVariants({ variant, size }),
           className,
         )}
