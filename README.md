@@ -1,6 +1,6 @@
 # @nipsysdev/lsd-react
 
-A React component library implementing the Logos Design System (LSD) with TypeScript, Tailwind CSS, and shadcn/ui.
+A React component library implementing the Logos Design System (LSD) with RadixUI (shadcn/ui) and Tailwind CSS.
 
 ## Features
 
