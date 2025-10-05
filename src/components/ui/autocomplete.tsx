@@ -41,6 +41,7 @@ export interface AutocompleteProps
   error?: boolean;
   variant?: 'outlined' | 'underlined';
   clearable?: boolean;
+  value?: string;
 }
 
 const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
@@ -61,12 +62,15 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
       error = false,
       variant = 'outlined',
       clearable = false,
+      value: controlledValue,
       ...props
     },
     ref,
   ) => {
     const [open, setOpen] = React.useState(false);
-    const [value, setValue] = React.useState('');
+    const [internalValue, setInternalValue] = React.useState('');
+    const value =
+      controlledValue !== undefined ? controlledValue : internalValue;
     const [searchText, setSearchText] = React.useState('');
     const [asyncOptions, setAsyncOptions] = React.useState<
       AutocompleteOption[]
@@ -79,16 +83,20 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
 
     const handleSelect = React.useCallback(
       (currentValue: string) => {
-        setValue(currentValue);
+        if (controlledValue === undefined) {
+          setInternalValue(currentValue);
+        }
         setSearchText('');
         setOpen(false);
         onValueChange?.(currentValue);
       },
-      [onValueChange],
+      [onValueChange, controlledValue],
     );
 
     const onCancel = () => {
-      setValue('');
+      if (controlledValue === undefined) {
+        setInternalValue('');
+      }
       setSearchText('');
       onValueChange?.('');
       onClear?.();
@@ -283,7 +291,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                           value={option.value}
                           keywords={[option.label]}
                           onSelect={() => handleSelect(option.value)}
-                          className="hover:underline focus:underline cursor-pointer"
+                          className="hover:underline focus:underline cursor-pointer data-[selected=true]:underline"
                         >
                           <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
                             {matchedPart}

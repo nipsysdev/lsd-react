@@ -1,4 +1,5 @@
 import { SearchIcon } from 'lucide-react';
+import { useState } from 'react';
 import { Autocomplete } from '@/components/ui/autocomplete';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
@@ -193,6 +194,69 @@ export default () => (
           </div>
         </div>
       </div>
+
+      <div className="space-y-2">
+        <h3 className="text-lg font-semibold">Controlled Component</h3>
+        <div className="flex flex-wrap gap-4">
+          <div>
+            <h4 className="text-sm font-medium mb-1">
+              With External State Control
+            </h4>
+            <ControlledAutocompleteExample />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
+
+function ControlledAutocompleteExample() {
+  const [selectedValue, setSelectedValue] = useState<string>('');
+
+  const handleClear = () => {
+    setSelectedValue('');
+  };
+
+  const handleSetValue = (value: string) => {
+    setSelectedValue(value);
+  };
+
+  return (
+    <div className="space-y-4">
+      <Autocomplete
+        label="Select a framework"
+        options={frameworks}
+        placeholder="Select a framework..."
+        value={selectedValue}
+        onValueChange={setSelectedValue}
+        clearable
+      />
+      <div className="flex gap-2">
+        <button
+          type="button"
+          onClick={() => handleSetValue('1')}
+          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
+        >
+          Set to React
+        </button>
+        <button
+          type="button"
+          onClick={() => handleSetValue('2')}
+          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
+        >
+          Set to Vue
+        </button>
+        <button
+          type="button"
+          onClick={handleClear}
+          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
+        >
+          Clear
+        </button>
+      </div>
+      <p className="text-sm text-lsd-text-secondary">
+        Selected value: {selectedValue || 'None'}
+      </p>
+    </div>
+  );
+}
