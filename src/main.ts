@@ -16,6 +16,7 @@ export * from '@/components/ui/select';
 export * from '@/components/ui/separator';
 export * from '@/components/ui/sonner';
 export * from '@/components/ui/switch';
+export * from '@/components/ui/tabs';
 export * from '@/components/ui/toggle';
 export * from '@/components/ui/toggle-group';
 export * from '@/components/ui/typography';
