@@ -42,6 +42,7 @@ export interface AutocompleteProps
   variant?: 'outlined' | 'underlined';
   clearable?: boolean;
   value?: string;
+  isLoading?: boolean;
 }
 
 const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
@@ -63,6 +64,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
       variant = 'outlined',
       clearable = false,
       value: controlledValue,
+      isLoading: externalIsLoading,
       ...props
     },
     ref,
@@ -75,7 +77,9 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     const [asyncOptions, setAsyncOptions] = React.useState<
       AutocompleteOption[]
     >([]);
-    const [isLoading, setIsLoading] = React.useState(false);
+    const [internalIsLoading, setInternalIsLoading] = React.useState(false);
+    const isLoading =
+      externalIsLoading !== undefined ? externalIsLoading : internalIsLoading;
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     // Forward ref to inputRef
@@ -104,8 +108,8 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
 
     // Fetch options asynchronously when onOptionsFetch is provided
     React.useEffect(() => {
-      if (onOptionsFetch && open) {
-        setIsLoading(true);
+      if (onOptionsFetch && open && externalIsLoading === undefined) {
+        setInternalIsLoading(true);
         const fetchOptions = async () => {
           try {
             const fetchedOptions = await onOptionsFetch(searchText);
@@ -114,7 +118,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
             console.error('Error fetching options:', error);
             setAsyncOptions([]);
           } finally {
-            setIsLoading(false);
+            setInternalIsLoading(false);
           }
         };
 
@@ -125,7 +129,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
 
         return () => clearTimeout(timer);
       }
-    }, [onOptionsFetch, searchText, open]);
+    }, [onOptionsFetch, searchText, open, externalIsLoading]);
 
     // Filter options based on search text
     const filteredOptions = React.useMemo(() => {
@@ -272,37 +276,34 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
               <CommandList>
                 {isLoading ? (
                   <CommandEmpty>{loadingText}</CommandEmpty>
+                ) : filteredOptions.length === 0 ? (
+                  <CommandEmpty>{emptyText}</CommandEmpty>
                 ) : (
-                  <>
-                    <CommandEmpty>{emptyText}</CommandEmpty>
-                    {filteredOptions?.map((option) => {
-                      const inputValue = searchText;
-                      const matchedPart = option.label.slice(
-                        0,
-                        inputValue.length,
-                      );
-                      const remainingPart = option.label.slice(
-                        inputValue.length,
-                      );
+                  filteredOptions?.map((option) => {
+                    const inputValue = searchText;
+                    const matchedPart = option.label.slice(
+                      0,
+                      inputValue.length,
+                    );
+                    const remainingPart = option.label.slice(inputValue.length);
 
-                      return (
-                        <CommandItem
-                          key={option.value}
-                          value={option.value}
-                          keywords={[option.label]}
-                          onSelect={() => handleSelect(option.value)}
-                          className="hover:underline focus:underline cursor-pointer data-[selected=true]:underline"
-                        >
-                          <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
-                            {matchedPart}
-                            <span className="opacity-50 whitespace-pre">
-                              {remainingPart}
-                            </span>
+                    return (
+                      <CommandItem
+                        key={option.value}
+                        value={option.value}
+                        keywords={[option.label]}
+                        onSelect={() => handleSelect(option.value)}
+                        className="hover:underline focus:underline cursor-pointer data-[selected=true]:underline"
+                      >
+                        <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
+                          {matchedPart}
+                          <span className="opacity-50 whitespace-pre">
+                            {remainingPart}
                           </span>
-                        </CommandItem>
-                      );
-                    })}
-                  </>
+                        </span>
+                      </CommandItem>
+                    );
+                  })
                 )}
               </CommandList>
             </Command>

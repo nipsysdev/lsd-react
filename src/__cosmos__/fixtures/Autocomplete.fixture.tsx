@@ -196,6 +196,18 @@ export default () => (
       </div>
 
       <div className="space-y-2">
+        <h3 className="text-lg font-semibold">External Loading State</h3>
+        <div className="flex flex-wrap gap-4">
+          <div>
+            <h4 className="text-sm font-medium mb-1">
+              With Controlled Loading State
+            </h4>
+            <ExternalLoadingExample />
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-2">
         <h3 className="text-lg font-semibold">Controlled Component</h3>
         <div className="flex flex-wrap gap-4">
           <div>
@@ -256,6 +268,36 @@ function ControlledAutocompleteExample() {
       </div>
       <p className="text-sm text-lsd-text-secondary">
         Selected value: {selectedValue || 'None'}
+      </p>
+    </div>
+  );
+}
+
+function ExternalLoadingExample() {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleToggleLoading = () => {
+    setIsLoading(!isLoading);
+  };
+
+  return (
+    <div className="space-y-4">
+      <Autocomplete
+        label="Select a framework"
+        options={frameworks}
+        placeholder="Select a framework..."
+        isLoading={isLoading}
+        loadingText="Please wait..."
+      />
+      <button
+        type="button"
+        onClick={handleToggleLoading}
+        className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
+      >
+        {isLoading ? 'Stop Loading' : 'Start Loading'}
+      </button>
+      <p className="text-sm text-lsd-text-secondary">
+        Loading state: {isLoading ? 'Loading' : 'Not loading'}
       </p>
     </div>
   );
