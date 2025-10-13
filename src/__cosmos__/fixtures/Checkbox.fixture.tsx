@@ -1,5 +1,6 @@
 import { useId, useState } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
+import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
 
@@ -19,7 +20,7 @@ export default function CheckboxFixture() {
   const businessId = useId();
 
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-8 w-full space-y-8">
       <div className="flex justify-end gap-4">
         <ThemeToggle />
         <FontToggle />
@@ -35,89 +36,192 @@ export default function CheckboxFixture() {
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Default Checkbox</h2>
-        <div className="flex items-center space-x-2">
-          <Checkbox id={defaultCheckboxId} />
-          <label htmlFor={defaultCheckboxId}>Accept terms and conditions</label>
-        </div>
+        <CodeExample
+          title="Checkbox Default"
+          code={`<div className="flex items-center space-x-2">
+  <Checkbox id="default-checkbox" />
+  <label htmlFor="default-checkbox">Accept terms and conditions</label>
+</div>`}
+        >
+          <div className="flex items-center space-x-2">
+            <Checkbox id={defaultCheckboxId} />
+            <label htmlFor={defaultCheckboxId}>
+              Accept terms and conditions
+            </label>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Controlled Checkbox</h2>
-        <div className="flex items-center space-x-2">
-          <Checkbox
-            id={controlledCheckboxId}
-            checked={checked}
-            onCheckedChange={(value) => setChecked(!!value)}
-          />
-          <label htmlFor={controlledCheckboxId}>
-            Checkbox is {checked ? 'checked' : 'unchecked'}
-          </label>
-        </div>
+        <CodeExample
+          title="Checkbox Controlled"
+          code={`function CheckboxExample() {
+  const [checked, setChecked] = useState(false);
+  
+  return (
+    <div className="flex items-center space-x-2">
+      <Checkbox
+        id="controlled-checkbox"
+        checked={checked}
+        onCheckedChange={(value) => setChecked(!!value)}
+      />
+      <label htmlFor="controlled-checkbox">
+        Checkbox is {checked ? 'checked' : 'unchecked'}
+      </label>
+    </div>
+  );
+}`}
+        >
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id={controlledCheckboxId}
+              checked={checked}
+              onCheckedChange={(value) => setChecked(!!value)}
+            />
+            <label htmlFor={controlledCheckboxId}>
+              Checkbox is {checked ? 'checked' : 'unchecked'}
+            </label>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Checked by Default</h2>
-        <div className="flex items-center space-x-2">
-          <Checkbox id={disabledCheckedId} defaultChecked />
-          <label htmlFor={disabledCheckedId}>Pre-checked option</label>
-        </div>
+        <CodeExample
+          title="Checkbox Checked by Default"
+          code={`<div className="flex items-center space-x-2">
+  <Checkbox id="default-checked" defaultChecked />
+  <label htmlFor="default-checked">Pre-checked option</label>
+</div>`}
+        >
+          <div className="flex items-center space-x-2">
+            <Checkbox id={disabledCheckedId} defaultChecked />
+            <label htmlFor={disabledCheckedId}>Pre-checked option</label>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Disabled State</h2>
-        <div className="space-y-4">
-          <div className="flex items-center space-x-2">
-            <Checkbox id={disabledUncheckedId} disabled />
-            <label htmlFor={disabledUncheckedId}>Disabled unchecked</label>
+        <CodeExample
+          title="Checkbox Disabled State"
+          code={`<div className="space-y-4">
+  <div className="flex items-center space-x-2">
+    <Checkbox id="disabled-unchecked" disabled />
+    <label htmlFor="disabled-unchecked">Disabled unchecked</label>
+  </div>
+  <div className="flex items-center space-x-2">
+    <Checkbox id="disabled-checked" disabled checked />
+    <label htmlFor="disabled-checked">Disabled checked</label>
+  </div>
+</div>`}
+        >
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <Checkbox id={disabledUncheckedId} disabled />
+              <label htmlFor={disabledUncheckedId}>Disabled unchecked</label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox id={disabledCheckedId} disabled checked />
+              <label htmlFor={disabledCheckedId}>Disabled checked</label>
+            </div>
           </div>
-          <div className="flex items-center space-x-2">
-            <Checkbox id={disabledCheckedId} disabled checked />
-            <label htmlFor={disabledCheckedId}>Disabled checked</label>
-          </div>
-        </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Multiple Checkboxes</h2>
-        <div className="space-y-4">
-          <div className="flex items-center space-x-2">
-            <Checkbox
-              id={termsId}
-              checked={checked2}
-              onCheckedChange={(value) => setChecked2(!!value)}
-            />
-            <label htmlFor={termsId}>I agree to the terms and conditions</label>
+        <CodeExample
+          title="Checkbox Multiple Checkboxes"
+          code={`function MultipleCheckboxesExample() {
+  const [checked, setChecked] = useState(true);
+  
+  return (
+    <div className="space-y-4">
+      <div className="flex items-center space-x-2">
+        <Checkbox
+          id="terms"
+          checked={checked}
+          onCheckedChange={(value) => setChecked(!!value)}
+        />
+        <label htmlFor="terms">I agree to the terms and conditions</label>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Checkbox id="newsletter" />
+        <label htmlFor="newsletter">Subscribe to newsletter</label>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Checkbox id="updates" />
+        <label htmlFor="updates">Receive product updates</label>
+      </div>
+    </div>
+  );
+}`}
+        >
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id={termsId}
+                checked={checked2}
+                onCheckedChange={(value) => setChecked2(!!value)}
+              />
+              <label htmlFor={termsId}>
+                I agree to the terms and conditions
+              </label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox id={newsletterId} />
+              <label htmlFor={newsletterId}>Subscribe to newsletter</label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox id={updatesId} />
+              <label htmlFor={updatesId}>Receive product updates</label>
+            </div>
           </div>
-          <div className="flex items-center space-x-2">
-            <Checkbox id={newsletterId} />
-            <label htmlFor={newsletterId}>Subscribe to newsletter</label>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Checkbox id={updatesId} />
-            <label htmlFor={updatesId}>Receive product updates</label>
-          </div>
-        </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Checkbox Group</h2>
-        <div className="space-y-3">
-          <p className="text-sm font-medium">Select your interests:</p>
-          <div className="space-y-2 pl-2">
-            <div className="flex items-center space-x-2">
-              <Checkbox id={techId} />
-              <label htmlFor={techId}>Technology</label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Checkbox id={designId} />
-              <label htmlFor={designId}>Design</label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Checkbox id={businessId} />
-              <label htmlFor={businessId}>Business</label>
+        <CodeExample
+          title="Checkbox Group"
+          code={`<div className="space-y-3">
+  <p className="text-sm font-medium">Select your interests:</p>
+  <div className="space-y-2 pl-2">
+    <div className="flex items-center space-x-2">
+      <Checkbox id="tech" />
+      <label htmlFor="tech">Technology</label>
+    </div>
+    <div className="flex items-center space-x-2">
+      <Checkbox id="design" />
+      <label htmlFor="design">Design</label>
+    </div>
+    <div className="flex items-center space-x-2">
+      <Checkbox id="business" />
+      <label htmlFor="business">Business</label>
+    </div>
+  </div>
+</div>`}
+        >
+          <div className="space-y-3">
+            <p className="text-sm font-medium">Select your interests:</p>
+            <div className="space-y-2 pl-2">
+              <div className="flex items-center space-x-2">
+                <Checkbox id={techId} />
+                <label htmlFor={techId}>Technology</label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Checkbox id={designId} />
+                <label htmlFor={designId}>Design</label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Checkbox id={businessId} />
+                <label htmlFor={businessId}>Business</label>
+              </div>
             </div>
           </div>
-        </div>
+        </CodeExample>
       </div>
     </div>
   );

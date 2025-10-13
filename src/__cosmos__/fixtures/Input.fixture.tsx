@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Input } from '@/components/ui/input';
+import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
 
@@ -7,7 +8,7 @@ export default function InputFixture() {
   const [value, setValue] = useState('');
 
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-8 w-full space-y-8">
       <div className="flex justify-end gap-4">
         <ThemeToggle />
         <FontToggle />
@@ -23,119 +24,245 @@ export default function InputFixture() {
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Variants</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-lg font-medium mb-2">Underlined (Default)</h3>
-            <Input placeholder="Enter your text" />
+        <CodeExample
+          title="Input Variants"
+          code={`<div className="space-y-6">
+  <div>
+    <h3 className="text-lg font-medium mb-2">Underlined (Default)</h3>
+    <Input placeholder="Enter your text" />
+  </div>
+  <div>
+    <h3 className="text-lg font-medium mb-2">Outlined</h3>
+    <Input variant="outlined" placeholder="Enter your text" />
+  </div>
+</div>`}
+        >
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">Underlined (Default)</h3>
+              <Input placeholder="Enter your text" />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Outlined</h3>
+              <Input variant="outlined" placeholder="Enter your text" />
+            </div>
           </div>
-          <div>
-            <h3 className="text-lg font-medium mb-2">Outlined</h3>
-            <Input variant="outlined" placeholder="Enter your text" />
-          </div>
-        </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Sizes</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-lg font-medium mb-2">Large (Default)</h3>
-            <Input size="large" placeholder="Large input" />
+        <CodeExample
+          title="Input Sizes"
+          code={`<div className="space-y-6">
+  <div>
+    <h3 className="text-lg font-medium mb-2">Large (Default)</h3>
+    <Input size="large" placeholder="Large input" />
+  </div>
+  <div>
+    <h3 className="text-lg font-medium mb-2">Medium</h3>
+    <Input size="medium" placeholder="Medium input" />
+  </div>
+  <div>
+    <h3 className="text-lg font-medium mb-2">Small</h3>
+    <Input size="small" placeholder="Small input" />
+  </div>
+</div>`}
+        >
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">Large (Default)</h3>
+              <Input size="large" placeholder="Large input" />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Medium</h3>
+              <Input size="medium" placeholder="Medium input" />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Small</h3>
+              <Input size="small" placeholder="Small input" />
+            </div>
           </div>
-          <div>
-            <h3 className="text-lg font-medium mb-2">Medium</h3>
-            <Input size="medium" placeholder="Medium input" />
-          </div>
-          <div>
-            <h3 className="text-lg font-medium mb-2">Small</h3>
-            <Input size="small" placeholder="Small input" />
-          </div>
-        </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">With Labels</h2>
-        <div className="space-y-6">
-          <Input label="Name" placeholder="Enter your name" />
-          <Input label="Email" placeholder="Enter your email" />
-          <Input
-            label="Password"
-            type="password"
-            placeholder="Enter your password"
-          />
-        </div>
+        <CodeExample
+          title="Input With Labels"
+          code={`<div className="space-y-6">
+  <Input label="Name" placeholder="Enter your name" />
+  <Input label="Email" placeholder="Enter your email" />
+  <Input
+    label="Password"
+    type="password"
+    placeholder="Enter your password"
+  />
+</div>`}
+        >
+          <div className="space-y-6">
+            <Input label="Name" placeholder="Enter your name" />
+            <Input label="Email" placeholder="Enter your email" />
+            <Input
+              label="Password"
+              type="password"
+              placeholder="Enter your password"
+            />
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">With Supporting Text</h2>
-        <div className="space-y-6">
-          <Input
-            label="Email"
-            placeholder="Enter your email"
-            supportingText="We'll never share your email with anyone else."
-          />
-          <Input
-            label="Password"
-            type="password"
-            placeholder="Enter your password"
-            supportingText="Use at least 8 characters."
-          />
-        </div>
+        <CodeExample
+          title="Input With Supporting Text"
+          code={`<div className="space-y-6">
+  <Input
+    label="Email"
+    placeholder="Enter your email"
+    supportingText="We'll never share your email with anyone else."
+  />
+  <Input
+    label="Password"
+    type="password"
+    placeholder="Enter your password"
+    supportingText="Use at least 8 characters."
+  />
+</div>`}
+        >
+          <div className="space-y-6">
+            <Input
+              label="Email"
+              placeholder="Enter your email"
+              supportingText="We'll never share your email with anyone else."
+            />
+            <Input
+              label="Password"
+              type="password"
+              placeholder="Enter your password"
+              supportingText="Use at least 8 characters."
+            />
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Controlled Input</h2>
-        <div className="space-y-4">
-          <Input
-            label="Type something"
-            placeholder="Start typing..."
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            supportingText={`You typed: ${value || '(nothing)'}`}
-          />
-        </div>
+        <CodeExample
+          title="Input Controlled"
+          code={`function ControlledInputExample() {
+  const [value, setValue] = useState('');
+  
+  return (
+    <div className="space-y-4">
+      <Input
+        label="Type something"
+        placeholder="Start typing..."
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        supportingText={\`You typed: \${value || '(nothing)'}\`}
+      />
+    </div>
+  );
+}`}
+        >
+          <div className="space-y-4">
+            <Input
+              label="Type something"
+              placeholder="Start typing..."
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              supportingText={`You typed: ${value || '(nothing)'}`}
+            />
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">States</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-lg font-medium mb-2">Normal</h3>
-            <Input label="Normal state" placeholder="This is a normal input" />
+        <CodeExample
+          title="Input States"
+          code={`<div className="space-y-6">
+  <div>
+    <h3 className="text-lg font-medium mb-2">Normal</h3>
+    <Input label="Normal state" placeholder="This is a normal input" />
+  </div>
+  <div>
+    <h3 className="text-lg font-medium mb-2">Disabled</h3>
+    <Input
+      label="Disabled state"
+      placeholder="This is disabled"
+      disabled
+      supportingText="This field is disabled"
+    />
+  </div>
+  <div>
+    <h3 className="text-lg font-medium mb-2">Error</h3>
+    <Input
+      label="Error state"
+      placeholder="This has an error"
+      error
+      supportingText="This field has an error"
+    />
+  </div>
+</div>`}
+        >
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-medium mb-2">Normal</h3>
+              <Input
+                label="Normal state"
+                placeholder="This is a normal input"
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Disabled</h3>
+              <Input
+                label="Disabled state"
+                placeholder="This is disabled"
+                disabled
+                supportingText="This field is disabled"
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Error</h3>
+              <Input
+                label="Error state"
+                placeholder="This has an error"
+                error
+                supportingText="This field has an error"
+              />
+            </div>
           </div>
-          <div>
-            <h3 className="text-lg font-medium mb-2">Disabled</h3>
-            <Input
-              label="Disabled state"
-              placeholder="This is disabled"
-              disabled
-              supportingText="This field is disabled"
-            />
-          </div>
-          <div>
-            <h3 className="text-lg font-medium mb-2">Error</h3>
-            <Input
-              label="Error state"
-              placeholder="This has an error"
-              error
-              supportingText="This field has an error"
-            />
-          </div>
-        </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Input Types</h2>
-        <div className="space-y-6">
-          <Input label="Email" type="email" placeholder="Enter your email" />
-          <Input
-            label="Password"
-            type="password"
-            placeholder="Enter your password"
-          />
-          <Input label="Number" type="number" placeholder="Enter a number" />
-          <Input label="Search" type="search" placeholder="Search..." />
-        </div>
+        <CodeExample
+          title="Input Types"
+          code={`<div className="space-y-6">
+  <Input label="Email" type="email" placeholder="Enter your email" />
+  <Input
+    label="Password"
+    type="password"
+    placeholder="Enter your password"
+  />
+  <Input label="Number" type="number" placeholder="Enter a number" />
+  <Input label="Search" type="search" placeholder="Search..." />
+</div>`}
+        >
+          <div className="space-y-6">
+            <Input label="Email" type="email" placeholder="Enter your email" />
+            <Input
+              label="Password"
+              type="password"
+              placeholder="Enter your password"
+            />
+            <Input label="Number" type="number" placeholder="Enter a number" />
+            <Input label="Search" type="search" placeholder="Search..." />
+          </div>
+        </CodeExample>
       </div>
     </div>
   );

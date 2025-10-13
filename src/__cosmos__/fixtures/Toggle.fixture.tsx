@@ -1,11 +1,12 @@
 import { Bold, Italic, Underline } from 'lucide-react';
 import { Toggle } from '@/components/ui/toggle';
+import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
 
 export default function ToggleFixture() {
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-8 w-full space-y-8">
       <div className="flex justify-end gap-4">
         <ThemeToggle />
         <FontToggle />
@@ -20,71 +21,140 @@ export default function ToggleFixture() {
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Default Toggle</h2>
-        <div className="flex gap-4">
-          <Toggle aria-label="Toggle bold">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle aria-label="Toggle italic">
-            <Italic className="h-4 w-4" />
-          </Toggle>
-          <Toggle aria-label="Toggle underline">
-            <Underline className="h-4 w-4" />
-          </Toggle>
-        </div>
+        <CodeExample
+          title="Default Toggle"
+          code={`<div className="flex gap-4">
+  <Toggle aria-label="Toggle bold">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle aria-label="Toggle italic">
+    <Italic className="h-4 w-4" />
+  </Toggle>
+  <Toggle aria-label="Toggle underline">
+    <Underline className="h-4 w-4" />
+  </Toggle>
+</div>`}
+        >
+          <div className="flex gap-4">
+            <Toggle aria-label="Toggle bold">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle aria-label="Toggle italic">
+              <Italic className="h-4 w-4" />
+            </Toggle>
+            <Toggle aria-label="Toggle underline">
+              <Underline className="h-4 w-4" />
+            </Toggle>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Outlined Toggle</h2>
-        <div className="flex gap-4">
-          <Toggle aria-label="Toggle bold">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle aria-label="Toggle italic">
-            <Italic className="h-4 w-4" />
-          </Toggle>
-          <Toggle aria-label="Toggle underline">
-            <Underline className="h-4 w-4" />
-          </Toggle>
-        </div>
+        <CodeExample
+          title="Outlined Toggle"
+          code={`<div className="flex gap-4">
+  <Toggle aria-label="Toggle bold">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle aria-label="Toggle italic">
+    <Italic className="h-4 w-4" />
+  </Toggle>
+  <Toggle aria-label="Toggle underline">
+    <Underline className="h-4 w-4" />
+  </Toggle>
+</div>`}
+        >
+          <div className="flex gap-4">
+            <Toggle aria-label="Toggle bold">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle aria-label="Toggle italic">
+              <Italic className="h-4 w-4" />
+            </Toggle>
+            <Toggle aria-label="Toggle underline">
+              <Underline className="h-4 w-4" />
+            </Toggle>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Toggle Sizes</h2>
-        <div className="flex gap-4 items-center">
-          <Toggle size="sm" aria-label="Small toggle">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle size="default" aria-label="Default toggle">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle size="lg" aria-label="Large toggle">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-        </div>
+        <CodeExample
+          title="Toggle Sizes"
+          code={`<div className="flex gap-4 items-center">
+  <Toggle size="sm" aria-label="Small toggle">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle size="default" aria-label="Default toggle">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle size="lg" aria-label="Large toggle">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+</div>`}
+        >
+          <div className="flex gap-4 items-center">
+            <Toggle size="sm" aria-label="Small toggle">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle size="default" aria-label="Default toggle">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle size="lg" aria-label="Large toggle">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Pressed State</h2>
-        <div className="flex gap-4">
-          <Toggle defaultPressed aria-label="Pressed bold">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle defaultPressed aria-label="Pressed italic">
-            <Italic className="h-4 w-4" />
-          </Toggle>
-        </div>
+        <CodeExample
+          title="Pressed State"
+          code={`<div className="flex gap-4">
+  <Toggle defaultPressed aria-label="Pressed bold">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle defaultPressed aria-label="Pressed italic">
+    <Italic className="h-4 w-4" />
+  </Toggle>
+</div>`}
+        >
+          <div className="flex gap-4">
+            <Toggle defaultPressed aria-label="Pressed bold">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle defaultPressed aria-label="Pressed italic">
+              <Italic className="h-4 w-4" />
+            </Toggle>
+          </div>
+        </CodeExample>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold mb-4">Disabled State</h2>
-        <div className="flex gap-4">
-          <Toggle disabled aria-label="Disabled bold">
-            <Bold className="h-4 w-4" />
-          </Toggle>
-          <Toggle disabled aria-label="Disabled italic">
-            <Italic className="h-4 w-4" />
-          </Toggle>
-        </div>
+        <CodeExample
+          title="Disabled State"
+          code={`<div className="flex gap-4">
+  <Toggle disabled aria-label="Disabled bold">
+    <Bold className="h-4 w-4" />
+  </Toggle>
+  <Toggle disabled aria-label="Disabled italic">
+    <Italic className="h-4 w-4" />
+  </Toggle>
+</div>`}
+        >
+          <div className="flex gap-4">
+            <Toggle disabled aria-label="Disabled bold">
+              <Bold className="h-4 w-4" />
+            </Toggle>
+            <Toggle disabled aria-label="Disabled italic">
+              <Italic className="h-4 w-4" />
+            </Toggle>
+          </div>
+        </CodeExample>
       </div>
     </div>
   );
