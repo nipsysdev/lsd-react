@@ -1,5 +1,6 @@
 import './style.css';
 
+export * from '@/components/ui/accordion';
 export * from '@/components/ui/alert-dialog';
 export * from '@/components/ui/autocomplete';
 export * from '@/components/ui/badge';
