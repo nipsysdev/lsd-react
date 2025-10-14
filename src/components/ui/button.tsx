@@ -10,11 +10,17 @@ const buttonVariants = cva(
       variant: {
         filled: 'bg-primary text-primary-foreground',
         outlined: 'bg-transparent text-foreground',
+        'filled-icon': 'bg-primary text-primary-foreground rounded-full',
+        'outlined-icon': 'bg-transparent text-foreground rounded-full',
       },
       size: {
         default: 'h-[34px] px-6 py-2 text-base',
         sm: 'h-8 px-3 py-[6px] text-sm',
         lg: 'h-12 px-8 py-[10px] text-lg',
+        icon: 'w-10 h-10',
+        'icon-sm': 'w-8 h-8',
+        'icon-lg': 'w-12 h-12',
+        'icon-xl': 'w-16 h-16',
       },
     },
     defaultVariants: {
