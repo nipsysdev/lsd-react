@@ -9,7 +9,7 @@ import { CodeBlock } from './code-block';
 
 interface CodeExampleProps {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   code: string;
 }
 
