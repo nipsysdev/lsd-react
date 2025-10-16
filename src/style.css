@@ -205,3 +205,28 @@ html {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+/* Indeterminate Progress Animation */
+@keyframes indeterminate-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-indeterminate-progress {
+  animation: indeterminate-progress 1.5s ease-in-out infinite;
+}
+
+.animate-indeterminate-progress-slow {
+  animation: indeterminate-progress 3s ease-in-out infinite;
+}
+
+.animate-indeterminate-progress-fast {
+  animation: indeterminate-progress 0.75s ease-in-out infinite;
+}

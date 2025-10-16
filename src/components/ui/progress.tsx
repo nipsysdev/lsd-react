@@ -6,12 +6,14 @@ import { cn } from '@/lib/utils';
 interface ProgressProps
   extends React.ComponentProps<typeof ProgressPrimitive.Root> {
   value?: number;
+  indeterminate?: boolean;
+  speed?: 'slow' | 'normal' | 'fast';
 }
 
 const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
   ProgressProps
->(({ className, value, ...props }, ref) => (
+>(({ className, value, indeterminate, speed = 'normal', ...props }, ref) => (
   <ProgressPrimitive.Root
     ref={ref}
     data-slot="progress"
@@ -23,8 +25,21 @@ const Progress = React.forwardRef<
   >
     <ProgressPrimitive.Indicator
       data-slot="progress-indicator"
-      className="h-full w-full flex-1 transition-all bg-lsd-primary"
-      style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
+      className={cn(
+        'h-full w-full flex-1 bg-lsd-primary',
+        indeterminate
+          ? cn(
+              'animate-indeterminate-progress',
+              speed === 'slow' && 'animate-indeterminate-progress-slow',
+              speed === 'fast' && 'animate-indeterminate-progress-fast',
+            )
+          : 'transition-all',
+      )}
+      style={
+        indeterminate
+          ? undefined
+          : { transform: `translateX(-${100 - (value || 0)}%)` }
+      }
     />
   </ProgressPrimitive.Root>
 ));

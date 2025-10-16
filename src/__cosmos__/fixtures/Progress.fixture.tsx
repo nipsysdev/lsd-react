@@ -94,6 +94,33 @@ export default function ProgressFixture() {
           </div>
         </CodeExample>
       </div>
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold">Indeterminate Progress</h2>
+        <CodeExample
+          title="Progress Indeterminate"
+          code={`<div className="space-y-4">
+  <Progress indeterminate />
+  <Progress indeterminate speed="slow" />
+  <Progress indeterminate speed="fast" />
+</div>`}
+        >
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <p>Normal Speed (default):</p>
+              <Progress indeterminate />
+            </div>
+            <div className="space-y-2">
+              <p>Slow Speed:</p>
+              <Progress indeterminate speed="slow" />
+            </div>
+            <div className="space-y-2">
+              <p>Fast Speed:</p>
+              <Progress indeterminate speed="fast" />
+            </div>
+          </div>
+        </CodeExample>
+      </div>
     </div>
   );
 }
