@@ -25,7 +25,7 @@
   },
   "scripts": {
     "cosmos": "cosmos",
-    "cosmos-export": "cosmos-export",
+    "cosmos-export": "cosmos-export && touch ./docs/.nojekyll && cp CNAME ./docs/",
     "cosmos-preview": "pnpm dlx http-server ./docs",
     "build": "tsc -p tsconfig.json && vite build --mode lib",
     "lint": "biome check .",

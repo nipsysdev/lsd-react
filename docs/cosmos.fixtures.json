@@ -1,0 +1,255 @@
+{
+  "rendererUrl": "renderer.html",
+  "fixtures": [
+    {
+      "filePath": "src/__cosmos__/fixtures/Accordion.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Accordion"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FAccordion.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/AlertDialog.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "AlertDialog"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FAlertDialog.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Autocomplete.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Autocomplete"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FAutocomplete.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Badge.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Badge"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FBadge.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Button.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Button"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FButton.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/ButtonGroup.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "ButtonGroup"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FButtonGroup.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Card.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Card"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FCard.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Checkbox.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Checkbox"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FCheckbox.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Command.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Command"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FCommand.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Dialog.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Dialog"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FDialog.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Input.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Input"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FInput.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Label.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Label"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FLabel.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Popover.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Popover"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FPopover.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Progress.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Progress"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FProgress.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/ScrollArea.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "ScrollArea"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FScrollArea.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Select.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Select"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSelect.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Separator.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Separator"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSeparator.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Sheet.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Sheet"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSheet.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Sidebar.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Sidebar"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSidebar.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Sonner.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Sonner"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSonner.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Switch.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Switch"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FSwitch.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Tabs.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Tabs"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FTabs.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Toggle.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Toggle"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FToggle.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/ToggleGroup.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "ToggleGroup"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FToggleGroup.fixture.tsx%22%7D&locked=true"
+    },
+    {
+      "filePath": "src/__cosmos__/fixtures/Typography.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Typography"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FTypography.fixture.tsx%22%7D&locked=true"
+    }
+  ]
+}
