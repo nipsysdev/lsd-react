@@ -5,12 +5,12 @@ import { CodeExample } from '../code-example';
 
 export default function TypographyFixture() {
   return (
-    <div className="p-8 w-full max-w-6xl mx-auto">
-      <div className="mb-10 text-center">
-        <div className="flex justify-center mb-4">
+    <div className="lsd:p-8 lsd:w-full lsd:max-w-6xl lsd:mx-auto">
+      <div className="lsd:mb-10 lsd:text-center">
+        <div className="lsd:flex lsd:justify-center lsd:mb-4">
           <ThemeToggle />
         </div>
-        <Typography variant="h1" className="mb-4">
+        <Typography variant="h1" className="lsd:mb-4">
           Typography Component
         </Typography>
         <Typography
@@ -23,25 +23,25 @@ export default function TypographyFixture() {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <div className="lsd:grid lsd:grid-cols-1 md:grid-cols-2 lsd:gap-8 lsd:w-full">
         {/* Display Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Display Variants
           </Typography>
           <CodeExample
             title="Display Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="display1">Display 1</Typography>
   <Typography variant="display2">Display 2</Typography>
   <Typography variant="display3">Display 3</Typography>
   <Typography variant="display4">Display 4</Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="display1">Display 1</Typography>
               <Typography variant="display2">Display 2</Typography>
               <Typography variant="display3">Display 3</Typography>
@@ -51,16 +51,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Heading Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Heading Variants
           </Typography>
           <CodeExample
             title="Heading Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="h1">Heading 1</Typography>
   <Typography variant="h2">Heading 2</Typography>
   <Typography variant="h3">Heading 3</Typography>
@@ -69,7 +69,7 @@ export default function TypographyFixture() {
   <Typography variant="h6">Heading 6</Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="h1">Heading 1</Typography>
               <Typography variant="h2">Heading 2</Typography>
               <Typography variant="h3">Heading 3</Typography>
@@ -81,16 +81,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Subtitle Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Subtitle Variants
           </Typography>
           <CodeExample
             title="Subtitle Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="subtitle1">
     Subtitle 1 - The quick brown fox jumps over the lazy dog
   </Typography>
@@ -105,7 +105,7 @@ export default function TypographyFixture() {
   </Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="subtitle1">
                 Subtitle 1 - The quick brown fox jumps over the lazy dog
               </Typography>
@@ -123,16 +123,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Body Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Body Variants
           </Typography>
           <CodeExample
             title="Body Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="body1">
     Body 1: This is the primary body text variant. It should be used
     for most paragraph content. The quick brown fox jumps over the
@@ -150,7 +150,7 @@ export default function TypographyFixture() {
   </Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="body1">
                 Body 1: This is the primary body text variant. It should be used
                 for most paragraph content. The quick brown fox jumps over the
@@ -171,16 +171,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Label Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Label Variants
           </Typography>
           <CodeExample
             title="Label Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="label1">
     Label 1 - Form labels, captions, and small text
   </Typography>
@@ -189,7 +189,7 @@ export default function TypographyFixture() {
   </Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="label1">
                 Label 1 - Form labels, captions, and small text
               </Typography>
@@ -201,16 +201,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Color Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Color Variants
           </Typography>
           <CodeExample
             title="Color Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="body1" color="primary">
     Primary color text using the theme's primary text color
   </Typography>
@@ -219,7 +219,7 @@ export default function TypographyFixture() {
   </Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="body1" color="primary">
                 Primary color text using the theme's primary text color
               </Typography>
@@ -231,16 +231,16 @@ export default function TypographyFixture() {
         </div>
 
         {/* Font Family Variants */}
-        <div className="border border-lsd-border p-6 rounded-lg">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Font Family Variants
           </Typography>
           <CodeExample
             title="Font Family Variants"
-            code={`<div className="flex flex-col gap-2">
+            code={`<div className="lsd:flex lsd:flex-col lsd:gap-2">
   <Typography variant="body1" className="font-sans">
     Sans-serif font family - The quick brown fox jumps over the lazy
     dog
@@ -254,7 +254,7 @@ export default function TypographyFixture() {
   </Typography>
 </div>`}
           >
-            <div className="flex flex-col gap-2">
+            <div className="lsd:flex lsd:flex-col lsd:gap-2">
               <Typography variant="body1" className="font-sans">
                 Sans-serif font family - The quick brown fox jumps over the lazy
                 dog
@@ -271,44 +271,44 @@ export default function TypographyFixture() {
         </div>
 
         {/* Custom Element Types */}
-        <div className="border border-lsd-border p-6 rounded-lg md:col-span-2">
+        <div className="lsd:border lsd:border-lsd-border lsd:p-6 lsd:rounded-lg md:col-span-2">
           <Typography
             variant="h3"
-            className="mb-4 pb-2 border-b border-lsd-border"
+            className="lsd:mb-4 lsd:pb-2 lsd:border-b lsd:border-lsd-border"
           >
             Custom Element Types
           </Typography>
           <CodeExample
             title="Custom Element Types"
-            code={`<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            code={`<div className="lsd:grid lsd:grid-cols-1 md:grid-cols-2 lsd:gap-4">
   <Typography
     variant="h1"
     as="div"
-    className="border border-lsd-border p-4 rounded"
+    className="lsd:border lsd:border-lsd-border lsd:p-4 lsd:rounded"
   >
     This is an H1 variant rendered as a div element
   </Typography>
   <Typography
     variant="body1"
     as="p"
-    className="border border-lsd-border p-4 rounded"
+    className="lsd:border lsd:border-lsd-border lsd:p-4 lsd:rounded"
   >
     This is a body1 variant rendered as a paragraph element
   </Typography>
 </div>`}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="lsd:grid lsd:grid-cols-1 md:grid-cols-2 lsd:gap-4">
               <Typography
                 variant="h1"
                 as="div"
-                className="border border-lsd-border p-4 rounded"
+                className="lsd:border lsd:border-lsd-border lsd:p-4 lsd:rounded"
               >
                 This is an H1 variant rendered as a div element
               </Typography>
               <Typography
                 variant="body1"
                 as="p"
-                className="border border-lsd-border p-4 rounded"
+                className="lsd:border lsd:border-lsd-border lsd:p-4 lsd:rounded"
               >
                 This is a body1 variant rendered as a paragraph element
               </Typography>

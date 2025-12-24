@@ -22,7 +22,10 @@ const ToggleGroup = React.forwardRef<
       ref={ref}
       data-slot="toggle-group"
       data-size={size}
-      className={cn('group/toggle-group flex w-fit items-center', className)}
+      className={cn(
+        'group/toggle-group lsd:flex lsd:w-fit lsd:items-center',
+        className,
+      )}
       {...props}
     >
       <ToggleGroupContext.Provider value={{ size }}>
@@ -49,7 +52,7 @@ const ToggleGroupItem = React.forwardRef<
         toggleVariants({
           size: context.size || size,
         }),
-        'min-w-0 flex-1 shrink-0 rounded-none shadow-none focus:z-10 focus-visible:z-10 border-l-0 first:border-l cursor-pointer disabled:cursor-not-allowed',
+        'lsd:min-w-0 lsd:flex-1 lsd:shrink-0 lsd:rounded-none lsd:shadow-none focus:lsd:z-10 focus-visible:lsd:z-10 lsd:border-l-0 first:lsd:border-l lsd:cursor-pointer lsd:disabled:cursor-not-allowed',
         className,
       )}
       {...props}

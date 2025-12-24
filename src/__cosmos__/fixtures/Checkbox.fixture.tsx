@@ -20,30 +20,32 @@ export default function CheckboxFixture() {
   const businessId = useId();
 
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Checkbox Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Checkbox Component</h2>
+        <p className="lsd:text-muted-foreground">
           A checkbox component that allows users to select one or more options
           from a set.
         </p>
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Default Checkbox</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Default Checkbox
+        </h2>
         <CodeExample
           title="Checkbox Default"
-          code={`<div className="flex items-center space-x-2">
+          code={`<div className="lsd:flex lsd:items-center lsd:space-x-2">
   <Checkbox id="default-checkbox" />
   <label htmlFor="default-checkbox">Accept terms and conditions</label>
 </div>`}
         >
-          <div className="flex items-center space-x-2">
+          <div className="lsd:flex lsd:items-center lsd:space-x-2">
             <Checkbox id={defaultCheckboxId} />
             <label htmlFor={defaultCheckboxId}>
               Accept terms and conditions
@@ -53,14 +55,16 @@ export default function CheckboxFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Controlled Checkbox</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Controlled Checkbox
+        </h2>
         <CodeExample
           title="Checkbox Controlled"
           code={`function CheckboxExample() {
   const [checked, setChecked] = useState(false);
   
   return (
-    <div className="flex items-center space-x-2">
+    <div className="lsd:flex lsd:items-center lsd:space-x-2">
       <Checkbox
         id="controlled-checkbox"
         checked={checked}
@@ -73,7 +77,7 @@ export default function CheckboxFixture() {
   );
 }`}
         >
-          <div className="flex items-center space-x-2">
+          <div className="lsd:flex lsd:items-center lsd:space-x-2">
             <Checkbox
               id={controlledCheckboxId}
               checked={checked}
@@ -87,15 +91,17 @@ export default function CheckboxFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Checked by Default</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Checked by Default
+        </h2>
         <CodeExample
           title="Checkbox Checked by Default"
-          code={`<div className="flex items-center space-x-2">
+          code={`<div className="lsd:flex lsd:items-center lsd:space-x-2">
   <Checkbox id="default-checked" defaultChecked />
   <label htmlFor="default-checked">Pre-checked option</label>
 </div>`}
         >
-          <div className="flex items-center space-x-2">
+          <div className="lsd:flex lsd:items-center lsd:space-x-2">
             <Checkbox id={disabledCheckedId} defaultChecked />
             <label htmlFor={disabledCheckedId}>Pre-checked option</label>
           </div>
@@ -103,26 +109,28 @@ export default function CheckboxFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Disabled State</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Disabled State
+        </h2>
         <CodeExample
           title="Checkbox Disabled State"
-          code={`<div className="space-y-4">
-  <div className="flex items-center space-x-2">
+          code={`<div className="lsd:space-y-4">
+  <div className="lsd:flex lsd:items-center lsd:space-x-2">
     <Checkbox id="disabled-unchecked" disabled />
     <label htmlFor="disabled-unchecked">Disabled unchecked</label>
   </div>
-  <div className="flex items-center space-x-2">
+  <div className="lsd:flex lsd:items-center lsd:space-x-2">
     <Checkbox id="disabled-checked" disabled checked />
     <label htmlFor="disabled-checked">Disabled checked</label>
   </div>
 </div>`}
         >
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+          <div className="lsd:space-y-4">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Checkbox id={disabledUncheckedId} disabled />
               <label htmlFor={disabledUncheckedId}>Disabled unchecked</label>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Checkbox id={disabledCheckedId} disabled checked />
               <label htmlFor={disabledCheckedId}>Disabled checked</label>
             </div>
@@ -131,15 +139,17 @@ export default function CheckboxFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Multiple Checkboxes</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Multiple Checkboxes
+        </h2>
         <CodeExample
           title="Checkbox Multiple Checkboxes"
           code={`function MultipleCheckboxesExample() {
   const [checked, setChecked] = useState(true);
   
   return (
-    <div className="space-y-4">
-      <div className="flex items-center space-x-2">
+    <div className="lsd:space-y-4">
+      <div className="lsd:flex lsd:items-center lsd:space-x-2">
         <Checkbox
           id="terms"
           checked={checked}
@@ -147,11 +157,11 @@ export default function CheckboxFixture() {
         />
         <label htmlFor="terms">I agree to the terms and conditions</label>
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="lsd:flex lsd:items-center lsd:space-x-2">
         <Checkbox id="newsletter" />
         <label htmlFor="newsletter">Subscribe to newsletter</label>
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="lsd:flex lsd:items-center lsd:space-x-2">
         <Checkbox id="updates" />
         <label htmlFor="updates">Receive product updates</label>
       </div>
@@ -159,8 +169,8 @@ export default function CheckboxFixture() {
   );
 }`}
         >
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+          <div className="lsd:space-y-4">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Checkbox
                 id={termsId}
                 checked={checked2}
@@ -170,11 +180,11 @@ export default function CheckboxFixture() {
                 I agree to the terms and conditions
               </label>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Checkbox id={newsletterId} />
               <label htmlFor={newsletterId}>Subscribe to newsletter</label>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Checkbox id={updatesId} />
               <label htmlFor={updatesId}>Receive product updates</label>
             </div>
@@ -183,39 +193,43 @@ export default function CheckboxFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Checkbox Group</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Checkbox Group
+        </h2>
         <CodeExample
           title="Checkbox Group"
-          code={`<div className="space-y-3">
-  <p className="text-sm font-medium">Select your interests:</p>
-  <div className="space-y-2 pl-2">
-    <div className="flex items-center space-x-2">
+          code={`<div className="lsd:space-y-3">
+  <p className="lsd:text-sm lsd:font-medium">Select your interests:</p>
+  <div className="lsd:space-y-2 lsd:pl-2">
+    <div className="lsd:flex lsd:items-center lsd:space-x-2">
       <Checkbox id="tech" />
       <label htmlFor="tech">Technology</label>
     </div>
-    <div className="flex items-center space-x-2">
+    <div className="lsd:flex lsd:items-center lsd:space-x-2">
       <Checkbox id="design" />
       <label htmlFor="design">Design</label>
     </div>
-    <div className="flex items-center space-x-2">
+    <div className="lsd:flex lsd:items-center lsd:space-x-2">
       <Checkbox id="business" />
       <label htmlFor="business">Business</label>
     </div>
   </div>
 </div>`}
         >
-          <div className="space-y-3">
-            <p className="text-sm font-medium">Select your interests:</p>
-            <div className="space-y-2 pl-2">
-              <div className="flex items-center space-x-2">
+          <div className="lsd:space-y-3">
+            <p className="lsd:text-sm lsd:font-medium">
+              Select your interests:
+            </p>
+            <div className="lsd:space-y-2 lsd:pl-2">
+              <div className="lsd:flex lsd:items-center lsd:space-x-2">
                 <Checkbox id={techId} />
                 <label htmlFor={techId}>Technology</label>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="lsd:flex lsd:items-center lsd:space-x-2">
                 <Checkbox id={designId} />
                 <label htmlFor={designId}>Design</label>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="lsd:flex lsd:items-center lsd:space-x-2">
                 <Checkbox id={businessId} />
                 <label htmlFor={businessId}>Business</label>
               </div>

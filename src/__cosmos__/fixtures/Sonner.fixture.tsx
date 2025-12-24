@@ -7,24 +7,24 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function SonnerFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Sonner Toast Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Sonner Toast Component</h2>
+        <p className="lsd:text-muted-foreground">
           A toast notification component that displays messages to users.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Basic Toasts</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Basic Toasts</h2>
         <CodeExample
           title="Basic Toasts"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Button
     variant="filled"
     onClick={() => toast('Event has been created')}
@@ -57,7 +57,7 @@ export default function SonnerFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Button
               variant="filled"
               onClick={() => toast('Event has been created')}
@@ -92,11 +92,11 @@ export default function SonnerFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Toast with Action</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Toast with Action</h2>
         <CodeExample
           title="Toast with Action"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Button
     variant="filled"
     onClick={() =>
@@ -112,7 +112,7 @@ export default function SonnerFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Button
               variant="filled"
               onClick={() =>
@@ -130,18 +130,20 @@ export default function SonnerFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Toast with Rich Content</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Toast with Rich Content
+        </h2>
         <CodeExample
           title="Toast with Rich Content"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Button
     variant="filled"
     onClick={() =>
       toast(
         <div>
-          <h4 className="font-semibold">Event Created</h4>
-          <p className="text-sm">
+          <h4 className="lsd:font-semibold">Event Created</h4>
+          <p className="lsd:text-sm">
             Your event has been created successfully.
           </p>
         </div>,
@@ -155,14 +157,14 @@ export default function SonnerFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Button
               variant="filled"
               onClick={() =>
                 toast(
                   <div>
-                    <h4 className="font-semibold">Event Created</h4>
-                    <p className="text-sm">
+                    <h4 className="lsd:font-semibold">Event Created</h4>
+                    <p className="lsd:text-sm">
                       Your event has been created successfully.
                     </p>
                   </div>,
@@ -178,11 +180,11 @@ export default function SonnerFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Persistent Toast</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Persistent Toast</h2>
         <CodeExample
           title="Persistent Toast"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Button
     variant="filled"
     onClick={() =>
@@ -198,7 +200,7 @@ export default function SonnerFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Button
               variant="filled"
               onClick={() =>
@@ -216,11 +218,11 @@ export default function SonnerFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Positioned Toasts</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Positioned Toasts</h2>
         <CodeExample
           title="Positioned Toasts"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Button
     variant="filled"
     onClick={() =>
@@ -263,7 +265,7 @@ export default function SonnerFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Button
               variant="filled"
               onClick={() =>

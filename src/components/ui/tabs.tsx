@@ -23,17 +23,17 @@ const tabsVariants = cva('', {
 });
 
 const tabsListVariants = cva(
-  'bg-lsd-surface-primary border-b border-lsd-border flex flex-row',
+  'lsd:bg-lsd-surface-primary lsd:border-b lsd:border-lsd-border lsd:flex lsd:flex-row',
   {
     variants: {
       size: {
-        sm: 'h-8',
-        md: 'h-10',
-        lg: 'h-12',
+        sm: 'lsd:h-8',
+        md: 'lsd:h-10',
+        lg: 'lsd:h-12',
       },
       fullWidth: {
-        true: 'w-full',
-        false: 'w-fit',
+        true: 'lsd:w-full',
+        false: 'lsd:w-fit',
       },
     },
     defaultVariants: {
@@ -44,16 +44,16 @@ const tabsListVariants = cva(
 );
 
 const tabsTriggerVariants = cva(
-  'text-lsd-text border border-transparent border-b-0 hover:underline data-[state=active]:border-lsd-text data-[state=active]:bg-lsd-surface-primary data-[state=active]:font-medium disabled:opacity-34 disabled:pointer-events-none flex items-center justify-center whitespace-nowrap transition-colors',
+  'lsd:text-lsd-text lsd:border lsd:border-transparent lsd:border-b-0 lsd:hover:underline lsd:data-[state=active]:border-lsd-text lsd:data-[state=active]:bg-lsd-surface-primary lsd:data-[state=active]:font-medium lsd:disabled:opacity-34 lsd:disabled:pointer-events-none lsd:flex lsd:items-center lsd:justify-center lsd:whitespace-nowrap lsd:transition-colors',
   {
     variants: {
       size: {
-        sm: 'px-3 py-1.5 text-sm [&>svg]:ml-2 [&>svg]:h-4 [&>svg]:w-4',
-        md: 'px-4 py-2 text-base [&>svg]:ml-3 [&>svg]:h-5 [&>svg]:w-5',
-        lg: 'px-5 py-2.5 text-lg [&>svg]:ml-3.5 [&>svg]:h-6 [&>svg]:w-6',
+        sm: 'lsd:px-3 lsd:py-1.5 lsd:text-sm lsd:[&>svg]:ml-2 lsd:[&>svg]:h-4 lsd:[&>svg]:w-4',
+        md: 'lsd:px-4 lsd:py-2 lsd:text-base lsd:[&>svg]:ml-3 lsd:[&>svg]:h-5 lsd:[&>svg]:w-5',
+        lg: 'lsd:px-5 lsd:py-2.5 lsd:text-lg lsd:[&>svg]:ml-3.5 lsd:[&>svg]:h-6 lsd:[&>svg]:w-6',
       },
       fullWidth: {
-        true: 'flex-1',
+        true: 'lsd:flex-1',
         false: '',
       },
     },
@@ -118,7 +118,7 @@ function TabsContent({
   return (
     <TabsPrimitive.Content
       data-slot="tabs-content"
-      className={cn('mt-4 outline-none', className)}
+      className={cn('lsd:mt-4 lsd:outline-none', className)}
       {...props}
     />
   );

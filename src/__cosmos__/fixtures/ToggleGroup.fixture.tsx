@@ -13,22 +13,22 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function ToggleGroupFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Toggle Group Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Toggle Group Component</h2>
+        <p className="lsd:text-muted-foreground">
           A toggle group component that allows users to select one or more
           options from a group.
         </p>
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
           Single Selection Toggle Group
         </h2>
         <CodeExample
@@ -39,13 +39,13 @@ export default function ToggleGroupFixture() {
   aria-label="Text alignment"
 >
   <ToggleGroupItem value="left" aria-label="Left aligned">
-    <AlignLeft className="h-4 w-4" />
+    <AlignLeft className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="center" aria-label="Center aligned">
-    <AlignCenter className="h-4 w-4" />
+    <AlignCenter className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="right" aria-label="Right aligned">
-    <AlignRight className="h-4 w-4" />
+    <AlignRight className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
 </ToggleGroup>`}
         >
@@ -55,19 +55,21 @@ export default function ToggleGroupFixture() {
             aria-label="Text alignment"
           >
             <ToggleGroupItem value="left" aria-label="Left aligned">
-              <AlignLeft className="h-4 w-4" />
+              <AlignLeft className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="center" aria-label="Center aligned">
-              <AlignCenter className="h-4 w-4" />
+              <AlignCenter className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="right" aria-label="Right aligned">
-              <AlignRight className="h-4 w-4" />
+              <AlignRight className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
         </CodeExample>
       </div>
       <div>
-        <h2 className="text-xl font-semibold mb-4">Toggle Group with Text</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Toggle Group with Text
+        </h2>
         <CodeExample
           title="Toggle Group with Text"
           code={`<ToggleGroup
@@ -105,7 +107,7 @@ export default function ToggleGroupFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
           Multiple Selection Toggle Group
         </h2>
         <CodeExample
@@ -116,13 +118,13 @@ export default function ToggleGroupFixture() {
   aria-label="Text formatting"
 >
   <ToggleGroupItem value="bold" aria-label="Toggle bold">
-    <Bold className="h-4 w-4" />
+    <Bold className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="italic" aria-label="Toggle italic">
-    <Italic className="h-4 w-4" />
+    <Italic className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="underline" aria-label="Toggle underline">
-    <Underline className="h-4 w-4" />
+    <Underline className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
 </ToggleGroup>`}
         >
@@ -132,20 +134,20 @@ export default function ToggleGroupFixture() {
             aria-label="Text formatting"
           >
             <ToggleGroupItem value="bold" aria-label="Toggle bold">
-              <Bold className="h-4 w-4" />
+              <Bold className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="italic" aria-label="Toggle italic">
-              <Italic className="h-4 w-4" />
+              <Italic className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="underline" aria-label="Toggle underline">
-              <Underline className="h-4 w-4" />
+              <Underline className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
         </CodeExample>
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
           Outlined Variant Toggle Group
         </h2>
         <CodeExample
@@ -156,13 +158,13 @@ export default function ToggleGroupFixture() {
   aria-label="Text alignment"
 >
   <ToggleGroupItem value="left" aria-label="Left aligned">
-    <AlignLeft className="h-4 w-4" />
+    <AlignLeft className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="center" aria-label="Center aligned">
-    <AlignCenter className="h-4 w-4" />
+    <AlignCenter className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="right" aria-label="Right aligned">
-    <AlignRight className="h-4 w-4" />
+    <AlignRight className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
 </ToggleGroup>`}
         >
@@ -172,25 +174,27 @@ export default function ToggleGroupFixture() {
             aria-label="Text alignment"
           >
             <ToggleGroupItem value="left" aria-label="Left aligned">
-              <AlignLeft className="h-4 w-4" />
+              <AlignLeft className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="center" aria-label="Center aligned">
-              <AlignCenter className="h-4 w-4" />
+              <AlignCenter className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="right" aria-label="Right aligned">
-              <AlignRight className="h-4 w-4" />
+              <AlignRight className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
         </CodeExample>
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Toggle Group Sizes</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Toggle Group Sizes
+        </h2>
         <CodeExample
           title="Toggle Group Sizes"
-          code={`<div className="space-y-4">
+          code={`<div className="lsd:space-y-4">
   <div>
-    <h3 className="text-md font-medium mb-2">Small</h3>
+    <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Small</h3>
     <ToggleGroup
       type="single"
       size="sm"
@@ -198,19 +202,19 @@ export default function ToggleGroupFixture() {
       aria-label="Text alignment"
     >
       <ToggleGroupItem value="left" aria-label="Left aligned">
-        <AlignLeft className="h-4 w-4" />
+        <AlignLeft className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="center" aria-label="Center aligned">
-        <AlignCenter className="h-4 w-4" />
+        <AlignCenter className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="right" aria-label="Right aligned">
-        <AlignRight className="h-4 w-4" />
+        <AlignRight className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
   </div>
 
   <div>
-    <h3 className="text-md font-medium mb-2">Default</h3>
+    <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Default</h3>
     <ToggleGroup
       type="single"
       size="default"
@@ -218,19 +222,19 @@ export default function ToggleGroupFixture() {
       aria-label="Text alignment"
     >
       <ToggleGroupItem value="left" aria-label="Left aligned">
-        <AlignLeft className="h-4 w-4" />
+        <AlignLeft className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="center" aria-label="Center aligned">
-        <AlignCenter className="h-4 w-4" />
+        <AlignCenter className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="right" aria-label="Right aligned">
-        <AlignRight className="h-4 w-4" />
+        <AlignRight className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
   </div>
 
   <div>
-    <h3 className="text-md font-medium mb-2">Large</h3>
+    <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Large</h3>
     <ToggleGroup
       type="single"
       size="lg"
@@ -238,21 +242,21 @@ export default function ToggleGroupFixture() {
       aria-label="Text alignment"
     >
       <ToggleGroupItem value="left" aria-label="Left aligned">
-        <AlignLeft className="h-4 w-4" />
+        <AlignLeft className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="center" aria-label="Center aligned">
-        <AlignCenter className="h-4 w-4" />
+        <AlignCenter className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="right" aria-label="Right aligned">
-        <AlignRight className="h-4 w-4" />
+        <AlignRight className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
   </div>
 </div>`}
         >
-          <div className="space-y-4">
+          <div className="lsd:space-y-4">
             <div>
-              <h3 className="text-md font-medium mb-2">Small</h3>
+              <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Small</h3>
               <ToggleGroup
                 type="single"
                 size="sm"
@@ -260,19 +264,19 @@ export default function ToggleGroupFixture() {
                 aria-label="Text alignment"
               >
                 <ToggleGroupItem value="left" aria-label="Left aligned">
-                  <AlignLeft className="h-4 w-4" />
+                  <AlignLeft className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="center" aria-label="Center aligned">
-                  <AlignCenter className="h-4 w-4" />
+                  <AlignCenter className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="right" aria-label="Right aligned">
-                  <AlignRight className="h-4 w-4" />
+                  <AlignRight className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>
 
             <div>
-              <h3 className="text-md font-medium mb-2">Default</h3>
+              <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Default</h3>
               <ToggleGroup
                 type="single"
                 size="default"
@@ -280,19 +284,19 @@ export default function ToggleGroupFixture() {
                 aria-label="Text alignment"
               >
                 <ToggleGroupItem value="left" aria-label="Left aligned">
-                  <AlignLeft className="h-4 w-4" />
+                  <AlignLeft className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="center" aria-label="Center aligned">
-                  <AlignCenter className="h-4 w-4" />
+                  <AlignCenter className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="right" aria-label="Right aligned">
-                  <AlignRight className="h-4 w-4" />
+                  <AlignRight className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>
 
             <div>
-              <h3 className="text-md font-medium mb-2">Large</h3>
+              <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Large</h3>
               <ToggleGroup
                 type="single"
                 size="lg"
@@ -300,13 +304,13 @@ export default function ToggleGroupFixture() {
                 aria-label="Text alignment"
               >
                 <ToggleGroupItem value="left" aria-label="Left aligned">
-                  <AlignLeft className="h-4 w-4" />
+                  <AlignLeft className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="center" aria-label="Center aligned">
-                  <AlignCenter className="h-4 w-4" />
+                  <AlignCenter className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
                 <ToggleGroupItem value="right" aria-label="Right aligned">
-                  <AlignRight className="h-4 w-4" />
+                  <AlignRight className="lsd:h-4 lsd:w-4" />
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>
@@ -315,7 +319,9 @@ export default function ToggleGroupFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Disabled Toggle Group</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Disabled Toggle Group
+        </h2>
         <CodeExample
           title="Disabled Toggle Group"
           code={`<ToggleGroup
@@ -325,13 +331,13 @@ export default function ToggleGroupFixture() {
   disabled
 >
   <ToggleGroupItem value="left" aria-label="Left aligned">
-    <AlignLeft className="h-4 w-4" />
+    <AlignLeft className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="center" aria-label="Center aligned">
-    <AlignCenter className="h-4 w-4" />
+    <AlignCenter className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
   <ToggleGroupItem value="right" aria-label="Right aligned">
-    <AlignRight className="h-4 w-4" />
+    <AlignRight className="lsd:h-4 lsd:w-4" />
   </ToggleGroupItem>
 </ToggleGroup>`}
         >
@@ -342,13 +348,13 @@ export default function ToggleGroupFixture() {
             disabled
           >
             <ToggleGroupItem value="left" aria-label="Left aligned">
-              <AlignLeft className="h-4 w-4" />
+              <AlignLeft className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="center" aria-label="Center aligned">
-              <AlignCenter className="h-4 w-4" />
+              <AlignCenter className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
             <ToggleGroupItem value="right" aria-label="Right aligned">
-              <AlignRight className="h-4 w-4" />
+              <AlignRight className="lsd:h-4 lsd:w-4" />
             </ToggleGroupItem>
           </ToggleGroup>
         </CodeExample>

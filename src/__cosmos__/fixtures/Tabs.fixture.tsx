@@ -5,22 +5,22 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function TabsFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Tabs Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Tabs Component</h2>
+        <p className="lsd:text-muted-foreground">
           A tabs component that allows users to navigate between different
           content sections.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Default Tabs</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Default Tabs</h2>
         <CodeExample
           title="Default Tabs"
           code={`<Tabs defaultValue="tab1">
@@ -59,13 +59,13 @@ export default function TabsFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Sizes</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Sizes</h2>
         <CodeExample
           title="Tabs Sizes"
-          code={`<div className="space-y-8">
+          code={`<div className="lsd:space-y-8">
   <div>
-    <h3 className="text-lg font-medium mb-2">Small Tabs</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small Tabs</h3>
     <Tabs defaultValue="tab1" size="sm">
       <TabsList size="sm">
         <TabsTrigger value="tab1" size="sm">
@@ -91,7 +91,7 @@ export default function TabsFixture() {
   </div>
 
   <div>
-    <h3 className="text-lg font-medium mb-2">Medium Tabs</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium Tabs</h3>
     <Tabs defaultValue="tab1" size="md">
       <TabsList size="md">
         <TabsTrigger value="tab1" size="md">
@@ -117,7 +117,7 @@ export default function TabsFixture() {
   </div>
 
   <div>
-    <h3 className="text-lg font-medium mb-2">Large Tabs</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large Tabs</h3>
     <Tabs defaultValue="tab1" size="lg">
       <TabsList size="lg">
         <TabsTrigger value="tab1" size="lg">
@@ -143,9 +143,11 @@ export default function TabsFixture() {
   </div>
 </div>`}
         >
-          <div className="space-y-8">
+          <div className="lsd:space-y-8">
             <div>
-              <h3 className="text-lg font-medium mb-2">Small Tabs</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Small Tabs
+              </h3>
               <Tabs defaultValue="tab1" size="sm">
                 <TabsList size="sm">
                   <TabsTrigger value="tab1" size="sm">
@@ -171,7 +173,9 @@ export default function TabsFixture() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium mb-2">Medium Tabs</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Medium Tabs
+              </h3>
               <Tabs defaultValue="tab1" size="md">
                 <TabsList size="md">
                   <TabsTrigger value="tab1" size="md">
@@ -197,7 +201,9 @@ export default function TabsFixture() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium mb-2">Large Tabs</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Large Tabs
+              </h3>
               <Tabs defaultValue="tab1" size="lg">
                 <TabsList size="lg">
                   <TabsTrigger value="tab1" size="lg">
@@ -225,8 +231,8 @@ export default function TabsFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Full Width Tabs</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Full Width Tabs</h2>
         <CodeExample
           title="Full Width Tabs"
           code={`<Tabs defaultValue="tab1" fullWidth>
@@ -277,8 +283,8 @@ export default function TabsFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Tabs with Icons</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Tabs with Icons</h2>
         <CodeExample
           title="Tabs with Icons"
           code={`<Tabs defaultValue="tab1">
@@ -413,8 +419,8 @@ export default function TabsFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Disabled Tabs</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Disabled Tabs</h2>
         <CodeExample
           title="Disabled Tabs"
           code={`<Tabs defaultValue="tab1">

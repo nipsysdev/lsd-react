@@ -8,14 +8,18 @@ import { CodeExample } from '../code-example';
 
 export default function AccordionFixture() {
   return (
-    <div className="p-8 w-full">
-      <h2 className="text-2xl font-bold mb-6">Accordion Component</h2>
+    <div className="lsd:p-8 lsd:w-full">
+      <h2 className="lsd:text-2xl lsd:font-bold lsd:mb-6">
+        Accordion Component
+      </h2>
 
-      <div className="max-w-md space-y-4">
-        <h3 className="text-lg font-semibold mb-2">Ethereum Basics</h3>
+      <div className="lsd:max-w-md lsd:space-y-4">
+        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
+          Ethereum Basics
+        </h3>
         <CodeExample
           title="Single Collapsible Accordion"
-          code={`<Accordion type="single" collapsible className="w-full">
+          code={`<Accordion type="single" collapsible className="lsd:w-full">
   <AccordionItem value="item-1">
     <AccordionTrigger>What is Ethereum?</AccordionTrigger>
     <AccordionContent>
@@ -46,7 +50,7 @@ export default function AccordionFixture() {
   </AccordionItem>
 </Accordion>`}
         >
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="lsd:w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>What is Ethereum?</AccordionTrigger>
               <AccordionContent>
@@ -79,11 +83,13 @@ export default function AccordionFixture() {
         </CodeExample>
       </div>
 
-      <div className="max-w-md mt-8 space-y-4">
-        <h3 className="text-lg font-semibold mb-2">Ethereum Technology</h3>
+      <div className="lsd:max-w-md lsd:mt-8 lsd:space-y-4">
+        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
+          Ethereum Technology
+        </h3>
         <CodeExample
           title="Multiple Open Accordion"
-          code={`<Accordion type="multiple" className="w-full">
+          code={`<Accordion type="multiple" className="lsd:w-full">
   <AccordionItem value="item-1">
     <AccordionTrigger>
       What is the Ethereum Virtual Machine (EVM)?
@@ -117,7 +123,7 @@ export default function AccordionFixture() {
   </AccordionItem>
 </Accordion>`}
         >
-          <Accordion type="multiple" className="w-full">
+          <Accordion type="multiple" className="lsd:w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>
                 What is the Ethereum Virtual Machine (EVM)?
@@ -153,11 +159,13 @@ export default function AccordionFixture() {
         </CodeExample>
       </div>
 
-      <div className="max-w-md mt-8 space-y-4">
-        <h3 className="text-lg font-semibold mb-2">Ethereum Ecosystem</h3>
+      <div className="lsd:max-w-md lsd:mt-8 lsd:space-y-4">
+        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
+          Ethereum Ecosystem
+        </h3>
         <CodeExample
           title="Accordion with Disabled Item"
-          code={`<Accordion type="single" collapsible className="w-full">
+          code={`<Accordion type="single" collapsible className="lsd:w-full">
   <AccordionItem value="item-1">
     <AccordionTrigger>What are dApps?</AccordionTrigger>
     <AccordionContent>
@@ -189,7 +197,7 @@ export default function AccordionFixture() {
   </AccordionItem>
 </Accordion>`}
         >
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="lsd:w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>What are dApps?</AccordionTrigger>
               <AccordionContent>

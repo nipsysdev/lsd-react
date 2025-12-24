@@ -32,43 +32,46 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const getSizeClasses = () => {
       switch (size) {
         case 'large':
-          return 'w-52';
+          return 'lsd:w-52';
         case 'medium':
-          return 'w-44';
+          return 'lsd:w-44';
         case 'small':
-          return 'w-40';
+          return 'lsd:w-40';
         default:
-          return 'w-52';
+          return 'lsd:w-52';
       }
     };
 
     const getPaddingClasses = () => {
       switch (size) {
         case 'large':
-          return 'px-4 py-4';
+          return 'lsd:px-4 lsd:py-4';
         case 'medium':
-          return 'px-3 py-3';
+          return 'lsd:px-3 lsd:py-3';
         case 'small':
-          return 'px-3 py-3';
+          return 'lsd:px-3 lsd:py-3';
         default:
-          return 'px-4 py-4';
+          return 'lsd:px-4 lsd:py-4';
       }
     };
 
     return (
-      <div className={cn('flex flex-col box-border', className)}>
+      <div className={cn('lsd:flex lsd:flex-col lsd:box-border', className)}>
         {label && (
-          <label htmlFor={finalId} className="pb-1.5 text-sm font-medium">
+          <label
+            htmlFor={finalId}
+            className="lsd:pb-1.5 lsd:text-sm lsd:font-medium"
+          >
             {label}
           </label>
         )}
         <div
           className={cn(
-            'flex items-center justify-between',
+            'lsd:flex lsd:items-center lsd:justify-between',
             variant === 'outlined'
-              ? 'border border-lsd-border-primary rounded'
-              : 'border border-transparent border-b-lsd-border-primary',
-            error && 'border-lsd-destructive',
+              ? 'lsd:border lsd:border-lsd-border-primary lsd:rounded'
+              : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary',
+            error && 'lsd:border-lsd-destructive',
             getSizeClasses(),
           )}
         >
@@ -77,21 +80,21 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             type={type}
             id={finalId}
             className={cn(
-              'file:text-lsd-text placeholder:text-lsd-text-primary placeholder:opacity-30 selection:bg-lsd-primary selection:text-lsd-surface-primary border-none outline-none bg-transparent text-lsd-text-primary w-full h-full text-base file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-base file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-34',
-              'focus-visible:outline-none',
-              error && 'line-through',
+              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full lsd:text-base file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:text-base file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
+              'focus-visible:lsd:outline-none',
+              error && 'lsd:line-through',
               getPaddingClasses(),
             )}
             {...props}
           />
         </div>
         {supportingText && (
-          <div className="pt-1.5 w-fit">
+          <div className="lsd:pt-1.5 lsd:w-fit">
             <p
               className={cn(
-                'text-sm',
-                size === 'large' ? 'text-base' : 'text-sm',
-                error && 'text-lsd-destructive',
+                'lsd:text-sm',
+                size === 'large' ? 'lsd:text-base' : 'lsd:text-sm',
+                error && 'lsd:text-lsd-destructive',
               )}
             >
               {supportingText}

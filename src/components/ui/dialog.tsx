@@ -36,7 +36,7 @@ function DialogOverlay({
     <DialogPrimitive.Overlay
       data-slot="dialog-overlay"
       className={cn(
-        'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50',
+        'lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:fixed lsd:inset-0 lsd:z-50 lsd:bg-black/50',
         className,
       )}
       {...props}
@@ -58,7 +58,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          'bg-lsd-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 border border-lsd-border p-6 shadow-lg duration-200 sm:max-w-lg',
+          'lsd:bg-lsd-surface-primary lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg',
           className,
         )}
         {...props}
@@ -67,10 +67,10 @@ function DialogContent({
         {showCloseButton && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
-            className="p-2 focus:outline-hidden data-[state=open]:bg-lsd-surface-secondary data-[state=open]:text-lsd-text absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 cursor-pointer"
+            className="lsd:p-2 focus:lsd:outline-hidden lsd:data-[state=open]:bg-lsd-surface-secondary lsd:data-[state=open]:text-lsd-text lsd:absolute lsd:top-4 lsd:right-4 lsd:rounded-xs lsd:opacity-70 lsd:transition-opacity lsd:hover:opacity-100 lsd:disabled:pointer-events-none lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4 lsd:cursor-pointer"
           >
             <XIcon />
-            <span className="sr-only">Close</span>
+            <span className="lsd:sr-only">Close</span>
           </DialogPrimitive.Close>
         )}
       </DialogPrimitive.Content>
@@ -82,7 +82,10 @@ function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="dialog-header"
-      className={cn('flex flex-col gap-2 text-center sm:text-left', className)}
+      className={cn(
+        'lsd:flex lsd:flex-col lsd:gap-2 lsd:text-center lsd:sm:text-left',
+        className,
+      )}
       {...props}
     />
   );
@@ -93,7 +96,7 @@ function DialogFooter({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="dialog-footer"
       className={cn(
-        'flex flex-col-reverse gap-2 sm:flex-row sm:justify-end',
+        'lsd:flex lsd:flex-col-reverse lsd:gap-2 lsd:sm:flex-row lsd:sm:justify-end',
         className,
       )}
       {...props}
@@ -108,7 +111,10 @@ function DialogTitle({
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn('text-lg leading-none font-semibold', className)}
+      className={cn(
+        'lsd:text-lg lsd:leading-none lsd:font-semibold',
+        className,
+      )}
       {...props}
     />
   );
@@ -121,7 +127,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn('text-lsd-text text-sm', className)}
+      className={cn('lsd:text-lsd-text lsd:text-sm', className)}
       {...props}
     />
   );

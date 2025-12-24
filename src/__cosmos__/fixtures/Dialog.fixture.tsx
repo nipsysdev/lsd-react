@@ -21,22 +21,22 @@ export default function DialogFixture() {
   const [showFormDialog, setShowFormDialog] = useState(false);
 
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Dialog Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Dialog Component</h2>
+        <p className="lsd:text-muted-foreground">
           A dialog component that displays content in a modal overlay with
           optional header, footer, and actions.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Using DialogTrigger</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Using DialogTrigger</h2>
         <CodeExample
           title="Dialog with Trigger"
           code={`<Dialog>
@@ -83,11 +83,13 @@ export default function DialogFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Using Boolean State Control</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Using Boolean State Control
+        </h2>
         <CodeExample
           title="Controlled Dialog Examples"
-          code={`<div className="flex gap-4">
+          code={`<div className="lsd:flex lsd:gap-4">
   <Button onClick={() => setShowBasicDialog(true)}>
     Show Basic Dialog
   </Button>
@@ -144,14 +146,14 @@ export default function DialogFixture() {
 
 {/* Form Dialog */}
 <Dialog open={showFormDialog} onOpenChange={setShowFormDialog}>
-  <DialogContent className="sm:max-w-[425px]">
+  <DialogContent className="sm:lsd:max-w-[425px]">
     <DialogHeader>
       <DialogTitle>Edit Profile</DialogTitle>
       <DialogDescription>
         Make changes to your profile here. Click save when you're done.
       </DialogDescription>
     </DialogHeader>
-    <div className="grid gap-4 py-4">
+    <div className="lsd:grid lsd:gap-4 lsd:py-4">
       <Input title="Name" defaultValue="John Doe" />
       <Input title="Username" defaultValue="@johndoe" />
     </div>
@@ -164,7 +166,7 @@ export default function DialogFixture() {
   </DialogContent>
 </Dialog>`}
         >
-          <div className="flex gap-4">
+          <div className="lsd:flex lsd:gap-4">
             <Button onClick={() => setShowBasicDialog(true)}>
               Show Basic Dialog
             </Button>
@@ -218,7 +220,7 @@ export default function DialogFixture() {
           </Dialog>
 
           <Dialog open={showFormDialog} onOpenChange={setShowFormDialog}>
-            <DialogContent className="sm:max-w-[425px]">
+            <DialogContent className="sm:lsd:max-w-[425px]">
               <DialogHeader>
                 <DialogTitle>Edit Profile</DialogTitle>
                 <DialogDescription>
@@ -226,7 +228,7 @@ export default function DialogFixture() {
                   done.
                 </DialogDescription>
               </DialogHeader>
-              <div className="grid gap-4 py-4">
+              <div className="lsd:grid lsd:gap-4 lsd:py-4">
                 <Input label="Name" defaultValue="John Doe" />
                 <Input label="Username" defaultValue="@johndoe" />
               </div>

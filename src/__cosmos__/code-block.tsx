@@ -9,12 +9,12 @@ export function CodeBlock({ className, code, ...props }: CodeBlockProps) {
   return (
     <pre
       className={cn(
-        'overflow-x-auto rounded-md bg-lsd-surface-secondary p-4 text-sm text-lsd-text-primary',
+        'lsd:overflow-x-auto lsd:rounded-md lsd:bg-lsd-surface-secondary lsd:p-4 lsd:text-sm lsd:text-lsd-text-primary',
         className,
       )}
       {...props}
     >
-      <code className="font-mono">{code}</code>
+      <code className="lsd:font-mono">{code}</code>
     </pre>
   );
 }

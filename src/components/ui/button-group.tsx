@@ -5,14 +5,14 @@ import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 const buttonGroupVariants = cva(
-  "flex w-fit items-stretch [&>*]:focus-visible:z-10 [&>*]:focus-visible:relative [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-md has-[>[data-slot=button-group]]:gap-2",
+  "lsd:flex lsd:w-fit lsd:items-stretch lsd:[&>*]:focus-visible:z-10 lsd:[&>*]:focus-visible:relative lsd:[&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit lsd:[&>input]:flex-1 has-[select[aria-hidden=true]:last-child]:lsd:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-md has-[>[data-slot=button-group]]:lsd:gap-2",
   {
     variants: {
       orientation: {
         horizontal:
-          '[&>*:not(:first-child)]:rounded-l-none [&>*:not(:first-child)]:border-l-0 [&>*:not(:last-child)]:rounded-r-none',
+          'lsd:[&>*:not(:first-child)]:rounded-l-none lsd:[&>*:not(:first-child)]:border-l-0 lsd:[&>*:not(:last-child)]:rounded-r-none',
         vertical:
-          'flex-col [&>*:not(:first-child)]:rounded-t-none [&>*:not(:first-child)]:border-t-0 [&>*:not(:last-child)]:rounded-b-none',
+          'lsd:flex-col lsd:[&>*:not(:first-child)]:rounded-t-none lsd:[&>*:not(:first-child)]:border-t-0 lsd:[&>*:not(:last-child)]:rounded-b-none',
       },
     },
     defaultVariants: {
@@ -52,7 +52,7 @@ const ButtonGroupText = React.forwardRef<HTMLDivElement, ButtonGroupTextProps>(
       <Comp
         ref={ref}
         className={cn(
-          "bg-secondary flex items-center gap-2 rounded-md border px-4 text-sm font-medium shadow-xs [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 cursor-pointer disabled:cursor-not-allowed",
+          "lsd:bg-secondary lsd:flex lsd:items-center lsd:gap-2 lsd:rounded-md lsd:border lsd:px-4 lsd:text-sm lsd:font-medium lsd:shadow-xs lsd:[&_svg]:pointer-events-none lsd:[&_svg:not([class*='size-'])]:size-4 lsd:cursor-pointer lsd:disabled:cursor-not-allowed",
           className,
         )}
         {...props}
@@ -72,7 +72,7 @@ const ButtonGroupSeparator = React.forwardRef<
       data-slot="button-group-separator"
       orientation={orientation}
       className={cn(
-        'bg-border relative !m-0 self-stretch data-[orientation=vertical]:h-auto',
+        'lsd:bg-border lsd:relative lsd:!m-0 lsd:self-stretch lsd:data-[orientation=vertical]:h-auto',
         className,
       )}
       {...props}

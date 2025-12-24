@@ -21,22 +21,24 @@ export default function AlertDialogFixture() {
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
 
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Alert Dialog Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Alert Dialog Component</h2>
+        <p className="lsd:text-muted-foreground">
           A modal dialog that interrupts the user with important content and
           expects a response.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Using AlertDialogTrigger</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Using AlertDialogTrigger
+        </h2>
         <CodeExample
           title="AlertDialog with Trigger"
           code={`<AlertDialog>
@@ -79,11 +81,13 @@ export default function AlertDialogFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Using Boolean State Control</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Using Boolean State Control
+        </h2>
         <CodeExample
           title="Controlled AlertDialog Examples"
-          code={`<div className="flex gap-4">
+          code={`<div className="lsd:flex lsd:gap-4">
   <Button onClick={() => setShowBasicDialog(true)}>
     Show Basic Dialog
   </Button>
@@ -130,7 +134,7 @@ export default function AlertDialogFixture() {
     </AlertDialogHeader>
     <AlertDialogFooter>
       <AlertDialogCancel>Cancel</AlertDialogCancel>
-      <AlertDialogAction className="bg-red-600 hover:bg-red-700">
+      <AlertDialogAction className="lsd:bg-red-600 hover:lsd:bg-red-700">
         Delete
       </AlertDialogAction>
     </AlertDialogFooter>
@@ -154,7 +158,7 @@ export default function AlertDialogFixture() {
   </AlertDialogContent>
 </AlertDialog>`}
         >
-          <div className="flex gap-4">
+          <div className="lsd:flex lsd:gap-4">
             <Button onClick={() => setShowBasicDialog(true)}>
               Show Basic Dialog
             </Button>
@@ -202,7 +206,7 @@ export default function AlertDialogFixture() {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction className="bg-red-600 hover:bg-red-700">
+                <AlertDialogAction className="lsd:bg-red-600 hover:lsd:bg-red-700">
                   Delete
                 </AlertDialogAction>
               </AlertDialogFooter>

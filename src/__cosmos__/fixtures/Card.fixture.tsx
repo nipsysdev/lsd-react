@@ -14,40 +14,42 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function CardFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Card Component</h2>
-        <p className="text-lsd-text-secondary">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Card Component</h2>
+        <p className="lsd:text-lsd-text-secondary">
           A card component that displays content in a contained box with
           optional header, footer, and actions.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Basic Card</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Basic Card</h2>
         <CodeExample
           title="Card Basic"
           code={`<Card>
-  <CardContent className="pt-6">
+  <CardContent className="lsd:pt-6">
     <p>This is a basic card with only content.</p>
   </CardContent>
 </Card>`}
         >
           <Card>
-            <CardContent className="pt-6">
+            <CardContent className="lsd:pt-6">
               <p>This is a basic card with only content.</p>
             </CardContent>
           </Card>
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Card with Header and Title</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Card with Header and Title
+        </h2>
         <CodeExample
           title="Card with Header and Title"
           code={`<Card>
@@ -72,8 +74,8 @@ export default function CardFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
           Card with Header, Content, and Footer
         </h2>
         <CodeExample
@@ -106,8 +108,8 @@ export default function CardFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Card with Action</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Card with Action</h2>
         <CodeExample
           title="Card with Action"
           code={`<Card>
@@ -146,11 +148,11 @@ export default function CardFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Card Examples</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Card Examples</h2>
         <CodeExample
           title="Card Examples"
-          code={`<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          code={`<div className="lsd:grid lsd:grid-cols-1 md:lsd:grid-cols-2 lsd:gap-6">
   <Card>
     <CardHeader>
       <CardTitle>User Profile</CardTitle>
@@ -159,7 +161,7 @@ export default function CardFixture() {
       </CardDescription>
     </CardHeader>
     <CardContent>
-      <div className="space-y-2">
+      <div className="lsd:space-y-2">
         <p>
           <strong>Name:</strong> John Doe
         </p>
@@ -187,7 +189,7 @@ export default function CardFixture() {
       </CardAction>
     </CardHeader>
     <CardContent>
-      <div className="space-y-2">
+      <div className="lsd:space-y-2">
         <p>
           <strong>Progress:</strong> 75%
         </p>
@@ -202,7 +204,7 @@ export default function CardFixture() {
   </Card>
 </div>`}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="lsd:grid lsd:grid-cols-1 md:lsd:grid-cols-2 lsd:gap-6">
             <Card>
               <CardHeader>
                 <CardTitle>User Profile</CardTitle>
@@ -211,7 +213,7 @@ export default function CardFixture() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2">
+                <div className="lsd:space-y-2">
                   <p>
                     <strong>Name:</strong> John Doe
                   </p>
@@ -239,7 +241,7 @@ export default function CardFixture() {
                 </CardAction>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2">
+                <div className="lsd:space-y-2">
                   <p>
                     <strong>Progress:</strong> 75%
                   </p>

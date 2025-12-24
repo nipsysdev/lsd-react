@@ -20,7 +20,7 @@ function Command({
     <CommandPrimitive
       data-slot="command"
       className={cn(
-        'bg-lsd-surface-primary text-lsd-text flex h-full w-full flex-col overflow-hidden rounded-md',
+        'lsd:bg-lsd-surface-primary lsd:text-lsd-text lsd:flex lsd:h-full lsd:w-full lsd:flex-col lsd:overflow-hidden lsd:rounded-md',
         className,
       )}
       {...props}
@@ -43,15 +43,15 @@ function CommandDialog({
 }) {
   return (
     <Dialog {...props}>
-      <DialogHeader className="sr-only">
+      <DialogHeader className="lsd:sr-only">
         <DialogTitle>{title}</DialogTitle>
         <DialogDescription>{description}</DialogDescription>
       </DialogHeader>
       <DialogContent
-        className={cn('overflow-hidden p-0', className)}
+        className={cn('lsd:overflow-hidden lsd:p-0', className)}
         showCloseButton={showCloseButton}
       >
-        <Command className="[&_[cmdk-group-heading]]:text-lsd-text [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group]]:px-2 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
+        <Command className="lsd:[&_[cmdk-group-heading]]:text-lsd-text lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:font-medium lsd:[&_[cmdk-group]]:px-2 lsd:[&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 lsd:[&_[cmdk-input-wrapper]_svg]:h-5 lsd:[&_[cmdk-input-wrapper]_svg]:w-5 lsd:[&_[cmdk-input]]:h-12 lsd:[&_[cmdk-item]]:px-2 lsd:[&_[cmdk-item]]:py-3 lsd:[&_[cmdk-item]_svg]:h-5 lsd:[&_[cmdk-item]_svg]:w-5">
           {children}
         </Command>
       </DialogContent>
@@ -66,13 +66,13 @@ function CommandInput({
   return (
     <div
       data-slot="command-input-wrapper"
-      className="flex h-9 items-center gap-2 border-b border-lsd-border px-3"
+      className="lsd:flex lsd:h-9 lsd:items-center lsd:gap-2 lsd:border-b lsd:border-lsd-border lsd:px-3"
     >
-      <SearchIcon className="size-4 shrink-0 opacity-50" />
+      <SearchIcon className="lsd:size-4 lsd:shrink-0 lsd:opacity-50" />
       <CommandPrimitive.Input
         data-slot="command-input"
         className={cn(
-          'placeholder:text-lsd-text/50 flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50',
+          'placeholder:text-lsd-text/50 lsd:flex lsd:h-10 lsd:w-full lsd:rounded-md lsd:bg-transparent lsd:py-3 lsd:text-sm lsd:outline-hidden lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50',
           className,
         )}
         {...props}
@@ -89,7 +89,7 @@ function CommandList({
     <CommandPrimitive.List
       data-slot="command-list"
       className={cn(
-        'max-h-[300px] scroll-py-1 overflow-x-hidden overflow-y-auto',
+        'lsd:max-h-[300px] lsd:scroll-py-1 lsd:overflow-x-hidden lsd:overflow-y-auto',
         className,
       )}
       {...props}
@@ -103,7 +103,7 @@ function CommandEmpty({
   return (
     <CommandPrimitive.Empty
       data-slot="command-empty"
-      className="py-6 text-center text-sm"
+      className="lsd:py-6 lsd:text-center lsd:text-sm"
       {...props}
     />
   );
@@ -117,7 +117,7 @@ function CommandGroup({
     <CommandPrimitive.Group
       data-slot="command-group"
       className={cn(
-        'text-lsd-text [&_[cmdk-group-heading]]:text-lsd-text overflow-hidden p-1 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium',
+        'lsd:text-lsd-text lsd:[&_[cmdk-group-heading]]:text-lsd-text lsd:overflow-hidden lsd:p-1 lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:py-1.5 lsd:[&_[cmdk-group-heading]]:text-xs lsd:[&_[cmdk-group-heading]]:font-medium',
         className,
       )}
       {...props}
@@ -132,7 +132,7 @@ function CommandSeparator({
   return (
     <CommandPrimitive.Separator
       data-slot="command-separator"
-      className={cn('bg-lsd-border -mx-1 h-px', className)}
+      className={cn('lsd:bg-lsd-border lsd:-mx-1 lsd:h-px', className)}
       {...props}
     />
   );
@@ -146,7 +146,7 @@ function CommandItem({
     <CommandPrimitive.Item
       data-slot="command-item"
       className={cn(
-        "data-[selected=true]:bg-lsd-surface-secondary data-[selected=true]:text-lsd-text [&_svg:not([class*='text-'])]:text-lsd-text relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "lsd:data-[selected=true]:bg-lsd-surface-secondary lsd:data-[selected=true]:text-lsd-text lsd:[&_svg:not([class*='text-'])]:text-lsd-text lsd:relative lsd:flex lsd:cursor-default lsd:items-center lsd:gap-2 lsd:rounded-sm lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:outline-hidden lsd:select-none lsd:data-[disabled=true]:pointer-events-none lsd:data-[disabled=true]:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
         className,
       )}
       {...props}
@@ -161,7 +161,10 @@ function CommandShortcut({
   return (
     <span
       data-slot="command-shortcut"
-      className={cn('text-lsd-text ml-auto text-xs tracking-widest', className)}
+      className={cn(
+        'lsd:text-lsd-text lsd:ml-auto lsd:text-xs lsd:tracking-widest',
+        className,
+      )}
       {...props}
     />
   );

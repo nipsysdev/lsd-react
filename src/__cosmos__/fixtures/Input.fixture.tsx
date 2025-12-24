@@ -8,42 +8,44 @@ export default function InputFixture() {
   const [value, setValue] = useState('');
 
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Input Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Input Component</h2>
+        <p className="lsd:text-muted-foreground">
           An input component that allows users to enter text data with labels
           and supporting text.
         </p>
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Variants</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">Variants</h2>
         <CodeExample
           title="Input Variants"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <div>
-    <h3 className="text-lg font-medium mb-2">Underlined (Default)</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Underlined (Default)</h3>
     <Input placeholder="Enter your text" />
   </div>
   <div>
-    <h3 className="text-lg font-medium mb-2">Outlined</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Outlined</h3>
     <Input variant="outlined" placeholder="Enter your text" />
   </div>
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <div>
-              <h3 className="text-lg font-medium mb-2">Underlined (Default)</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Underlined (Default)
+              </h3>
               <Input placeholder="Enter your text" />
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-2">Outlined</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Outlined</h3>
               <Input variant="outlined" placeholder="Enter your text" />
             </div>
           </div>
@@ -51,35 +53,37 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Sizes</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">Sizes</h2>
         <CodeExample
           title="Input Sizes"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <div>
-    <h3 className="text-lg font-medium mb-2">Large (Default)</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large (Default)</h3>
     <Input size="large" placeholder="Large input" />
   </div>
   <div>
-    <h3 className="text-lg font-medium mb-2">Medium</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium</h3>
     <Input size="medium" placeholder="Medium input" />
   </div>
   <div>
-    <h3 className="text-lg font-medium mb-2">Small</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small</h3>
     <Input size="small" placeholder="Small input" />
   </div>
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <div>
-              <h3 className="text-lg font-medium mb-2">Large (Default)</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Large (Default)
+              </h3>
               <Input size="large" placeholder="Large input" />
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-2">Medium</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium</h3>
               <Input size="medium" placeholder="Medium input" />
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-2">Small</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small</h3>
               <Input size="small" placeholder="Small input" />
             </div>
           </div>
@@ -87,10 +91,10 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">With Labels</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">With Labels</h2>
         <CodeExample
           title="Input With Labels"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <Input label="Name" placeholder="Enter your name" />
   <Input label="Email" placeholder="Enter your email" />
   <Input
@@ -100,7 +104,7 @@ export default function InputFixture() {
   />
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <Input label="Name" placeholder="Enter your name" />
             <Input label="Email" placeholder="Enter your email" />
             <Input
@@ -113,10 +117,12 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">With Supporting Text</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          With Supporting Text
+        </h2>
         <CodeExample
           title="Input With Supporting Text"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <Input
     label="Email"
     placeholder="Enter your email"
@@ -130,7 +136,7 @@ export default function InputFixture() {
   />
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <Input
               label="Email"
               placeholder="Enter your email"
@@ -147,14 +153,16 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Controlled Input</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Controlled Input
+        </h2>
         <CodeExample
           title="Input Controlled"
           code={`function ControlledInputExample() {
   const [value, setValue] = useState('');
   
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Input
         label="Type something"
         placeholder="Start typing..."
@@ -166,7 +174,7 @@ export default function InputFixture() {
   );
 }`}
         >
-          <div className="space-y-4">
+          <div className="lsd:space-y-4">
             <Input
               label="Type something"
               placeholder="Start typing..."
@@ -179,16 +187,16 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">States</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">States</h2>
         <CodeExample
           title="Input States"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <div>
-    <h3 className="text-lg font-medium mb-2">Normal</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Normal</h3>
     <Input label="Normal state" placeholder="This is a normal input" />
   </div>
   <div>
-    <h3 className="text-lg font-medium mb-2">Disabled</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Disabled</h3>
     <Input
       label="Disabled state"
       placeholder="This is disabled"
@@ -197,7 +205,7 @@ export default function InputFixture() {
     />
   </div>
   <div>
-    <h3 className="text-lg font-medium mb-2">Error</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Error</h3>
     <Input
       label="Error state"
       placeholder="This has an error"
@@ -207,16 +215,16 @@ export default function InputFixture() {
   </div>
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <div>
-              <h3 className="text-lg font-medium mb-2">Normal</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Normal</h3>
               <Input
                 label="Normal state"
                 placeholder="This is a normal input"
               />
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-2">Disabled</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Disabled</h3>
               <Input
                 label="Disabled state"
                 placeholder="This is disabled"
@@ -225,7 +233,7 @@ export default function InputFixture() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-medium mb-2">Error</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Error</h3>
               <Input
                 label="Error state"
                 placeholder="This has an error"
@@ -238,10 +246,10 @@ export default function InputFixture() {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Input Types</h2>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">Input Types</h2>
         <CodeExample
           title="Input Types"
-          code={`<div className="space-y-6">
+          code={`<div className="lsd:space-y-6">
   <Input label="Email" type="email" placeholder="Enter your email" />
   <Input
     label="Password"
@@ -252,7 +260,7 @@ export default function InputFixture() {
   <Input label="Search" type="search" placeholder="Search..." />
 </div>`}
         >
-          <div className="space-y-6">
+          <div className="lsd:space-y-6">
             <Input label="Email" type="email" placeholder="Enter your email" />
             <Input
               label="Password"

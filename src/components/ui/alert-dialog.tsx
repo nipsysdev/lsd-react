@@ -33,7 +33,7 @@ function AlertDialogOverlay({
     <AlertDialogPrimitive.Overlay
       data-slot="alert-dialog-overlay"
       className={cn(
-        'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50',
+        'lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:fixed lsd:inset-0 lsd:z-50 lsd:bg-black/50',
         className,
       )}
       {...props}
@@ -51,7 +51,7 @@ function AlertDialogContent({
       <AlertDialogPrimitive.Content
         data-slot="alert-dialog-content"
         className={cn(
-          'bg-lsd-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 border border-lsd-border p-6 shadow-lg duration-200 sm:max-w-lg',
+          'lsd:bg-lsd-surface-primary lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg',
           className,
         )}
         {...props}
@@ -67,7 +67,10 @@ function AlertDialogHeader({
   return (
     <div
       data-slot="alert-dialog-header"
-      className={cn('flex flex-col gap-2 text-center sm:text-left', className)}
+      className={cn(
+        'lsd:flex lsd:flex-col lsd:gap-2 lsd:text-center lsd:sm:text-left',
+        className,
+      )}
       {...props}
     />
   );
@@ -81,7 +84,7 @@ function AlertDialogFooter({
     <div
       data-slot="alert-dialog-footer"
       className={cn(
-        'flex flex-col-reverse gap-2 sm:flex-row sm:justify-end',
+        'lsd:flex lsd:flex-col-reverse lsd:gap-2 lsd:sm:flex-row lsd:sm:justify-end',
         className,
       )}
       {...props}
@@ -96,7 +99,10 @@ function AlertDialogTitle({
   return (
     <AlertDialogPrimitive.Title
       data-slot="alert-dialog-title"
-      className={cn('text-lg font-semibold text-lsd-text', className)}
+      className={cn(
+        'lsd:text-lg lsd:font-semibold lsd:text-lsd-text',
+        className,
+      )}
       {...props}
     />
   );
@@ -109,7 +115,7 @@ function AlertDialogDescription({
   return (
     <AlertDialogPrimitive.Description
       data-slot="alert-dialog-description"
-      className={cn('text-lsd-text-secondary text-sm', className)}
+      className={cn('lsd:text-lsd-text-secondary lsd:text-sm', className)}
       {...props}
     />
   );

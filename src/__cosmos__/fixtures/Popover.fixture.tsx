@@ -1,10 +1,8 @@
-import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import {
   Popover,
-  PopoverAnchor,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
@@ -14,22 +12,22 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function PopoverFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Popover Component</h2>
-        <p className="text-lsd-text-secondary">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Popover Component</h2>
+        <p className="lsd:text-lsd-text-secondary">
           A popover component that displays content in a floating overlay
           positioned relative to a trigger element.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Basic Popover</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Basic Popover</h2>
         <CodeExample
           title="Basic Popover"
           code={`<Popover>
@@ -37,9 +35,9 @@ export default function PopoverFixture() {
     <Button>Open Popover</Button>
   </PopoverTrigger>
   <PopoverContent>
-    <div className="space-y-2">
-      <h4 className="font-medium leading-none">Dimensions</h4>
-      <p className="text-sm text-lsd-text-secondary">
+    <div className="lsd:space-y-2">
+      <h4 className="lsd:font-medium lsd:leading-none">Dimensions</h4>
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Set the dimensions for the layer.
       </p>
     </div>
@@ -51,9 +49,9 @@ export default function PopoverFixture() {
               <Button>Open Popover</Button>
             </PopoverTrigger>
             <PopoverContent>
-              <div className="space-y-2">
-                <h4 className="font-medium leading-none">Dimensions</h4>
-                <p className="text-sm text-lsd-text-secondary">
+              <div className="lsd:space-y-2">
+                <h4 className="lsd:font-medium lsd:leading-none">Dimensions</h4>
+                <p className="lsd:text-sm lsd:text-lsd-text-secondary">
                   Set the dimensions for the layer.
                 </p>
               </div>
@@ -62,49 +60,49 @@ export default function PopoverFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Popover with Form</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Popover with Form</h2>
         <CodeExample
           title="Popover with Form"
           code={`<Popover>
   <PopoverTrigger asChild>
     <Button variant="outlined">Adjust Settings</Button>
   </PopoverTrigger>
-  <PopoverContent className="w-80">
-    <div className="grid gap-4">
-      <div className="space-y-2">
-        <h4 className="font-medium leading-none">Settings</h4>
-        <p className="text-sm text-lsd-text-secondary">
+  <PopoverContent className="lsd:w-80">
+    <div className="lsd:grid lsd:gap-4">
+      <div className="lsd:space-y-2">
+        <h4 className="lsd:font-medium lsd:leading-none">Settings</h4>
+        <p className="lsd:text-sm lsd:text-lsd-text-secondary">
           Make changes to your settings here.
         </p>
       </div>
-      <div className="grid gap-2">
-        <div className="grid grid-cols-3 items-center gap-4">
+      <div className="lsd:grid lsd:gap-2">
+        <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
           <Label htmlFor="width">Width</Label>
           <Input
             defaultValue="100%"
-            className="col-span-2 h-8"
+            className="lsd:col-span-2 lsd:h-8"
           />
         </div>
-        <div className="grid grid-cols-3 items-center gap-4">
+        <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
           <Label htmlFor="maxWidth">Max. width</Label>
           <Input
             defaultValue="300px"
-            className="col-span-2 h-8"
+            className="lsd:col-span-2 lsd:h-8"
           />
         </div>
-        <div className="grid grid-cols-3 items-center gap-4">
+        <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
           <Label htmlFor="height">Height</Label>
           <Input
             defaultValue="25px"
-            className="col-span-2 h-8"
+            className="lsd:col-span-2 lsd:h-8"
           />
         </div>
-        <div className="grid grid-cols-3 items-center gap-4">
+        <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
           <Label htmlFor="maxHeight">Max. height</Label>
           <Input
             defaultValue="none"
-            className="col-span-2 h-8"
+            className="lsd:col-span-2 lsd:h-8"
           />
         </div>
       </div>
@@ -116,30 +114,42 @@ export default function PopoverFixture() {
             <PopoverTrigger asChild>
               <Button variant="outlined">Adjust Settings</Button>
             </PopoverTrigger>
-            <PopoverContent className="w-80">
-              <div className="grid gap-4">
-                <div className="space-y-2">
-                  <h4 className="font-medium leading-none">Settings</h4>
-                  <p className="text-sm text-lsd-text-secondary">
+            <PopoverContent className="lsd:w-80">
+              <div className="lsd:grid lsd:gap-4">
+                <div className="lsd:space-y-2">
+                  <h4 className="lsd:font-medium lsd:leading-none">Settings</h4>
+                  <p className="lsd:text-sm lsd:text-lsd-text-secondary">
                     Make changes to your settings here.
                   </p>
                 </div>
-                <div className="grid gap-2">
-                  <div className="grid grid-cols-3 items-center gap-4">
+                <div className="lsd:grid lsd:gap-2">
+                  <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
                     <Label htmlFor="width">Width</Label>
-                    <Input defaultValue="100%" className="col-span-2 h-8" />
+                    <Input
+                      defaultValue="100%"
+                      className="lsd:col-span-2 lsd:h-8"
+                    />
                   </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
+                  <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
                     <Label htmlFor="maxWidth">Max. width</Label>
-                    <Input defaultValue="300px" className="col-span-2 h-8" />
+                    <Input
+                      defaultValue="300px"
+                      className="lsd:col-span-2 lsd:h-8"
+                    />
                   </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
+                  <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
                     <Label htmlFor="height">Height</Label>
-                    <Input defaultValue="25px" className="col-span-2 h-8" />
+                    <Input
+                      defaultValue="25px"
+                      className="lsd:col-span-2 lsd:h-8"
+                    />
                   </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
+                  <div className="lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4">
                     <Label htmlFor="maxHeight">Max. height</Label>
-                    <Input defaultValue="none" className="col-span-2 h-8" />
+                    <Input
+                      defaultValue="none"
+                      className="lsd:col-span-2 lsd:h-8"
+                    />
                   </div>
                 </div>
               </div>
@@ -148,11 +158,11 @@ export default function PopoverFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Popover Examples</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Popover Examples</h2>
         <CodeExample
           title="Popover Examples"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <Popover>
     <PopoverTrigger asChild>
       <Button size="sm">Top</Button>
@@ -190,7 +200,7 @@ export default function PopoverFixture() {
   </Popover>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <Popover>
               <PopoverTrigger asChild>
                 <Button size="sm">Top</Button>

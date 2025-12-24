@@ -17,7 +17,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn('border-b border-lsd-border-primary', className)}
+      className={cn('lsd:border-b lsd:border-lsd-border-primary', className)}
       {...props}
     />
   );
@@ -29,17 +29,17 @@ function AccordionTrigger({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
   return (
-    <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Header className="lsd:flex">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          'focus-visible:border-lsd-border-primary cursor-pointer focus-visible:ring-lsd-text/50 flex flex-1 items-start justify-between gap-4 rounded-none py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:cursor-default disabled:opacity-34 [&[data-state=open]>svg]:rotate-180 text-lsd-text-primary bg-lsd-surface-primary',
+          'focus-visible:lsd:border-lsd-border-primary lsd:cursor-pointer focus-visible:lsd:ring-lsd-text/50 lsd:flex lsd:flex-1 lsd:items-start lsd:justify-between lsd:gap-4 lsd:rounded-none lsd:py-4 lsd:text-left lsd:text-sm lsd:font-medium lsd:transition-all lsd:outline-none lsd:hover:underline focus-visible:lsd:ring-[3px] lsd:disabled:pointer-events-none lsd:disabled:cursor-default lsd:disabled:opacity-34 [&[lsd:data-state=open]>svg]:rotate-180 lsd:text-lsd-text-primary lsd:bg-lsd-surface-primary',
           className,
         )}
         {...props}
       >
         {children}
-        <ChevronDownIcon className="text-lsd-icon-primary pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
+        <ChevronDownIcon className="lsd:text-lsd-icon-primary lsd:pointer-events-none lsd:size-4 lsd:shrink-0 lsd:translate-y-0.5 lsd:transition-transform lsd:duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
@@ -53,12 +53,12 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+      className="lsd:data-[state=closed]:animate-accordion-up lsd:data-[state=open]:animate-accordion-down lsd:overflow-hidden lsd:text-sm"
       {...props}
     >
       <div
         className={cn(
-          'pt-0 pb-4 text-lsd-text-primary bg-lsd-surface-primary',
+          'lsd:pt-0 lsd:pb-4 lsd:text-lsd-text-primary lsd:bg-lsd-surface-primary',
           className,
         )}
       >

@@ -6,46 +6,46 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function ButtonFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Button Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Button Component</h2>
+        <p className="lsd:text-muted-foreground">
           A button component that allows users to perform actions.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Variants</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Variants</h2>
         <CodeExample
           title="Button Variants"
-          code={`<div className="flex gap-4">
+          code={`<div className="lsd:flex lsd:gap-4">
   <Button variant="filled">Filled</Button>
   <Button variant="outlined">Outlined</Button>
 </div>`}
         >
-          <div className="flex gap-4">
+          <div className="lsd:flex lsd:gap-4">
             <Button variant="filled">Filled</Button>
             <Button variant="outlined">Outlined</Button>
           </div>
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Sizes</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Sizes</h2>
         <CodeExample
           title="Button Sizes"
-          code={`<div className="flex gap-4 items-center">
+          code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
   <Button size="sm">Small</Button>
   <Button>Default</Button>
   <Button size="lg">Large</Button>
 </div>`}
         >
-          <div className="flex gap-4 items-center">
+          <div className="lsd:flex lsd:gap-4 lsd:items-center">
             <Button size="sm">Small</Button>
             <Button>Default</Button>
             <Button size="lg">Large</Button>
@@ -53,27 +53,27 @@ export default function ButtonFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">States</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">States</h2>
         <CodeExample
           title="Button States"
-          code={`<div className="flex gap-4">
+          code={`<div className="lsd:flex lsd:gap-4">
   <Button>Normal</Button>
   <Button disabled>Disabled</Button>
 </div>`}
         >
-          <div className="flex gap-4">
+          <div className="lsd:flex lsd:gap-4">
             <Button>Normal</Button>
             <Button disabled>Disabled</Button>
           </div>
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">All Combinations</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">All Combinations</h2>
         <CodeExample
           title="All Button Combinations"
-          code={`<div className="grid grid-cols-3 gap-4">
+          code={`<div className="lsd:grid lsd:grid-cols-3 lsd:gap-4">
   <Button size="sm">Small Filled</Button>
   <Button size="sm" variant="outlined">
     Small Outlined
@@ -95,7 +95,7 @@ export default function ButtonFixture() {
   </Button>
 </div>`}
         >
-          <div className="grid grid-cols-3 gap-4">
+          <div className="lsd:grid lsd:grid-cols-3 lsd:gap-4">
             <Button size="sm">Small Filled</Button>
             <Button size="sm" variant="outlined">
               Small Outlined
@@ -119,11 +119,11 @@ export default function ButtonFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Icon Buttons</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Icon Buttons</h2>
         <CodeExample
           title="Icon Button Variants"
-          code={`<div className="flex gap-4 items-center">
+          code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
   <Button variant="filled-icon" size="icon" aria-label="Add">
     <Plus />
   </Button>
@@ -132,7 +132,7 @@ export default function ButtonFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex gap-4 items-center">
+          <div className="lsd:flex lsd:gap-4 lsd:items-center">
             <Button variant="filled-icon" size="icon" aria-label="Add">
               <Plus />
             </Button>
@@ -143,11 +143,11 @@ export default function ButtonFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Icon Button Sizes</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Icon Button Sizes</h2>
         <CodeExample
           title="Icon Button Sizes"
-          code={`<div className="flex gap-4 items-center">
+          code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
   <Button variant="filled-icon" size="icon-sm" aria-label="Add">
     <Plus size={14} />
   </Button>
@@ -162,7 +162,7 @@ export default function ButtonFixture() {
   </Button>
 </div>`}
         >
-          <div className="flex gap-4 items-center">
+          <div className="lsd:flex lsd:gap-4 lsd:items-center">
             <Button variant="filled-icon" size="icon-sm" aria-label="Add">
               <Plus size={14} />
             </Button>

@@ -17,22 +17,22 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function CommandFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Command Component</h2>
-        <p className="text-lsd-text-secondary">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Command Component</h2>
+        <p className="lsd:text-lsd-text-secondary">
           A command component that provides a searchable command palette
           interface with grouped items and keyboard shortcuts.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Basic Command</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Basic Command</h2>
         <CodeExample
           title="Basic Command"
           code={`<Command>
@@ -53,7 +53,7 @@ export default function CommandFixture() {
   </CommandList>
 </Command>`}
         >
-          <Command className="rounded-lg border shadow-md">
+          <Command className="lsd:rounded-lg lsd:border lsd:shadow-md">
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
@@ -73,8 +73,10 @@ export default function CommandFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Command with Shortcuts</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">
+          Command with Shortcuts
+        </h2>
         <CodeExample
           title="Command with Shortcuts"
           code={`<Command>
@@ -105,7 +107,7 @@ export default function CommandFixture() {
   </CommandList>
 </Command>`}
         >
-          <Command className="rounded-lg border shadow-md">
+          <Command className="lsd:rounded-lg lsd:border lsd:shadow-md">
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
@@ -135,8 +137,8 @@ export default function CommandFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Command Dialog</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Command Dialog</h2>
         <CodeExample
           title="Command Dialog"
           code={`import { useState } from 'react';

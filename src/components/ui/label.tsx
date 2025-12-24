@@ -5,17 +5,17 @@ import type * as React from 'react';
 import { cn } from '@/lib/utils';
 
 const labelVariants = cva(
-  'flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50',
+  'lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 peer-lsd:disabled:cursor-not-allowed peer-lsd:disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'text-lsd-text-primary',
-        secondary: 'text-lsd-text-secondary',
+        default: 'lsd:text-lsd-text-primary',
+        secondary: 'lsd:text-lsd-text-secondary',
       },
       size: {
-        sm: 'text-[0.75rem] leading-[1rem]',
-        md: 'text-[0.875rem] leading-[1.25rem]',
-        lg: 'text-[1rem] leading-[1.5rem]',
+        sm: 'lsd:text-[0.75rem] lsd:leading-[1rem]',
+        md: 'lsd:text-[0.875rem] lsd:leading-[1.25rem]',
+        lg: 'lsd:text-[1rem] lsd:leading-[1.5rem]',
       },
     },
     defaultVariants: {

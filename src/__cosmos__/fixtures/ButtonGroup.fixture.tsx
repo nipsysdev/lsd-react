@@ -10,22 +10,22 @@ import { ThemeToggle } from '../theme-toggle';
 
 export default function ButtonGroupFixture() {
   return (
-    <div className="p-8 w-full space-y-8">
-      <div className="flex justify-end gap-4">
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
         <FontToggle />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Button Group Component</h2>
-        <p className="text-muted-foreground">
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Button Group Component</h2>
+        <p className="lsd:text-muted-foreground">
           A button group component that groups related buttons together with
           proper visual separation.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Primary Actions</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Primary Actions</h2>
         <CodeExample
           title="Button Group Primary Actions"
           code={`<ButtonGroup>
@@ -40,8 +40,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Secondary Actions</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Secondary Actions</h2>
         <CodeExample
           title="Button Group Secondary Actions"
           code={`<ButtonGroup>
@@ -58,8 +58,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Navigation</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Navigation</h2>
         <CodeExample
           title="Button Group Navigation"
           code={`<ButtonGroup>
@@ -76,8 +76,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Vertical Menu</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Vertical Menu</h2>
         <CodeExample
           title="Button Group Vertical Menu"
           code={`<ButtonGroup orientation="vertical">
@@ -94,8 +94,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Export Options</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Export Options</h2>
         <CodeExample
           title="Button Group Export Options"
           code={`<ButtonGroup>
@@ -116,13 +116,13 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Button Sizes</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Button Sizes</h2>
         <CodeExample
           title="Button Group Button Sizes"
-          code={`<div className="space-y-4">
+          code={`<div className="lsd:space-y-4">
   <div>
-    <h3 className="text-lg font-medium mb-2">Small Buttons</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small Buttons</h3>
     <ButtonGroup>
       <Button size="sm" variant="outlined">
         Copy
@@ -137,7 +137,7 @@ export default function ButtonGroupFixture() {
   </div>
 
   <div>
-    <h3 className="text-lg font-medium mb-2">Default Buttons</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Default Buttons</h3>
     <ButtonGroup>
       <Button variant="outlined">Bold</Button>
       <Button variant="outlined">Italic</Button>
@@ -146,7 +146,7 @@ export default function ButtonGroupFixture() {
   </div>
 
   <div>
-    <h3 className="text-lg font-medium mb-2">Large Buttons</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large Buttons</h3>
     <ButtonGroup>
       <Button size="lg" variant="filled">
         Submit
@@ -158,9 +158,11 @@ export default function ButtonGroupFixture() {
   </div>
 </div>`}
         >
-          <div className="space-y-4">
+          <div className="lsd:space-y-4">
             <div>
-              <h3 className="text-lg font-medium mb-2">Small Buttons</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Small Buttons
+              </h3>
               <ButtonGroup>
                 <Button size="sm" variant="outlined">
                   Copy
@@ -175,7 +177,9 @@ export default function ButtonGroupFixture() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium mb-2">Default Buttons</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Default Buttons
+              </h3>
               <ButtonGroup>
                 <Button variant="outlined">Bold</Button>
                 <Button variant="outlined">Italic</Button>
@@ -184,7 +188,9 @@ export default function ButtonGroupFixture() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium mb-2">Large Buttons</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Large Buttons
+              </h3>
               <ButtonGroup>
                 <Button size="lg" variant="filled">
                   Submit
@@ -198,8 +204,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">With Disabled State</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">With Disabled State</h2>
         <CodeExample
           title="Button Group With Disabled State"
           code={`<ButtonGroup>
@@ -218,8 +224,8 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Text Editor Actions</h2>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Text Editor Actions</h2>
         <CodeExample
           title="Button Group Text Editor Actions"
           code={`<ButtonGroup>

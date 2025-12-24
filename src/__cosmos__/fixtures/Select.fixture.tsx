@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 import {
   Select,
   SelectContent,
@@ -32,28 +33,28 @@ const languages = [
 ];
 
 export default () => (
-  <div className="p-8 w-full space-y-8">
-    <div className="flex justify-end gap-4">
+  <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+    <div className="lsd:flex lsd:justify-end lsd:gap-4">
       <ThemeToggle />
       <FontToggle />
     </div>
 
-    <div className="space-y-4">
-      <h2 className="text-2xl font-bold">Select Component</h2>
-      <p className="text-lsd-text-secondary">
+    <div className="lsd:space-y-4">
+      <h2 className="lsd:text-2xl lsd:font-bold">Select Component</h2>
+      <p className="lsd:text-lsd-text-secondary">
         A select component that allows users to select from a list of options.
       </p>
     </div>
 
-    <div className="space-y-6">
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Basic Usage</h3>
+    <div className="lsd:space-y-6">
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Basic Usage</h3>
         <CodeExample
           title="Select Basic Usage"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
 <div>
   <Select>
-    <SelectTrigger className="w-[180px]">
+    <SelectTrigger className="lsd:w-[180px]">
       <SelectValue placeholder="Select a framework" />
     </SelectTrigger>
     <SelectContent>
@@ -70,7 +71,7 @@ export default () => (
 </div>
 <div>
   <Select defaultValue="react">
-    <SelectTrigger className="w-[180px]">
+    <SelectTrigger className="lsd:w-[180px]">
       <SelectValue placeholder="Select a framework" />
     </SelectTrigger>
     <SelectContent>
@@ -87,10 +88,10 @@ export default () => (
 </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Select>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lsd:w-[180px]">
                   <SelectValue placeholder="Select a framework" />
                 </SelectTrigger>
                 <SelectContent>
@@ -107,7 +108,7 @@ export default () => (
             </div>
             <div>
               <Select defaultValue="react">
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lsd:w-[180px]">
                   <SelectValue placeholder="Select a framework" />
                 </SelectTrigger>
                 <SelectContent>
@@ -126,15 +127,15 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Sizes</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Sizes</h3>
         <CodeExample
           title="Select Sizes"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
-    <h4 className="text-sm font-medium mb-1">Default Size</h4>
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">Default Size</h4>
     <Select>
-      <SelectTrigger className="w-[180px]" size="default">
+      <SelectTrigger className="lsd:w-[180px]" size="default">
         <SelectValue placeholder="Default size" />
       </SelectTrigger>
       <SelectContent>
@@ -147,9 +148,9 @@ export default () => (
     </Select>
   </div>
   <div>
-    <h4 className="text-sm font-medium mb-1">Small Size</h4>
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">Small Size</h4>
     <Select>
-      <SelectTrigger className="w-[180px]" size="sm">
+      <SelectTrigger className="lsd:w-[180px]" size="sm">
         <SelectValue placeholder="Small size" />
       </SelectTrigger>
       <SelectContent>
@@ -163,11 +164,13 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">Default Size</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                Default Size
+              </h4>
               <Select>
-                <SelectTrigger className="w-[180px]" size="default">
+                <SelectTrigger className="lsd:w-[180px]" size="default">
                   <SelectValue placeholder="Default size" />
                 </SelectTrigger>
                 <SelectContent>
@@ -180,9 +183,11 @@ export default () => (
               </Select>
             </div>
             <div>
-              <h4 className="text-sm font-medium mb-1">Small Size</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                Small Size
+              </h4>
               <Select>
-                <SelectTrigger className="w-[180px]" size="sm">
+                <SelectTrigger className="lsd:w-[180px]" size="sm">
                   <SelectValue placeholder="Small size" />
                 </SelectTrigger>
                 <SelectContent>
@@ -198,14 +203,16 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">With Groups and Separators</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">
+          With Groups and Separators
+        </h3>
         <CodeExample
           title="Select With Groups and Separators"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
     <Select>
-      <SelectTrigger className="w-[250px]">
+      <SelectTrigger className="lsd:w-[250px]">
         <SelectValue placeholder="Select an option" />
       </SelectTrigger>
       <SelectContent>
@@ -231,10 +238,10 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Select>
-                <SelectTrigger className="w-[250px]">
+                <SelectTrigger className="lsd:w-[250px]">
                   <SelectValue placeholder="Select an option" />
                 </SelectTrigger>
                 <SelectContent>
@@ -262,14 +269,14 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Disabled State</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Disabled State</h3>
         <CodeExample
           title="Select Disabled State"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
     <Select disabled>
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="lsd:w-[180px]">
         <SelectValue placeholder="Disabled select" />
       </SelectTrigger>
       <SelectContent>
@@ -283,7 +290,7 @@ export default () => (
   </div>
   <div>
     <Select disabled defaultValue="react">
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="lsd:w-[180px]">
         <SelectValue placeholder="Disabled select" />
       </SelectTrigger>
       <SelectContent>
@@ -297,10 +304,10 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Select disabled>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lsd:w-[180px]">
                   <SelectValue placeholder="Disabled select" />
                 </SelectTrigger>
                 <SelectContent>
@@ -314,7 +321,7 @@ export default () => (
             </div>
             <div>
               <Select disabled defaultValue="react">
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lsd:w-[180px]">
                   <SelectValue placeholder="Disabled select" />
                 </SelectTrigger>
                 <SelectContent>
@@ -330,14 +337,16 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">With Value Change Handler</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">
+          With Value Change Handler
+        </h3>
         <CodeExample
           title="Select With Value Change Handler"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
     <Select onValueChange={(value) => console.log('Selected:', value)}>
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="lsd:w-[180px]">
         <SelectValue placeholder="Select a framework" />
       </SelectTrigger>
       <SelectContent>
@@ -351,12 +360,12 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Select
                 onValueChange={(value) => console.log('Selected:', value)}
               >
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lsd:w-[180px]">
                   <SelectValue placeholder="Select a framework" />
                 </SelectTrigger>
                 <SelectContent>
@@ -372,8 +381,8 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Controlled Component</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Controlled Component</h3>
         <CodeExample
           title="Select Controlled Component"
           code={`function ControlledSelectExample() {
@@ -388,9 +397,9 @@ export default () => (
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Select value={selectedValue} onValueChange={setSelectedValue}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="lsd:w-[180px]">
           <SelectValue placeholder="Select a framework" />
         </SelectTrigger>
         <SelectContent>
@@ -401,39 +410,39 @@ export default () => (
           ))}
         </SelectContent>
       </Select>
-      <div className="flex gap-2">
-        <button
-          type="button"
+      <div className="lsd:flex lsd:gap-2">
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('react')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
         >
           Set to React
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('vue')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
         >
           Set to Vue
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Buttton
+          variant="outlined"
+          size="sm"
           onClick={handleClear}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
         >
           Clear
-        </button>
+        </Buttton>
       </div>
-      <p className="text-sm text-lsd-text-secondary">
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Selected value: {selectedValue || 'None'}
       </p>
     </div>
   );
 }`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
                 With External State Control
               </h4>
               <ControlledSelectExample />
@@ -457,9 +466,9 @@ function ControlledSelectExample() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Select value={selectedValue} onValueChange={setSelectedValue}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="lsd:w-[180px]">
           <SelectValue placeholder="Select a framework" />
         </SelectTrigger>
         <SelectContent>
@@ -470,30 +479,26 @@ function ControlledSelectExample() {
           ))}
         </SelectContent>
       </Select>
-      <div className="flex gap-2">
-        <button
-          type="button"
+      <div className="lsd:flex lsd:gap-2">
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('react')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
         >
           Set to React
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('vue')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
         >
           Set to Vue
-        </button>
-        <button
-          type="button"
-          onClick={handleClear}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border"
-        >
+        </Button>
+        <Button variant="outlined" size="sm" onClick={handleClear}>
           Clear
-        </button>
+        </Button>
       </div>
-      <p className="text-sm text-lsd-text-secondary">
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Selected value: {selectedValue || 'None'}
       </p>
     </div>
