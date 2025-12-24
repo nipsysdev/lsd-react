@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ThemeToggle } from '@/__cosmos__/theme-toggle';
 import { Typography } from '@/components/ui/typography';
 import { CodeExample } from '../code-example';

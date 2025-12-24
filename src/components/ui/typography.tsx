@@ -97,13 +97,6 @@ function getDefaultComponent(
       return 'label';
 
     // All other variants default to span
-    case 'subtitle1':
-    case 'subtitle2':
-    case 'subtitle3':
-    case 'subtitle4':
-    case 'body1':
-    case 'body2':
-    case 'body3':
     default:
       return 'span';
   }
