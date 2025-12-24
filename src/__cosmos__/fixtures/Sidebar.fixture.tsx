@@ -16,7 +16,6 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarProvider,
-  SidebarRail,
   SidebarTrigger,
 } from '@/components/ui/sidebar';
 import { CodeExample } from '../code-example';
@@ -49,9 +48,9 @@ const items = [
 
 export default function SidebarFixture() {
   return (
-    <div className="w-full">
-      <div className="w-full space-y-8">
-        <div className="flex justify-end gap-4">
+    <div className="lsd:w-full">
+      <div className="lsd:w-full lsd:space-y-8">
+        <div className="lsd:flex lsd:justify-end lsd:gap-4">
           <ThemeToggle />
           <FontToggle />
         </div>
@@ -62,11 +61,11 @@ export default function SidebarFixture() {
               <SidebarMenu>
                 <SidebarMenuItem>
                   <SidebarMenuButton size="lg">
-                    <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                      <Home className="size-4" />
+                    <div className="lsd:flex lsd:aspect-square lsd:size-8 lsd:items-center lsd:justify-center lsd:rounded-lg lsd:bg-sidebar-primary lsd:text-sidebar-primary-foreground">
+                      <Home className="lsd:size-4" />
                     </div>
-                    <div className="flex flex-col gap-0.5 leading-none">
-                      <span className="font-semibold">LSD React</span>
+                    <div className="lsd:flex lsd:flex-col lsd:gap-0.5 lsd:leading-none">
+                      <span className="lsd:font-semibold">LSD React</span>
                       <span className="">v1.0.0</span>
                     </div>
                   </SidebarMenuButton>
@@ -135,11 +134,11 @@ export default function SidebarFixture() {
             </SidebarFooter>
           </Sidebar>
           <SidebarInset>
-            <main className="flex items-center gap-2">
+            <main className="lsd:flex lsd:items-center lsd:gap-2">
               <SidebarTrigger />
-              <h1 className="text-2xl font-bold">Main Content</h1>
+              <h1 className="lsd:text-2xl lsd:font-bold">Main Content</h1>
             </main>
-            <p className="mt-4 px-6 text-muted-foreground">
+            <p className="lsd:mt-4 lsd:px-6 lsd:text-muted-foreground">
               This sidebar includes a search input, submenu items, and a footer
               section.
             </p>
@@ -151,11 +150,11 @@ export default function SidebarFixture() {
               <SidebarMenu>
                 <SidebarMenuItem>
                   <SidebarMenuButton size="lg">
-                    <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                      <Home className="size-4" />
+                    <div className="lsd:flex lsd:aspect-square lsd:size-8 lsd:items-center lsd:justify-center lsd:rounded-lg lsd:bg-sidebar-primary lsd:text-sidebar-primary-foreground">
+                      <Home className="lsd:size-4" />
                     </div>
-                    <div className="flex flex-col gap-0.5 leading-none">
-                      <span className="font-semibold">LSD React</span>
+                    <div className="lsd:flex lsd:flex-col lsd:gap-0.5 lsd:leading-none">
+                      <span className="lsd:font-semibold">LSD React</span>
                       <span className="">v1.0.0</span>
                     </div>
                   </SidebarMenuButton>
@@ -225,11 +224,11 @@ export default function SidebarFixture() {
             <SidebarRail />
           </Sidebar>
           <SidebarInset>
-            <main className="flex items-center gap-2">
+            <main className="lsd:flex lsd:items-center lsd:gap-2">
               <SidebarTrigger />
-              <h1 className="text-2xl font-bold">Main Content</h1>
+              <h1 className="lsd:text-2xl lsd:font-bold">Main Content</h1>
             </main>
-            <p className="mt-4 px-6 text-muted-foreground">
+            <p className="lsd:mt-4 lsd:px-6 lsd:text-muted-foreground">
               This sidebar includes a search input, submenu items, and a footer
               section.
             </p>

@@ -13,9 +13,9 @@ interface CodeExampleProps {
   code: string;
 }
 
-export function CodeExample({ title, children, code }: CodeExampleProps) {
+export function CodeExample({ children, code }: CodeExampleProps) {
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <div>{children}</div>
       <Accordion type="single" collapsible>
         <AccordionItem value="code">

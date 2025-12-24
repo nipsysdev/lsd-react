@@ -24,10 +24,10 @@ export function ThemeToggle() {
       aria-label="Theme toggle"
     >
       <ToggleGroupItem value="light" aria-label="Light theme">
-        <Sun className="h-4 w-4" />
+        <Sun className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem value="dark" aria-label="Dark theme">
-        <Moon className="h-4 w-4" />
+        <Moon className="lsd:h-4 lsd:w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
   );

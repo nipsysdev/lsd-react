@@ -5,13 +5,13 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 
 const toggleVariants = cva(
-  'inline-flex items-center justify-center border transition-colors bg-transparent text-lsd-text border-lsd-border hover:underline cursor-pointer disabled:opacity-34 disabled:cursor-not-allowed disabled:no-underline data-[state=on]:bg-lsd-primary data-[state=on]:text-lsd-surface-primary',
+  'lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:transition-colors lsd:bg-transparent lsd:text-lsd-text lsd:border-lsd-border lsd:hover:underline lsd:cursor-pointer lsd:disabled:opacity-34 lsd:disabled:cursor-not-allowed lsd:disabled:no-underline lsd:data-[state=on]:bg-lsd-primary lsd:data-[state=on]:text-lsd-surface-primary',
   {
     variants: {
       size: {
-        default: 'h-10 min-w-10 px-3 py-[6px]',
-        sm: 'h-8 min-w-8 px-2 py-[6px] text-[0.75rem]',
-        lg: 'h-12 min-w-12 px-4 py-[10px] text-[0.875rem]',
+        default: 'lsd:h-10 lsd:min-w-10 lsd:px-3 lsd:py-[6px]',
+        sm: 'lsd:h-8 lsd:min-w-8 lsd:px-2 lsd:py-[6px] lsd:text-[0.75rem]',
+        lg: 'lsd:h-12 lsd:min-w-12 lsd:px-4 lsd:py-[10px] lsd:text-[0.875rem]',
       },
     },
     defaultVariants: {

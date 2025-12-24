@@ -1,6 +1,7 @@
 import { SearchIcon } from 'lucide-react';
 import { useState } from 'react';
 import { Autocomplete } from '@/components/ui/autocomplete';
+import { Button } from '@/components/ui/button';
 import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
@@ -15,26 +16,26 @@ const frameworks = [
 ];
 
 export default () => (
-  <div className="p-8 w-full space-y-8">
-    <div className="flex justify-end gap-4">
+  <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+    <div className="lsd:flex lsd:justify-end lsd:gap-4">
       <ThemeToggle />
       <FontToggle />
     </div>
 
-    <div className="space-y-4">
-      <h2 className="text-2xl font-bold">Autocomplete Component</h2>
-      <p className="text-muted-foreground">
+    <div className="lsd:space-y-4">
+      <h2 className="lsd:text-2xl lsd:font-bold">Autocomplete Component</h2>
+      <p className="lsd:text-muted-foreground">
         An autocomplete component that allows users to select from a list of
         options.
       </p>
     </div>
 
-    <div className="space-y-6">
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Sizes</h3>
+    <div className="lsd:space-y-6">
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Sizes</h3>
         <CodeExample
           title="Autocomplete Sizes"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
     <Autocomplete
       label="Large"
@@ -61,7 +62,7 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Autocomplete
                 label="Large"
@@ -90,11 +91,11 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Variants</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Variants</h3>
         <CodeExample
           title="Autocomplete Variants"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
     <Autocomplete
       label="Outlined"
@@ -113,7 +114,7 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
               <Autocomplete
                 label="Outlined"
@@ -134,45 +135,53 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">With Icon</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">With Icon</h3>
         <CodeExample
           title="Autocomplete with Icons"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
-    <h4 className="text-sm font-medium mb-1">With Search Icon</h4>
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">With Search Icon</h4>
     <Autocomplete
       options={frameworks}
       placeholder="Search..."
-      icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
+      icon={<SearchIcon className="lsd:h-4 lsd:w-4 lsd:text-lsd-icon-primary" />}
     />
   </div>
   <div>
-    <h4 className="text-sm font-medium mb-1">With Clear Icon</h4>
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">With Clear Icon</h4>
     <Autocomplete
       options={frameworks}
       placeholder="Type to see clear icon..."
-      icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
+      icon={<SearchIcon className="lsd:h-4 lsd:w-4 lsd:text-lsd-icon-primary" />}
       defaultValue="react"
     />
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">With Search Icon</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                With Search Icon
+              </h4>
               <Autocomplete
                 options={frameworks}
                 placeholder="Search..."
-                icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
+                icon={
+                  <SearchIcon className="lsd:h-4 lsd:w-4 lsd:text-lsd-icon-primary" />
+                }
               />
             </div>
             <div>
-              <h4 className="text-sm font-medium mb-1">With Clear Icon</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                With Clear Icon
+              </h4>
               <Autocomplete
                 options={frameworks}
                 placeholder="Type to see clear icon..."
-                icon={<SearchIcon className="h-4 w-4 text-lsd-icon-primary" />}
+                icon={
+                  <SearchIcon className="lsd:h-4 lsd:w-4 lsd:text-lsd-icon-primary" />
+                }
                 defaultValue="react"
               />
             </div>
@@ -180,8 +189,8 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Error State</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Error State</h3>
         <CodeExample
           title="Autocomplete Error State"
           code={`<Autocomplete
@@ -198,8 +207,8 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Disabled State</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Disabled State</h3>
         <CodeExample
           title="Autocomplete Disabled State"
           code={`<Autocomplete
@@ -218,8 +227,10 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">With Value Change Handler</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">
+          With Value Change Handler
+        </h3>
         <CodeExample
           title="Autocomplete With Value Change Handler"
           code={`<Autocomplete
@@ -236,13 +247,13 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Clearable Prop</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Clearable Prop</h3>
         <CodeExample
           title="Autocomplete Clearable Prop"
-          code={`<div className="flex flex-wrap gap-4">
+          code={`<div className="lsd:flex lsd:flex-wrap lsd:gap-4">
   <div>
-    <h4 className="text-sm font-medium mb-1">
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
       Not Clearable (default)
     </h4>
     <Autocomplete
@@ -252,7 +263,7 @@ export default () => (
     />
   </div>
   <div>
-    <h4 className="text-sm font-medium mb-1">Clearable</h4>
+    <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">Clearable</h4>
     <Autocomplete
       options={frameworks}
       placeholder="Select a framework..."
@@ -262,9 +273,9 @@ export default () => (
   </div>
 </div>`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
                 Not Clearable (default)
               </h4>
               <Autocomplete
@@ -274,7 +285,9 @@ export default () => (
               />
             </div>
             <div>
-              <h4 className="text-sm font-medium mb-1">Clearable</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                Clearable
+              </h4>
               <Autocomplete
                 options={frameworks}
                 placeholder="Select a framework..."
@@ -286,8 +299,8 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Async Options</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Async Options</h3>
         <CodeExample
           title="Autocomplete Async Options"
           code={`<Autocomplete
@@ -320,9 +333,11 @@ export default () => (
   }}
 />`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">With Async Loading</h4>
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
+                With Async Loading
+              </h4>
               <Autocomplete
                 placeholder="Search for a country..."
                 loadingText="Loading countries..."
@@ -357,8 +372,10 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">External Loading State</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">
+          External Loading State
+        </h3>
         <CodeExample
           title="Autocomplete External Loading State"
           code={`function ExternalLoadingExample() {
@@ -369,7 +386,7 @@ export default () => (
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Autocomplete
         label="Select a framework"
         options={frameworks}
@@ -377,23 +394,23 @@ export default () => (
         isLoading={isLoading}
         loadingText="Please wait..."
       />
-      <button
-        type="button"
+      <Button
+        variant="outlined"
+        size="sm"
         onClick={handleToggleLoading}
-        className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
       >
         {isLoading ? 'Stop Loading' : 'Start Loading'}
-      </button>
-      <p className="text-sm text-lsd-text-secondary">
+      </Button>
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Loading state: {isLoading ? 'Loading' : 'Not loading'}
       </p>
     </div>
   );
 }`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
                 With Controlled Loading State
               </h4>
               <ExternalLoadingExample />
@@ -402,8 +419,8 @@ export default () => (
         </CodeExample>
       </div>
 
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold">Controlled Component</h3>
+      <div className="lsd:space-y-2">
+        <h3 className="lsd:text-lg lsd:font-semibold">Controlled Component</h3>
         <CodeExample
           title="Autocomplete Controlled Component"
           code={`function ControlledAutocompleteExample() {
@@ -418,7 +435,7 @@ export default () => (
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Autocomplete
         label="Select a framework"
         options={frameworks}
@@ -427,39 +444,39 @@ export default () => (
         onValueChange={setSelectedValue}
         clearable
       />
-      <div className="flex gap-2">
-        <button
-          type="button"
+      <div className="lsd:flex lsd:gap-2">
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('1')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
         >
           Set to React
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('2')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
         >
           Set to Vue
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={handleClear}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
         >
           Clear
-        </button>
+        </Button>
       </div>
-      <p className="text-sm text-lsd-text-secondary">
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Selected value: {selectedValue || 'None'}
       </p>
     </div>
   );
 }`}
         >
-          <div className="flex flex-wrap gap-4">
+          <div className="lsd:flex lsd:flex-wrap lsd:gap-4">
             <div>
-              <h4 className="text-sm font-medium mb-1">
+              <h4 className="lsd:text-sm lsd:font-medium lsd:mb-1">
                 With External State Control
               </h4>
               <ControlledAutocompleteExample />
@@ -483,7 +500,7 @@ function ControlledAutocompleteExample() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Autocomplete
         label="Select a framework"
         options={frameworks}
@@ -492,30 +509,26 @@ function ControlledAutocompleteExample() {
         onValueChange={setSelectedValue}
         clearable
       />
-      <div className="flex gap-2">
-        <button
-          type="button"
+      <div className="lsd:flex lsd:gap-2">
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('1')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
         >
           Set to React
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outlined"
+          size="sm"
           onClick={() => handleSetValue('2')}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
         >
           Set to Vue
-        </button>
-        <button
-          type="button"
-          onClick={handleClear}
-          className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
-        >
+        </Button>
+        <Button variant="outlined" size="sm" onClick={handleClear}>
           Clear
-        </button>
+        </Button>
       </div>
-      <p className="text-sm text-lsd-text-secondary">
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Selected value: {selectedValue || 'None'}
       </p>
     </div>
@@ -530,7 +543,7 @@ function ExternalLoadingExample() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="lsd:space-y-4">
       <Autocomplete
         label="Select a framework"
         options={frameworks}
@@ -538,14 +551,10 @@ function ExternalLoadingExample() {
         isLoading={isLoading}
         loadingText="Please wait..."
       />
-      <button
-        type="button"
-        onClick={handleToggleLoading}
-        className="px-3 py-1 text-sm bg-lsd-surface-secondary border border-lsd-border-primary rounded"
-      >
+      <Button variant="outlined" size="sm" onClick={handleToggleLoading}>
         {isLoading ? 'Stop Loading' : 'Start Loading'}
-      </button>
-      <p className="text-sm text-lsd-text-secondary">
+      </Button>
+      <p className="lsd:text-sm lsd:text-lsd-text-secondary">
         Loading state: {isLoading ? 'Loading' : 'Not loading'}
       </p>
     </div>

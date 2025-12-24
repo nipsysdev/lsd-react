@@ -18,7 +18,7 @@ const Progress = React.forwardRef<
     ref={ref}
     data-slot="progress"
     className={cn(
-      'relative w-full h-2 overflow-hidden rounded-none bg-lsd-surface-secondary border border-lsd-border-primary',
+      'lsd:relative lsd:w-full lsd:h-2 lsd:overflow-hidden lsd:rounded-none lsd:bg-lsd-surface-secondary lsd:border lsd:border-lsd-border-primary',
       className,
     )}
     {...props}
@@ -26,14 +26,14 @@ const Progress = React.forwardRef<
     <ProgressPrimitive.Indicator
       data-slot="progress-indicator"
       className={cn(
-        'h-full w-full flex-1 bg-lsd-primary',
+        'lsd:h-full lsd:w-full lsd:flex-1 lsd:bg-lsd-primary',
         indeterminate
           ? cn(
-              'animate-indeterminate-progress',
-              speed === 'slow' && 'animate-indeterminate-progress-slow',
-              speed === 'fast' && 'animate-indeterminate-progress-fast',
+              'lsd:animate-indeterminate-progress',
+              speed === 'slow' && 'lsd:animate-indeterminate-progress-slow',
+              speed === 'fast' && 'lsd:animate-indeterminate-progress-fast',
             )
-          : 'transition-all',
+          : 'lsd:transition-all',
       )}
       style={
         indeterminate

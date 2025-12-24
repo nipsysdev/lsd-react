@@ -1,6 +1,6 @@
 'use client';
 
-import { SearchIcon, XIcon } from 'lucide-react';
+import { XIcon } from 'lucide-react';
 import * as React from 'react';
 import {
   Command,
@@ -151,39 +151,41 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
     // Size classes
     const sizeClasses = {
       large: {
-        container: 'w-[208px]',
-        label: 'mb-1.5 ml-[14px]',
-        inputContainer: 'h-[40px]',
-        input: 'px-[17px] py-[9px]',
-        icon: 'px-[13px] py-[12px]',
+        container: 'lsd:w-[208px]',
+        label: 'lsd:mb-1.5 lsd:ml-[14px]',
+        inputContainer: 'lsd:h-[40px]',
+        input: 'lsd:px-[17px] lsd:py-[9px]',
+        icon: 'lsd:px-[13px] lsd:py-[12px]',
       },
       medium: {
-        container: 'w-[188px]',
-        label: 'mb-1.5 ml-[14px]',
-        inputContainer: 'h-[32px]',
-        input: 'px-[13px] py-[5px]',
-        icon: 'px-[11px] py-[8px]',
+        container: 'lsd:w-[188px]',
+        label: 'lsd:mb-1.5 lsd:ml-[14px]',
+        inputContainer: 'lsd:h-[32px]',
+        input: 'lsd:px-[13px] lsd:py-[5px]',
+        icon: 'lsd:px-[11px] lsd:py-[8px]',
       },
       small: {
-        container: 'w-[164px]',
-        label: 'mb-1.5 ml-[12px]',
-        inputContainer: 'h-[28px]',
-        input: 'px-[11px] py-[5px]',
-        icon: 'px-[9px] py-[6px]',
+        container: 'lsd:w-[164px]',
+        label: 'lsd:mb-1.5 lsd:ml-[12px]',
+        inputContainer: 'lsd:h-[28px]',
+        input: 'lsd:px-[11px] lsd:py-[5px]',
+        icon: 'lsd:px-[9px] lsd:py-[6px]',
       },
     };
 
     const currentSize = sizeClasses[size];
 
     return (
-      <div className={cn('box-border', currentSize.container, className)}>
+      <div className={cn('lsd:box-border', currentSize.container, className)}>
         {label && (
           <label
             htmlFor={inputId}
             className={cn(
-              'block text-sm',
+              'lsd:block lsd:text-sm',
               currentSize.label,
-              disabled ? 'text-lsd-text-secondary' : 'text-lsd-text-primary',
+              disabled
+                ? 'lsd:text-lsd-text-secondary'
+                : 'lsd:text-lsd-text-primary',
             )}
           >
             {label}
@@ -193,16 +195,16 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
           <PopoverTrigger asChild>
             <div
               className={cn(
-                'flex justify-between',
+                'lsd:flex lsd:justify-between',
                 currentSize.inputContainer,
                 variant === 'outlined'
                   ? disabled
-                    ? 'border border-lsd-text-secondary'
-                    : 'border border-lsd-border-primary'
+                    ? 'lsd:border lsd:border-lsd-text-secondary'
+                    : 'lsd:border lsd:border-lsd-border-primary'
                   : disabled
-                    ? 'border border-transparent border-b-lsd-text-secondary'
-                    : 'border border-transparent border-b-lsd-border-primary',
-                disabled ? 'cursor-not-allowed' : 'cursor-pointer',
+                    ? 'lsd:border lsd:border-transparent lsd:border-b-lsd-text-secondary'
+                    : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary',
+                disabled ? 'lsd:cursor-not-allowed' : 'lsd:cursor-pointer',
               )}
             >
               <input
@@ -220,18 +222,20 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                 disabled={disabled}
                 readOnly
                 className={cn(
-                  'border-none outline-none bg-none w-full text-[14px]',
+                  'lsd:border-none lsd:outline-none lsd:bg-none lsd:w-full lsd:text-[14px]',
                   currentSize.input,
                   disabled
-                    ? 'text-lsd-text-secondary'
-                    : 'text-lsd-text-primary',
-                  error && 'line-through',
-                  '[&::placeholder]:text-lsd-text-primary [&::placeholder]:opacity-30',
+                    ? 'lsd:text-lsd-text-secondary'
+                    : 'lsd:text-lsd-text-primary',
+                  error && 'lsd:line-through',
+                  'lsd:[&::placeholder]:text-lsd-text-primary lsd:[&::placeholder]:opacity-30',
                 )}
                 {...props}
               />
               {icon && (
-                <div className={cn('flex items-center', currentSize.icon)}>
+                <div
+                  className={cn('lsd:flex lsd:items-center', currentSize.icon)}
+                >
                   {icon}
                 </div>
               )}
@@ -241,17 +245,17 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                   onClick={onCancel}
                   disabled={disabled}
                   className={cn(
-                    'flex items-center',
+                    'lsd:flex lsd:items-center',
                     currentSize.icon,
-                    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
+                    disabled ? 'lsd:cursor-not-allowed' : 'lsd:cursor-pointer',
                   )}
                 >
                   <XIcon
                     className={cn(
-                      'h-4 w-4',
+                      'lsd:h-4 lsd:w-4',
                       disabled
-                        ? 'text-lsd-text-secondary'
-                        : 'text-lsd-icon-primary',
+                        ? 'lsd:text-lsd-text-secondary'
+                        : 'lsd:text-lsd-icon-primary',
                     )}
                   />
                 </button>
@@ -260,17 +264,17 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
           </PopoverTrigger>
           <PopoverContent
             className={cn(
-              'w-full p-0',
-              'bg-lsd-surface-primary border-lsd-border-primary',
+              'lsd:w-full lsd:p-0',
+              'lsd:bg-lsd-surface-primary lsd:border-lsd-border-primary',
             )}
             align="start"
             sideOffset={0}
           >
-            <Command className="rounded-none border-none shadow-none">
+            <Command className="lsd:rounded-none lsd:border-none lsd:shadow-none">
               <CommandInput
                 value={searchText}
                 onValueChange={setSearchText}
-                className="h-9 border-none"
+                className="lsd:h-9 lsd:border-none"
                 placeholder={placeholder}
               />
               <CommandList>
@@ -293,11 +297,11 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
                         value={option.value}
                         keywords={[option.label]}
                         onSelect={() => handleSelect(option.value)}
-                        className="hover:underline focus:underline cursor-pointer data-[selected=true]:underline"
+                        className="lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:data-[selected=true]:underline"
                       >
-                        <span className="block overflow-hidden whitespace-nowrap text-ellipsis">
+                        <span className="lsd:block lsd:overflow-hidden lsd:whitespace-nowrap lsd:text-ellipsis">
                           {matchedPart}
-                          <span className="opacity-50 whitespace-pre">
+                          <span className="lsd:opacity-50 lsd:whitespace-pre">
                             {remainingPart}
                           </span>
                         </span>
