@@ -27,6 +27,12 @@ jobs:
       
       - name: Set up Node.js using mise
         uses: jdx/mise-action@v3
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Build
+        run: pnpm build
 
       - name: Create Git Tag
         if: steps.check.outputs.changed == 'true'
