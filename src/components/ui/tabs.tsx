@@ -118,7 +118,7 @@ function TabsContent({
   return (
     <TabsPrimitive.Content
       data-slot="tabs-content"
-      className={cn('lsd:mt-4 lsd:outline-none', className)}
+      className={cn('lsd:outline-none', className)}
       {...props}
     />
   );

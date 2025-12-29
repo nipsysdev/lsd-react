@@ -16,7 +16,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     {
       className,
       variant = 'underlined',
-      size = 'large',
+      size = 'medium',
       label,
       supportingText,
       error,
@@ -29,29 +29,42 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const inputId = React.useId();
     const finalId = id || inputId;
 
-    const getSizeClasses = () => {
+    const getTextSizeClasses = () => {
       switch (size) {
         case 'large':
-          return 'lsd:w-52';
+          return 'lsd:text-lg file:lsd:text-lg';
         case 'medium':
-          return 'lsd:w-44';
+          return 'lsd:text-base file:lsd:text-base';
         case 'small':
-          return 'lsd:w-40';
+          return 'lsd:text-sm file:lsd:text-sm';
         default:
-          return 'lsd:w-52';
+          return 'lsd:text-base file:lsd:text-base';
       }
     };
 
-    const getPaddingClasses = () => {
+    const getVerticalPaddingClasses = () => {
       switch (size) {
         case 'large':
-          return 'lsd:px-4 lsd:py-4';
+          return 'lsd:py-4';
         case 'medium':
-          return 'lsd:px-3 lsd:py-3';
+          return 'lsd:py-3';
         case 'small':
-          return 'lsd:px-3 lsd:py-3';
+          return 'lsd:py-2';
         default:
-          return 'lsd:px-4 lsd:py-4';
+          return 'lsd:py-3';
+      }
+    };
+
+    const getLabelSizeClasses = () => {
+      switch (size) {
+        case 'large':
+          return 'lsd:text-base';
+        case 'medium':
+          return 'lsd:text-sm';
+        case 'small':
+          return 'lsd:text-xs';
+        default:
+          return 'lsd:text-sm';
       }
     };
 
@@ -60,7 +73,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={finalId}
-            className="lsd:pb-1.5 lsd:text-sm lsd:font-medium"
+            className={cn('lsd:font-medium', getLabelSizeClasses())}
           >
             {label}
           </label>
@@ -72,7 +85,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               ? 'lsd:border lsd:border-lsd-border-primary lsd:rounded'
               : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary',
             error && 'lsd:border-lsd-destructive',
-            getSizeClasses(),
           )}
         >
           <input
@@ -80,10 +92,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             type={type}
             id={finalId}
             className={cn(
-              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full lsd:text-base file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:text-base file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
-              'focus-visible:lsd:outline-none',
+              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
+              'focus-visible:lsd:outline-none lsd:px-4',
               error && 'lsd:line-through',
-              getPaddingClasses(),
+              getTextSizeClasses(),
+              getVerticalPaddingClasses(),
             )}
             {...props}
           />
