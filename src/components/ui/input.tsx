@@ -42,7 +42,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       }
     };
 
-    const getPaddingClasses = () => {
+    const getVerticalPaddingClasses = () => {
       switch (size) {
         case 'large':
           return 'lsd:py-4';
@@ -96,7 +96,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:text-base file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
               'focus-visible:lsd:outline-none lsd:px-4',
               error && 'lsd:line-through',
-              getPaddingClasses(),
+              getVerticalPaddingClasses(),
             )}
             {...props}
           />
