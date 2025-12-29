@@ -29,16 +29,16 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const inputId = React.useId();
     const finalId = id || inputId;
 
-    const getSizeClasses = () => {
+    const getTextSizeClasses = () => {
       switch (size) {
         case 'large':
-          return 'lsd:text-lg';
+          return 'lsd:text-lg file:lsd:text-lg';
         case 'medium':
-          return 'lsd:text-base';
+          return 'lsd:text-base file:lsd:text-base';
         case 'small':
-          return 'lsd:text-sm';
+          return 'lsd:text-sm file:lsd:text-sm';
         default:
-          return 'lsd:text-base';
+          return 'lsd:text-base file:lsd:text-base';
       }
     };
 
@@ -85,7 +85,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               ? 'lsd:border lsd:border-lsd-border-primary lsd:rounded'
               : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary',
             error && 'lsd:border-lsd-destructive',
-            getSizeClasses(),
           )}
         >
           <input
@@ -93,9 +92,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             type={type}
             id={finalId}
             className={cn(
-              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:text-base file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
+              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
               'focus-visible:lsd:outline-none lsd:px-4',
               error && 'lsd:line-through',
+              getTextSizeClasses(),
               getVerticalPaddingClasses(),
             )}
             {...props}
