@@ -2,7 +2,7 @@
   "name": "@nipsysdev/lsd-react",
   "description": "@nipsysdev/lsd-react is a UI component library based on the Logos Design System",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "module": "./dist/main.js",
   "exports": {
