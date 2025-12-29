@@ -58,11 +58,11 @@ export default function InputFixture() {
           title="Input Sizes"
           code={`<div className="lsd:space-y-6">
   <div>
-    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large (Default)</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large</h3>
     <Input size="large" placeholder="Large input" />
   </div>
   <div>
-    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium</h3>
+    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium (Default)</h3>
     <Input size="medium" placeholder="Medium input" />
   </div>
   <div>
@@ -73,13 +73,13 @@ export default function InputFixture() {
         >
           <div className="lsd:space-y-6">
             <div>
-              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
-                Large (Default)
-              </h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large</h3>
               <Input size="large" placeholder="Large input" />
             </div>
             <div>
-              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium</h3>
+              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
+                Medium (Default)
+              </h3>
               <Input size="medium" placeholder="Medium input" />
             </div>
             <div>
