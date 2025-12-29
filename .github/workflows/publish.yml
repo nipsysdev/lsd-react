@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -13,13 +17,22 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Check version changes
         uses: EndBug/version-check@v2
         id: check
+      
+      - name: Set up Node.js using mise
+        uses: jdx/mise-action@v3
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Build
+        run: pnpm build
 
       - name: Create Git Tag
         if: steps.check.outputs.changed == 'true'
@@ -42,6 +55,4 @@ jobs:
 
       - name: Publish to npm
         if: steps.check.outputs.changed == 'true'
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --provenance
