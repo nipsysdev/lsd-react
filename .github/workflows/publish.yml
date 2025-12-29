@@ -55,4 +55,4 @@ jobs:
 
       - name: Publish to npm
         if: steps.check.outputs.changed == 'true'
-        run: pnpm publish
+        run: pnpm publish --provenance
