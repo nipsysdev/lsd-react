@@ -123,7 +123,6 @@ pnpm install
 - `pnpm cosmos` - Start React Cosmos dev server
 - `pnpm cosmos:export` - Export Cosmos site
 - `pnpm lint` - Run linting
-- `pnpm type-check` - Run TypeScript type checking
 
 
 ## License
