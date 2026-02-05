@@ -23,7 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-lsd_docs
-*_PLAN.md
+coverage
+ai_docs
 .kilocode
 *.tgz
+plans
