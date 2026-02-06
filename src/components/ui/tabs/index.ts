@@ -2,12 +2,14 @@ export { Tabs } from './Tabs';
 export { TabsContent } from './TabsContent';
 export { TabsList } from './TabsList';
 export { TabsTrigger } from './TabsTrigger';
-export type { TabsListProps, TabsProps, TabsTriggerProps } from './types';
-export {
-  type TabsListVariants,
-  type TabsTriggerVariants,
-  type TabsVariants,
+export type {
+  TabsListProps,
+  TabsListVariants,
+  TabsProps,
+  TabsTriggerProps,
+  TabsTriggerVariants,
+  TabsVariants,
   tabsListVariants,
   tabsTriggerVariants,
   tabsVariants,
-} from './variants';
+} from './types';

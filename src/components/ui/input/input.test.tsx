@@ -36,14 +36,14 @@ describe('Input', () => {
   });
 
   it('renders with large size', () => {
-    render(<Input size="large" />);
+    render(<Input size="lg" />);
     const input = screen.getByRole('textbox');
     expect(input).toHaveClass('lsd:text-lg');
     expect(input).toHaveClass('lsd:py-4');
   });
 
   it('renders with small size', () => {
-    render(<Input size="small" />);
+    render(<Input size="sm" />);
     const input = screen.getByRole('textbox');
     expect(input).toHaveClass('lsd:text-sm');
     expect(input).toHaveClass('lsd:py-2');
@@ -186,13 +186,13 @@ describe('Input', () => {
   });
 
   it('applies label size classes correctly', () => {
-    render(<Input size="large" label="Label" />);
+    render(<Input size="lg" label="Label" />);
     const label = screen.getByText('Label');
     expect(label).toHaveClass('lsd:text-base');
   });
 
   it('applies supporting text size classes correctly', () => {
-    render(<Input size="large" supportingText="Supporting" />);
+    render(<Input size="lg" supportingText="Supporting" />);
     const supportingText = screen.getByText('Supporting');
     expect(supportingText).toHaveClass('lsd:text-base');
   });

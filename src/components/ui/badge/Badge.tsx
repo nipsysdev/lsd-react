@@ -2,7 +2,7 @@ import { Slot } from '@radix-ui/react-slot';
 import type * as React from 'react';
 
 import { cn } from '@/lib/utils';
-import { type BadgeVariants, badgeVariants } from './variants';
+import { type BadgeVariants, badgeVariants } from './types';
 
 export interface BadgeProps
   extends React.ComponentProps<'span'>,

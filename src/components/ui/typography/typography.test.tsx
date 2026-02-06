@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { Typography, typographyVariants } from './index';
+import { Typography } from './index';
+import { typographyVariants } from './types';
 
 describe('Typography', () => {
   it('renders without crashing', () => {

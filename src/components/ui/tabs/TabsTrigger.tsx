@@ -2,7 +2,7 @@ import * as TabsPrimitive from '@radix-ui/react-tabs';
 
 import { cn } from '@/lib/utils';
 import type { TabsTriggerProps } from './types';
-import { tabsTriggerVariants } from './variants';
+import { tabsTriggerVariants } from './types';
 
 function TabsTrigger({
   className,

@@ -8,5 +8,5 @@ import type { toggleVariants } from '@/components/ui/toggle';
 export const ToggleGroupContext = React.createContext<
   VariantProps<typeof toggleVariants>
 >({
-  size: 'default',
+  size: 'md',
 });

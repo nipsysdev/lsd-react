@@ -32,8 +32,8 @@ describe('Toggle', () => {
     expect(toggle).toHaveClass('lsd:cursor-pointer');
   });
 
-  it('applies default size classes correctly', () => {
-    render(<Toggle size="default" />);
+  it('applies medium size classes correctly', () => {
+    render(<Toggle size="md" />);
     const toggle = screen.getByRole('button');
     expect(toggle).toHaveClass('lsd:h-10');
     expect(toggle).toHaveClass('lsd:min-w-10');
@@ -124,11 +124,11 @@ describe('Toggle', () => {
 });
 
 describe('toggleVariants', () => {
-  it('returns correct classes for default size', () => {
-    expect(toggleVariants({ size: 'default' })).toContain('lsd:h-10');
-    expect(toggleVariants({ size: 'default' })).toContain('lsd:min-w-10');
-    expect(toggleVariants({ size: 'default' })).toContain('lsd:px-3');
-    expect(toggleVariants({ size: 'default' })).toContain('lsd:py-[6px]');
+  it('returns correct classes for medium size', () => {
+    expect(toggleVariants({ size: 'md' })).toContain('lsd:h-10');
+    expect(toggleVariants({ size: 'md' })).toContain('lsd:min-w-10');
+    expect(toggleVariants({ size: 'md' })).toContain('lsd:px-3');
+    expect(toggleVariants({ size: 'md' })).toContain('lsd:py-[6px]');
   });
 
   it('returns correct classes for small size', () => {

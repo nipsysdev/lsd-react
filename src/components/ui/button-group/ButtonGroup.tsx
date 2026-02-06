@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 import type { ButtonGroupProps } from './types';
-import { buttonGroupVariants } from './variants';
+import { buttonGroupVariants } from './types';
 
 const ButtonGroup = React.forwardRef<HTMLFieldSetElement, ButtonGroupProps>(
   ({ className, orientation, ...props }, ref) => {

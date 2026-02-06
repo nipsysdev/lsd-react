@@ -30,9 +30,9 @@ describe('Badge', () => {
     expect(badge).toHaveClass('lsd:text-lsd-text-primary');
   });
 
-  it('applies default size classes correctly', () => {
-    render(<Badge size="default">Default</Badge>);
-    const badge = screen.getByText('Default');
+  it('applies medium size classes correctly', () => {
+    render(<Badge size="md">Medium</Badge>);
+    const badge = screen.getByText('Medium');
     expect(badge).toHaveClass('lsd:h-[28px]');
     expect(badge).toHaveClass('lsd:px-[11px]');
     expect(badge).toHaveClass('lsd:py-[3px]');
@@ -121,10 +121,10 @@ describe('badgeVariants', () => {
     );
   });
 
-  it('returns correct classes for default size', () => {
-    expect(badgeVariants({ size: 'default' })).toContain('lsd:h-[28px]');
-    expect(badgeVariants({ size: 'default' })).toContain('lsd:px-[11px]');
-    expect(badgeVariants({ size: 'default' })).toContain('lsd:text-[0.875rem]');
+  it('returns correct classes for medium size', () => {
+    expect(badgeVariants({ size: 'md' })).toContain('lsd:h-[28px]');
+    expect(badgeVariants({ size: 'md' })).toContain('lsd:px-[11px]');
+    expect(badgeVariants({ size: 'md' })).toContain('lsd:text-[0.875rem]');
   });
 
   it('returns correct classes for small size', () => {

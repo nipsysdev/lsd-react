@@ -2,7 +2,7 @@ import * as TabsPrimitive from '@radix-ui/react-tabs';
 
 import { cn } from '@/lib/utils';
 import type { TabsListProps } from './types';
-import { tabsListVariants } from './variants';
+import { tabsListVariants } from './types';
 
 function TabsList({ className, size, fullWidth, ...props }: TabsListProps) {
   return (
