@@ -107,7 +107,7 @@ export function SidebarTrigger({
       data-sidebar="trigger"
       data-slot="sidebar-trigger"
       variant="outlined"
-      size="icon"
+      size="icon-md"
       className={cn('lsd:size-7', className)}
       onClick={(event) => {
         onClick?.(event);

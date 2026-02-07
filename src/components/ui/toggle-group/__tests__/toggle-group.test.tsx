@@ -36,9 +36,9 @@ describe('ToggleGroup', () => {
     expect(group).toHaveClass('lsd:items-center');
   });
 
-  it('applies default size classes correctly', () => {
+  it('applies medium size classes correctly', () => {
     render(
-      <ToggleGroup type="single" size="default">
+      <ToggleGroup type="single" size="md">
         <ToggleGroupItem value="a">A</ToggleGroupItem>
       </ToggleGroup>,
     );

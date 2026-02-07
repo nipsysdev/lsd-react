@@ -22,7 +22,7 @@ const Autocomplete = React.forwardRef<HTMLInputElement, AutocompleteProps>(
       onClear,
       disabled = false,
       label,
-      size = 'large',
+      size = 'md',
       icon,
       error = false,
       variant = 'outlined',

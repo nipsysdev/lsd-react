@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { cn } from '@/lib/utils';
 import type { TypographyProps } from './types';
+import { typographyVariants } from './types';
 import { getDefaultComponent } from './utils';
-import { typographyVariants } from './variants';
 
 const Typography = React.forwardRef<HTMLHeadingElement, TypographyProps>(
   ({ className, variant, color, as, ...props }, ref) => {

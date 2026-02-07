@@ -13,7 +13,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     {
       className,
       variant = 'underlined',
-      size = 'medium',
+      size = 'md',
       label,
       supportingText,
       error,
@@ -64,7 +64,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             <p
               className={cn(
                 'lsd:text-sm',
-                size === 'large' ? 'lsd:text-base' : 'lsd:text-sm',
+                size === 'lg' ? 'lsd:text-base' : 'lsd:text-sm',
                 error && 'lsd:text-lsd-destructive',
               )}
             >

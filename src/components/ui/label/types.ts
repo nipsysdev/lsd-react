@@ -1,4 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
+import type { SizeVariant } from '@/lib/types';
+
+export type LabelVariant = 'default' | 'secondary';
 
 export const labelVariants = cva(
   'lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 peer-lsd:disabled:cursor-not-allowed peer-lsd:disabled:opacity-50',
@@ -21,4 +24,7 @@ export const labelVariants = cva(
   },
 );
 
-export type LabelVariants = VariantProps<typeof labelVariants>;
+export type LabelVariants = VariantProps<typeof labelVariants> & {
+  variant?: LabelVariant;
+  size?: SizeVariant;
+};

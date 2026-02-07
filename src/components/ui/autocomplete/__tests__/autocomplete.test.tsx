@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { Autocomplete } from '../index';
-import type { AutocompleteOption } from './types';
+import type { AutocompleteOption } from '../types';
 
 describe('Autocomplete', () => {
   const mockOptions: AutocompleteOption[] = [
@@ -58,20 +58,20 @@ describe('Autocomplete', () => {
     expect(input).toHaveClass('lsd:line-through');
   });
 
-  it('applies large size classes by default', () => {
+  it('applies medium size classes by default', () => {
     render(<Autocomplete options={mockOptions} />);
-    const container = screen.getByRole('textbox').parentElement?.parentElement;
-    expect(container).toHaveClass('lsd:w-[208px]');
-  });
-
-  it('applies medium size classes when size="medium"', () => {
-    render(<Autocomplete options={mockOptions} size="medium" />);
     const container = screen.getByRole('textbox').parentElement?.parentElement;
     expect(container).toHaveClass('lsd:w-[188px]');
   });
 
-  it('applies small size classes when size="small"', () => {
-    render(<Autocomplete options={mockOptions} size="small" />);
+  it('applies medium size classes when size="md"', () => {
+    render(<Autocomplete options={mockOptions} size="md" />);
+    const container = screen.getByRole('textbox').parentElement?.parentElement;
+    expect(container).toHaveClass('lsd:w-[188px]');
+  });
+
+  it('applies small size classes when size="sm"', () => {
+    render(<Autocomplete options={mockOptions} size="sm" />);
     const container = screen.getByRole('textbox').parentElement?.parentElement;
     expect(container).toHaveClass('lsd:w-[164px]');
   });

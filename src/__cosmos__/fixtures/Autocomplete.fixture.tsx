@@ -41,7 +41,7 @@ export default () => (
       label="Large"
       options={frameworks}
       placeholder="Large size..."
-      size="large"
+      size="lg"
     />
   </div>
   <div>
@@ -49,7 +49,7 @@ export default () => (
       label="Medium"
       options={frameworks}
       placeholder="Medium size..."
-      size="medium"
+      size="md"
     />
   </div>
   <div>
@@ -57,7 +57,7 @@ export default () => (
       label="Small"
       options={frameworks}
       placeholder="Small size..."
-      size="small"
+      size="sm"
     />
   </div>
 </div>`}
@@ -68,7 +68,7 @@ export default () => (
                 label="Large"
                 options={frameworks}
                 placeholder="Large size..."
-                size="large"
+                size="lg"
               />
             </div>
             <div>
@@ -76,7 +76,7 @@ export default () => (
                 label="Medium"
                 options={frameworks}
                 placeholder="Medium size..."
-                size="medium"
+                size="md"
               />
             </div>
             <div>
@@ -84,7 +84,7 @@ export default () => (
                 label="Small"
                 options={frameworks}
                 placeholder="Small size..."
-                size="small"
+                size="sm"
               />
             </div>
           </div>

@@ -1,14 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  tabsListVariants,
-  tabsTriggerVariants,
-  tabsVariants,
-} from '../index';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../index';
+import { tabsListVariants, tabsTriggerVariants, tabsVariants } from '../types';
 
 describe('Tabs', () => {
   it('renders without crashing', () => {

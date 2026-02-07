@@ -1,4 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
+import type { SizeVariant } from '@/lib/types';
+
+export type BadgeVariant = 'filled' | 'outlined';
 
 export const badgeVariants = cva(
   'lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:border-lsd-icon-primary lsd:rounded-[20px] lsd:w-fit lsd:whitespace-nowrap lsd:shrink-0 lsd:[&>svg]:size-3 lsd:[&>svg]:pointer-events-none lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:transition-colors lsd:overflow-hidden',
@@ -9,16 +12,18 @@ export const badgeVariants = cva(
         outlined: 'lsd:bg-transparent lsd:text-lsd-text-primary',
       },
       size: {
-        default:
-          'lsd:h-[28px] lsd:px-[11px] lsd:py-[3px] lsd:gap-[12px] lsd:text-[0.875rem]',
         sm: 'lsd:h-[24px] lsd:px-[7px] lsd:py-[3px] lsd:gap-[8px] lsd:text-[0.75rem]',
+        md: 'lsd:h-[28px] lsd:px-[11px] lsd:py-[3px] lsd:gap-[12px] lsd:text-[0.875rem]',
       },
     },
     defaultVariants: {
       variant: 'filled',
-      size: 'default',
+      size: 'md',
     },
   },
 );
 
-export type BadgeVariants = VariantProps<typeof badgeVariants>;
+export type BadgeVariants = VariantProps<typeof badgeVariants> & {
+  variant?: BadgeVariant;
+  size?: SizeVariant;
+};

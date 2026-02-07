@@ -91,7 +91,7 @@ export default function ToggleFixture() {
   <Toggle size="sm" aria-label="Small toggle">
     <Bold className="lsd:h-4 lsd:w-4" />
   </Toggle>
-  <Toggle size="default" aria-label="Default toggle">
+  <Toggle size="md" aria-label="Medium toggle">
     <Bold className="lsd:h-4 lsd:w-4" />
   </Toggle>
   <Toggle size="lg" aria-label="Large toggle">
@@ -103,7 +103,7 @@ export default function ToggleFixture() {
             <Toggle size="sm" aria-label="Small toggle">
               <Bold className="lsd:h-4 lsd:w-4" />
             </Toggle>
-            <Toggle size="default" aria-label="Default toggle">
+            <Toggle size="md" aria-label="Medium toggle">
               <Bold className="lsd:h-4 lsd:w-4" />
             </Toggle>
             <Toggle size="lg" aria-label="Large toggle">
