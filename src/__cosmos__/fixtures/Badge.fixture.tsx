@@ -39,12 +39,12 @@ export default function BadgeFixture() {
         <CodeExample
           title="Badge Sizes"
           code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
-  <Badge size="default">Default Size</Badge>
+  <Badge size="md">Medium Size</Badge>
   <Badge size="sm">Small Size</Badge>
 </div>`}
         >
           <div className="lsd:flex lsd:gap-4 lsd:items-center">
-            <Badge size="default">Default Size</Badge>
+            <Badge size="md">Medium Size</Badge>
             <Badge size="sm">Small Size</Badge>
           </div>
         </CodeExample>
@@ -58,11 +58,11 @@ export default function BadgeFixture() {
           title="Badge Variant and Size Combinations"
           code={`<div className="lsd:flex lsd:flex-col lsd:gap-4">
   <div className="lsd:flex lsd:gap-4 lsd:items-center">
-    <Badge variant="filled" size="default">
-      Filled Default
+    <Badge variant="filled" size="md">
+      Filled Medium
     </Badge>
-    <Badge variant="outlined" size="default">
-      Outlined Default
+    <Badge variant="outlined" size="md">
+      Outlined Medium
     </Badge>
   </div>
   <div className="lsd:flex lsd:gap-4 lsd:items-center">
@@ -77,11 +77,11 @@ export default function BadgeFixture() {
         >
           <div className="lsd:flex lsd:flex-col lsd:gap-4">
             <div className="lsd:flex lsd:gap-4 lsd:items-center">
-              <Badge variant="filled" size="default">
-                Filled Default
+              <Badge variant="filled" size="md">
+                Filled Medium
               </Badge>
-              <Badge variant="outlined" size="default">
-                Outlined Default
+              <Badge variant="outlined" size="md">
+                Outlined Medium
               </Badge>
             </div>
             <div className="lsd:flex lsd:gap-4 lsd:items-center">

@@ -1,11 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import {
-  ButtonGroup,
-  ButtonGroupSeparator,
-  ButtonGroupText,
-  buttonGroupVariants,
-} from '../index';
+import { ButtonGroup, ButtonGroupSeparator, ButtonGroupText } from '../index';
+import { buttonGroupVariants } from '../types';
 
 // Helper function to query by data-slot
 const queryByDataSlot = (container: HTMLElement, slot: string) => {

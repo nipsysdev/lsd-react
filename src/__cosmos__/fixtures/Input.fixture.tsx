@@ -59,32 +59,32 @@ export default function InputFixture() {
           code={`<div className="lsd:space-y-6">
   <div>
     <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large</h3>
-    <Input size="large" placeholder="Large input" />
+    <Input size="lg" placeholder="Large input" />
   </div>
   <div>
     <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Medium (Default)</h3>
-    <Input size="medium" placeholder="Medium input" />
+    <Input size="md" placeholder="Medium input" />
   </div>
   <div>
     <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small</h3>
-    <Input size="small" placeholder="Small input" />
+    <Input size="sm" placeholder="Small input" />
   </div>
 </div>`}
         >
           <div className="lsd:space-y-6">
             <div>
               <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large</h3>
-              <Input size="large" placeholder="Large input" />
+              <Input size="lg" placeholder="Large input" />
             </div>
             <div>
               <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
                 Medium (Default)
               </h3>
-              <Input size="medium" placeholder="Medium input" />
+              <Input size="md" placeholder="Medium input" />
             </div>
             <div>
               <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small</h3>
-              <Input size="small" placeholder="Small input" />
+              <Input size="sm" placeholder="Small input" />
             </div>
           </div>
         </CodeExample>

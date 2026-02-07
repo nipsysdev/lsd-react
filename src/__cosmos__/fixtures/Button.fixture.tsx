@@ -41,13 +41,13 @@ export default function ButtonFixture() {
           title="Button Sizes"
           code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
   <Button size="sm">Small</Button>
-  <Button>Default</Button>
+  <Button size="md">Medium</Button>
   <Button size="lg">Large</Button>
 </div>`}
         >
           <div className="lsd:flex lsd:gap-4 lsd:items-center">
             <Button size="sm">Small</Button>
-            <Button>Default</Button>
+            <Button size="md">Medium</Button>
             <Button size="lg">Large</Button>
           </div>
         </CodeExample>
@@ -124,19 +124,19 @@ export default function ButtonFixture() {
         <CodeExample
           title="Icon Button Variants"
           code={`<div className="lsd:flex lsd:gap-4 lsd:items-center">
-  <Button variant="filled-icon" size="icon" aria-label="Add">
+  <Button variant="filled-icon" size="icon-md" aria-label="Add">
     <Plus />
   </Button>
-  <Button variant="outlined-icon" size="icon" aria-label="Add">
+  <Button variant="outlined-icon" size="icon-md" aria-label="Add">
     <Plus />
   </Button>
 </div>`}
         >
           <div className="lsd:flex lsd:gap-4 lsd:items-center">
-            <Button variant="filled-icon" size="icon" aria-label="Add">
+            <Button variant="filled-icon" size="icon-md" aria-label="Add">
               <Plus />
             </Button>
-            <Button variant="outlined-icon" size="icon" aria-label="Add">
+            <Button variant="outlined-icon" size="icon-md" aria-label="Add">
               <Plus />
             </Button>
           </div>
@@ -151,7 +151,7 @@ export default function ButtonFixture() {
   <Button variant="filled-icon" size="icon-sm" aria-label="Add">
     <Plus size={14} />
   </Button>
-  <Button variant="filled-icon" size="icon" aria-label="Add">
+  <Button variant="filled-icon" size="icon-md" aria-label="Add">
     <Plus />
   </Button>
   <Button variant="filled-icon" size="icon-lg" aria-label="Add">
@@ -166,7 +166,7 @@ export default function ButtonFixture() {
             <Button variant="filled-icon" size="icon-sm" aria-label="Add">
               <Plus size={14} />
             </Button>
-            <Button variant="filled-icon" size="icon" aria-label="Add">
+            <Button variant="filled-icon" size="icon-md" aria-label="Add">
               <Plus />
             </Button>
             <Button variant="filled-icon" size="icon-lg" aria-label="Add">

@@ -41,8 +41,8 @@ describe('Button', () => {
     expect(button).toHaveClass('lsd:rounded-full');
   });
 
-  it('applies default size classes correctly', () => {
-    render(<Button size="default">Default</Button>);
+  it('applies medium size classes correctly', () => {
+    render(<Button size="md">Medium</Button>);
     const button = screen.getByRole('button');
     expect(button).toHaveClass('lsd:h-[34px]');
     expect(button).toHaveClass('lsd:px-6');
@@ -68,8 +68,8 @@ describe('Button', () => {
     expect(button).toHaveClass('lsd:text-lg');
   });
 
-  it('applies icon size classes correctly', () => {
-    render(<Button size="icon">Icon</Button>);
+  it('applies icon-md size classes correctly', () => {
+    render(<Button size="icon-md">Icon</Button>);
     const button = screen.getByRole('button');
     expect(button).toHaveClass('lsd:w-10');
     expect(button).toHaveClass('lsd:h-10');
@@ -196,11 +196,11 @@ describe('buttonVariants', () => {
     );
   });
 
-  it('returns correct classes for default size', () => {
-    expect(buttonVariants({ size: 'default' })).toContain('lsd:h-[34px]');
-    expect(buttonVariants({ size: 'default' })).toContain('lsd:px-6');
-    expect(buttonVariants({ size: 'default' })).toContain('lsd:py-2');
-    expect(buttonVariants({ size: 'default' })).toContain('lsd:text-base');
+  it('returns correct classes for medium size', () => {
+    expect(buttonVariants({ size: 'md' })).toContain('lsd:h-[34px]');
+    expect(buttonVariants({ size: 'md' })).toContain('lsd:px-6');
+    expect(buttonVariants({ size: 'md' })).toContain('lsd:py-2');
+    expect(buttonVariants({ size: 'md' })).toContain('lsd:text-base');
   });
 
   it('returns correct classes for small size', () => {
@@ -217,9 +217,9 @@ describe('buttonVariants', () => {
     expect(buttonVariants({ size: 'lg' })).toContain('lsd:text-lg');
   });
 
-  it('returns correct classes for icon size', () => {
-    expect(buttonVariants({ size: 'icon' })).toContain('lsd:w-10');
-    expect(buttonVariants({ size: 'icon' })).toContain('lsd:h-10');
+  it('returns correct classes for icon-md size', () => {
+    expect(buttonVariants({ size: 'icon-md' })).toContain('lsd:w-10');
+    expect(buttonVariants({ size: 'icon-md' })).toContain('lsd:h-10');
   });
 
   it('returns correct classes for icon-sm size', () => {

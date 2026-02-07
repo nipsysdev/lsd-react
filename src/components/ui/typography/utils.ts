@@ -1,5 +1,5 @@
 import type { VariantProps } from 'class-variance-authority';
-import type { typographyVariants } from './variants';
+import type { typographyVariants } from './types';
 
 export function getDefaultComponent(
   variant?: VariantProps<typeof typographyVariants>['variant'],
