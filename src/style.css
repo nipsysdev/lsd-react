@@ -53,6 +53,8 @@
   --color-lsd-primary: rgb(var(--lsd-text));
   --color-lsd-destructive: rgb(var(--lsd-destructive));
   --color-lsd-success: rgb(var(--lsd-success));
+  --color-lsd-warning: rgb(var(--lsd-warning));
+  --color-lsd-info: rgb(var(--lsd-info));
   --color-lsd-chart-1: 220 38 38;
   --color-lsd-chart-2: 37 99 235;
   --color-lsd-chart-3: 22 163 74;
@@ -75,6 +77,8 @@
   --lsd-surface-secondary: 255 255 255;
   --lsd-destructive: 185 28 28;
   --lsd-success: 21 128 61;
+  --lsd-warning: 245 158 11;
+  --lsd-info: 37 99 235;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));
@@ -123,6 +127,8 @@
   --lsd-surface-secondary: 0 0 0;
   --lsd-destructive: 153 27 27;
   --lsd-success: 20 83 45;
+  --lsd-warning: 217 119 6;
+  --lsd-info: 59 130 246;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));
