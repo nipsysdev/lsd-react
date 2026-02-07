@@ -51,7 +51,8 @@
   --color-lsd-surface-primary: rgb(var(--lsd-surface-primary));
   --color-lsd-surface-secondary: rgb(var(--lsd-surface-secondary));
   --color-lsd-primary: rgb(var(--lsd-text));
-  --color-lsd-destructive: 239 68 68;
+  --color-lsd-destructive: rgb(var(--lsd-destructive));
+  --color-lsd-success: rgb(var(--lsd-success));
   --color-lsd-chart-1: 220 38 38;
   --color-lsd-chart-2: 37 99 235;
   --color-lsd-chart-3: 22 163 74;
@@ -72,6 +73,8 @@
   --lsd-icon-secondary: 255 255 255;
   --lsd-surface-primary: 255 255 255;
   --lsd-surface-secondary: 255 255 255;
+  --lsd-destructive: 185 28 28;
+  --lsd-success: 21 128 61;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));
@@ -118,6 +121,8 @@
   --lsd-icon-secondary: 0 0 0;
   --lsd-surface-primary: 0 0 0;
   --lsd-surface-secondary: 0 0 0;
+  --lsd-destructive: 153 27 27;
+  --lsd-success: 20 83 45;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));
@@ -229,4 +234,18 @@ html {
 
 .animate-indeterminate-progress-fast {
   animation: indeterminate-progress 0.75s ease-in-out infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }

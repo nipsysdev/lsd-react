@@ -41,6 +41,53 @@ describe('Button', () => {
     expect(button).toHaveClass('lsd:rounded-full');
   });
 
+  it('applies link variant classes correctly', () => {
+    render(<Button variant="link">Link</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:bg-transparent');
+    expect(button).toHaveClass('lsd:text-foreground');
+    expect(button).toHaveClass('lsd:border-0');
+    expect(button).toHaveClass('lsd:hover:underline');
+  });
+
+  it('applies destructive variant classes correctly', () => {
+    render(<Button variant="destructive">Delete</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:bg-lsd-destructive');
+    expect(button).toHaveClass('lsd:text-white');
+    expect(button).toHaveClass('lsd:border-lsd-destructive');
+    expect(button).toHaveClass('lsd:hover:bg-lsd-destructive/90');
+  });
+
+  it('applies destructive-icon variant classes correctly', () => {
+    render(<Button variant="destructive-icon">Delete</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:bg-lsd-destructive');
+    expect(button).toHaveClass('lsd:text-white');
+    expect(button).toHaveClass('lsd:border-lsd-destructive');
+    expect(button).toHaveClass('lsd:rounded-full');
+    expect(button).toHaveClass('lsd:hover:bg-lsd-destructive/90');
+  });
+
+  it('applies success variant classes correctly', () => {
+    render(<Button variant="success">Save</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:bg-lsd-success');
+    expect(button).toHaveClass('lsd:text-white');
+    expect(button).toHaveClass('lsd:border-lsd-success');
+    expect(button).toHaveClass('lsd:hover:bg-lsd-success/90');
+  });
+
+  it('applies success-icon variant classes correctly', () => {
+    render(<Button variant="success-icon">Save</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:bg-lsd-success');
+    expect(button).toHaveClass('lsd:text-white');
+    expect(button).toHaveClass('lsd:border-lsd-success');
+    expect(button).toHaveClass('lsd:rounded-full');
+    expect(button).toHaveClass('lsd:hover:bg-lsd-success/90');
+  });
+
   it('applies medium size classes correctly', () => {
     render(<Button size="md">Medium</Button>);
     const button = screen.getByRole('button');
@@ -159,6 +206,59 @@ describe('Button', () => {
     expect(button).toHaveAttribute('data-testid', 'test-button');
     expect(button).toHaveAttribute('aria-label', 'Test');
   });
+
+  it('shows loading spinner when loading prop is true', () => {
+    render(<Button loading>Loading</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toBeDisabled();
+    expect(button.querySelector('svg')).toBeInTheDocument();
+  });
+
+  it('dims content when loading', () => {
+    render(<Button loading>Click me</Button>);
+    const button = screen.getByRole('button');
+    const content = button.querySelector('span.lsd\\:opacity-50');
+    expect(content).toHaveTextContent('Click me');
+  });
+
+  it('does not show spinner when loading prop is false', () => {
+    render(<Button loading={false}>Click me</Button>);
+    const button = screen.getByRole('button');
+    expect(button).not.toBeDisabled();
+    expect(button.querySelector('svg')).not.toBeInTheDocument();
+  });
+
+  it('applies fullWidth class when fullWidth prop is true', () => {
+    render(<Button fullWidth>Full Width</Button>);
+    const button = screen.getByRole('button');
+    expect(button).toHaveClass('lsd:w-full');
+  });
+
+  it('does not apply fullWidth class when fullWidth prop is false', () => {
+    render(<Button fullWidth={false}>Normal Width</Button>);
+    const button = screen.getByRole('button');
+    expect(button).not.toHaveClass('lsd:w-full');
+  });
+
+  it('disables button when loading is true even if disabled prop is false', () => {
+    render(
+      <Button loading={true} disabled={false}>
+        Loading
+      </Button>,
+    );
+    const button = screen.getByRole('button');
+    expect(button).toBeDisabled();
+  });
+
+  it('keeps button disabled when both loading and disabled are true', () => {
+    render(
+      <Button loading={true} disabled={true}>
+        Loading
+      </Button>,
+    );
+    const button = screen.getByRole('button');
+    expect(button).toBeDisabled();
+  });
 });
 
 describe('buttonVariants', () => {
@@ -193,6 +293,69 @@ describe('buttonVariants', () => {
     );
     expect(buttonVariants({ variant: 'outlined-icon' })).toContain(
       'lsd:rounded-full',
+    );
+  });
+
+  it('returns correct classes for link variant', () => {
+    expect(buttonVariants({ variant: 'link' })).toContain('lsd:bg-transparent');
+    expect(buttonVariants({ variant: 'link' })).toContain(
+      'lsd:text-foreground',
+    );
+    expect(buttonVariants({ variant: 'link' })).toContain('lsd:border-0');
+    expect(buttonVariants({ variant: 'link' })).toContain(
+      'lsd:hover:underline',
+    );
+  });
+
+  it('returns correct classes for destructive variant', () => {
+    expect(buttonVariants({ variant: 'destructive' })).toContain(
+      'lsd:bg-lsd-destructive',
+    );
+    expect(buttonVariants({ variant: 'destructive' })).toContain(
+      'lsd:text-white',
+    );
+    expect(buttonVariants({ variant: 'destructive' })).toContain(
+      'lsd:hover:bg-lsd-destructive/90',
+    );
+  });
+
+  it('returns correct classes for destructive-icon variant', () => {
+    expect(buttonVariants({ variant: 'destructive-icon' })).toContain(
+      'lsd:bg-lsd-destructive',
+    );
+    expect(buttonVariants({ variant: 'destructive-icon' })).toContain(
+      'lsd:text-white',
+    );
+    expect(buttonVariants({ variant: 'destructive-icon' })).toContain(
+      'lsd:rounded-full',
+    );
+    expect(buttonVariants({ variant: 'destructive-icon' })).toContain(
+      'lsd:hover:bg-lsd-destructive/90',
+    );
+  });
+
+  it('returns correct classes for success variant', () => {
+    expect(buttonVariants({ variant: 'success' })).toContain(
+      'lsd:bg-lsd-success',
+    );
+    expect(buttonVariants({ variant: 'success' })).toContain('lsd:text-white');
+    expect(buttonVariants({ variant: 'success' })).toContain(
+      'lsd:hover:bg-lsd-success/90',
+    );
+  });
+
+  it('returns correct classes for success-icon variant', () => {
+    expect(buttonVariants({ variant: 'success-icon' })).toContain(
+      'lsd:bg-lsd-success',
+    );
+    expect(buttonVariants({ variant: 'success-icon' })).toContain(
+      'lsd:text-white',
+    );
+    expect(buttonVariants({ variant: 'success-icon' })).toContain(
+      'lsd:rounded-full',
+    );
+    expect(buttonVariants({ variant: 'success-icon' })).toContain(
+      'lsd:hover:bg-lsd-success/90',
     );
   });
 
