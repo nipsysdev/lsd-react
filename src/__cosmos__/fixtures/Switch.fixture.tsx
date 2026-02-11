@@ -16,6 +16,9 @@ export default function SwitchFixture() {
   const wifiId = useId();
   const bluetoothId = useId();
   const locationId = useId();
+  const smallSwitchId = useId();
+  const mediumSwitchId = useId();
+  const largeSwitchId = useId();
 
   return (
     <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
@@ -172,6 +175,42 @@ export default function SwitchFixture() {
             <div className="lsd:flex lsd:items-center lsd:space-x-2">
               <Switch id={locationId} />
               <label htmlFor={locationId}>Location Services</label>
+            </div>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">Sizes</h2>
+        <CodeExample
+          title="Sizes"
+          code={`<div className="lsd:space-y-4">
+  <div className="lsd:flex lsd:items-center lsd:space-x-2">
+    <Switch id="small" size="sm" />
+    <label htmlFor="small">Small (sm)</label>
+  </div>
+  <div className="lsd:flex lsd:items-center lsd:space-x-2">
+    <Switch id="medium" size="md" />
+    <label htmlFor="medium">Medium (md)</label>
+  </div>
+  <div className="lsd:flex lsd:items-center lsd:space-x-2">
+    <Switch id="large" size="lg" />
+    <label htmlFor="large">Large (lg)</label>
+  </div>
+</div>`}
+        >
+          <div className="lsd:space-y-4">
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
+              <Switch id={smallSwitchId} size="sm" />
+              <label htmlFor={smallSwitchId}>Small (sm)</label>
+            </div>
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
+              <Switch id={mediumSwitchId} size="md" />
+              <label htmlFor={mediumSwitchId}>Medium (md)</label>
+            </div>
+            <div className="lsd:flex lsd:items-center lsd:space-x-2">
+              <Switch id={largeSwitchId} size="lg" />
+              <label htmlFor={largeSwitchId}>Large (lg)</label>
             </div>
           </div>
         </CodeExample>
