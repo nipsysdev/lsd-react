@@ -5,226 +5,322 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { CodeExample } from '../code-example';
+import { FontToggle } from '../font-toggle';
+import { ThemeToggle } from '../theme-toggle';
 
 export default function AccordionFixture() {
   return (
-    <div className="lsd:p-8 lsd:w-full">
-      <h2 className="lsd:text-2xl lsd:font-bold lsd:mb-6">
-        Accordion Component
-      </h2>
+    <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
+      <div className="lsd:flex lsd:justify-end lsd:gap-4">
+        <ThemeToggle />
+        <FontToggle />
+      </div>
 
-      <div className="lsd:max-w-md lsd:space-y-4">
-        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
-          Ethereum Basics
-        </h3>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-2xl lsd:font-bold">Accordion Component</h2>
+        <p className="lsd:text-muted-foreground">
+          A vertically stacked set of interactive headings that each reveal a
+          section of content.
+        </p>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Basic Usage</h2>
         <CodeExample
           title="Single Collapsible Accordion"
           code={`<Accordion type="single" collapsible className="lsd:w-full">
   <AccordionItem value="item-1">
-    <AccordionTrigger>What is Ethereum?</AccordionTrigger>
+    <AccordionTrigger>Is it accessible?</AccordionTrigger>
     <AccordionContent>
-      Ethereum is a decentralized, open-source blockchain with smart
-      contract functionality. It is the second-largest cryptocurrency by
-      market capitalization, after Bitcoin. Ethereum enables developers
-      to build and deploy decentralized applications (dApps) and create
-      new cryptocurrencies.
+      Yes. It adheres to the WAI-ARIA design pattern.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-2">
-    <AccordionTrigger>What are Smart Contracts?</AccordionTrigger>
+    <AccordionTrigger>Is it styled?</AccordionTrigger>
     <AccordionContent>
-      Smart contracts are self-executing contracts with the terms of the
-      agreement directly written into code. They run on the Ethereum
-      Virtual Machine (EVM) and automatically execute when predetermined
-      conditions are met, without intermediaries.
+      Yes. It comes with default styles that match the other components.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-3">
-    <AccordionTrigger>What is Ether (ETH)?</AccordionTrigger>
+    <AccordionTrigger>Is it animated?</AccordionTrigger>
     <AccordionContent>
-      Ether (ETH) is the native cryptocurrency of the Ethereum platform.
-      It is used to pay for transaction fees and computational services
-      on the Ethereum network. ETH can also be traded as a digital
-      currency on various exchanges.
+      Yes. It's animated by default, but you can disable it if you prefer.
     </AccordionContent>
   </AccordionItem>
 </Accordion>`}
         >
           <Accordion type="single" collapsible className="lsd:w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What is Ethereum?</AccordionTrigger>
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
               <AccordionContent>
-                Ethereum is a decentralized, open-source blockchain with smart
-                contract functionality. It is the second-largest cryptocurrency
-                by market capitalization, after Bitcoin. Ethereum enables
-                developers to build and deploy decentralized applications
-                (dApps) and create new cryptocurrencies.
+                Yes. It adheres to the WAI-ARIA design pattern.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>What are Smart Contracts?</AccordionTrigger>
+              <AccordionTrigger>Is it styled?</AccordionTrigger>
               <AccordionContent>
-                Smart contracts are self-executing contracts with the terms of
-                the agreement directly written into code. They run on the
-                Ethereum Virtual Machine (EVM) and automatically execute when
-                predetermined conditions are met, without intermediaries.
+                Yes. It comes with default styles that match the other
+                components.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>What is Ether (ETH)?</AccordionTrigger>
+              <AccordionTrigger>Is it animated?</AccordionTrigger>
               <AccordionContent>
-                Ether (ETH) is the native cryptocurrency of the Ethereum
-                platform. It is used to pay for transaction fees and
-                computational services on the Ethereum network. ETH can also be
-                traded as a digital currency on various exchanges.
+                Yes. It's animated by default, but you can disable it if you
+                prefer.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </CodeExample>
       </div>
 
-      <div className="lsd:max-w-md lsd:mt-8 lsd:space-y-4">
-        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
-          Ethereum Technology
-        </h3>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Multiple Open</h2>
         <CodeExample
           title="Multiple Open Accordion"
           code={`<Accordion type="multiple" className="lsd:w-full">
   <AccordionItem value="item-1">
-    <AccordionTrigger>
-      What is the Ethereum Virtual Machine (EVM)?
-    </AccordionTrigger>
+    <AccordionTrigger>Can I open multiple items?</AccordionTrigger>
     <AccordionContent>
-      The EVM is a runtime environment for smart contracts in Ethereum.
-      It is a Turing-complete virtual machine that allows anyone to
-      execute arbitrary EVM bytecode. Every Ethereum node runs on the
-      EVM to maintain consensus across the blockchain.
+      Yes. You can open multiple items at the same time.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-2">
-    <AccordionTrigger>What is Ethereum 2.0?</AccordionTrigger>
+    <AccordionTrigger>How does it work?</AccordionTrigger>
     <AccordionContent>
-      Ethereum 2.0 is an upgrade to the Ethereum network that improves
-      its scalability, security, and sustainability. The key change is
-      the transition from Proof of Work (PoW) to Proof of Stake (PoS)
-      consensus mechanism, which significantly reduces energy
-      consumption.
+      Set the type prop to "multiple" to allow multiple items to be open.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-3">
-    <AccordionTrigger>What are Layer 2 Solutions?</AccordionTrigger>
+    <AccordionTrigger>Is it responsive?</AccordionTrigger>
     <AccordionContent>
-      Layer 2 solutions are scaling solutions built on top of the
-      Ethereum mainnet (Layer 1) to increase transaction throughput and
-      reduce fees. Examples include Optimistic Rollups, zk-Rollups, and
-      side chains, which process transactions off-chain and then settle
-      them on the main Ethereum blockchain.
+      Yes. It works well on all screen sizes.
     </AccordionContent>
   </AccordionItem>
 </Accordion>`}
         >
           <Accordion type="multiple" className="lsd:w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>
-                What is the Ethereum Virtual Machine (EVM)?
-              </AccordionTrigger>
+              <AccordionTrigger>Can I open multiple items?</AccordionTrigger>
               <AccordionContent>
-                The EVM is a runtime environment for smart contracts in
-                Ethereum. It is a Turing-complete virtual machine that allows
-                anyone to execute arbitrary EVM bytecode. Every Ethereum node
-                runs on the EVM to maintain consensus across the blockchain.
+                Yes. You can open multiple items at the same time.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>What is Ethereum 2.0?</AccordionTrigger>
+              <AccordionTrigger>How does it work?</AccordionTrigger>
               <AccordionContent>
-                Ethereum 2.0 is an upgrade to the Ethereum network that improves
-                its scalability, security, and sustainability. The key change is
-                the transition from Proof of Work (PoW) to Proof of Stake (PoS)
-                consensus mechanism, which significantly reduces energy
-                consumption.
+                Set the type prop to "multiple" to allow multiple items to be
+                open.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>What are Layer 2 Solutions?</AccordionTrigger>
+              <AccordionTrigger>Is it responsive?</AccordionTrigger>
               <AccordionContent>
-                Layer 2 solutions are scaling solutions built on top of the
-                Ethereum mainnet (Layer 1) to increase transaction throughput
-                and reduce fees. Examples include Optimistic Rollups,
-                zk-Rollups, and side chains, which process transactions
-                off-chain and then settle them on the main Ethereum blockchain.
+                Yes. It works well on all screen sizes.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </CodeExample>
       </div>
 
-      <div className="lsd:max-w-md lsd:mt-8 lsd:space-y-4">
-        <h3 className="lsd:text-lg lsd:font-semibold lsd:mb-2">
-          Ethereum Ecosystem
-        </h3>
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Sizes</h2>
+        <CodeExample
+          title="Accordion Sizes"
+          code={`<div className="lsd:space-y-4">
+  <Accordion type="single" collapsible className="lsd:w-full">
+    <AccordionItem value="item-1">
+      <AccordionTrigger size="sm">Small Size</AccordionTrigger>
+      <AccordionContent size="sm">
+        This is a small accordion with compact text and padding.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+
+  <Accordion type="single" collapsible className="lsd:w-full">
+    <AccordionItem value="item-1">
+      <AccordionTrigger size="md">Medium Size</AccordionTrigger>
+      <AccordionContent size="md">
+        This is the default medium size accordion.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+
+  <Accordion type="single" collapsible className="lsd:w-full">
+    <AccordionItem value="item-1">
+      <AccordionTrigger size="lg">Large Size</AccordionTrigger>
+      <AccordionContent size="lg">
+        This is a large accordion with bigger text and more padding.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+</div>`}
+        >
+          <div className="lsd:space-y-4">
+            <Accordion type="single" collapsible className="lsd:w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger size="sm">Small Size</AccordionTrigger>
+                <AccordionContent size="sm">
+                  This is a small accordion with compact text and padding.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+
+            <Accordion type="single" collapsible className="lsd:w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger size="md">Medium Size</AccordionTrigger>
+                <AccordionContent size="md">
+                  This is the default medium size accordion.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+
+            <Accordion type="single" collapsible className="lsd:w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger size="lg">Large Size</AccordionTrigger>
+                <AccordionContent size="lg">
+                  This is a large accordion with bigger text and more padding.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Disabled Items</h2>
         <CodeExample
           title="Accordion with Disabled Item"
           code={`<Accordion type="single" collapsible className="lsd:w-full">
   <AccordionItem value="item-1">
-    <AccordionTrigger>What are dApps?</AccordionTrigger>
+    <AccordionTrigger>Can I disable items?</AccordionTrigger>
     <AccordionContent>
-      Decentralized applications (dApps) are digital applications that
-      run on a blockchain network, typically Ethereum. Unlike
-      traditional applications, dApps are not controlled by a single
-      entity and operate autonomously through smart contracts.
+      Yes. You can disable individual accordion items.
     </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-2">
-    <AccordionTrigger>What is DeFi?</AccordionTrigger>
+  <AccordionItem value="item-2" disabled>
+    <AccordionTrigger>This item is disabled</AccordionTrigger>
     <AccordionContent>
-      Decentralized Finance (DeFi) refers to financial applications
-      built on blockchain technology that operate without traditional
-      financial intermediaries. DeFi platforms on Ethereum offer
-      services like lending, borrowing, trading, and earning interest
-      through smart contracts.
+      You won't be able to open this item.
     </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-3" disabled>
-    <AccordionTrigger>What are NFTs?</AccordionTrigger>
+  <AccordionItem value="item-3">
+    <AccordionTrigger>How do I disable an item?</AccordionTrigger>
     <AccordionContent>
-      Non-Fungible Tokens (NFTs) are unique digital assets that
-      represent ownership of specific items or content. Unlike
-      cryptocurrencies, each NFT has distinct properties and cannot be
-      exchanged on a one-to-one basis. They are commonly used for
-      digital art, collectibles, and gaming assets.
+      Add the disabled prop to the AccordionItem component.
     </AccordionContent>
   </AccordionItem>
 </Accordion>`}
         >
           <Accordion type="single" collapsible className="lsd:w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What are dApps?</AccordionTrigger>
+              <AccordionTrigger>Can I disable items?</AccordionTrigger>
               <AccordionContent>
-                Decentralized applications (dApps) are digital applications that
-                run on a blockchain network, typically Ethereum. Unlike
-                traditional applications, dApps are not controlled by a single
-                entity and operate autonomously through smart contracts.
+                Yes. You can disable individual accordion items.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>What is DeFi?</AccordionTrigger>
+            <AccordionItem value="item-2" disabled>
+              <AccordionTrigger>This item is disabled</AccordionTrigger>
               <AccordionContent>
-                Decentralized Finance (DeFi) refers to financial applications
-                built on blockchain technology that operate without traditional
-                financial intermediaries. DeFi platforms on Ethereum offer
-                services like lending, borrowing, trading, and earning interest
-                through smart contracts.
+                You won't be able to open this item.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3" disabled>
-              <AccordionTrigger>What are NFTs?</AccordionTrigger>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>How do I disable an item?</AccordionTrigger>
               <AccordionContent>
-                Non-Fungible Tokens (NFTs) are unique digital assets that
-                represent ownership of specific items or content. Unlike
-                cryptocurrencies, each NFT has distinct properties and cannot be
-                exchanged on a one-to-one basis. They are commonly used for
-                digital art, collectibles, and gaming assets.
+                Add the disabled prop to the AccordionItem component.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Size Combinations</h2>
+        <CodeExample
+          title="Accordion Size Combinations"
+          code={`<div className="lsd:space-y-4">
+  <Accordion type="multiple" className="lsd:w-full">
+    <AccordionItem value="item-1">
+      <AccordionTrigger size="sm">Small Trigger</AccordionTrigger>
+      <AccordionContent size="sm">
+        Small content with compact styling.
+      </AccordionContent>
+    </AccordionItem>
+    <AccordionItem value="item-2">
+      <AccordionTrigger size="md">Medium Trigger</AccordionTrigger>
+      <AccordionContent size="md">
+        Medium content with default styling.
+      </AccordionContent>
+    </AccordionItem>
+    <AccordionItem value="item-3">
+      <AccordionTrigger size="lg">Large Trigger</AccordionTrigger>
+      <AccordionContent size="lg">
+        Large content with expanded styling.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+</div>`}
+        >
+          <div className="lsd:space-y-4">
+            <Accordion type="multiple" className="lsd:w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger size="sm">Small Trigger</AccordionTrigger>
+                <AccordionContent size="sm">
+                  Small content with compact styling.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger size="md">Medium Trigger</AccordionTrigger>
+                <AccordionContent size="md">
+                  Medium content with default styling.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger size="lg">Large Trigger</AccordionTrigger>
+                <AccordionContent size="lg">
+                  Large content with expanded styling.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Rich Content</h2>
+        <CodeExample
+          title="Accordion with Rich Content"
+          code={`<Accordion type="single" collapsible className="lsd:w-full">
+  <AccordionItem value="item-1">
+    <AccordionTrigger>Can I use rich content?</AccordionTrigger>
+    <AccordionContent>
+      <div className="lsd:space-y-2">
+        <p className="lsd:font-semibold">Yes, you can!</p>
+        <p>You can include any HTML content inside the accordion.</p>
+        <ul className="lsd:list-disc lsd:pl-4 lsd:space-y-1">
+          <li>Lists</li>
+          <li>Links</li>
+          <li>Other components</li>
+        </ul>
+      </div>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>`}
+        >
+          <Accordion type="single" collapsible className="lsd:w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Can I use rich content?</AccordionTrigger>
+              <AccordionContent>
+                <div className="lsd:space-y-2">
+                  <p className="lsd:font-semibold">Yes, you can!</p>
+                  <p>You can include any HTML content inside the accordion.</p>
+                  <ul className="lsd:list-disc lsd:pl-4 lsd:space-y-1">
+                    <li>Lists</li>
+                    <li>Links</li>
+                    <li>Other components</li>
+                  </ul>
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
