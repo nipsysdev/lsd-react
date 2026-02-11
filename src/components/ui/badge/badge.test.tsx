@@ -10,29 +10,41 @@ describe('Badge', () => {
 
   it('renders children correctly', () => {
     render(<Badge>Test Badge</Badge>);
-    expect(screen.getByText('Test Badge')).toHaveAttribute(
-      'data-slot',
-      'badge',
-    );
+    expect(screen.getByText('Test Badge')).toBeInTheDocument();
+    expect(
+      screen.getByText('Test Badge').closest('[data-slot="badge"]'),
+    ).toHaveAttribute('data-slot', 'badge');
   });
 
   it('applies filled variant classes correctly', () => {
-    render(<Badge variant="filled">Filled</Badge>);
-    const badge = screen.getByText('Filled');
+    render(
+      <Badge variant="filled" data-testid="badge">
+        Filled
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:bg-lsd-primary');
     expect(badge).toHaveClass('lsd:text-lsd-surface-primary');
   });
 
   it('applies outlined variant classes correctly', () => {
-    render(<Badge variant="outlined">Outlined</Badge>);
-    const badge = screen.getByText('Outlined');
+    render(
+      <Badge variant="outlined" data-testid="badge">
+        Outlined
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:bg-transparent');
     expect(badge).toHaveClass('lsd:text-lsd-text-primary');
   });
 
   it('applies medium size classes correctly', () => {
-    render(<Badge size="md">Medium</Badge>);
-    const badge = screen.getByText('Medium');
+    render(
+      <Badge size="md" data-testid="badge">
+        Medium
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:h-[28px]');
     expect(badge).toHaveClass('lsd:px-[11px]');
     expect(badge).toHaveClass('lsd:py-[3px]');
@@ -40,34 +52,42 @@ describe('Badge', () => {
   });
 
   it('applies small size classes correctly', () => {
-    render(<Badge size="sm">Small</Badge>);
-    const badge = screen.getByText('Small');
+    render(
+      <Badge size="sm" data-testid="badge">
+        Small
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:h-[24px]');
     expect(badge).toHaveClass('lsd:px-[7px]');
     expect(badge).toHaveClass('lsd:text-[0.75rem]');
   });
 
   it('uses default variant when not specified', () => {
-    render(<Badge>Default</Badge>);
-    const badge = screen.getByText('Default');
+    render(<Badge data-testid="badge">Default</Badge>);
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:bg-lsd-primary');
   });
 
   it('uses default size when not specified', () => {
-    render(<Badge>Default</Badge>);
-    const badge = screen.getByText('Default');
+    render(<Badge data-testid="badge">Default</Badge>);
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:h-[28px]');
   });
 
   it('merges custom className with component classes', () => {
-    render(<Badge className="custom-class">Custom</Badge>);
-    const badge = screen.getByText('Custom');
+    render(
+      <Badge className="custom-class" data-testid="badge">
+        Custom
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('custom-class');
   });
 
   it('applies base classes correctly', () => {
-    render(<Badge>Base</Badge>);
-    const badge = screen.getByText('Base');
+    render(<Badge data-testid="badge">Base</Badge>);
+    const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:inline-flex');
     expect(badge).toHaveClass('lsd:items-center');
     expect(badge).toHaveClass('lsd:justify-center');
@@ -86,19 +106,19 @@ describe('Badge', () => {
         Badge
       </Badge>,
     );
-    const badge = screen.getByText('Badge');
+    const badge = screen.getByTestId('test-badge');
     expect(badge).toHaveAttribute('data-testid', 'test-badge');
     expect(badge).toHaveAttribute('id', 'badge-1');
   });
 
   it('renders as span by default', () => {
-    render(<Badge>Badge</Badge>);
-    expect(screen.getByText('Badge').tagName).toBe('SPAN');
+    render(<Badge data-testid="badge">Badge</Badge>);
+    expect(screen.getByTestId('badge').tagName).toBe('SPAN');
   });
 
   it('applies data-slot attribute', () => {
-    render(<Badge>Badge</Badge>);
-    expect(screen.getByText('Badge')).toHaveAttribute('data-slot', 'badge');
+    render(<Badge data-testid="badge">Badge</Badge>);
+    expect(screen.getByTestId('badge')).toHaveAttribute('data-slot', 'badge');
   });
 });
 
