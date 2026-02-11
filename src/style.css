@@ -8,6 +8,13 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --animate-indeterminate-progress: indeterminate-progress 1.5s ease-in-out
+    infinite;
+  --animate-indeterminate-progress-slow: indeterminate-progress 3s ease-in-out
+    infinite;
+  --animate-indeterminate-progress-fast: indeterminate-progress 0.75s
+    ease-in-out infinite;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -222,24 +229,9 @@ html {
   0% {
     transform: translateX(-100%);
   }
-  50% {
-    transform: translateX(100%);
-  }
   100% {
-    transform: translateX(100%);
+    transform: translateX(400%);
   }
-}
-
-.animate-indeterminate-progress {
-  animation: indeterminate-progress 1.5s ease-in-out infinite;
-}
-
-.animate-indeterminate-progress-slow {
-  animation: indeterminate-progress 3s ease-in-out infinite;
-}
-
-.animate-indeterminate-progress-fast {
-  animation: indeterminate-progress 0.75s ease-in-out infinite;
 }
 
 /* Spinner Animation */

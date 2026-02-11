@@ -5,4 +5,9 @@ export interface ProgressProps
   value?: number;
   indeterminate?: boolean;
   speed?: 'slow' | 'normal' | 'fast';
+  variant?: 'default' | 'success' | 'warning' | 'destructive';
+  showLabel?: boolean;
+  labelPosition?: 'top' | 'bottom';
+  paused?: boolean;
+  size?: 'sm' | 'md' | 'lg';
 }
