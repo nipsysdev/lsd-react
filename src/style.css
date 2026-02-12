@@ -59,9 +59,13 @@
   --color-lsd-surface-secondary: rgb(var(--lsd-surface-secondary));
   --color-lsd-primary: rgb(var(--lsd-text));
   --color-lsd-destructive: rgb(var(--lsd-destructive));
+  --color-lsd-destructive-text: rgb(var(--lsd-destructive-text));
   --color-lsd-success: rgb(var(--lsd-success));
+  --color-lsd-success-text: rgb(var(--lsd-success-text));
   --color-lsd-warning: rgb(var(--lsd-warning));
+  --color-lsd-warning-text: rgb(var(--lsd-warning-text));
   --color-lsd-info: rgb(var(--lsd-info));
+  --color-lsd-info-text: rgb(var(--lsd-info-text));
   --color-lsd-chart-1: 220 38 38;
   --color-lsd-chart-2: 37 99 235;
   --color-lsd-chart-3: 22 163 74;
@@ -83,9 +87,13 @@
   --lsd-surface-primary: 255 255 255;
   --lsd-surface-secondary: 255 255 255;
   --lsd-destructive: 185 28 28;
+  --lsd-destructive-text: 239 68 68;
   --lsd-success: 21 128 61;
+  --lsd-success-text: 34 197 94;
   --lsd-warning: 245 158 11;
+  --lsd-warning-text: 245 158 11;
   --lsd-info: 37 99 235;
+  --lsd-info-text: 37 99 235;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));
@@ -133,9 +141,13 @@
   --lsd-surface-primary: 0 0 0;
   --lsd-surface-secondary: 0 0 0;
   --lsd-destructive: 153 27 27;
+  --lsd-destructive-text: 248 113 113;
   --lsd-success: 20 83 45;
+  --lsd-success-text: 74 222 128;
   --lsd-warning: 217 119 6;
+  --lsd-warning-text: 217 119 6;
   --lsd-info: 59 130 246;
+  --lsd-info-text: 59 130 246;
 
   /* Shadcn variables using LSD values */
   --background: rgb(var(--lsd-surface-primary));

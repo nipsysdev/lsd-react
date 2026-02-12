@@ -8,11 +8,24 @@ const Toaster = ({ ...props }: ToasterProps) => {
     <Sonner
       theme={theme as ToasterProps['theme']}
       className="lsd:toaster lsd:group"
+      richColors
       style={
         {
-          '--normal-bg': 'var(--popover)',
-          '--normal-text': 'var(--popover-foreground)',
-          '--normal-border': 'var(--border)',
+          '--normal-bg': 'rgb(var(--lsd-surface-primary))',
+          '--normal-text': 'rgb(var(--lsd-text-primary))',
+          '--normal-border': 'rgb(var(--lsd-border))',
+          '--success-bg': 'rgb(var(--lsd-surface-primary))',
+          '--success-border': 'rgb(var(--lsd-success))',
+          '--success-text': 'rgb(var(--lsd-success-text))',
+          '--error-bg': 'rgb(var(--lsd-surface-primary))',
+          '--error-border': 'rgb(var(--lsd-destructive))',
+          '--error-text': 'rgb(var(--lsd-destructive-text))',
+          '--warning-bg': 'rgb(var(--lsd-surface-primary))',
+          '--warning-border': 'rgb(var(--lsd-warning))',
+          '--warning-text': 'rgb(var(--lsd-warning-text))',
+          '--info-bg': 'rgb(var(--lsd-surface-primary))',
+          '--info-border': 'rgb(var(--lsd-info))',
+          '--info-text': 'rgb(var(--lsd-info-text))',
         } as React.CSSProperties
       }
       {...props}
