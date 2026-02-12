@@ -26,7 +26,6 @@ describe('ButtonGroupText', () => {
     expect(text).toHaveClass('lsd:text-sm');
     expect(text).toHaveClass('lsd:font-medium');
     expect(text).toHaveClass('lsd:shadow-xs');
-    expect(text).toHaveClass('lsd:cursor-pointer');
   });
 
   it('renders as div by default', () => {

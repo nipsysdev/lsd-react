@@ -5,7 +5,12 @@ export type ButtonVariant =
   | 'filled'
   | 'outlined'
   | 'filled-icon'
-  | 'outlined-icon';
+  | 'outlined-icon'
+  | 'link'
+  | 'destructive'
+  | 'destructive-icon'
+  | 'success'
+  | 'success-icon';
 
 export const buttonVariants = cva(
   'lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:transition-colors lsd:cursor-pointer',
@@ -18,6 +23,15 @@ export const buttonVariants = cva(
           'lsd:bg-primary lsd:text-primary-foreground lsd:rounded-full',
         'outlined-icon':
           'lsd:bg-transparent lsd:text-foreground lsd:rounded-full',
+        link: 'lsd:bg-transparent lsd:border-0 lsd:text-foreground lsd:hover:underline',
+        destructive:
+          'lsd:bg-lsd-destructive lsd:text-white lsd:border-lsd-destructive lsd:hover:bg-lsd-destructive/90',
+        'destructive-icon':
+          'lsd:bg-lsd-destructive lsd:text-white lsd:border-lsd-destructive lsd:rounded-full lsd:hover:bg-lsd-destructive/90',
+        success:
+          'lsd:bg-lsd-success lsd:text-white lsd:border-lsd-success lsd:hover:bg-lsd-success/90',
+        'success-icon':
+          'lsd:bg-lsd-success lsd:text-white lsd:border-lsd-success lsd:rounded-full lsd:hover:bg-lsd-success/90',
       },
       size: {
         xs: 'lsd:h-7 lsd:px-2 lsd:py-1 lsd:text-xs',

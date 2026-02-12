@@ -1,4 +1,11 @@
 export { Accordion } from './Accordion';
-export { AccordionContent } from './AccordionContent';
+export {
+  AccordionContent,
+  type AccordionContentProps,
+} from './AccordionContent';
 export { AccordionItem } from './AccordionItem';
-export { AccordionTrigger } from './AccordionTrigger';
+export {
+  AccordionTrigger,
+  type AccordionTriggerProps,
+} from './AccordionTrigger';
+export type { AccordionVariants } from './types';

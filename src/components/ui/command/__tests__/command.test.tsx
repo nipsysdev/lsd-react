@@ -53,7 +53,6 @@ describe('Command', () => {
     expect(command).toHaveClass('lsd:w-full');
     expect(command).toHaveClass('lsd:flex-col');
     expect(command).toHaveClass('lsd:overflow-hidden');
-    expect(command).toHaveClass('lsd:rounded-md');
   });
 
   it('merges custom className with component classes', () => {

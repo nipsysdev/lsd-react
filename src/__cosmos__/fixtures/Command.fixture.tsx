@@ -53,7 +53,7 @@ export default function CommandFixture() {
   </CommandList>
 </Command>`}
         >
-          <Command className="lsd:rounded-lg lsd:border lsd:shadow-md">
+          <Command className="lsd:border">
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
@@ -107,7 +107,7 @@ export default function CommandFixture() {
   </CommandList>
 </Command>`}
         >
-          <Command className="lsd:rounded-lg lsd:border lsd:shadow-md">
+          <Command className="lsd:border">
             <CommandInput placeholder="Type a command or search..." />
             <CommandList>
               <CommandEmpty>No results found.</CommandEmpty>
@@ -185,7 +185,7 @@ function CommandDialogDemo() {
   return (
     <>
       <Button onClick={() => setOpen(true)}>Open Command Dialog</Button>
-      <CommandDialog open={open} onOpenChange={setOpen}>
+      <CommandDialog open={open} onOpenChange={setOpen} showCloseButton={false}>
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>

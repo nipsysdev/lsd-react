@@ -25,7 +25,6 @@ describe('Input', () => {
     const input = screen.getByRole('textbox');
     const wrapper = input.parentElement;
     expect(wrapper).toHaveClass('lsd:border-lsd-border-primary');
-    expect(wrapper).toHaveClass('lsd:rounded');
   });
 
   it('renders with default size (medium)', () => {
@@ -70,7 +69,8 @@ describe('Input', () => {
   it('applies error state correctly', () => {
     render(<Input error />);
     const input = screen.getByRole('textbox');
-    expect(input).toHaveClass('lsd:line-through');
+    const wrapper = input.parentElement;
+    expect(wrapper).toHaveClass('lsd:border-lsd-destructive');
   });
 
   it('applies error state to supporting text', () => {

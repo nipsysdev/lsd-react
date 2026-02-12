@@ -279,7 +279,6 @@ export default function ToggleGroupFixture() {
               <h3 className="lsd:text-md lsd:font-medium lsd:mb-2">Default</h3>
               <ToggleGroup
                 type="single"
-                size="default"
                 defaultValue="center"
                 aria-label="Text alignment"
               >

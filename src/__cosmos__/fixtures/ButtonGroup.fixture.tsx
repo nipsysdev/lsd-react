@@ -24,10 +24,12 @@ export default function ButtonGroupFixture() {
         </p>
       </div>
 
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Primary Actions</h2>
+      <div>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Basic Button Group
+        </h2>
         <CodeExample
-          title="Button Group Primary Actions"
+          title="Basic Button Group"
           code={`<ButtonGroup>
   <Button variant="filled">Save</Button>
   <Button variant="filled">Save As</Button>
@@ -40,28 +42,12 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Secondary Actions</h2>
+      <div>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          With Text Label
+        </h2>
         <CodeExample
-          title="Button Group Secondary Actions"
-          code={`<ButtonGroup>
-  <Button variant="outlined">Edit</Button>
-  <Button variant="outlined">Duplicate</Button>
-  <Button variant="outlined">Delete</Button>
-</ButtonGroup>`}
-        >
-          <ButtonGroup>
-            <Button variant="outlined">Edit</Button>
-            <Button variant="outlined">Duplicate</Button>
-            <Button variant="outlined">Delete</Button>
-          </ButtonGroup>
-        </CodeExample>
-      </div>
-
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Navigation</h2>
-        <CodeExample
-          title="Button Group Navigation"
+          title="Button Group with Text Label"
           code={`<ButtonGroup>
   <Button variant="outlined">Previous</Button>
   <ButtonGroupText>Page 1 of 5</ButtonGroupText>
@@ -76,10 +62,12 @@ export default function ButtonGroupFixture() {
         </CodeExample>
       </div>
 
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Vertical Menu</h2>
+      <div>
+        <h2 className="lsd:text-xl lsd:font-semibold lsd:mb-4">
+          Vertical Orientation
+        </h2>
         <CodeExample
-          title="Button Group Vertical Menu"
+          title="Vertical Button Group"
           code={`<ButtonGroup orientation="vertical">
   <Button variant="outlined">Profile</Button>
   <Button variant="outlined">Settings</Button>
@@ -90,160 +78,6 @@ export default function ButtonGroupFixture() {
             <Button variant="outlined">Profile</Button>
             <Button variant="outlined">Settings</Button>
             <Button variant="outlined">Logout</Button>
-          </ButtonGroup>
-        </CodeExample>
-      </div>
-
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Export Options</h2>
-        <CodeExample
-          title="Button Group Export Options"
-          code={`<ButtonGroup>
-  <Button variant="filled">Export</Button>
-  <ButtonGroupSeparator />
-  <Button variant="outlined">PDF</Button>
-  <Button variant="outlined">CSV</Button>
-  <Button variant="outlined">JSON</Button>
-</ButtonGroup>`}
-        >
-          <ButtonGroup>
-            <Button variant="filled">Export</Button>
-            <ButtonGroupSeparator />
-            <Button variant="outlined">PDF</Button>
-            <Button variant="outlined">CSV</Button>
-            <Button variant="outlined">JSON</Button>
-          </ButtonGroup>
-        </CodeExample>
-      </div>
-
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Button Sizes</h2>
-        <CodeExample
-          title="Button Group Button Sizes"
-          code={`<div className="lsd:space-y-4">
-  <div>
-    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Small Buttons</h3>
-    <ButtonGroup>
-      <Button size="sm" variant="outlined">
-        Copy
-      </Button>
-      <Button size="sm" variant="outlined">
-        Cut
-      </Button>
-      <Button size="sm" variant="outlined">
-        Paste
-      </Button>
-    </ButtonGroup>
-  </div>
-
-  <div>
-    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Default Buttons</h3>
-    <ButtonGroup>
-      <Button variant="outlined">Bold</Button>
-      <Button variant="outlined">Italic</Button>
-      <Button variant="outlined">Underline</Button>
-    </ButtonGroup>
-  </div>
-
-  <div>
-    <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">Large Buttons</h3>
-    <ButtonGroup>
-      <Button size="lg" variant="filled">
-        Submit
-      </Button>
-      <Button size="lg" variant="filled">
-        Continue
-      </Button>
-    </ButtonGroup>
-  </div>
-</div>`}
-        >
-          <div className="lsd:space-y-4">
-            <div>
-              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
-                Small Buttons
-              </h3>
-              <ButtonGroup>
-                <Button size="sm" variant="outlined">
-                  Copy
-                </Button>
-                <Button size="sm" variant="outlined">
-                  Cut
-                </Button>
-                <Button size="sm" variant="outlined">
-                  Paste
-                </Button>
-              </ButtonGroup>
-            </div>
-
-            <div>
-              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
-                Default Buttons
-              </h3>
-              <ButtonGroup>
-                <Button variant="outlined">Bold</Button>
-                <Button variant="outlined">Italic</Button>
-                <Button variant="outlined">Underline</Button>
-              </ButtonGroup>
-            </div>
-
-            <div>
-              <h3 className="lsd:text-lg lsd:font-medium lsd:mb-2">
-                Large Buttons
-              </h3>
-              <ButtonGroup>
-                <Button size="lg" variant="filled">
-                  Submit
-                </Button>
-                <Button size="lg" variant="filled">
-                  Continue
-                </Button>
-              </ButtonGroup>
-            </div>
-          </div>
-        </CodeExample>
-      </div>
-
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">With Disabled State</h2>
-        <CodeExample
-          title="Button Group With Disabled State"
-          code={`<ButtonGroup>
-  <Button variant="outlined">Undo</Button>
-  <Button variant="outlined" disabled>
-    Redo
-  </Button>
-</ButtonGroup>`}
-        >
-          <ButtonGroup>
-            <Button variant="outlined">Undo</Button>
-            <Button variant="outlined" disabled>
-              Redo
-            </Button>
-          </ButtonGroup>
-        </CodeExample>
-      </div>
-
-      <div className="lsd:space-y-4">
-        <h2 className="lsd:text-xl lsd:font-semibold">Text Editor Actions</h2>
-        <CodeExample
-          title="Button Group Text Editor Actions"
-          code={`<ButtonGroup>
-  <Button variant="outlined">Undo</Button>
-  <Button variant="outlined">Redo</Button>
-  <ButtonGroupSeparator />
-  <ButtonGroupText>Format</ButtonGroupText>
-  <ButtonGroupSeparator />
-  <Button variant="filled">Save</Button>
-</ButtonGroup>`}
-        >
-          <ButtonGroup>
-            <Button variant="outlined">Undo</Button>
-            <Button variant="outlined">Redo</Button>
-            <ButtonGroupSeparator />
-            <ButtonGroupText>Format</ButtonGroupText>
-            <ButtonGroupSeparator />
-            <Button variant="filled">Save</Button>
           </ButtonGroup>
         </CodeExample>
       </div>

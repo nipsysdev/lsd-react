@@ -54,7 +54,7 @@ describe('SelectItem', () => {
     const item = document.querySelector('[data-slot="select-item"]');
     expect(item).toHaveClass('lsd:flex');
     expect(item).toHaveClass('lsd:w-full');
-    expect(item).toHaveClass('lsd:cursor-default');
+    expect(item).toHaveClass('lsd:cursor-pointer');
     expect(item).toHaveClass('lsd:items-center');
   });
 

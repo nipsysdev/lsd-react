@@ -26,11 +26,13 @@ export default function ButtonFixture() {
           code={`<div className="lsd:flex lsd:gap-4">
   <Button variant="filled">Filled</Button>
   <Button variant="outlined">Outlined</Button>
+  <Button variant="link">Link</Button>
 </div>`}
         >
           <div className="lsd:flex lsd:gap-4">
             <Button variant="filled">Filled</Button>
             <Button variant="outlined">Outlined</Button>
+            <Button variant="link">Link</Button>
           </div>
         </CodeExample>
       </div>
@@ -174,6 +176,90 @@ export default function ButtonFixture() {
             </Button>
             <Button variant="filled-icon" size="icon-xl" aria-label="Add">
               <Plus size={32} />
+            </Button>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Destructive & Success</h2>
+        <CodeExample
+          title="Destructive and Success Variants"
+          code={`<div className="lsd:flex lsd:gap-4">
+  <Button variant="destructive">Delete</Button>
+  <Button variant="success">Save</Button>
+  <Button variant="destructive-icon" size="icon-md" aria-label="Delete">
+    <Plus />
+  </Button>
+  <Button variant="success-icon" size="icon-md" aria-label="Save">
+    <Plus />
+  </Button>
+</div>`}
+        >
+          <div className="lsd:flex lsd:gap-4">
+            <Button variant="destructive">Delete</Button>
+            <Button variant="success">Save</Button>
+            <Button
+              variant="destructive-icon"
+              size="icon-md"
+              aria-label="Delete"
+            >
+              <Plus />
+            </Button>
+            <Button variant="success-icon" size="icon-md" aria-label="Save">
+              <Plus />
+            </Button>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Loading State</h2>
+        <CodeExample
+          title="Loading State"
+          code={`<div className="lsd:flex lsd:gap-4">
+  <Button loading>Loading...</Button>
+  <Button variant="outlined" loading>
+    Loading...
+  </Button>
+  <Button variant="link" loading>
+    Loading...
+  </Button>
+  <Button variant="destructive" loading>
+    Loading...
+  </Button>
+</div>`}
+        >
+          <div className="lsd:flex lsd:gap-4">
+            <Button loading>Loading...</Button>
+            <Button variant="outlined" loading>
+              Loading...
+            </Button>
+            <Button variant="link" loading>
+              Loading...
+            </Button>
+            <Button variant="destructive" loading>
+              Loading...
+            </Button>
+          </div>
+        </CodeExample>
+      </div>
+
+      <div className="lsd:space-y-4">
+        <h2 className="lsd:text-xl lsd:font-semibold">Full Width</h2>
+        <CodeExample
+          title="Full Width Button"
+          code={`<div className="lsd:w-full lsd:space-y-2">
+  <Button fullWidth>Full Width Button</Button>
+  <Button variant="outlined" fullWidth>
+    Full Width Outlined
+  </Button>
+</div>`}
+        >
+          <div className="lsd:w-full lsd:space-y-2">
+            <Button fullWidth>Full Width Button</Button>
+            <Button variant="outlined" fullWidth>
+              Full Width Outlined
             </Button>
           </div>
         </CodeExample>
