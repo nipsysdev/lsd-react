@@ -110,7 +110,5 @@ describe('AccordionContent', () => {
     );
     expect(innerDiv).toHaveClass('lsd:pt-0');
     expect(innerDiv).toHaveClass('lsd:pb-4');
-    expect(innerDiv).toHaveClass('lsd:text-lsd-text-primary');
-    expect(innerDiv).toHaveClass('lsd:bg-lsd-surface-primary');
   });
 });

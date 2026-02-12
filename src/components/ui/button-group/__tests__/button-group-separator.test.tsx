@@ -28,7 +28,7 @@ describe('ButtonGroupSeparator', () => {
     const separator = queryByDataSlot(container, 'button-group-separator');
     expect(separator).toHaveClass('lsd:bg-border');
     expect(separator).toHaveClass('lsd:relative');
-    expect(separator).toHaveClass('lsd:!m-0');
+    expect(separator).toHaveClass('lsd:m-0!');
     expect(separator).toHaveClass('lsd:self-stretch');
     expect(separator).toHaveClass('lsd:data-[orientation=vertical]:h-auto');
   });

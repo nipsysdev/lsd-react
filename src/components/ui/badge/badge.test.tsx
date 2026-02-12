@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 import { Badge, badgeVariants } from './index';
 
 describe('Badge', () => {
@@ -119,6 +119,111 @@ describe('Badge', () => {
   it('applies data-slot attribute', () => {
     render(<Badge data-testid="badge">Badge</Badge>);
     expect(screen.getByTestId('badge')).toHaveAttribute('data-slot', 'badge');
+  });
+
+  it('handles click events', () => {
+    const handleClick = vi.fn();
+    render(<Badge onClick={handleClick}>Clickable</Badge>);
+    const badge = screen.getByText('Clickable');
+    badge.click();
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('applies button role when clickable', () => {
+    render(<Badge onClick={() => {}}>Clickable</Badge>);
+    const badge = screen.getByText('Clickable');
+    const badgeElement = badge.closest('[data-slot="badge"]');
+    expect(badgeElement).toHaveAttribute('role', 'button');
+    expect(badgeElement).toHaveAttribute('tabIndex', '0');
+  });
+
+  it('handles keyboard events when clickable', () => {
+    const handleClick = vi.fn();
+    render(<Badge onClick={handleClick}>Clickable</Badge>);
+    const badge = screen.getByText('Clickable');
+    fireEvent.keyDown(badge, { key: 'Enter' });
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('renders with icon on the left', () => {
+    render(<Badge icon={<span data-testid="icon">★</span>}>With Icon</Badge>);
+    expect(screen.getByTestId('icon')).toBeInTheDocument();
+    const badge = screen.getByText('With Icon');
+    const badgeElement = badge.closest('[data-slot="badge"]');
+    expect(badgeElement).toContainElement(screen.getByTestId('icon'));
+  });
+
+  it('renders with icon on the right', () => {
+    render(
+      <Badge icon={<span data-testid="icon">★</span>} iconPosition="right">
+        With Icon
+      </Badge>,
+    );
+    expect(screen.getByTestId('icon')).toBeInTheDocument();
+    const badge = screen.getByText('With Icon');
+    const badgeElement = badge.closest('[data-slot="badge"]');
+    expect(badgeElement).toContainElement(screen.getByTestId('icon'));
+  });
+
+  it('renders as dot variant', () => {
+    render(
+      <Badge dot data-testid="badge">
+        Dot
+      </Badge>,
+    );
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:rounded-full');
+    expect(badge).toHaveClass('lsd:p-0');
+    expect(badge).toHaveClass('lsd:border-0');
+  });
+
+  it('applies correct dot size for xs', () => {
+    render(<Badge dot size="xs" data-testid="badge" />);
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:w-[8px]');
+    expect(badge).toHaveClass('lsd:h-[8px]');
+  });
+
+  it('applies correct dot size for sm', () => {
+    render(<Badge dot size="sm" data-testid="badge" />);
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:w-[10px]');
+    expect(badge).toHaveClass('lsd:h-[10px]');
+  });
+
+  it('applies correct dot size for md', () => {
+    render(<Badge dot size="md" data-testid="badge" />);
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:w-[12px]');
+    expect(badge).toHaveClass('lsd:h-[12px]');
+  });
+
+  it('applies correct dot size for lg', () => {
+    render(<Badge dot size="lg" data-testid="badge" />);
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:w-[14px]');
+    expect(badge).toHaveClass('lsd:h-[14px]');
+  });
+
+  it('applies correct dot size for xl', () => {
+    render(<Badge dot size="xl" data-testid="badge" />);
+    const badge = screen.getByTestId('badge');
+    expect(badge).toHaveClass('lsd:w-[16px]');
+    expect(badge).toHaveClass('lsd:h-[16px]');
+  });
+
+  it('handles dismiss event', () => {
+    const handleDismiss = vi.fn();
+    const handleClick = vi.fn();
+    render(
+      <Badge onDismiss={handleDismiss} onClick={handleClick}>
+        Dismissible
+      </Badge>,
+    );
+    const dismissButton = screen.getByLabelText('Dismiss');
+    dismissButton.click();
+    expect(handleDismiss).toHaveBeenCalledTimes(1);
+    expect(handleClick).not.toHaveBeenCalled();
   });
 });
 

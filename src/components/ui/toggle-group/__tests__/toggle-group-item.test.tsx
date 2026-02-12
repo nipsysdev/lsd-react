@@ -35,8 +35,8 @@ describe('ToggleGroupItem', () => {
       </ToggleGroup>,
     );
     const itemA = screen.getByRole('radio', { name: 'A' });
-    // First item has first:lsd:border-l (Tailwind first: variant)
-    expect(itemA).toHaveClass('first:lsd:border-l');
+    // First item has lsd:first:border-l (Tailwind first: variant)
+    expect(itemA).toHaveClass('lsd:first:border-l');
   });
 
   it('applies non-first item border classes', () => {

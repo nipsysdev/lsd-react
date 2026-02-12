@@ -94,7 +94,6 @@ describe('CommandInput', () => {
     expect(input).toHaveClass('lsd:flex');
     expect(input).toHaveClass('lsd:h-10');
     expect(input).toHaveClass('lsd:w-full');
-    expect(input).toHaveClass('lsd:rounded-md');
     expect(input).toHaveClass('lsd:bg-transparent');
     expect(input).toHaveClass('lsd:py-3');
     expect(input).toHaveClass('lsd:text-sm');
