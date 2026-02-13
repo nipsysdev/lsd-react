@@ -2,6 +2,9 @@
   "name": "@nipsys/shadcn-lsd",
   "description": "@nipsys/shadcn-lsd is a UI component library based on the Logos Design System",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.1.0",
   "type": "module",
   "module": "./dist/main.js",
