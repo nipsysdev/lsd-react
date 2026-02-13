@@ -1,24 +1,24 @@
-# @nipsysdev/lsd-react
+# @nipsys/shadcn-lsd
 
 A React component library implementing the Logos Design System (LSD) using shadcn / Radix UI and Tailwind CSS.
 
 ## Overview
 
-@nipsysdev/lsd-react follows a minimalist design system. The library offers a comprehensive set of UI components with built-in light and dark theme support.
+@nipsys/shadcn-lsd follows a minimalist design system. The library offers a comprehensive set of UI components with built-in light and dark theme support.
 
 ## Installation
 
 ```bash
-npm install @nipsysdev/lsd-react
+npm install @nipsys/shadcn-lsd
 # or
-pnpm add @nipsysdev/lsd-react
+pnpm add @nipsys/shadcn-lsd
 ```
 
 ## Quick Start
 
 ```tsx
-import { Button, Input, Card } from '@nipsysdev/lsd-react';
-import '@nipsysdev/lsd-react/css';
+import { Button, Input, Card } from '@nipsys/shadcn-lsd';
+import '@nipsys/shadcn-lsd/css';
 
 function App() {
   return (

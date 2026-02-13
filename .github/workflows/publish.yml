@@ -4,16 +4,15 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
-  id-token: write  # Required for OIDC
-  contents: read
+  id-token: write
+  contents: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout Code
@@ -24,13 +23,33 @@ jobs:
       - name: Check version changes
         uses: EndBug/version-check@v2
         id: check
-      
-      - name: Set up Node.js using mise
+
+      - name: Set up Node.js and pnpm using mise
         uses: jdx/mise-action@v3
-      
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Install dependencies
-        run: pnpm install
-      
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+
       - name: Build
         run: pnpm build
 
@@ -39,20 +58,18 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-
           git tag -a "v${{ steps.check.outputs.version }}" -m "Release v${{ steps.check.outputs.version }}"
           git push origin "v${{ steps.check.outputs.version }}"
 
       - name: Create GitHub Release
         if: steps.check.outputs.changed == 'true'
         uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.check.outputs.version }}
           name: Release v${{ steps.check.outputs.version }}
           generate_release_notes: true
+          fail_on_unmatched_files: true
 
       - name: Publish to npm
         if: steps.check.outputs.changed == 'true'
-        run: pnpm publish --provenance
+        run: pnpm publish --provenance --access public --no-git-checks

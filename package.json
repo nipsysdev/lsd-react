@@ -1,8 +1,8 @@
 {
-  "name": "@nipsysdev/lsd-react",
-  "description": "@nipsysdev/lsd-react is a UI component library based on the Logos Design System",
+  "name": "@nipsys/shadcn-lsd",
+  "description": "@nipsys/shadcn-lsd is a UI component library based on the Logos Design System",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.1.0",
   "type": "module",
   "module": "./dist/main.js",
   "exports": {
@@ -83,8 +83,8 @@
     "globals": "^17.3.0",
     "jsdom": "^28.0.0",
     "lefthook": "^2.1.0",
-    "react-cosmos": "^7.1.1",
-    "react-cosmos-plugin-vite": "^7.1.1",
+    "react-cosmos": "^6.2.3",
+    "react-cosmos-plugin-vite": "^6.2.0",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-dts": "^4.5.4",
