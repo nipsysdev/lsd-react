@@ -1,9 +1,5 @@
 import { Button } from '@/components/ui/button';
-import {
-  ButtonGroup,
-  ButtonGroupSeparator,
-  ButtonGroupText,
-} from '@/components/ui/button-group';
+import { ButtonGroup, ButtonGroupText } from '@/components/ui/button-group';
 import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
 import { ThemeToggle } from '../theme-toggle';
