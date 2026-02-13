@@ -16,7 +16,7 @@
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nipsysdev/lsd-react.git"
+    "url": "git+https://github.com/nipsysdev/shadcn-lsd.git"
   },
   "author": "Xavier Saliniere <bonjour@xaviers.sh>",
   "engines": {

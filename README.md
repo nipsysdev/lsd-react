@@ -111,8 +111,8 @@ LSD React provides a comprehensive set of UI components:
 ### Setup
 
 ```bash
-git clone https://github.com/nipsysdev/lsd-react.git
-cd lsd-react
+git clone https://github.com/nipsysdev/shadcn-lsd.git
+cd shadcn-lsd
 pnpm install
 ```
 
