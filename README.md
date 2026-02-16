@@ -18,21 +18,31 @@ First, import the stylesheet in your application entry point:
 import '@nipsys/shadcn-lsd/css';
 ```
 
+You can also import it in CSS:
+
+```css
+@import "@nipsys/shadcn-lsd/css";
+```
+
 ### Import Components
 
 ```tsx
-import { Button, Dialog, DialogTrigger, DialogContent } from '@nipsys/shadcn-lsd';
+import { Dialog, DialogTrigger, DialogContent, Button } from "@nipsys/shadcn-lsd";
 
 function App() {
   return (
     <Dialog>
-      <DialogTrigger>Open</DialogTrigger>
+      <DialogTrigger>
+        <Button>Open</Button>
+      </DialogTrigger>
       <DialogContent>
         <p>Dialog content here</p>
       </DialogContent>
     </Dialog>
   );
 }
+
+export default App;
 ```
 
 ### Theming
