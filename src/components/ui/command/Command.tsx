@@ -13,7 +13,7 @@ export function Command({
     <CommandPrimitive
       data-slot="command"
       className={cn(
-        'lsd:bg-lsd-surface-primary lsd:text-lsd-text lsd:flex lsd:h-full lsd:w-full lsd:flex-col lsd:overflow-hidden',
+        'lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:flex lsd:h-full lsd:w-full lsd:flex-col lsd:overflow-hidden',
         className,
       )}
       {...props}

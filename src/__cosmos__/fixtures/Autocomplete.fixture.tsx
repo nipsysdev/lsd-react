@@ -4,7 +4,7 @@ import { Autocomplete } from '@/components/ui/autocomplete';
 import { Button } from '@/components/ui/button';
 import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
-import { ThemeToggle } from '../theme-toggle';
+import { ThemeAccentToggle, ThemeToggle } from '../theme-toggle';
 
 const frameworks = [
   { value: '1', label: 'React' },
@@ -19,6 +19,7 @@ export default () => (
   <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
     <div className="lsd:flex lsd:justify-end lsd:gap-4">
       <ThemeToggle />
+      <ThemeAccentToggle />
       <FontToggle />
     </div>
 

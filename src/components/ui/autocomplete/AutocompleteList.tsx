@@ -36,7 +36,7 @@ export function AutocompleteContent({
     <PopoverContent
       className={cn(
         'lsd:w-full lsd:p-0',
-        'lsd:bg-lsd-surface-primary lsd:border-lsd-border-primary',
+        'lsd:bg-lsd-surface lsd:border-lsd-border',
       )}
       align="start"
       sideOffset={0}

@@ -10,7 +10,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn('lsd:text-lsd-text lsd:text-sm', className)}
+      className={cn('lsd:text-lsd-text-primary lsd:text-sm', className)}
       {...props}
     />
   );

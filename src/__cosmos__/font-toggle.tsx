@@ -16,7 +16,9 @@ export function FontToggle() {
       <ToggleGroup
         type="single"
         value={font}
-        onValueChange={(value) => setFont(value as 'mono' | 'sans' | 'serif')}
+        onValueChange={(value) =>
+          !!value && setFont(value as 'mono' | 'sans' | 'serif')
+        }
         aria-label="Font toggle"
       >
         <ToggleGroupItem value="mono" aria-label="Mono font">

@@ -52,8 +52,8 @@ describe('SelectContent', () => {
       </Select>,
     );
     const content = document.querySelector('[data-slot="select-content"]');
-    expect(content).toHaveClass('lsd:bg-lsd-surface-primary');
-    expect(content).toHaveClass('lsd:text-lsd-text');
+    expect(content).toHaveClass('lsd:bg-lsd-surface');
+    expect(content).toHaveClass('lsd:text-lsd-text-primary');
     expect(content).toHaveClass('lsd:border');
     expect(content).toHaveClass('lsd:border-lsd-border');
   });

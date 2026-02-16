@@ -43,8 +43,7 @@ LSD React uses CSS custom properties for theming. The theme can be switched by a
 :root {
   --lsd-text: 0 0 0;           /* Black */
   --lsd-border: 0 0 0;         /* Black */
-  --lsd-surface-primary: 255 255 255; /* White */
-  --lsd-surface-secondary: 255 255 255; /* White */
+  --lsd-surface: 255 255 255; /* White */
 }
 ```
 
@@ -54,8 +53,7 @@ LSD React uses CSS custom properties for theming. The theme can be switched by a
 .dark {
   --lsd-text: 255 255 255;     /* White */
   --lsd-border: 255 255 255;   /* White */
-  --lsd-surface-primary: 0 0 0;     /* Black */
-  --lsd-surface-secondary: 0 0 0;     /* Black */
+  --lsd-surface: 0 0 0;     /* Black */
 }
 ```
 

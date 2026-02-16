@@ -27,7 +27,7 @@ describe('CardFooter', () => {
     expect(footer).toHaveClass('lsd:px-6');
     expect(footer).toHaveClass('lsd:py-6');
     expect(footer).toHaveClass('lsd:border-t');
-    expect(footer).toHaveClass('lsd:border-lsd-border-primary');
+    expect(footer).toHaveClass('lsd:border-lsd-border');
     expect(footer).toHaveClass('lsd:pt-6');
   });
 

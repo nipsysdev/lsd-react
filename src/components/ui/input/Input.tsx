@@ -40,8 +40,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={cn(
             'lsd:flex lsd:items-center lsd:justify-between',
             variant === 'outlined'
-              ? 'lsd:border lsd:border-lsd-border-primary'
-              : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary',
+              ? 'lsd:border lsd:border-lsd-border'
+              : 'lsd:border lsd:border-transparent lsd:border-b-lsd-border',
             error && 'lsd:border-lsd-destructive',
           )}
         >
@@ -50,7 +50,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             type={type}
             id={finalId}
             className={cn(
-              'file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
+              'file:lsd:text-lsd-text-primary placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34',
               'focus-visible:lsd:outline-none lsd:px-4',
               getTextSizeClasses(size),
               getVerticalPaddingClasses(size),

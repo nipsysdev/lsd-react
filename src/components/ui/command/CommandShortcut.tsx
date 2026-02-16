@@ -10,7 +10,7 @@ export function CommandShortcut({
     <span
       data-slot="command-shortcut"
       className={cn(
-        'lsd:text-lsd-text lsd:ml-auto lsd:text-xs lsd:tracking-widest',
+        'lsd:text-lsd-text-primary lsd:ml-auto lsd:text-xs lsd:tracking-widest',
         className,
       )}
       {...props}

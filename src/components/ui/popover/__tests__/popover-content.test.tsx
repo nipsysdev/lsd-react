@@ -23,8 +23,8 @@ describe('PopoverContent', () => {
       </Popover>,
     );
     const content = document.querySelector('[data-slot="popover-content"]');
-    expect(content).toHaveClass('lsd:bg-lsd-surface-primary');
-    expect(content).toHaveClass('lsd:text-lsd-text');
+    expect(content).toHaveClass('lsd:bg-lsd-surface');
+    expect(content).toHaveClass('lsd:text-lsd-text-primary');
     expect(content).toHaveClass('lsd:z-50');
     expect(content).toHaveClass('lsd:w-72');
     expect(content).toHaveClass('lsd:border');

@@ -55,7 +55,7 @@ const Progress = React.forwardRef<
     return (
       <div className="lsd:w-full">
         {showLabel && labelText && labelPosition === 'top' && (
-          <div className="lsd:mb-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text lsd:text-center">
+          <div className="lsd:mb-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text-primary lsd:text-center">
             {labelText}
           </div>
         )}
@@ -63,7 +63,7 @@ const Progress = React.forwardRef<
           ref={ref}
           data-slot="progress"
           className={cn(
-            'lsd:relative lsd:w-full lsd:overflow-hidden lsd:rounded-none lsd:bg-lsd-surface-secondary lsd:border lsd:border-lsd-border-primary',
+            'lsd:relative lsd:w-full lsd:overflow-hidden lsd:rounded-none lsd:bg-lsd-surface lsd:border lsd:border-lsd-border',
             sizeClasses[size],
             className,
           )}
@@ -85,7 +85,7 @@ const Progress = React.forwardRef<
           />
         </ProgressPrimitive.Root>
         {showLabel && labelText && labelPosition === 'bottom' && (
-          <div className="lsd:mt-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text lsd:text-center">
+          <div className="lsd:mt-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text-primary lsd:text-center">
             {labelText}
           </div>
         )}

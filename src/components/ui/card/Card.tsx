@@ -9,7 +9,7 @@ const Card = React.forwardRef<HTMLDivElement, React.ComponentProps<'div'>>(
         ref={ref}
         data-slot="card"
         className={cn(
-          'lsd:bg-lsd-surface-primary lsd:text-lsd-text-primary lsd:flex lsd:flex-col lsd:border-lsd-border-primary lsd:border lsd:shadow-sm',
+          'lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:flex lsd:flex-col lsd:border-lsd-border lsd:border lsd:shadow-sm',
           className,
         )}
         {...props}

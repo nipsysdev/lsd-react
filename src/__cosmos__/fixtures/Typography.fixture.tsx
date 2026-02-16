@@ -1,4 +1,4 @@
-import { ThemeToggle } from '@/__cosmos__/theme-toggle';
+import { ThemeAccentToggle, ThemeToggle } from '@/__cosmos__/theme-toggle';
 import { Typography } from '@/components/ui/typography';
 import { CodeExample } from '../code-example';
 
@@ -6,8 +6,9 @@ export default function TypographyFixture() {
   return (
     <div className="lsd:p-8 lsd:w-full lsd:max-w-6xl lsd:mx-auto">
       <div className="lsd:mb-10 lsd:text-center">
-        <div className="lsd:flex lsd:justify-center lsd:mb-4">
+        <div className="lsd:flex lsd:justify-center lsd:gap-4 lsd:mb-4">
           <ThemeToggle />
+          <ThemeAccentToggle />
         </div>
         <Typography variant="h1" className="lsd:mb-4">
           Typography Component

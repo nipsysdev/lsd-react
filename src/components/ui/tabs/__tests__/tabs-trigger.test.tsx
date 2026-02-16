@@ -40,7 +40,7 @@ describe('TabsTrigger', () => {
       </Tabs>,
     );
     const trigger = document.querySelector('[data-slot="tabs-trigger"]');
-    expect(trigger).toHaveClass('lsd:text-lsd-text');
+    expect(trigger).toHaveClass('lsd:text-lsd-text-primary');
     expect(trigger).toHaveClass('lsd:border');
     expect(trigger).toHaveClass('lsd:border-transparent');
     expect(trigger).toHaveClass('lsd:border-b-0');
@@ -62,10 +62,10 @@ describe('TabsTrigger', () => {
     );
     const trigger = screen.getByRole('tab', { name: 'Tab 1' });
     expect(trigger).toHaveAttribute('data-state', 'active');
-    expect(trigger).toHaveClass('lsd:data-[state=active]:border-lsd-text');
     expect(trigger).toHaveClass(
-      'lsd:data-[state=active]:bg-lsd-surface-primary',
+      'lsd:data-[state=active]:border-lsd-text-primary',
     );
+    expect(trigger).toHaveClass('lsd:data-[state=active]:bg-lsd-surface');
     expect(trigger).toHaveClass('lsd:data-[state=active]:font-medium');
   });
 

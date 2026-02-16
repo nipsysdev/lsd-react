@@ -26,9 +26,7 @@ describe('Checkbox', () => {
     render(<Checkbox checked />);
     const checkbox = screen.getByRole('checkbox');
     expect(checkbox).toHaveClass('lsd:data-[state=checked]:bg-lsd-primary');
-    expect(checkbox).toHaveClass(
-      'lsd:data-[state=checked]:text-lsd-surface-primary',
-    );
+    expect(checkbox).toHaveClass('lsd:data-[state=checked]:text-lsd-surface');
     expect(checkbox).toHaveClass('lsd:data-[state=checked]:border-lsd-primary');
   });
 
@@ -84,7 +82,7 @@ describe('Checkbox', () => {
   it('applies focus-visible classes', () => {
     render(<Checkbox />);
     const checkbox = screen.getByRole('checkbox');
-    expect(checkbox).toHaveClass('focus-visible:lsd:border-lsd-border-primary');
+    expect(checkbox).toHaveClass('focus-visible:lsd:border-lsd-border');
     expect(checkbox).toHaveClass('focus-visible:lsd:ring-[3px]');
   });
 
