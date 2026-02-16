@@ -66,10 +66,8 @@ describe('CommandItem', () => {
       </Command>,
     );
     const item = document.querySelector('[data-slot="command-item"]');
-    expect(item).toHaveClass(
-      'lsd:data-[selected=true]:bg-lsd-surface-secondary',
-    );
-    expect(item).toHaveClass('lsd:data-[selected=true]:text-lsd-text');
+    expect(item).toHaveClass('lsd:data-[selected=true]:bg-lsd-surface');
+    expect(item).toHaveClass('lsd:data-[selected=true]:text-lsd-text-primary');
   });
 
   it('applies disabled state classes', () => {

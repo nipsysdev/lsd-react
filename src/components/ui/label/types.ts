@@ -4,7 +4,7 @@ import type { SizeVariant } from '@/lib/types';
 export type LabelVariant = 'default' | 'secondary';
 
 export const labelVariants = cva(
-  'lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 peer-lsd:disabled:cursor-not-allowed peer-lsd:disabled:opacity-50',
+  'lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 lsd:peer-disabled:cursor-not-allowed lsd:peer-disabled:opacity-50',
   {
     variants: {
       variant: {

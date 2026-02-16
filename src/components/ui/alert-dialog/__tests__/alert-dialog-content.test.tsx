@@ -25,7 +25,7 @@ describe('AlertDialogContent', () => {
     const content = document.querySelector(
       '[data-slot="alert-dialog-content"]',
     );
-    expect(content).toHaveClass('lsd:bg-lsd-surface-primary');
+    expect(content).toHaveClass('lsd:bg-lsd-surface');
     expect(content).toHaveClass('lsd:fixed');
     expect(content).toHaveClass('lsd:top-[50%]');
     expect(content).toHaveClass('lsd:left-[50%]');

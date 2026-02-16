@@ -80,14 +80,14 @@ describe('Autocomplete', () => {
     render(<Autocomplete options={mockOptions} variant="outlined" />);
     const trigger = screen.getByRole('textbox').parentElement;
     expect(trigger).toHaveClass('lsd:border');
-    expect(trigger).toHaveClass('lsd:border-lsd-border-primary');
+    expect(trigger).toHaveClass('lsd:border-lsd-border');
   });
 
   it('applies underlined variant classes', () => {
     render(<Autocomplete options={mockOptions} variant="underlined" />);
     const trigger = screen.getByRole('textbox').parentElement;
     expect(trigger).toHaveClass('lsd:border-transparent');
-    expect(trigger).toHaveClass('lsd:border-b-lsd-border-primary');
+    expect(trigger).toHaveClass('lsd:border-b-lsd-border');
   });
 
   it('merges custom className with component classes', () => {

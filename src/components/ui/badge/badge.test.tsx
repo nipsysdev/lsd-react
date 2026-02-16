@@ -24,7 +24,7 @@ describe('Badge', () => {
     );
     const badge = screen.getByTestId('badge');
     expect(badge).toHaveClass('lsd:bg-lsd-primary');
-    expect(badge).toHaveClass('lsd:text-lsd-surface-primary');
+    expect(badge).toHaveClass('lsd:text-lsd-surface');
   });
 
   it('applies outlined variant classes correctly', () => {
@@ -233,7 +233,7 @@ describe('badgeVariants', () => {
       'lsd:bg-lsd-primary',
     );
     expect(badgeVariants({ variant: 'filled' })).toContain(
-      'lsd:text-lsd-surface-primary',
+      'lsd:text-lsd-surface',
     );
   });
 

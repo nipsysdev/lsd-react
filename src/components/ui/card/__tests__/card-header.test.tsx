@@ -31,7 +31,7 @@ describe('CardHeader', () => {
     expect(header).toHaveClass('lsd:px-6');
     expect(header).toHaveClass('lsd:py-6');
     expect(header).toHaveClass('lsd:border-b');
-    expect(header).toHaveClass('lsd:border-lsd-border-primary');
+    expect(header).toHaveClass('lsd:border-lsd-border');
     expect(header).toHaveClass('lsd:pb-6');
   });
 

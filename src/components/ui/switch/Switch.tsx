@@ -5,7 +5,7 @@ import type * as React from 'react';
 import { cn } from '@/lib/utils';
 
 const switchVariants = cva(
-  'peer lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=unchecked]:bg-lsd-surface-secondary focus-visible:lsd:border-lsd-border focus-visible:lsd:ring-lsd-text/50 dark:lsd:data-[state=unchecked]:bg-lsd-surface-secondary/80 lsd:inline-flex lsd:shrink-0 lsd:items-center lsd:rounded-full lsd:border lsd:border-lsd-border lsd:shadow-xs lsd:transition-all lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50',
+  'peer lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=unchecked]:bg-lsd-surface focus-visible:lsd:border-lsd-border focus-visible:lsd:ring-lsd-text/50 dark:lsd:data-[state=unchecked]:bg-lsd-surface/80 lsd:inline-flex lsd:shrink-0 lsd:items-center lsd:rounded-full lsd:border lsd:border-lsd-border lsd:shadow-xs lsd:transition-all lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50',
   {
     variants: {
       size: {
@@ -21,7 +21,7 @@ const switchVariants = cva(
 );
 
 const thumbVariants = cva(
-  'lsd:bg-lsd-surface-primary lsd:border lsd:border-lsd-border dark:lsd:data-[state=unchecked]:bg-lsd-text dark:lsd:data-[state=checked]:bg-lsd-surface-primary lsd:pointer-events-none lsd:block lsd:rounded-full lsd:ring-0 lsd:transition-transform',
+  'lsd:bg-lsd-surface lsd:border lsd:border-lsd-border dark:lsd:data-[state=unchecked]:bg-lsd-text-primary dark:lsd:data-[state=checked]:bg-lsd-surface lsd:pointer-events-none lsd:block lsd:rounded-full lsd:ring-0 lsd:transition-transform',
   {
     variants: {
       size: {

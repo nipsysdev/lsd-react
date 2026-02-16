@@ -20,9 +20,9 @@ describe('Progress', () => {
     expect(progress).toHaveClass('lsd:w-full');
     expect(progress).toHaveClass('lsd:h-3');
     expect(progress).toHaveClass('lsd:overflow-hidden');
-    expect(progress).toHaveClass('lsd:bg-lsd-surface-secondary');
+    expect(progress).toHaveClass('lsd:bg-lsd-surface');
     expect(progress).toHaveClass('lsd:border');
-    expect(progress).toHaveClass('lsd:border-lsd-border-primary');
+    expect(progress).toHaveClass('lsd:border-lsd-border');
   });
 
   it('renders indicator element', () => {

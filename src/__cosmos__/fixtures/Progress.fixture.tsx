@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
-import { ThemeToggle } from '../theme-toggle';
+import { ThemeAccentToggle, ThemeToggle } from '../theme-toggle';
 
 export default function ProgressFixture() {
   const [progress, setProgress] = useState(30);
@@ -13,6 +13,7 @@ export default function ProgressFixture() {
     <div className="lsd:p-8 lsd:w-full lsd:space-y-8">
       <div className="lsd:flex lsd:justify-end lsd:gap-4">
         <ThemeToggle />
+        <ThemeAccentToggle />
         <FontToggle />
       </div>
 

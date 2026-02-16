@@ -117,7 +117,7 @@ describe('tabsVariants', () => {
 describe('tabsListVariants', () => {
   it('returns correct classes for default variants', () => {
     const result = tabsListVariants();
-    expect(result).toContain('lsd:bg-lsd-surface-primary');
+    expect(result).toContain('lsd:bg-lsd-surface');
     expect(result).toContain('lsd:border-b');
     expect(result).toContain('lsd:border-lsd-border');
     expect(result).toContain('lsd:flex');

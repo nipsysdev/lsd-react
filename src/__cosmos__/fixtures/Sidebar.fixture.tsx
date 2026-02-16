@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/sidebar';
 import { CodeExample } from '../code-example';
 import { FontToggle } from '../font-toggle';
-import { ThemeToggle } from '../theme-toggle';
+import { ThemeAccentToggle, ThemeToggle } from '../theme-toggle';
 
 // Menu items.
 const items = [
@@ -52,6 +52,7 @@ export default function SidebarFixture() {
       <div className="lsd:w-full lsd:space-y-8">
         <div className="lsd:flex lsd:justify-end lsd:gap-4">
           <ThemeToggle />
+          <ThemeAccentToggle />
           <FontToggle />
         </div>
 

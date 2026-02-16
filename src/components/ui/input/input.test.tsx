@@ -17,14 +17,14 @@ describe('Input', () => {
     render(<Input />);
     const input = screen.getByRole('textbox');
     const wrapper = input.parentElement;
-    expect(wrapper).toHaveClass('lsd:border-b-lsd-border-primary');
+    expect(wrapper).toHaveClass('lsd:border-b-lsd-border');
   });
 
   it('renders with outlined variant', () => {
     render(<Input variant="outlined" />);
     const input = screen.getByRole('textbox');
     const wrapper = input.parentElement;
-    expect(wrapper).toHaveClass('lsd:border-lsd-border-primary');
+    expect(wrapper).toHaveClass('lsd:border-lsd-border');
   });
 
   it('renders with default size (medium)', () => {

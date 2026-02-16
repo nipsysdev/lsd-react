@@ -10,7 +10,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn('lsd:border-b lsd:border-lsd-border-primary', className)}
+      className={cn('lsd:border-b lsd:border-lsd-border', className)}
       {...props}
     />
   );

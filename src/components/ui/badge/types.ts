@@ -11,11 +11,11 @@ export type BadgeVariant =
   | 'dot';
 
 export const badgeVariants = cva(
-  'lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:border-lsd-icon-primary lsd:rounded-[20px] lsd:w-fit lsd:whitespace-nowrap lsd:shrink-0 lsd:[&>svg]:size-3 lsd:[&>svg]:pointer-events-none lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:transition-colors lsd:overflow-hidden',
+  'lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:border-lsd-border lsd:rounded-[20px] lsd:w-fit lsd:whitespace-nowrap lsd:shrink-0 lsd:[&>svg]:size-3 lsd:[&>svg]:pointer-events-none lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:transition-colors lsd:overflow-hidden',
   {
     variants: {
       variant: {
-        filled: 'lsd:bg-lsd-primary lsd:text-lsd-surface-primary',
+        filled: 'lsd:bg-lsd-primary lsd:text-lsd-surface',
         outlined: 'lsd:bg-transparent lsd:text-lsd-text-primary',
         destructive:
           'lsd:bg-lsd-destructive lsd:text-white lsd:border-lsd-destructive',

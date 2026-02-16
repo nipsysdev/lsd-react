@@ -30,11 +30,11 @@ describe('Card', () => {
   it('applies default classes', () => {
     const { container } = render(<Card />);
     const card = queryByDataSlot(container, 'card');
-    expect(card).toHaveClass('lsd:bg-lsd-surface-primary');
+    expect(card).toHaveClass('lsd:bg-lsd-surface');
     expect(card).toHaveClass('lsd:text-lsd-text-primary');
     expect(card).toHaveClass('lsd:flex');
     expect(card).toHaveClass('lsd:flex-col');
-    expect(card).toHaveClass('lsd:border-lsd-border-primary');
+    expect(card).toHaveClass('lsd:border-lsd-border');
     expect(card).toHaveClass('lsd:border');
     expect(card).toHaveClass('lsd:shadow-sm');
   });

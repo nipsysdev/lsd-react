@@ -48,139 +48,163 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* LSD Design Tokens as Tailwind Colors */
-  --color-lsd-text: rgb(var(--lsd-text));
-  --color-lsd-text-primary: rgb(var(--lsd-text-primary));
-  --color-lsd-text-secondary: rgb(var(--lsd-text-secondary));
-  --color-lsd-border: rgb(var(--lsd-border));
-  --color-lsd-border-primary: rgb(var(--lsd-border-primary));
-  --color-lsd-icon-primary: rgb(var(--lsd-icon-primary));
-  --color-lsd-icon-secondary: rgb(var(--lsd-icon-secondary));
-  --color-lsd-surface-primary: rgb(var(--lsd-surface-primary));
-  --color-lsd-surface-secondary: rgb(var(--lsd-surface-secondary));
-  --color-lsd-primary: rgb(var(--lsd-text));
-  --color-lsd-destructive: rgb(var(--lsd-destructive));
-  --color-lsd-destructive-text: rgb(var(--lsd-destructive-text));
-  --color-lsd-success: rgb(var(--lsd-success));
-  --color-lsd-success-text: rgb(var(--lsd-success-text));
-  --color-lsd-warning: rgb(var(--lsd-warning));
-  --color-lsd-warning-text: rgb(var(--lsd-warning-text));
-  --color-lsd-info: rgb(var(--lsd-info));
-  --color-lsd-info-text: rgb(var(--lsd-info-text));
-  --color-lsd-chart-1: 220 38 38;
-  --color-lsd-chart-2: 37 99 235;
-  --color-lsd-chart-3: 22 163 74;
-  --color-lsd-chart-4: 245 158 11;
-  --color-lsd-chart-5: 168 85 247;
+  --color-lsd-text-primary: var(--lsd-text-primary);
+  --color-lsd-text-secondary: var(--lsd-text-secondary);
+  --color-lsd-border: var(--lsd-border);
+  --color-lsd-icon-primary: var(--lsd-icon-primary);
+  --color-lsd-icon-secondary: var(--lsd-icon-secondary);
+  --color-lsd-surface: var(--lsd-surface);
+  --color-lsd-primary: var(--lsd-primary);
+  --color-lsd-destructive: var(--lsd-destructive);
+  --color-lsd-destructive-text: var(--lsd-destructive-text);
+  --color-lsd-success: var(--lsd-success);
+  --color-lsd-success-text: var(--lsd-success-text);
+  --color-lsd-warning: var(--lsd-warning);
+  --color-lsd-warning-text: var(--lsd-warning-text);
+  --color-lsd-info: var(--lsd-info);
+  --color-lsd-info-text: var(--lsd-info-text);
+  --color-lsd-chart-1: #dc2626;
+  --color-lsd-chart-2: #2563eb;
+  --color-lsd-chart-3: #16a34a;
+  --color-lsd-chart-4: #f59e0b;
+  --color-lsd-chart-5: #a855f7;
+
+  --color-lsd-theme-teal: var(--lsd-theme-teal);
+  --color-lsd-theme-teal-border: var(--lsd-theme-teal-border);
 }
 
 :root {
   --radius: 0.625rem;
 
   /* LSD Design Tokens - Light Theme */
-  --lsd-text: 0 0 0;
-  --lsd-text-primary: 0 0 0;
-  --lsd-text-secondary: 128 128 128;
-  --lsd-border: 0 0 0;
-  --lsd-border-primary: 0 0 0;
-  --lsd-icon-primary: 0 0 0;
-  --lsd-icon-secondary: 255 255 255;
-  --lsd-surface-primary: 255 255 255;
-  --lsd-surface-secondary: 255 255 255;
-  --lsd-destructive: 185 28 28;
-  --lsd-destructive-text: 239 68 68;
-  --lsd-success: 21 128 61;
-  --lsd-success-text: 34 197 94;
-  --lsd-warning: 245 158 11;
-  --lsd-warning-text: 245 158 11;
-  --lsd-info: 37 99 235;
-  --lsd-info-text: 37 99 235;
+  --lsd-primary: #000000;
+  --lsd-primary-foreground: #ffffff;
+  --lsd-text-primary: #000000;
+  --lsd-text-secondary: #808080;
+  --lsd-border: #000000;
+  --lsd-icon-primary: #000000;
+  --lsd-icon-secondary: #ffffff;
+  --lsd-surface: #ffffff;
+  --lsd-destructive: #b91c1c;
+  --lsd-destructive-text: #cb3939;
+  --lsd-success: #15803d;
+  --lsd-success-text: #168440;
+  --lsd-warning: #f59e0b;
+  --lsd-warning-text: #d68b09;
+  --lsd-info: #2563eb;
+  --lsd-info-text: #2563eb;
 
   /* Shadcn variables using LSD values */
-  --background: rgb(var(--lsd-surface-primary));
-  --foreground: rgb(var(--lsd-text-primary));
-  --card: rgb(var(--lsd-surface-primary));
-  --card-foreground: rgb(var(--lsd-text-primary));
-  --popover: rgb(var(--lsd-surface-primary));
-  --popover-foreground: rgb(var(--lsd-text-primary));
-  --primary: rgb(var(--lsd-text));
-  --primary-foreground: rgb(var(--lsd-surface-primary));
-  --secondary: rgb(var(--lsd-surface-secondary));
-  --secondary-foreground: rgb(var(--lsd-text));
-  --muted: rgb(var(--lsd-surface-secondary));
-  --muted-foreground: rgb(var(--lsd-text));
-  --accent: rgb(var(--lsd-surface-secondary));
-  --accent-foreground: rgb(var(--lsd-text));
+  --background: var(--lsd-surface);
+  --foreground: var(--lsd-text-primary);
+  --card: var(--lsd-surface);
+  --card-foreground: var(--lsd-text-primary);
+  --popover: var(--lsd-surface);
+  --popover-foreground: var(--lsd-text-primary);
+  --primary: var(--lsd-primary);
+  --primary-foreground: var(--lsd-primary-foreground);
+  --secondary: var(--lsd-surface);
+  --secondary-foreground: var(--lsd-text-secondary);
+  --muted: var(--lsd-surface);
+  --muted-foreground: var(--lsd-text-primary);
+  --accent: var(--lsd-surface);
+  --accent-foreground: var(--lsd-text-secondary);
   --destructive: var(--color-lsd-destructive);
-  --border: rgb(var(--lsd-border));
-  --input: rgb(var(--lsd-surface-secondary));
-  --ring: rgb(var(--lsd-text));
+  --border: var(--lsd-border);
+  --input: var(--lsd-surface);
+  --ring: var(--lsd-text-primary);
   --chart-1: var(--color-lsd-chart-1);
   --chart-2: var(--color-lsd-chart-2);
   --chart-3: var(--color-lsd-chart-3);
   --chart-4: var(--color-lsd-chart-4);
   --chart-5: var(--color-lsd-chart-5);
-  --sidebar: rgb(var(--lsd-surface-primary));
-  --sidebar-foreground: rgb(var(--lsd-text-primary));
-  --sidebar-primary: rgb(var(--lsd-text));
-  --sidebar-primary-foreground: rgb(var(--lsd-surface-primary));
-  --sidebar-accent: rgb(var(--lsd-surface-secondary));
-  --sidebar-accent-foreground: rgb(var(--lsd-text));
-  --sidebar-border: rgb(var(--lsd-border));
-  --sidebar-ring: rgb(var(--lsd-text));
+  --sidebar: var(--lsd-surface);
+  --sidebar-foreground: var(--lsd-text-primary);
+  --sidebar-primary: var(--lsd-primary);
+  --sidebar-primary-foreground: var(--lsd-primary-foreground);
+  --sidebar-accent: var(--lsd-surface);
+  --sidebar-accent-foreground: var(--lsd-text-primary);
+  --sidebar-border: var(--lsd-border);
+  --sidebar-ring: var(--lsd-text-primary);
+
+  --lsd-theme-teal: #0d9488;
+  --lsd-theme-teal-border: #115e59;
 }
 
 .dark {
   /* LSD Design Tokens - Dark Theme */
-  --lsd-text: 255 255 255;
-  --lsd-text-primary: 255 255 255;
-  --lsd-text-secondary: 170 170 170;
-  --lsd-border: 255 255 255;
-  --lsd-border-primary: 255 255 255;
-  --lsd-icon-primary: 255 255 255;
-  --lsd-icon-secondary: 0 0 0;
-  --lsd-surface-primary: 0 0 0;
-  --lsd-surface-secondary: 0 0 0;
-  --lsd-destructive: 153 27 27;
-  --lsd-destructive-text: 248 113 113;
-  --lsd-success: 20 83 45;
-  --lsd-success-text: 74 222 128;
-  --lsd-warning: 217 119 6;
-  --lsd-warning-text: 217 119 6;
-  --lsd-info: 59 130 246;
-  --lsd-info-text: 59 130 246;
+  --lsd-primary: #ffffff;
+  --lsd-primary-foreground: #000000;
+  --lsd-text-primary: #ffffff;
+  --lsd-text-secondary: #aaaaaa;
+  --lsd-border: #ffffff;
+  --lsd-icon-primary: #ffffff;
+  --lsd-icon-secondary: #000000;
+  --lsd-surface: #000000;
+  --lsd-destructive: #991b1b;
+  --lsd-destructive-text: #f87171;
+  --lsd-success: #14532d;
+  --lsd-success-text: #4ade80;
+  --lsd-warning: #d97706;
+  --lsd-warning-text: #d97706;
+  --lsd-info: #3b82f6;
+  --lsd-info-text: #3b82f6;
 
   /* Shadcn variables using LSD values */
-  --background: rgb(var(--lsd-surface-primary));
-  --foreground: rgb(var(--lsd-text-primary));
-  --card: rgb(var(--lsd-surface-primary));
-  --card-foreground: rgb(var(--lsd-text-primary));
-  --popover: rgb(var(--lsd-surface-primary));
-  --popover-foreground: rgb(var(--lsd-text-primary));
-  --primary: rgb(var(--lsd-text));
-  --primary-foreground: rgb(var(--lsd-surface-primary));
-  --secondary: rgb(var(--lsd-surface-secondary));
-  --secondary-foreground: rgb(var(--lsd-text));
-  --muted: rgb(var(--lsd-surface-secondary));
-  --muted-foreground: rgb(var(--lsd-text));
-  --accent: rgb(var(--lsd-surface-secondary));
-  --accent-foreground: rgb(var(--lsd-text));
+  --background: var(--lsd-surface);
+  --foreground: var(--lsd-text-primary);
+  --card: var(--lsd-surface);
+  --card-foreground: var(--lsd-text-primary);
+  --popover: var(--lsd-surface);
+  --popover-foreground: var(--lsd-text-primary);
+  --primary: var(--lsd-primary);
+  --primary-foreground: var(--lsd-primary-foreground);
+  --secondary: var(--lsd-surface);
+  --secondary-foreground: var(--lsd-text-secondary);
+  --muted: var(--lsd-surface);
+  --muted-foreground: var(--lsd-text-secondary);
+  --accent: var(--lsd-surface);
+  --accent-foreground: var(--lsd-text-secondary);
   --destructive: var(--color-lsd-destructive);
-  --border: rgb(var(--lsd-border));
-  --input: rgb(var(--lsd-surface-secondary));
-  --ring: rgb(var(--lsd-text));
+  --border: var(--lsd-border);
+  --input: var(--lsd-surface);
+  --ring: var(--lsd-text-primary);
   --chart-1: var(--color-lsd-chart-1);
   --chart-2: var(--color-lsd-chart-2);
   --chart-3: var(--color-lsd-chart-3);
   --chart-4: var(--color-lsd-chart-4);
   --chart-5: var(--color-lsd-chart-5);
-  --sidebar: rgb(var(--lsd-surface-primary));
-  --sidebar-foreground: rgb(var(--lsd-text-primary));
-  --sidebar-primary: rgb(var(--lsd-text));
-  --sidebar-primary-foreground: rgb(var(--lsd-surface-primary));
-  --sidebar-accent: rgb(var(--lsd-surface-secondary));
-  --sidebar-accent-foreground: rgb(var(--lsd-text));
-  --sidebar-border: rgb(var(--lsd-border));
-  --sidebar-ring: rgb(var(--lsd-text));
+  --sidebar: var(--lsd-surface);
+  --sidebar-foreground: var(--lsd-text-primary);
+  --sidebar-primary: var(--lsd-primary);
+  --sidebar-primary-foreground: var(--lsd-primary-foreground);
+  --sidebar-accent: var(--lsd-surface);
+  --sidebar-accent-foreground: var(--lsd-text-primary);
+  --sidebar-border: var(--lsd-border);
+  --sidebar-ring: var(--lsd-text-primary);
+
+  --lsd-theme-teal: #14b8a6;
+  --lsd-theme-teal-border: #09635c;
+}
+
+/* Theme Override Classes */
+
+/* Teal Theme - Light Mode */
+.theme-teal {
+  --lsd-primary: #0d9488;
+  --lsd-primary-foreground: #ffffff;
+  --lsd-text-primary: #091f1d;
+  --lsd-surface: #ffffff;
+  --lsd-border: #115e59;
+}
+
+/* Teal Theme - Dark Mode */
+.dark.theme-teal {
+  --lsd-primary: #0d9488;
+  --lsd-primary-foreground: #ffffff;
+  --lsd-text-primary: #f6fffd;
+  --lsd-surface: #091f1d;
+  --lsd-border: #09635c;
 }
 
 @layer base {
@@ -220,20 +244,13 @@ html {
 }
 
 /* Sonner Toast Styles */
-[data-sonner-toaster] [data-sonner-toast] {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  border: 1px solid rgb(var(--lsd-border)) !important;
-}
-
-[data-sonner-toaster] [data-sonner-toast] [data-content] {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-[data-sonner-toaster] [data-sonner-toast] button {
-  border-radius: 0 !important;
-  box-shadow: none !important;
+[data-sonner-toaster] {
+  [data-sonner-toast],
+  [data-content],
+  button {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
 }
 
 /* Indeterminate Progress Animation */

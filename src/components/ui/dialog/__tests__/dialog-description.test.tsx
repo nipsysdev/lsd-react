@@ -35,7 +35,7 @@ describe('DialogDescription', () => {
       </Dialog>,
     );
     const description = screen.getByText('Description');
-    expect(description).toHaveClass('lsd:text-lsd-text');
+    expect(description).toHaveClass('lsd:text-lsd-text-primary');
     expect(description).toHaveClass('lsd:text-sm');
   });
 

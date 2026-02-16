@@ -36,13 +36,13 @@ describe('Toaster', () => {
     render(<Toaster />);
     const toaster = screen.getByTestId('sonner-toaster');
     expect(toaster.style.getPropertyValue('--normal-bg')).toBe(
-      'rgb(var(--lsd-surface-primary))',
+      'var(--lsd-surface)',
     );
     expect(toaster.style.getPropertyValue('--normal-text')).toBe(
-      'rgb(var(--lsd-text-primary))',
+      'var(--lsd-text-primary)',
     );
     expect(toaster.style.getPropertyValue('--normal-border')).toBe(
-      'rgb(var(--lsd-border))',
+      'var(--lsd-border)',
     );
   });
 

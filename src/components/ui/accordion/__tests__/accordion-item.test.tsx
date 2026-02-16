@@ -22,7 +22,7 @@ describe('AccordionItem', () => {
     );
     const item = document.querySelector('[data-slot="accordion-item"]');
     expect(item).toHaveClass('lsd:border-b');
-    expect(item).toHaveClass('lsd:border-lsd-border-primary');
+    expect(item).toHaveClass('lsd:border-lsd-border');
   });
 
   it('applies data-slot attribute', () => {

@@ -11,21 +11,21 @@ const Toaster = ({ ...props }: ToasterProps) => {
       richColors
       style={
         {
-          '--normal-bg': 'rgb(var(--lsd-surface-primary))',
-          '--normal-text': 'rgb(var(--lsd-text-primary))',
-          '--normal-border': 'rgb(var(--lsd-border))',
-          '--success-bg': 'rgb(var(--lsd-surface-primary))',
-          '--success-border': 'rgb(var(--lsd-success))',
-          '--success-text': 'rgb(var(--lsd-success-text))',
-          '--error-bg': 'rgb(var(--lsd-surface-primary))',
-          '--error-border': 'rgb(var(--lsd-destructive))',
-          '--error-text': 'rgb(var(--lsd-destructive-text))',
-          '--warning-bg': 'rgb(var(--lsd-surface-primary))',
-          '--warning-border': 'rgb(var(--lsd-warning))',
-          '--warning-text': 'rgb(var(--lsd-warning-text))',
-          '--info-bg': 'rgb(var(--lsd-surface-primary))',
-          '--info-border': 'rgb(var(--lsd-info))',
-          '--info-text': 'rgb(var(--lsd-info-text))',
+          '--normal-bg': 'var(--lsd-surface)',
+          '--normal-text': 'var(--lsd-text-primary)',
+          '--normal-border': 'var(--lsd-border)',
+          '--success-bg': 'var(--lsd-surface)',
+          '--success-border': 'var(--lsd-success)',
+          '--success-text': 'var(--lsd-success-text)',
+          '--error-bg': 'var(--lsd-surface)',
+          '--error-border': 'var(--lsd-destructive)',
+          '--error-text': 'var(--lsd-destructive-text)',
+          '--warning-bg': 'var(--lsd-surface)',
+          '--warning-border': 'var(--lsd-warning)',
+          '--warning-text': 'var(--lsd-warning-text)',
+          '--info-bg': 'var(--lsd-surface)',
+          '--info-border': 'var(--lsd-info)',
+          '--info-text': 'var(--lsd-info-text)',
         } as React.CSSProperties
       }
       {...props}
