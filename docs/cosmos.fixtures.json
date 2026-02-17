@@ -122,6 +122,16 @@
       "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FLabel.fixture.tsx%22%7D&locked=true"
     },
     {
+      "filePath": "src/__cosmos__/fixtures/Menubar.fixture.tsx",
+      "cleanPath": [
+        "src",
+        "__cosmos__",
+        "fixtures",
+        "Menubar"
+      ],
+      "rendererUrl": "renderer.html?fixtureId=%7B%22path%22%3A%22src%2F__cosmos__%2Ffixtures%2FMenubar.fixture.tsx%22%7D&locked=true"
+    },
+    {
       "filePath": "src/__cosmos__/fixtures/Popover.fixture.tsx",
       "cleanPath": [
         "src",
