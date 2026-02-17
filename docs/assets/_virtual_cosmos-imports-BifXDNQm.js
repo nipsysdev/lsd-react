@@ -1,4 +1,4 @@
-import { r as reactExports, g as getDefaultExportFromCjs, a as requireReactDom, R as React, b as React$1 } from "./index-DeeV_grH.js";
+import { r as reactExports, g as getDefaultExportFromCjs, a as requireReactDom, R as React, b as React$1 } from "./index-Ce8BqwaD.js";
 var jsxRuntime = { exports: {} };
 var reactJsxRuntime_production = {};
 var hasRequiredReactJsxRuntime_production;
@@ -115,32 +115,36 @@ const createLucideIcon = (iconName, iconNode) => {
   Component.displayName = toPascalCase(iconName);
   return Component;
 };
-const __iconNode$j = [
+const __iconNode$l = [
   [
     "path",
     { d: "M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8", key: "mg9rjx" }
   ]
 ];
-const Bold = createLucideIcon("bold", __iconNode$j);
-const __iconNode$i = [
+const Bold = createLucideIcon("bold", __iconNode$l);
+const __iconNode$k = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
   ["path", { d: "M3 10h18", key: "8toen8" }]
 ];
-const Calendar = createLucideIcon("calendar", __iconNode$i);
-const __iconNode$h = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$h);
-const __iconNode$g = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$g);
-const __iconNode$f = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$f);
-const __iconNode$e = [
+const Calendar = createLucideIcon("calendar", __iconNode$k);
+const __iconNode$j = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$j);
+const __iconNode$i = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$i);
+const __iconNode$h = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$h);
+const __iconNode$g = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$g);
+const __iconNode$f = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
   ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const CircleQuestionMark = createLucideIcon("circle-question-mark", __iconNode$e);
+const CircleQuestionMark = createLucideIcon("circle-question-mark", __iconNode$f);
+const __iconNode$e = [["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }]];
+const Circle = createLucideIcon("circle", __iconNode$e);
 const __iconNode$d = [
   ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
   [
@@ -642,19 +646,19 @@ function useDirection(localDir) {
 }
 var ENTRY_FOCUS = "rovingFocusGroup.onEntryFocus";
 var EVENT_OPTIONS$1 = { bubbles: false, cancelable: true };
-var GROUP_NAME$1 = "RovingFocusGroup";
-var [Collection$2, useCollection$2, createCollectionScope$2] = createCollection(GROUP_NAME$1);
+var GROUP_NAME$3 = "RovingFocusGroup";
+var [Collection$4, useCollection$4, createCollectionScope$4] = createCollection(GROUP_NAME$3);
 var [createRovingFocusGroupContext, createRovingFocusGroupScope] = createContextScope$1(
-  GROUP_NAME$1,
-  [createCollectionScope$2]
+  GROUP_NAME$3,
+  [createCollectionScope$4]
 );
-var [RovingFocusProvider, useRovingFocusContext] = createRovingFocusGroupContext(GROUP_NAME$1);
+var [RovingFocusProvider, useRovingFocusContext] = createRovingFocusGroupContext(GROUP_NAME$3);
 var RovingFocusGroup = reactExports.forwardRef(
   (props, forwardedRef) => {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$2.Provider, { scope: props.__scopeRovingFocusGroup, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$2.Slot, { scope: props.__scopeRovingFocusGroup, children: /* @__PURE__ */ jsxRuntimeExports.jsx(RovingFocusGroupImpl, { ...props, ref: forwardedRef }) }) });
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$4.Provider, { scope: props.__scopeRovingFocusGroup, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$4.Slot, { scope: props.__scopeRovingFocusGroup, children: /* @__PURE__ */ jsxRuntimeExports.jsx(RovingFocusGroupImpl, { ...props, ref: forwardedRef }) }) });
   }
 );
-RovingFocusGroup.displayName = GROUP_NAME$1;
+RovingFocusGroup.displayName = GROUP_NAME$3;
 var RovingFocusGroupImpl = reactExports.forwardRef((props, forwardedRef) => {
   const {
     __scopeRovingFocusGroup,
@@ -675,11 +679,11 @@ var RovingFocusGroupImpl = reactExports.forwardRef((props, forwardedRef) => {
     prop: currentTabStopIdProp,
     defaultProp: defaultCurrentTabStopId ?? null,
     onChange: onCurrentTabStopIdChange,
-    caller: GROUP_NAME$1
+    caller: GROUP_NAME$3
   });
   const [isTabbingBackOut, setIsTabbingBackOut] = reactExports.useState(false);
   const handleEntryFocus = useCallbackRef$1(onEntryFocus);
-  const getItems = useCollection$2(__scopeRovingFocusGroup);
+  const getItems = useCollection$4(__scopeRovingFocusGroup);
   const isClickFocusRef = reactExports.useRef(false);
   const [focusableItemsCount, setFocusableItemsCount] = reactExports.useState(0);
   reactExports.useEffect(() => {
@@ -734,7 +738,7 @@ var RovingFocusGroupImpl = reactExports.forwardRef((props, forwardedRef) => {
                   Boolean
                 );
                 const candidateNodes = candidateItems.map((item) => item.ref.current);
-                focusFirst$1(candidateNodes, preventScrollOnEntryFocus);
+                focusFirst$2(candidateNodes, preventScrollOnEntryFocus);
               }
             }
             isClickFocusRef.current = false;
@@ -745,7 +749,7 @@ var RovingFocusGroupImpl = reactExports.forwardRef((props, forwardedRef) => {
     }
   );
 });
-var ITEM_NAME$3 = "RovingFocusGroupItem";
+var ITEM_NAME$5 = "RovingFocusGroupItem";
 var RovingFocusGroupItem = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -758,9 +762,9 @@ var RovingFocusGroupItem = reactExports.forwardRef(
     } = props;
     const autoId = useId();
     const id = tabStopId || autoId;
-    const context = useRovingFocusContext(ITEM_NAME$3, __scopeRovingFocusGroup);
+    const context = useRovingFocusContext(ITEM_NAME$5, __scopeRovingFocusGroup);
     const isCurrentTabStop = context.currentTabStopId === id;
-    const getItems = useCollection$2(__scopeRovingFocusGroup);
+    const getItems = useCollection$4(__scopeRovingFocusGroup);
     const { onFocusableItemAdd, onFocusableItemRemove, currentTabStopId } = context;
     reactExports.useEffect(() => {
       if (focusable) {
@@ -769,7 +773,7 @@ var RovingFocusGroupItem = reactExports.forwardRef(
       }
     }, [focusable, onFocusableItemAdd, onFocusableItemRemove]);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Collection$2.ItemSlot,
+      Collection$4.ItemSlot,
       {
         scope: __scopeRovingFocusGroup,
         id,
@@ -803,9 +807,9 @@ var RovingFocusGroupItem = reactExports.forwardRef(
                 else if (focusIntent === "prev" || focusIntent === "next") {
                   if (focusIntent === "prev") candidateNodes.reverse();
                   const currentIndex = candidateNodes.indexOf(event.currentTarget);
-                  candidateNodes = context.loop ? wrapArray$1(candidateNodes, currentIndex + 1) : candidateNodes.slice(currentIndex + 1);
+                  candidateNodes = context.loop ? wrapArray$3(candidateNodes, currentIndex + 1) : candidateNodes.slice(currentIndex + 1);
                 }
-                setTimeout(() => focusFirst$1(candidateNodes));
+                setTimeout(() => focusFirst$2(candidateNodes));
               }
             }),
             children: typeof children === "function" ? children({ isCurrentTabStop, hasTabStop: currentTabStopId != null }) : children
@@ -815,7 +819,7 @@ var RovingFocusGroupItem = reactExports.forwardRef(
     );
   }
 );
-RovingFocusGroupItem.displayName = ITEM_NAME$3;
+RovingFocusGroupItem.displayName = ITEM_NAME$5;
 var MAP_KEY_TO_FOCUS_INTENT = {
   ArrowLeft: "prev",
   ArrowUp: "prev",
@@ -836,7 +840,7 @@ function getFocusIntent(event, orientation, dir) {
   if (orientation === "horizontal" && ["ArrowUp", "ArrowDown"].includes(key)) return void 0;
   return MAP_KEY_TO_FOCUS_INTENT[key];
 }
-function focusFirst$1(candidates, preventScroll = false) {
+function focusFirst$2(candidates, preventScroll = false) {
   const PREVIOUSLY_FOCUSED_ELEMENT = document.activeElement;
   for (const candidate of candidates) {
     if (candidate === PREVIOUSLY_FOCUSED_ELEMENT) return;
@@ -844,7 +848,7 @@ function focusFirst$1(candidates, preventScroll = false) {
     if (document.activeElement !== PREVIOUSLY_FOCUSED_ELEMENT) return;
   }
 }
-function wrapArray$1(array, startIndex) {
+function wrapArray$3(array, startIndex) {
   return array.map((_, index2) => array[(startIndex + index2) % array.length]);
 }
 var Root$a = RovingFocusGroup;
@@ -881,7 +885,7 @@ var TOGGLE_GROUP_NAME = "ToggleGroup";
 var [createToggleGroupContext] = createContextScope$1(TOGGLE_GROUP_NAME, [
   createRovingFocusGroupScope
 ]);
-var useRovingFocusGroupScope$1 = createRovingFocusGroupScope();
+var useRovingFocusGroupScope$3 = createRovingFocusGroupScope();
 var ToggleGroup$1 = React.forwardRef((props, forwardedRef) => {
   const { type, ...toggleGroupProps } = props;
   if (type === "single") {
@@ -969,7 +973,7 @@ var ToggleGroupImpl = React.forwardRef(
       loop = true,
       ...toggleGroupProps
     } = props;
-    const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeToggleGroup);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$3(__scopeToggleGroup);
     const direction = useDirection(dir);
     const commonProps = { role: "group", dir: direction, ...toggleGroupProps };
     return /* @__PURE__ */ jsxRuntimeExports.jsx(ToggleGroupContext, { scope: __scopeToggleGroup, rovingFocus, disabled, children: rovingFocus ? /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -985,12 +989,12 @@ var ToggleGroupImpl = React.forwardRef(
     ) : /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { ...commonProps, ref: forwardedRef }) });
   }
 );
-var ITEM_NAME$2 = "ToggleGroupItem";
+var ITEM_NAME$4 = "ToggleGroupItem";
 var ToggleGroupItem$1 = React.forwardRef(
   (props, forwardedRef) => {
-    const valueContext = useToggleGroupValueContext(ITEM_NAME$2, props.__scopeToggleGroup);
-    const context = useToggleGroupContext(ITEM_NAME$2, props.__scopeToggleGroup);
-    const rovingFocusGroupScope = useRovingFocusGroupScope$1(props.__scopeToggleGroup);
+    const valueContext = useToggleGroupValueContext(ITEM_NAME$4, props.__scopeToggleGroup);
+    const context = useToggleGroupContext(ITEM_NAME$4, props.__scopeToggleGroup);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$3(props.__scopeToggleGroup);
     const pressed = valueContext.value.includes(props.value);
     const disabled = context.disabled || props.disabled;
     const commonProps = { ...props, pressed, disabled };
@@ -1008,11 +1012,11 @@ var ToggleGroupItem$1 = React.forwardRef(
     ) : /* @__PURE__ */ jsxRuntimeExports.jsx(ToggleGroupItemImpl, { ...commonProps, ref: forwardedRef });
   }
 );
-ToggleGroupItem$1.displayName = ITEM_NAME$2;
+ToggleGroupItem$1.displayName = ITEM_NAME$4;
 var ToggleGroupItemImpl = React.forwardRef(
   (props, forwardedRef) => {
     const { __scopeToggleGroup, value, ...itemProps } = props;
-    const valueContext = useToggleGroupValueContext(ITEM_NAME$2, __scopeToggleGroup);
+    const valueContext = useToggleGroupValueContext(ITEM_NAME$4, __scopeToggleGroup);
     const singleProps = { role: "radio", "aria-checked": props.pressed, "aria-pressed": void 0 };
     const typeProps = valueContext.type === "single" ? singleProps : void 0;
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -1033,7 +1037,7 @@ var ToggleGroupItemImpl = React.forwardRef(
   }
 );
 var Root2$6 = ToggleGroup$1;
-var Item2 = ToggleGroupItem$1;
+var Item2$1 = ToggleGroupItem$1;
 function r(e) {
   var t, f, n = "";
   if ("string" == typeof e || "number" == typeof e) n += e;
@@ -4115,7 +4119,7 @@ const cva = (base, config) => (props) => {
   return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
 };
 const toggleVariants = cva(
-  "lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:transition-colors lsd:bg-transparent lsd:text-lsd-text lsd:border-lsd-border lsd:hover:underline lsd:cursor-pointer lsd:disabled:opacity-34 lsd:disabled:cursor-not-allowed lsd:disabled:no-underline lsd:data-[state=on]:bg-lsd-primary lsd:data-[state=on]:text-lsd-surface-primary",
+  "lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:transition-colors lsd:bg-transparent lsd:text-lsd-text-primary lsd:border-lsd-border lsd:hover:underline lsd:cursor-pointer lsd:disabled:opacity-34 lsd:disabled:cursor-not-allowed lsd:disabled:no-underline lsd:data-[state=on]:bg-lsd-primary lsd:data-[state=on]:text-lsd-surface",
   {
     variants: {
       size: {
@@ -4145,7 +4149,7 @@ Toggle.displayName = "Toggle";
 const ToggleGroupItem = reactExports.forwardRef(({ className, children, size: size2, ...props }, ref) => {
   const context = reactExports.useContext(ToggleGroupContext$1);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Item2,
+    Item2$1,
     {
       ref,
       "data-slot": "toggle-group-item",
@@ -4164,24 +4168,80 @@ const ToggleGroupItem = reactExports.forwardRef(({ className, children, size: si
 });
 ToggleGroupItem.displayName = "ToggleGroupItem";
 function ThemeToggle() {
+  const [mode, setMode] = reactExports.useState(() => {
+    if (typeof window !== "undefined") {
+      return document.documentElement.classList.contains("dark") ? "dark" : "light";
+    }
+    return "light";
+  });
   const toggleTheme = (value) => {
+    if (!value) return;
     if (value === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
+    setMode(value);
   };
-  const isDarkMode = document.documentElement.classList.contains("dark");
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     ToggleGroup,
     {
       type: "single",
-      value: isDarkMode ? "dark" : "light",
+      value: mode,
       onValueChange: toggleTheme,
       "aria-label": "Theme toggle",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(ToggleGroupItem, { value: "light", "aria-label": "Light theme", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "lsd:h-4 lsd:w-4" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(ToggleGroupItem, { value: "dark", "aria-label": "Dark theme", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "lsd:h-4 lsd:w-4" }) })
+      ]
+    }
+  );
+}
+function ThemeAccentToggle() {
+  const [theme, setTheme] = reactExports.useState(() => {
+    if (typeof window !== "undefined") {
+      return document.documentElement.classList.contains("theme-teal") ? "teal" : "monochrome";
+    }
+    return "monochrome";
+  });
+  const toggleAccentTheme = (value) => {
+    if (!value) return;
+    const root = document.documentElement;
+    root.classList.remove("theme-teal");
+    if (value === "teal") {
+      root.classList.add("theme-teal");
+    }
+    setTheme(value);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    ToggleGroup,
+    {
+      type: "single",
+      value: theme,
+      onValueChange: toggleAccentTheme,
+      "aria-label": "Accent theme toggle",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ToggleGroupItem,
+          {
+            value: "monochrome",
+            "aria-label": "Monochrome theme",
+            className: "lsd:group",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:gap-1 lsd:items-center", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:w-3 lsd:h-3 lsd:bg-black dark:lsd:bg-white lsd:rounded-full lsd:border lsd:group-aria-checked:border-lsd-surface" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:w-3 lsd:h-3 lsd:bg-white dark:lsd:bg-black lsd:rounded-full lsd:border lsd:border-black lsd:group-aria-checked:border-lsd-surface" })
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ToggleGroupItem,
+          {
+            value: "teal",
+            "aria-label": "Teal theme",
+            className: "lsd:group",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:flex lsd:gap-1 lsd:items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:w-3 lsd:h-3 lsd:bg-lsd-theme-teal lsd:rounded-full lsd:border lsd:border-lsd-theme-teal lsd:group-aria-checked:border-lsd-theme-teal-border" }) })
+          }
+        )
       ]
     }
   );
@@ -4431,11 +4491,11 @@ var Collapsible = reactExports.forwardRef(
   }
 );
 Collapsible.displayName = COLLAPSIBLE_NAME;
-var TRIGGER_NAME$8 = "CollapsibleTrigger";
+var TRIGGER_NAME$9 = "CollapsibleTrigger";
 var CollapsibleTrigger = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeCollapsible, ...triggerProps } = props;
-    const context = useCollapsibleContext(TRIGGER_NAME$8, __scopeCollapsible);
+    const context = useCollapsibleContext(TRIGGER_NAME$9, __scopeCollapsible);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive$1.button,
       {
@@ -4452,19 +4512,19 @@ var CollapsibleTrigger = reactExports.forwardRef(
     );
   }
 );
-CollapsibleTrigger.displayName = TRIGGER_NAME$8;
-var CONTENT_NAME$8 = "CollapsibleContent";
+CollapsibleTrigger.displayName = TRIGGER_NAME$9;
+var CONTENT_NAME$a = "CollapsibleContent";
 var CollapsibleContent = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { forceMount, ...contentProps } = props;
-    const context = useCollapsibleContext(CONTENT_NAME$8, props.__scopeCollapsible);
+    const context = useCollapsibleContext(CONTENT_NAME$a, props.__scopeCollapsible);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: ({ present }) => /* @__PURE__ */ jsxRuntimeExports.jsx(CollapsibleContentImpl, { ...contentProps, ref: forwardedRef, present }) });
   }
 );
-CollapsibleContent.displayName = CONTENT_NAME$8;
+CollapsibleContent.displayName = CONTENT_NAME$a;
 var CollapsibleContentImpl = reactExports.forwardRef((props, forwardedRef) => {
   const { __scopeCollapsible, present, children, ...contentProps } = props;
-  const context = useCollapsibleContext(CONTENT_NAME$8, __scopeCollapsible);
+  const context = useCollapsibleContext(CONTENT_NAME$a, __scopeCollapsible);
   const [isPresent, setIsPresent] = reactExports.useState(present);
   const ref = reactExports.useRef(null);
   const composedRefs = useComposedRefs(forwardedRef, ref);
@@ -4520,13 +4580,13 @@ function getState$5(open) {
   return open ? "open" : "closed";
 }
 var Root$8 = Collapsible;
-var Trigger$5 = CollapsibleTrigger;
+var Trigger$6 = CollapsibleTrigger;
 var Content$3 = CollapsibleContent;
 var ACCORDION_NAME = "Accordion";
 var ACCORDION_KEYS = ["Home", "End", "ArrowDown", "ArrowUp", "ArrowLeft", "ArrowRight"];
-var [Collection$1, useCollection$1, createCollectionScope$1] = createCollection(ACCORDION_NAME);
+var [Collection$3, useCollection$3, createCollectionScope$3] = createCollection(ACCORDION_NAME);
 var [createAccordionContext] = createContextScope$1(ACCORDION_NAME, [
-  createCollectionScope$1,
+  createCollectionScope$3,
   createCollapsibleScope
 ]);
 var useCollapsibleScope = createCollapsibleScope();
@@ -4535,7 +4595,7 @@ var Accordion$1 = React.forwardRef(
     const { type, ...accordionProps } = props;
     const singleProps = accordionProps;
     const multipleProps = accordionProps;
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Provider, { scope: props.__scopeAccordion, children: type === "multiple" ? /* @__PURE__ */ jsxRuntimeExports.jsx(AccordionImplMultiple, { ...multipleProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(AccordionImplSingle, { ...singleProps, ref: forwardedRef }) });
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$3.Provider, { scope: props.__scopeAccordion, children: type === "multiple" ? /* @__PURE__ */ jsxRuntimeExports.jsx(AccordionImplMultiple, { ...multipleProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(AccordionImplSingle, { ...singleProps, ref: forwardedRef }) });
   }
 );
 Accordion$1.displayName = ACCORDION_NAME;
@@ -4611,7 +4671,7 @@ var AccordionImpl = React.forwardRef(
     const { __scopeAccordion, disabled, dir, orientation = "vertical", ...accordionProps } = props;
     const accordionRef = React.useRef(null);
     const composedRefs = useComposedRefs(accordionRef, forwardedRef);
-    const getItems = useCollection$1(__scopeAccordion);
+    const getItems = useCollection$3(__scopeAccordion);
     const direction = useDirection(dir);
     const isDirectionLTR = direction === "ltr";
     const handleKeyDown = composeEventHandlers(props.onKeyDown, (event) => {
@@ -4683,7 +4743,7 @@ var AccordionImpl = React.forwardRef(
         disabled,
         direction: dir,
         orientation,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Slot, { scope: __scopeAccordion, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$3.Slot, { scope: __scopeAccordion, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           Primitive$1.div,
           {
             ...accordionProps,
@@ -4696,13 +4756,13 @@ var AccordionImpl = React.forwardRef(
     );
   }
 );
-var ITEM_NAME$1 = "AccordionItem";
-var [AccordionItemProvider, useAccordionItemContext] = createAccordionContext(ITEM_NAME$1);
+var ITEM_NAME$3 = "AccordionItem";
+var [AccordionItemProvider, useAccordionItemContext] = createAccordionContext(ITEM_NAME$3);
 var AccordionItem$1 = React.forwardRef(
   (props, forwardedRef) => {
     const { __scopeAccordion, value, ...accordionItemProps } = props;
-    const accordionContext = useAccordionContext(ITEM_NAME$1, __scopeAccordion);
-    const valueContext = useAccordionValueContext(ITEM_NAME$1, __scopeAccordion);
+    const accordionContext = useAccordionContext(ITEM_NAME$3, __scopeAccordion);
+    const valueContext = useAccordionValueContext(ITEM_NAME$3, __scopeAccordion);
     const collapsibleScope = useCollapsibleScope(__scopeAccordion);
     const triggerId = useId();
     const open = value && valueContext.value.includes(value) || false;
@@ -4737,7 +4797,7 @@ var AccordionItem$1 = React.forwardRef(
     );
   }
 );
-AccordionItem$1.displayName = ITEM_NAME$1;
+AccordionItem$1.displayName = ITEM_NAME$3;
 var HEADER_NAME = "AccordionHeader";
 var AccordionHeader = React.forwardRef(
   (props, forwardedRef) => {
@@ -4757,16 +4817,16 @@ var AccordionHeader = React.forwardRef(
   }
 );
 AccordionHeader.displayName = HEADER_NAME;
-var TRIGGER_NAME$7 = "AccordionTrigger";
+var TRIGGER_NAME$8 = "AccordionTrigger";
 var AccordionTrigger$1 = React.forwardRef(
   (props, forwardedRef) => {
     const { __scopeAccordion, ...triggerProps } = props;
     const accordionContext = useAccordionContext(ACCORDION_NAME, __scopeAccordion);
-    const itemContext = useAccordionItemContext(TRIGGER_NAME$7, __scopeAccordion);
-    const collapsibleContext = useAccordionCollapsibleContext(TRIGGER_NAME$7, __scopeAccordion);
+    const itemContext = useAccordionItemContext(TRIGGER_NAME$8, __scopeAccordion);
+    const collapsibleContext = useAccordionCollapsibleContext(TRIGGER_NAME$8, __scopeAccordion);
     const collapsibleScope = useCollapsibleScope(__scopeAccordion);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.ItemSlot, { scope: __scopeAccordion, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Trigger$5,
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$3.ItemSlot, { scope: __scopeAccordion, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Trigger$6,
       {
         "aria-disabled": itemContext.open && !collapsibleContext.collapsible || void 0,
         "data-orientation": accordionContext.orientation,
@@ -4778,13 +4838,13 @@ var AccordionTrigger$1 = React.forwardRef(
     ) });
   }
 );
-AccordionTrigger$1.displayName = TRIGGER_NAME$7;
-var CONTENT_NAME$7 = "AccordionContent";
+AccordionTrigger$1.displayName = TRIGGER_NAME$8;
+var CONTENT_NAME$9 = "AccordionContent";
 var AccordionContent$1 = React.forwardRef(
   (props, forwardedRef) => {
     const { __scopeAccordion, ...contentProps } = props;
     const accordionContext = useAccordionContext(ACCORDION_NAME, __scopeAccordion);
-    const itemContext = useAccordionItemContext(CONTENT_NAME$7, __scopeAccordion);
+    const itemContext = useAccordionItemContext(CONTENT_NAME$9, __scopeAccordion);
     const collapsibleScope = useCollapsibleScope(__scopeAccordion);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Content$3,
@@ -4804,7 +4864,7 @@ var AccordionContent$1 = React.forwardRef(
     );
   }
 );
-AccordionContent$1.displayName = CONTENT_NAME$7;
+AccordionContent$1.displayName = CONTENT_NAME$9;
 function getState$4(open) {
   return open ? "open" : "closed";
 }
@@ -4812,14 +4872,14 @@ var Root2$5 = Accordion$1;
 var Item$1 = AccordionItem$1;
 var Header = AccordionHeader;
 var Trigger2$1 = AccordionTrigger$1;
-var Content2$4 = AccordionContent$1;
+var Content2$6 = AccordionContent$1;
 function Accordion({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$5, { "data-slot": "accordion", ...props });
 }
 const accordionTriggerVariants = cva(
-  "focus-visible:lsd:border-lsd-border-primary lsd:cursor-pointer focus-visible:lsd:ring-lsd-text/50 lsd:flex lsd:flex-1 lsd:items-start lsd:justify-between lsd:gap-4 lsd:rounded-none lsd:text-left lsd:font-medium lsd:transition-all lsd:outline-none lsd:hover:underline focus-visible:lsd:ring-[3px] lsd:disabled:pointer-events-none lsd:disabled:cursor-default lsd:disabled:opacity-34 [&[lsd:data-state=open]>svg]:rotate-180 lsd:text-lsd-text-primary lsd:bg-lsd-surface-primary",
+  "focus-visible:lsd:border-lsd-border lsd:cursor-pointer focus-visible:lsd:ring-lsd-text/50 lsd:flex lsd:flex-1 lsd:items-start lsd:justify-between lsd:gap-4 lsd:rounded-none lsd:text-left lsd:font-medium lsd:transition-all lsd:outline-none lsd:hover:underline focus-visible:lsd:ring-[3px] lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34 [&[lsd:data-state=open]>svg]:rotate-180 lsd:text-lsd-text-primary lsd:bg-lsd-surface",
   {
     variants: {
       size: {
@@ -4834,7 +4894,7 @@ const accordionTriggerVariants = cva(
   }
 );
 const accordionContentVariants = cva(
-  "lsd:data-[state=closed]:animate-accordion-up lsd:data-[state=open]:animate-accordion-down lsd:overflow-hidden lsd:text-lsd-text-primary lsd:bg-lsd-surface-primary",
+  "lsd:data-[state=closed]:animate-accordion-up lsd:data-[state=open]:animate-accordion-down lsd:overflow-hidden lsd:text-lsd-text-primary lsd:bg-lsd-surface",
   {
     variants: {
       size: {
@@ -4865,7 +4925,7 @@ function AccordionContent({
     }
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Content2$4,
+    Content2$6,
     {
       "data-slot": "accordion-content",
       className: cn$1(accordionContentVariants({ size: size2 })),
@@ -4882,7 +4942,7 @@ function AccordionItem({
     Item$1,
     {
       "data-slot": "accordion-item",
-      className: cn$1("lsd:border-b lsd:border-lsd-border-primary", className),
+      className: cn$1("lsd:border-b lsd:border-lsd-border", className),
       ...props
     }
   );
@@ -4929,7 +4989,7 @@ function CodeBlock({ className, code, ...props }) {
     "pre",
     {
       className: cn$1(
-        "lsd:overflow-x-auto lsd:rounded-md lsd:bg-lsd-surface-secondary lsd:p-4 lsd:text-sm lsd:text-lsd-text-primary",
+        "lsd:overflow-x-auto lsd:rounded-md lsd:bg-lsd-surface lsd:p-4 lsd:text-sm lsd:text-lsd-text-primary",
         className
       ),
       ...props,
@@ -4949,7 +5009,10 @@ function CodeExample({ children, code }) {
 function TypographyFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:max-w-6xl lsd:mx-auto", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:mb-10 lsd:text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:flex lsd:justify-center lsd:mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-center lsd:gap-4 lsd:mb-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {})
+      ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Typography, { variant: "h1", className: "lsd:mb-4", children: "Typography Component" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         Typography,
@@ -5259,7 +5322,7 @@ function FontToggle() {
       {
         type: "single",
         value: font,
-        onValueChange: (value) => setFont(value),
+        onValueChange: (value) => !!value && setFont(value),
         "aria-label": "Font toggle",
         children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(ToggleGroupItem, { value: "mono", "aria-label": "Mono font", children: "Mono" }),
@@ -5274,6 +5337,7 @@ function ToggleGroupFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -5599,6 +5663,7 @@ function ToggleFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -5732,7 +5797,7 @@ var TABS_NAME = "Tabs";
 var [createTabsContext] = createContextScope$1(TABS_NAME, [
   createRovingFocusGroupScope
 ]);
-var useRovingFocusGroupScope = createRovingFocusGroupScope();
+var useRovingFocusGroupScope$2 = createRovingFocusGroupScope();
 var [TabsProvider, useTabsContext] = createTabsContext(TABS_NAME);
 var Tabs$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -5782,7 +5847,7 @@ var TabsList$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, loop = true, ...listProps } = props;
     const context = useTabsContext(TAB_LIST_NAME, __scopeTabs);
-    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$2(__scopeTabs);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Root$a,
       {
@@ -5805,12 +5870,12 @@ var TabsList$1 = reactExports.forwardRef(
   }
 );
 TabsList$1.displayName = TAB_LIST_NAME;
-var TRIGGER_NAME$6 = "TabsTrigger";
+var TRIGGER_NAME$7 = "TabsTrigger";
 var TabsTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, value, disabled = false, ...triggerProps } = props;
-    const context = useTabsContext(TRIGGER_NAME$6, __scopeTabs);
-    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
+    const context = useTabsContext(TRIGGER_NAME$7, __scopeTabs);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$2(__scopeTabs);
     const triggerId = makeTriggerId(context.baseId, value);
     const contentId = makeContentId(context.baseId, value);
     const isSelected = value === context.value;
@@ -5856,12 +5921,12 @@ var TabsTrigger$1 = reactExports.forwardRef(
     );
   }
 );
-TabsTrigger$1.displayName = TRIGGER_NAME$6;
-var CONTENT_NAME$6 = "TabsContent";
+TabsTrigger$1.displayName = TRIGGER_NAME$7;
+var CONTENT_NAME$8 = "TabsContent";
 var TabsContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, value, forceMount, children, ...contentProps } = props;
-    const context = useTabsContext(CONTENT_NAME$6, __scopeTabs);
+    const context = useTabsContext(CONTENT_NAME$8, __scopeTabs);
     const triggerId = makeTriggerId(context.baseId, value);
     const contentId = makeContentId(context.baseId, value);
     const isSelected = value === context.value;
@@ -5891,7 +5956,7 @@ var TabsContent$1 = reactExports.forwardRef(
     ) });
   }
 );
-TabsContent$1.displayName = CONTENT_NAME$6;
+TabsContent$1.displayName = CONTENT_NAME$8;
 function makeTriggerId(baseId, value) {
   return `${baseId}-trigger-${value}`;
 }
@@ -5900,7 +5965,7 @@ function makeContentId(baseId, value) {
 }
 var Root2$4 = Tabs$1;
 var List = TabsList$1;
-var Trigger$4 = TabsTrigger$1;
+var Trigger$5 = TabsTrigger$1;
 var Content$2 = TabsContent$1;
 const tabsVariants = cva("", {
   variants: {
@@ -5920,7 +5985,7 @@ const tabsVariants = cva("", {
   }
 });
 const tabsListVariants = cva(
-  "lsd:bg-lsd-surface-primary lsd:border-b lsd:border-lsd-border lsd:flex lsd:flex-row",
+  "lsd:bg-lsd-surface lsd:border-b lsd:border-lsd-border lsd:flex lsd:flex-row",
   {
     variants: {
       size: {
@@ -5940,7 +6005,7 @@ const tabsListVariants = cva(
   }
 );
 const tabsTriggerVariants = cva(
-  "lsd:text-lsd-text lsd:border lsd:border-transparent lsd:border-b-0 lsd:hover:underline lsd:data-[state=active]:border-lsd-text lsd:data-[state=active]:bg-lsd-surface-primary lsd:data-[state=active]:font-medium lsd:disabled:opacity-34 lsd:disabled:pointer-events-none lsd:flex lsd:items-center lsd:justify-center lsd:whitespace-nowrap lsd:transition-colors",
+  "lsd:text-lsd-text-primary lsd:cursor-pointer lsd:border lsd:border-transparent lsd:border-b-0 lsd:hover:underline lsd:data-[state=active]:border-lsd-text-primary lsd:data-[state=active]:bg-lsd-surface lsd:data-[state=active]:font-medium lsd:disabled:opacity-34 lsd:disabled:pointer-events-none lsd:flex lsd:items-center lsd:justify-center lsd:whitespace-nowrap lsd:transition-colors",
   {
     variants: {
       size: {
@@ -5999,7 +6064,7 @@ function TabsTrigger({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Trigger$4,
+    Trigger$5,
     {
       "data-slot": "tabs-trigger",
       className: cn$1(tabsTriggerVariants({ size: size2, fullWidth }), className),
@@ -6011,6 +6076,7 @@ function TabsFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -6602,7 +6668,7 @@ function getState$3(checked) {
 var Root$7 = Switch$1;
 var Thumb = SwitchThumb;
 const switchVariants = cva(
-  "peer lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=unchecked]:bg-lsd-surface-secondary focus-visible:lsd:border-lsd-border focus-visible:lsd:ring-lsd-text/50 dark:lsd:data-[state=unchecked]:bg-lsd-surface-secondary/80 lsd:inline-flex lsd:shrink-0 lsd:items-center lsd:rounded-full lsd:border lsd:border-lsd-border lsd:shadow-xs lsd:transition-all lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50",
+  "peer lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=unchecked]:bg-lsd-surface focus-visible:lsd:border-lsd-border focus-visible:lsd:ring-lsd-text/50 dark:lsd:data-[state=unchecked]:bg-lsd-surface/80 lsd:inline-flex lsd:shrink-0 lsd:items-center lsd:rounded-full lsd:border lsd:border-lsd-border lsd:shadow-xs lsd:transition-all lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50",
   {
     variants: {
       size: {
@@ -6617,7 +6683,7 @@ const switchVariants = cva(
   }
 );
 const thumbVariants = cva(
-  "lsd:bg-lsd-surface-primary lsd:border lsd:border-lsd-border dark:lsd:data-[state=unchecked]:bg-lsd-text dark:lsd:data-[state=checked]:bg-lsd-surface-primary lsd:pointer-events-none lsd:block lsd:rounded-full lsd:ring-0 lsd:transition-transform",
+  "lsd:bg-lsd-surface lsd:border lsd:border-lsd-border dark:lsd:data-[state=unchecked]:bg-lsd-text-primary dark:lsd:data-[state=checked]:bg-lsd-surface lsd:pointer-events-none lsd:block lsd:rounded-full lsd:ring-0 lsd:transition-transform",
   {
     variants: {
       size: {
@@ -6665,6 +6731,7 @@ function SwitchFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -8101,21 +8168,21 @@ const Toaster2 = ({ ...props }) => {
       className: "lsd:toaster lsd:group",
       richColors: true,
       style: {
-        "--normal-bg": "rgb(var(--lsd-surface-primary))",
-        "--normal-text": "rgb(var(--lsd-text-primary))",
-        "--normal-border": "rgb(var(--lsd-border))",
-        "--success-bg": "rgb(var(--lsd-surface-primary))",
-        "--success-border": "rgb(var(--lsd-success))",
-        "--success-text": "rgb(var(--lsd-success-text))",
-        "--error-bg": "rgb(var(--lsd-surface-primary))",
-        "--error-border": "rgb(var(--lsd-destructive))",
-        "--error-text": "rgb(var(--lsd-destructive-text))",
-        "--warning-bg": "rgb(var(--lsd-surface-primary))",
-        "--warning-border": "rgb(var(--lsd-warning))",
-        "--warning-text": "rgb(var(--lsd-warning-text))",
-        "--info-bg": "rgb(var(--lsd-surface-primary))",
-        "--info-border": "rgb(var(--lsd-info))",
-        "--info-text": "rgb(var(--lsd-info-text))"
+        "--normal-bg": "var(--lsd-surface)",
+        "--normal-text": "var(--lsd-text-primary)",
+        "--normal-border": "var(--lsd-border)",
+        "--success-bg": "var(--lsd-surface)",
+        "--success-border": "var(--lsd-success)",
+        "--success-text": "var(--lsd-success-text)",
+        "--error-bg": "var(--lsd-surface)",
+        "--error-border": "var(--lsd-destructive)",
+        "--error-text": "var(--lsd-destructive-text)",
+        "--warning-bg": "var(--lsd-surface)",
+        "--warning-border": "var(--lsd-warning)",
+        "--warning-text": "var(--lsd-warning-text)",
+        "--info-bg": "var(--lsd-surface)",
+        "--info-border": "var(--lsd-info)",
+        "--info-text": "var(--lsd-info-text)"
       },
       ...props
     }
@@ -8125,6 +8192,7 @@ function SonnerFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -8717,7 +8785,7 @@ var FocusScope = reactExports.forwardRef((props, forwardedRef) => {
         container.addEventListener(AUTOFOCUS_ON_MOUNT, onMountAutoFocus);
         container.dispatchEvent(mountEvent);
         if (!mountEvent.defaultPrevented) {
-          focusFirst(removeLinks(getTabbableCandidates(container)), { select: true });
+          focusFirst$1(removeLinks(getTabbableCandidates(container)), { select: true });
           if (document.activeElement === previouslyFocusedElement) {
             focus(container);
           }
@@ -8766,7 +8834,7 @@ var FocusScope = reactExports.forwardRef((props, forwardedRef) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { tabIndex: -1, ...scopeProps, ref: composedRefs, onKeyDown: handleKeyDown });
 });
 FocusScope.displayName = FOCUS_SCOPE_NAME;
-function focusFirst(candidates, { select = false } = {}) {
+function focusFirst$1(candidates, { select = false } = {}) {
   const previouslyFocusedElement = document.activeElement;
   for (const candidate of candidates) {
     focus(candidate, { select });
@@ -8845,15 +8913,15 @@ function arrayRemove(array, item) {
 function removeLinks(items2) {
   return items2.filter((item) => item.tagName !== "A");
 }
-var PORTAL_NAME$5 = "Portal";
-var Portal$4 = reactExports.forwardRef((props, forwardedRef) => {
+var PORTAL_NAME$7 = "Portal";
+var Portal$5 = reactExports.forwardRef((props, forwardedRef) => {
   const { container: containerProp, ...portalProps } = props;
   const [mounted, setMounted] = reactExports.useState(false);
   useLayoutEffect2(() => setMounted(true), []);
   const container = containerProp || mounted && globalThis?.document?.body;
   return container ? ReactDOM.createPortal(/* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { ...portalProps, ref: forwardedRef }), container) : null;
 });
-Portal$4.displayName = PORTAL_NAME$5;
+Portal$5.displayName = PORTAL_NAME$7;
 var count = 0;
 function useFocusGuards() {
   reactExports.useEffect(() => {
@@ -9696,11 +9764,11 @@ var Dialog$1 = (props) => {
   );
 };
 Dialog$1.displayName = DIALOG_NAME;
-var TRIGGER_NAME$5 = "DialogTrigger";
+var TRIGGER_NAME$6 = "DialogTrigger";
 var DialogTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeDialog, ...triggerProps } = props;
-    const context = useDialogContext(TRIGGER_NAME$5, __scopeDialog);
+    const context = useDialogContext(TRIGGER_NAME$6, __scopeDialog);
     const composedTriggerRef = useComposedRefs(forwardedRef, context.triggerRef);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive$1.button,
@@ -9717,28 +9785,28 @@ var DialogTrigger$1 = reactExports.forwardRef(
     );
   }
 );
-DialogTrigger$1.displayName = TRIGGER_NAME$5;
-var PORTAL_NAME$4 = "DialogPortal";
-var [PortalProvider$2, usePortalContext$2] = createDialogContext(PORTAL_NAME$4, {
+DialogTrigger$1.displayName = TRIGGER_NAME$6;
+var PORTAL_NAME$6 = "DialogPortal";
+var [PortalProvider$3, usePortalContext$3] = createDialogContext(PORTAL_NAME$6, {
   forceMount: void 0
 });
 var DialogPortal$1 = (props) => {
   const { __scopeDialog, forceMount, children, container } = props;
-  const context = useDialogContext(PORTAL_NAME$4, __scopeDialog);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider$2, { scope: __scopeDialog, forceMount, children: reactExports.Children.map(children, (child) => /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { asChild: true, container, children: child }) })) });
+  const context = useDialogContext(PORTAL_NAME$6, __scopeDialog);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider$3, { scope: __scopeDialog, forceMount, children: reactExports.Children.map(children, (child) => /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$5, { asChild: true, container, children: child }) })) });
 };
-DialogPortal$1.displayName = PORTAL_NAME$4;
+DialogPortal$1.displayName = PORTAL_NAME$6;
 var OVERLAY_NAME$1 = "DialogOverlay";
 var DialogOverlay$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const portalContext = usePortalContext$2(OVERLAY_NAME$1, props.__scopeDialog);
+    const portalContext = usePortalContext$3(OVERLAY_NAME$1, props.__scopeDialog);
     const { forceMount = portalContext.forceMount, ...overlayProps } = props;
     const context = useDialogContext(OVERLAY_NAME$1, props.__scopeDialog);
     return context.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogOverlayImpl, { ...overlayProps, ref: forwardedRef }) }) : null;
   }
 );
 DialogOverlay$1.displayName = OVERLAY_NAME$1;
-var Slot$3 = /* @__PURE__ */ createSlot$1("DialogOverlay.RemoveScroll");
+var Slot$4 = /* @__PURE__ */ createSlot$1("DialogOverlay.RemoveScroll");
 var DialogOverlayImpl = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeDialog, ...overlayProps } = props;
@@ -9746,7 +9814,7 @@ var DialogOverlayImpl = reactExports.forwardRef(
     return (
       // Make sure `Content` is scrollable even when it doesn't live inside `RemoveScroll`
       // ie. when `Overlay` and `Content` are siblings
-      /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$3, allowPinchZoom: true, shards: [context.contentRef], children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$4, allowPinchZoom: true, shards: [context.contentRef], children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         Primitive$1.div,
         {
           "data-state": getState$2(context.open),
@@ -9758,19 +9826,19 @@ var DialogOverlayImpl = reactExports.forwardRef(
     );
   }
 );
-var CONTENT_NAME$5 = "DialogContent";
+var CONTENT_NAME$7 = "DialogContent";
 var DialogContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const portalContext = usePortalContext$2(CONTENT_NAME$5, props.__scopeDialog);
+    const portalContext = usePortalContext$3(CONTENT_NAME$7, props.__scopeDialog);
     const { forceMount = portalContext.forceMount, ...contentProps } = props;
-    const context = useDialogContext(CONTENT_NAME$5, props.__scopeDialog);
+    const context = useDialogContext(CONTENT_NAME$7, props.__scopeDialog);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: context.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(DialogContentModal, { ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(DialogContentNonModal, { ...contentProps, ref: forwardedRef }) });
   }
 );
-DialogContent$1.displayName = CONTENT_NAME$5;
+DialogContent$1.displayName = CONTENT_NAME$7;
 var DialogContentModal = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = useDialogContext(CONTENT_NAME$5, props.__scopeDialog);
+    const context = useDialogContext(CONTENT_NAME$7, props.__scopeDialog);
     const contentRef = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, context.contentRef, contentRef);
     reactExports.useEffect(() => {
@@ -9804,7 +9872,7 @@ var DialogContentModal = reactExports.forwardRef(
 );
 var DialogContentNonModal = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = useDialogContext(CONTENT_NAME$5, props.__scopeDialog);
+    const context = useDialogContext(CONTENT_NAME$7, props.__scopeDialog);
     const hasInteractedOutsideRef = reactExports.useRef(false);
     const hasPointerDownOutsideRef = reactExports.useRef(false);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -9845,7 +9913,7 @@ var DialogContentNonModal = reactExports.forwardRef(
 var DialogContentImpl = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeDialog, trapFocus, onOpenAutoFocus, onCloseAutoFocus, ...contentProps } = props;
-    const context = useDialogContext(CONTENT_NAME$5, __scopeDialog);
+    const context = useDialogContext(CONTENT_NAME$7, __scopeDialog);
     const contentRef = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, contentRef);
     useFocusGuards();
@@ -9920,7 +9988,7 @@ function getState$2(open) {
 }
 var TITLE_WARNING_NAME = "DialogTitleWarning";
 var [WarningProvider, useWarningContext] = createContext2(TITLE_WARNING_NAME, {
-  contentName: CONTENT_NAME$5,
+  contentName: CONTENT_NAME$7,
   titleName: TITLE_NAME$1,
   docsSlug: "dialog"
 });
@@ -9953,8 +10021,8 @@ var DescriptionWarning$1 = ({ contentRef, descriptionId }) => {
   return null;
 };
 var Root$6 = Dialog$1;
-var Trigger$3 = DialogTrigger$1;
-var Portal$3 = DialogPortal$1;
+var Trigger$4 = DialogTrigger$1;
+var Portal$4 = DialogPortal$1;
 var Overlay = DialogOverlay$1;
 var Content$1 = DialogContent$1;
 var Title = DialogTitle$1;
@@ -9989,7 +10057,7 @@ function SheetOverlay({
 function SheetPortal({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$3, { "data-slot": "sheet-portal", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { "data-slot": "sheet-portal", ...props });
 }
 function SheetContent({
   className,
@@ -10081,7 +10149,7 @@ function SheetTitle({
 function SheetTrigger({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$3, { "data-slot": "sheet-trigger", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$4, { "data-slot": "sheet-trigger", ...props });
 }
 const sides = ["top", "right", "bottom", "left"];
 const min = Math.min;
@@ -11993,11 +12061,11 @@ var Popper = (props) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(PopperProvider, { scope: __scopePopper, anchor, onAnchorChange: setAnchor, children });
 };
 Popper.displayName = POPPER_NAME;
-var ANCHOR_NAME$1 = "PopperAnchor";
+var ANCHOR_NAME$2 = "PopperAnchor";
 var PopperAnchor = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopePopper, virtualRef, ...anchorProps } = props;
-    const context = usePopperContext(ANCHOR_NAME$1, __scopePopper);
+    const context = usePopperContext(ANCHOR_NAME$2, __scopePopper);
     const ref = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, ref);
     const anchorRef = reactExports.useRef(null);
@@ -12011,9 +12079,9 @@ var PopperAnchor = reactExports.forwardRef(
     return virtualRef ? null : /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { ...anchorProps, ref: composedRefs });
   }
 );
-PopperAnchor.displayName = ANCHOR_NAME$1;
-var CONTENT_NAME$4 = "PopperContent";
-var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$4);
+PopperAnchor.displayName = ANCHOR_NAME$2;
+var CONTENT_NAME$6 = "PopperContent";
+var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$6);
 var PopperContent = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -12032,7 +12100,7 @@ var PopperContent = reactExports.forwardRef(
       onPlaced,
       ...contentProps
     } = props;
-    const context = usePopperContext(CONTENT_NAME$4, __scopePopper);
+    const context = usePopperContext(CONTENT_NAME$6, __scopePopper);
     const [content, setContent] = reactExports.useState(null);
     const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
     const [arrow$12, setArrow] = reactExports.useState(null);
@@ -12155,8 +12223,8 @@ var PopperContent = reactExports.forwardRef(
     );
   }
 );
-PopperContent.displayName = CONTENT_NAME$4;
-var ARROW_NAME$3 = "PopperArrow";
+PopperContent.displayName = CONTENT_NAME$6;
+var ARROW_NAME$5 = "PopperArrow";
 var OPPOSITE_SIDE = {
   top: "bottom",
   right: "left",
@@ -12165,7 +12233,7 @@ var OPPOSITE_SIDE = {
 };
 var PopperArrow = reactExports.forwardRef(function PopperArrow2(props, forwardedRef) {
   const { __scopePopper, ...arrowProps } = props;
-  const contentContext = useContentContext(ARROW_NAME$3, __scopePopper);
+  const contentContext = useContentContext(ARROW_NAME$5, __scopePopper);
   const baseSide = OPPOSITE_SIDE[contentContext.placedSide];
   return (
     // we have to use an extra wrapper because `ResizeObserver` (used by `useSize`)
@@ -12210,7 +12278,7 @@ var PopperArrow = reactExports.forwardRef(function PopperArrow2(props, forwarded
     )
   );
 });
-PopperArrow.displayName = ARROW_NAME$3;
+PopperArrow.displayName = ARROW_NAME$5;
 function isNotNull(value) {
   return value !== null;
 }
@@ -12284,7 +12352,7 @@ var Root$4 = VisuallyHidden;
 var [createTooltipContext] = createContextScope$1("Tooltip", [
   createPopperScope
 ]);
-var usePopperScope$2 = createPopperScope();
+var usePopperScope$3 = createPopperScope();
 var PROVIDER_NAME = "TooltipProvider";
 var DEFAULT_DELAY_DURATION = 700;
 var TOOLTIP_OPEN = "tooltip.open";
@@ -12344,7 +12412,7 @@ var Tooltip$1 = (props) => {
     delayDuration: delayDurationProp
   } = props;
   const providerContext = useTooltipProviderContext(TOOLTIP_NAME, props.__scopeTooltip);
-  const popperScope = usePopperScope$2(__scopeTooltip);
+  const popperScope = usePopperScope$3(__scopeTooltip);
   const [trigger, setTrigger] = reactExports.useState(null);
   const contentId = useId();
   const openTimerRef = reactExports.useRef(0);
@@ -12424,13 +12492,13 @@ var Tooltip$1 = (props) => {
   ) });
 };
 Tooltip$1.displayName = TOOLTIP_NAME;
-var TRIGGER_NAME$4 = "TooltipTrigger";
+var TRIGGER_NAME$5 = "TooltipTrigger";
 var TooltipTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTooltip, ...triggerProps } = props;
-    const context = useTooltipContext(TRIGGER_NAME$4, __scopeTooltip);
-    const providerContext = useTooltipProviderContext(TRIGGER_NAME$4, __scopeTooltip);
-    const popperScope = usePopperScope$2(__scopeTooltip);
+    const context = useTooltipContext(TRIGGER_NAME$5, __scopeTooltip);
+    const providerContext = useTooltipProviderContext(TRIGGER_NAME$5, __scopeTooltip);
+    const popperScope = usePopperScope$3(__scopeTooltip);
     const ref = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, ref, context.onTriggerChange);
     const isPointerDownRef = reactExports.useRef(false);
@@ -12473,29 +12541,29 @@ var TooltipTrigger$1 = reactExports.forwardRef(
     ) });
   }
 );
-TooltipTrigger$1.displayName = TRIGGER_NAME$4;
-var PORTAL_NAME$3 = "TooltipPortal";
-var [PortalProvider$1, usePortalContext$1] = createTooltipContext(PORTAL_NAME$3, {
+TooltipTrigger$1.displayName = TRIGGER_NAME$5;
+var PORTAL_NAME$5 = "TooltipPortal";
+var [PortalProvider$2, usePortalContext$2] = createTooltipContext(PORTAL_NAME$5, {
   forceMount: void 0
 });
 var TooltipPortal = (props) => {
   const { __scopeTooltip, forceMount, children, container } = props;
-  const context = useTooltipContext(PORTAL_NAME$3, __scopeTooltip);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider$1, { scope: __scopeTooltip, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { asChild: true, container, children }) }) });
+  const context = useTooltipContext(PORTAL_NAME$5, __scopeTooltip);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider$2, { scope: __scopeTooltip, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$5, { asChild: true, container, children }) }) });
 };
-TooltipPortal.displayName = PORTAL_NAME$3;
-var CONTENT_NAME$3 = "TooltipContent";
+TooltipPortal.displayName = PORTAL_NAME$5;
+var CONTENT_NAME$5 = "TooltipContent";
 var TooltipContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const portalContext = usePortalContext$1(CONTENT_NAME$3, props.__scopeTooltip);
+    const portalContext = usePortalContext$2(CONTENT_NAME$5, props.__scopeTooltip);
     const { forceMount = portalContext.forceMount, side = "top", ...contentProps } = props;
-    const context = useTooltipContext(CONTENT_NAME$3, props.__scopeTooltip);
+    const context = useTooltipContext(CONTENT_NAME$5, props.__scopeTooltip);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: context.disableHoverableContent ? /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContentImpl, { side, ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContentHoverable, { side, ...contentProps, ref: forwardedRef }) });
   }
 );
 var TooltipContentHoverable = reactExports.forwardRef((props, forwardedRef) => {
-  const context = useTooltipContext(CONTENT_NAME$3, props.__scopeTooltip);
-  const providerContext = useTooltipProviderContext(CONTENT_NAME$3, props.__scopeTooltip);
+  const context = useTooltipContext(CONTENT_NAME$5, props.__scopeTooltip);
+  const providerContext = useTooltipProviderContext(CONTENT_NAME$5, props.__scopeTooltip);
   const ref = reactExports.useRef(null);
   const composedRefs = useComposedRefs(forwardedRef, ref);
   const [pointerGraceArea, setPointerGraceArea] = reactExports.useState(null);
@@ -12540,7 +12608,7 @@ var TooltipContentHoverable = reactExports.forwardRef((props, forwardedRef) => {
         const target = event.target;
         const pointerPosition = { x: event.clientX, y: event.clientY };
         const hasEnteredTarget = trigger?.contains(target) || content?.contains(target);
-        const isPointerOutsideGraceArea = !isPointInPolygon(pointerPosition, pointerGraceArea);
+        const isPointerOutsideGraceArea = !isPointInPolygon$1(pointerPosition, pointerGraceArea);
         if (hasEnteredTarget) {
           handleRemoveGraceArea();
         } else if (isPointerOutsideGraceArea) {
@@ -12566,8 +12634,8 @@ var TooltipContentImpl = reactExports.forwardRef(
       onPointerDownOutside,
       ...contentProps
     } = props;
-    const context = useTooltipContext(CONTENT_NAME$3, __scopeTooltip);
-    const popperScope = usePopperScope$2(__scopeTooltip);
+    const context = useTooltipContext(CONTENT_NAME$5, __scopeTooltip);
+    const popperScope = usePopperScope$3(__scopeTooltip);
     const { onClose } = context;
     reactExports.useEffect(() => {
       document.addEventListener(TOOLTIP_OPEN, onClose);
@@ -12620,20 +12688,20 @@ var TooltipContentImpl = reactExports.forwardRef(
     );
   }
 );
-TooltipContent$1.displayName = CONTENT_NAME$3;
-var ARROW_NAME$2 = "TooltipArrow";
+TooltipContent$1.displayName = CONTENT_NAME$5;
+var ARROW_NAME$4 = "TooltipArrow";
 var TooltipArrow = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTooltip, ...arrowProps } = props;
-    const popperScope = usePopperScope$2(__scopeTooltip);
+    const popperScope = usePopperScope$3(__scopeTooltip);
     const visuallyHiddenContentContext = useVisuallyHiddenContentContext(
-      ARROW_NAME$2,
+      ARROW_NAME$4,
       __scopeTooltip
     );
     return visuallyHiddenContentContext.isInside ? null : /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow, { ...popperScope, ...arrowProps, ref: forwardedRef });
   }
 );
-TooltipArrow.displayName = ARROW_NAME$2;
+TooltipArrow.displayName = ARROW_NAME$4;
 function getExitSideFromRect(point, rect) {
   const top = Math.abs(rect.top - point.y);
   const bottom = Math.abs(rect.bottom - point.y);
@@ -12691,7 +12759,7 @@ function getPointsFromRect(rect) {
     { x: left, y: bottom }
   ];
 }
-function isPointInPolygon(point, polygon) {
+function isPointInPolygon$1(point, polygon) {
   const { x: x2, y } = point;
   let inside = false;
   for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
@@ -12750,19 +12818,19 @@ function getHullPresorted(points) {
   }
 }
 var Provider = TooltipProvider$1;
-var Root3 = Tooltip$1;
-var Trigger$2 = TooltipTrigger$1;
-var Portal$2 = TooltipPortal;
-var Content2$3 = TooltipContent$1;
-var Arrow2 = TooltipArrow;
+var Root3$2 = Tooltip$1;
+var Trigger$3 = TooltipTrigger$1;
+var Portal$3 = TooltipPortal;
+var Content2$5 = TooltipContent$1;
+var Arrow2$1 = TooltipArrow;
 function TooltipContent({
   className,
   sideOffset = 0,
   children,
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$2, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Content2$3,
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$3, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    Content2$5,
     {
       "data-slot": "tooltip-content",
       sideOffset,
@@ -12773,7 +12841,7 @@ function TooltipContent({
       ...props,
       children: [
         children,
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow2, { className: "lsd:bg-foreground fill-foreground lsd:z-50 lsd:size-2.5 lsd:translate-y-[calc(-50%_-_2px)] lsd:rotate-45 lsd:rounded-[2px]" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow2$1, { className: "lsd:bg-foreground fill-foreground lsd:z-50 lsd:size-2.5 lsd:translate-y-[calc(-50%_-_2px)] lsd:rotate-45 lsd:rounded-[2px]" })
       ]
     }
   ) });
@@ -12794,12 +12862,12 @@ function TooltipProvider({
 function TooltipTrigger({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$2, { "data-slot": "tooltip-trigger", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$3, { "data-slot": "tooltip-trigger", ...props });
 }
 function Tooltip({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Root3, { "data-slot": "tooltip", ...props }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Root3$2, { "data-slot": "tooltip", ...props }) });
 }
 const MOBILE_BREAKPOINT = 768;
 function useIsMobile() {
@@ -12820,7 +12888,7 @@ function useIsMobile() {
 const SIDEBAR_WIDTH_MOBILE = "18rem";
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 const sidebarMenuButtonVariants = cva(
-  "peer/menu-button lsd:flex lsd:w-full lsd:items-center lsd:gap-2 lsd:overflow-hidden lsd:rounded-md lsd:p-2 lsd:text-left lsd:text-sm lsd:outline-hidden ring-sidebar-ring lsd:transition-[width,height,padding] lsd:hover:bg-sidebar-accent lsd:hover:text-sidebar-accent-foreground lsd:focus-visible:ring-2 lsd:active:bg-sidebar-accent lsd:active:text-sidebar-accent-foreground lsd:disabled:pointer-events-none lsd:disabled:opacity-50 lsd:group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-lsd:disabled:pointer-events-none aria-lsd:disabled:opacity-50 lsd:data-[active=true]:bg-sidebar-accent lsd:data-[active=true]:font-medium lsd:data-[active=true]:text-sidebar-accent-foreground lsd:data-[state=open]:hover:bg-sidebar-accent lsd:data-[state=open]:hover:text-sidebar-accent-foreground lsd:group-data-[collapsible=icon]:size-8! lsd:group-data-[collapsible=icon]:p-2! lsd:[&>span:last-child]:truncate lsd:[&>svg]:size-4 lsd:[&>svg]:shrink-0",
+  "peer/menu-button lsd:flex lsd:w-full lsd:items-center lsd:gap-2 lsd:overflow-hidden lsd:rounded-md lsd:p-2 lsd:text-left lsd:text-sm lsd:outline-hidden ring-sidebar-ring lsd:transition-[width,height,padding] lsd:hover:bg-sidebar-accent lsd:hover:text-sidebar-accent-foreground lsd:focus-visible:ring-2 lsd:active:bg-sidebar-accent lsd:active:text-sidebar-accent-foreground lsd:disabled:pointer-events-none lsd:disabled:opacity-50 lsd:group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-lsd:disabled:pointer-events-none aria-lsd:disabled:opacity-50 lsd:data-[active=true]:bg-sidebar-accent lsd:data-[active=true]:font-medium lsd:data-[active=true]:text-sidebar-accent-foreground lsd:data-[state=open]:hover:bg-sidebar-accent lsd:data-[state=open]:hover:text-sidebar-accent-foreground lsd:group-data-[collapsible=icon]:size-8! lsd:group-data-[collapsible=icon]:p-2! lsd:[&>span:last-child]:truncate lsd:[&>svg]:size-4 lsd:[&>svg]:shrink-0 lsd:hover:underline lsd:focus:underline",
   {
     variants: {
       variant: {
@@ -13087,7 +13155,7 @@ const Input = reactExports.forwardRef(
         {
           className: cn$1(
             "lsd:flex lsd:items-center lsd:justify-between",
-            variant === "outlined" ? "lsd:border lsd:border-lsd-border-primary" : "lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary",
+            variant === "outlined" ? "lsd:border lsd:border-lsd-border" : "lsd:border lsd:border-transparent lsd:border-b-lsd-border",
             error && "lsd:border-lsd-destructive"
           ),
           children: /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -13097,7 +13165,7 @@ const Input = reactExports.forwardRef(
               type,
               id: finalId,
               className: cn$1(
-                "file:lsd:text-lsd-text placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface-primary lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34",
+                "file:lsd:text-lsd-text-primary placeholder:lsd:text-lsd-text-primary placeholder:lsd:opacity-30 selection:lsd:bg-lsd-primary selection:lsd:text-lsd-surface lsd:border-none lsd:outline-none lsd:bg-transparent lsd:text-lsd-text-primary lsd:w-full lsd:h-full file:lsd:inline-flex file:lsd:h-7 file:lsd:border-0 file:lsd:bg-transparent file:lsd:font-medium lsd:disabled:pointer-events-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-34",
                 "focus-visible:lsd:outline-none lsd:px-4",
                 getTextSizeClasses(size2),
                 getVerticalPaddingClasses(size2)
@@ -13157,7 +13225,7 @@ function createSlot(ownerName) {
   Slot2.displayName = `${ownerName}.Slot`;
   return Slot2;
 }
-var Slot$2 = /* @__PURE__ */ createSlot("Slot");
+var Slot$3 = /* @__PURE__ */ createSlot("Slot");
 // @__NO_SIDE_EFFECTS__
 function createSlotClone(ownerName) {
   const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
@@ -13254,7 +13322,7 @@ var Primitive = NODES.reduce((primitive, node) => {
 var NAME$1 = "Separator";
 var DEFAULT_ORIENTATION = "horizontal";
 var ORIENTATIONS = ["horizontal", "vertical"];
-var Separator$2 = reactExports.forwardRef((props, forwardedRef) => {
+var Separator$3 = reactExports.forwardRef((props, forwardedRef) => {
   const { decorative, orientation: orientationProp = DEFAULT_ORIENTATION, ...domProps } = props;
   const orientation = isValidOrientation(orientationProp) ? orientationProp : DEFAULT_ORIENTATION;
   const ariaOrientation = orientation === "vertical" ? orientation : void 0;
@@ -13269,12 +13337,12 @@ var Separator$2 = reactExports.forwardRef((props, forwardedRef) => {
     }
   );
 });
-Separator$2.displayName = NAME$1;
+Separator$3.displayName = NAME$1;
 function isValidOrientation(orientation) {
   return ORIENTATIONS.includes(orientation);
 }
-var Root$3 = Separator$2;
-const Separator$1 = reactExports.forwardRef(
+var Root$3 = Separator$3;
+const Separator$2 = reactExports.forwardRef(
   ({ className, orientation = "horizontal", decorative = true, ...props }, ref) => {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Root$3,
@@ -13292,7 +13360,7 @@ const Separator$1 = reactExports.forwardRef(
     );
   }
 );
-Separator$1.displayName = Root$3.displayName;
+Separator$2.displayName = Root$3.displayName;
 function SidebarContent({ className, ...props }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "div",
@@ -13402,7 +13470,7 @@ function SidebarGroupLabel({
   asChild = false,
   ...props
 }) {
-  const Comp = asChild ? Slot$2 : "div";
+  const Comp = asChild ? Slot$3 : "div";
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Comp,
     {
@@ -13465,7 +13533,7 @@ function SidebarMenuButton({
   className,
   ...props
 }) {
-  const Comp = asChild ? Slot$2 : "button";
+  const Comp = asChild ? Slot$3 : "button";
   const { isMobile, state } = useSidebar();
   const button = /* @__PURE__ */ jsxRuntimeExports.jsx(
     Comp,
@@ -13535,7 +13603,7 @@ function SidebarMenuSubButton({
   className,
   ...props
 }) {
-  const Comp = asChild ? Slot$2 : "a";
+  const Comp = asChild ? Slot$3 : "a";
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Comp,
     {
@@ -13544,7 +13612,7 @@ function SidebarMenuSubButton({
       "data-size": size2,
       "data-active": isActive,
       className: cn$1(
-        "lsd:text-sidebar-foreground ring-sidebar-ring lsd:hover:bg-sidebar-accent lsd:hover:text-sidebar-accent-foreground lsd:active:bg-sidebar-accent lsd:active:text-sidebar-accent-foreground lsd:[&>svg]:text-sidebar-accent-foreground lsd:flex lsd:h-7 lsd:min-w-0 lsd:-translate-x-px lsd:items-center lsd:gap-2 lsd:overflow-hidden lsd:rounded-md lsd:px-2 lsd:outline-hidden lsd:focus-visible:ring-2 lsd:disabled:pointer-events-none lsd:disabled:opacity-50 aria-lsd:disabled:pointer-events-none aria-lsd:disabled:opacity-50 lsd:data-[active=true]:bg-sidebar-accent lsd:data-[active=true]:text-sidebar-accent-foreground",
+        "lsd:text-sidebar-foreground ring-sidebar-ring lsd:hover:bg-sidebar-accent lsd:hover:text-sidebar-accent-foreground lsd:active:bg-sidebar-accent lsd:active:text-sidebar-accent-foreground lsd:[&>svg]:text-sidebar-accent-foreground lsd:flex lsd:h-7 lsd:min-w-0 lsd:-translate-x-px lsd:items-center lsd:gap-2 lsd:overflow-hidden lsd:rounded-md lsd:px-2 lsd:outline-hidden lsd:focus-visible:ring-2 lsd:disabled:pointer-events-none lsd:disabled:opacity-50 aria-lsd:disabled:pointer-events-none aria-lsd:disabled:opacity-50 lsd:data-[active=true]:bg-sidebar-accent lsd:data-[active=true]:text-sidebar-accent-foreground lsd:hover:underline lsd:focus:underline",
         size2 === "sm" && "lsd:text-xs",
         size2 === "md" && "lsd:text-sm",
         "lsd:group-data-[collapsible=icon]:hidden",
@@ -13580,6 +13648,7 @@ function SidebarFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(SidebarProvider, { children: [
@@ -13733,7 +13802,7 @@ const fixture6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
   default: SidebarFixture
 }, Symbol.toStringTag, { value: "Module" }));
 var NAME = "Label";
-var Label$2 = reactExports.forwardRef((props, forwardedRef) => {
+var Label$3 = reactExports.forwardRef((props, forwardedRef) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Primitive.label,
     {
@@ -13748,10 +13817,10 @@ var Label$2 = reactExports.forwardRef((props, forwardedRef) => {
     }
   );
 });
-Label$2.displayName = NAME;
-var Root$2 = Label$2;
+Label$3.displayName = NAME;
+var Root$2 = Label$3;
 const labelVariants = cva(
-  "lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 peer-lsd:disabled:cursor-not-allowed peer-lsd:disabled:opacity-50",
+  "lsd:flex lsd:items-center lsd:gap-2 lsd:select-none lsd:group-data-[disabled=true]:pointer-events-none lsd:group-data-[disabled=true]:opacity-50 lsd:peer-disabled:cursor-not-allowed lsd:peer-disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -13770,7 +13839,7 @@ const labelVariants = cva(
     }
   }
 );
-function Label$1({ className, variant, size: size2, ...props }) {
+function Label$2({ className, variant, size: size2, ...props }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Root$2,
     {
@@ -13786,6 +13855,7 @@ function SheetFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -13974,7 +14044,7 @@ function SheetFixture() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx(SheetDescription, { children: "Make changes to your profile here. Click save when you're done." })
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:grid lsd:gap-4 lsd:py-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:grid-cols-4 lsd:items-center lsd:gap-4", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "name", className: "lsd:text-right", children: "Name" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: "name", className: "lsd:text-right", children: "Name" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   Input,
                   {
@@ -14053,17 +14123,17 @@ function SheetFixture() {
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:py-4 lsd:space-y-4", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:mb-2 lsd:text-sm lsd:font-medium", children: "Profile Information" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, { className: "lsd:mb-4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, { className: "lsd:mb-4" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-sm lsd:text-muted-foreground", children: "Manage your personal information and how it appears on your profile." })
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:mb-2 lsd:text-sm lsd:font-medium", children: "Notification Settings" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, { className: "lsd:mb-4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, { className: "lsd:mb-4" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-sm lsd:text-muted-foreground", children: "Configure how and when you receive notifications." })
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:mb-2 lsd:text-sm lsd:font-medium", children: "Privacy Settings" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, { className: "lsd:mb-4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, { className: "lsd:mb-4" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-sm lsd:text-muted-foreground", children: "Control your privacy settings and data sharing preferences." })
                 ] })
               ] }),
@@ -14090,7 +14160,7 @@ const Card = reactExports.forwardRef(
         ref,
         "data-slot": "card",
         className: cn$1(
-          "lsd:bg-lsd-surface-primary lsd:text-lsd-text-primary lsd:flex lsd:flex-col lsd:border-lsd-border-primary lsd:border lsd:shadow-sm",
+          "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:flex lsd:flex-col lsd:border-lsd-border lsd:border lsd:shadow-sm",
           className
         ),
         ...props
@@ -14145,7 +14215,7 @@ const CardFooter = reactExports.forwardRef(({ className, ...props }, ref) => {
       ref,
       "data-slot": "card-footer",
       className: cn$1(
-        "lsd:flex lsd:items-center lsd:px-6 lsd:py-6 lsd:border-t lsd:border-lsd-border-primary lsd:pt-6",
+        "lsd:flex lsd:items-center lsd:px-6 lsd:py-6 lsd:border-t lsd:border-lsd-border lsd:pt-6",
         className
       ),
       ...props
@@ -14160,7 +14230,7 @@ const CardHeader = reactExports.forwardRef(({ className, ...props }, ref) => {
       ref,
       "data-slot": "card-header",
       className: cn$1(
-        "@container/card-header lsd:grid lsd:auto-rows-min lsd:grid-rows-[auto_auto] lsd:items-start lsd:gap-2 lsd:px-6 lsd:py-6 lsd:has-data-[slot=card-action]:grid-cols-[1fr_auto] lsd:border-b lsd:border-lsd-border-primary lsd:pb-6",
+        "@container/card-header lsd:grid lsd:auto-rows-min lsd:grid-rows-[auto_auto] lsd:items-start lsd:gap-2 lsd:px-6 lsd:py-6 lsd:has-data-[slot=card-action]:grid-cols-[1fr_auto] lsd:border-b lsd:border-lsd-border lsd:pb-6",
         className
       ),
       ...props
@@ -14186,6 +14256,7 @@ function SeparatorFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -14218,7 +14289,7 @@ function SeparatorFixture() {
               /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-medium", children: "Section 1" }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-sm lsd:text-muted-foreground", children: "Content for the first section goes here." })
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, {}),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-medium", children: "Section 2" }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-sm lsd:text-muted-foreground", children: "Content for the second section goes here." })
@@ -14267,12 +14338,12 @@ function SeparatorFixture() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:text-sm lsd:font-medium", children: "Profile Information" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-xs lsd:text-muted-foreground", children: "Update your profile information and email address." })
               ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, {}),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:text-sm lsd:font-medium", children: "Password" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-xs lsd:text-muted-foreground", children: "Change your password to keep your account secure." })
               ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$1, {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Separator$2, {}),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "lsd:text-sm lsd:font-medium", children: "Notifications" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-xs lsd:text-muted-foreground", children: "Manage your notification preferences." })
@@ -14292,14 +14363,14 @@ function clamp(value, [min2, max2]) {
   return Math.min(max2, Math.max(min2, value));
 }
 var OPEN_KEYS = [" ", "Enter", "ArrowUp", "ArrowDown"];
-var SELECTION_KEYS = [" ", "Enter"];
+var SELECTION_KEYS$1 = [" ", "Enter"];
 var SELECT_NAME = "Select";
-var [Collection, useCollection, createCollectionScope] = createCollection(SELECT_NAME);
+var [Collection$2, useCollection$2, createCollectionScope$2] = createCollection(SELECT_NAME);
 var [createSelectContext] = createContextScope$1(SELECT_NAME, [
-  createCollectionScope,
+  createCollectionScope$2,
   createPopperScope
 ]);
-var usePopperScope$1 = createPopperScope();
+var usePopperScope$2 = createPopperScope();
 var [SelectProvider, useSelectContext] = createSelectContext(SELECT_NAME);
 var [SelectNativeOptionsProvider, useSelectNativeOptionsContext] = createSelectContext(SELECT_NAME);
 var Select$1 = (props) => {
@@ -14319,7 +14390,7 @@ var Select$1 = (props) => {
     required,
     form
   } = props;
-  const popperScope = usePopperScope$1(__scopeSelect);
+  const popperScope = usePopperScope$2(__scopeSelect);
   const [trigger, setTrigger] = reactExports.useState(null);
   const [valueNode, setValueNode] = reactExports.useState(null);
   const [valueNodeHasChildren, setValueNodeHasChildren] = reactExports.useState(false);
@@ -14360,7 +14431,7 @@ var Select$1 = (props) => {
       triggerPointerDownPosRef,
       disabled,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.Provider, { scope: __scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$2.Provider, { scope: __scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           SelectNativeOptionsProvider,
           {
             scope: props.__scopeSelect,
@@ -14401,15 +14472,15 @@ var Select$1 = (props) => {
   ) });
 };
 Select$1.displayName = SELECT_NAME;
-var TRIGGER_NAME$3 = "SelectTrigger";
+var TRIGGER_NAME$4 = "SelectTrigger";
 var SelectTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, disabled = false, ...triggerProps } = props;
-    const popperScope = usePopperScope$1(__scopeSelect);
-    const context = useSelectContext(TRIGGER_NAME$3, __scopeSelect);
+    const popperScope = usePopperScope$2(__scopeSelect);
+    const context = useSelectContext(TRIGGER_NAME$4, __scopeSelect);
     const isDisabled = context.disabled || disabled;
     const composedRefs = useComposedRefs(forwardedRef, context.onTriggerChange);
-    const getItems = useCollection(__scopeSelect);
+    const getItems = useCollection$2(__scopeSelect);
     const pointerTypeRef = reactExports.useRef("touch");
     const [searchRef, handleTypeaheadSearch, resetTypeahead] = useTypeaheadSearch((search) => {
       const enabledItems = getItems().filter((item) => !item.disabled);
@@ -14478,7 +14549,7 @@ var SelectTrigger$1 = reactExports.forwardRef(
     ) });
   }
 );
-SelectTrigger$1.displayName = TRIGGER_NAME$3;
+SelectTrigger$1.displayName = TRIGGER_NAME$4;
 var VALUE_NAME = "SelectValue";
 var SelectValue$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -14510,15 +14581,15 @@ var SelectIcon = reactExports.forwardRef(
   }
 );
 SelectIcon.displayName = ICON_NAME;
-var PORTAL_NAME$2 = "SelectPortal";
+var PORTAL_NAME$4 = "SelectPortal";
 var SelectPortal = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { asChild: true, ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$5, { asChild: true, ...props });
 };
-SelectPortal.displayName = PORTAL_NAME$2;
-var CONTENT_NAME$2 = "SelectContent";
+SelectPortal.displayName = PORTAL_NAME$4;
+var CONTENT_NAME$4 = "SelectContent";
 var SelectContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = useSelectContext(CONTENT_NAME$2, props.__scopeSelect);
+    const context = useSelectContext(CONTENT_NAME$4, props.__scopeSelect);
     const [fragment, setFragment] = reactExports.useState();
     useLayoutEffect2(() => {
       setFragment(new DocumentFragment());
@@ -14526,18 +14597,18 @@ var SelectContent$1 = reactExports.forwardRef(
     if (!context.open) {
       const frag = fragment;
       return frag ? reactDomExports.createPortal(
-        /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentProvider, { scope: props.__scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.Slot, { scope: props.__scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: props.children }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentProvider, { scope: props.__scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$2.Slot, { scope: props.__scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: props.children }) }) }),
         frag
       ) : null;
     }
     return /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentImpl, { ...props, ref: forwardedRef });
   }
 );
-SelectContent$1.displayName = CONTENT_NAME$2;
+SelectContent$1.displayName = CONTENT_NAME$4;
 var CONTENT_MARGIN = 10;
-var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME$2);
+var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME$4);
 var CONTENT_IMPL_NAME = "SelectContentImpl";
-var Slot$1 = /* @__PURE__ */ createSlot$1("SelectContent.RemoveScroll");
+var Slot$2 = /* @__PURE__ */ createSlot$1("SelectContent.RemoveScroll");
 var SelectContentImpl = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -14561,7 +14632,7 @@ var SelectContentImpl = reactExports.forwardRef(
       //
       ...contentProps
     } = props;
-    const context = useSelectContext(CONTENT_NAME$2, __scopeSelect);
+    const context = useSelectContext(CONTENT_NAME$4, __scopeSelect);
     const [content, setContent] = reactExports.useState(null);
     const [viewport, setViewport] = reactExports.useState(null);
     const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
@@ -14569,7 +14640,7 @@ var SelectContentImpl = reactExports.forwardRef(
     const [selectedItemText, setSelectedItemText] = reactExports.useState(
       null
     );
-    const getItems = useCollection(__scopeSelect);
+    const getItems = useCollection$2(__scopeSelect);
     const [isPositioned, setIsPositioned] = reactExports.useState(false);
     const firstValidItemFoundRef = reactExports.useRef(false);
     reactExports.useEffect(() => {
@@ -14700,7 +14771,7 @@ var SelectContentImpl = reactExports.forwardRef(
         position,
         isPositioned,
         searchRef,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$1, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$2, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           FocusScope,
           {
             asChild: true,
@@ -14774,12 +14845,12 @@ SelectContentImpl.displayName = CONTENT_IMPL_NAME;
 var ITEM_ALIGNED_POSITION_NAME = "SelectItemAlignedPosition";
 var SelectItemAlignedPosition = reactExports.forwardRef((props, forwardedRef) => {
   const { __scopeSelect, onPlaced, ...popperProps } = props;
-  const context = useSelectContext(CONTENT_NAME$2, __scopeSelect);
-  const contentContext = useSelectContentContext(CONTENT_NAME$2, __scopeSelect);
+  const context = useSelectContext(CONTENT_NAME$4, __scopeSelect);
+  const contentContext = useSelectContentContext(CONTENT_NAME$4, __scopeSelect);
   const [contentWrapper, setContentWrapper] = reactExports.useState(null);
   const [content, setContent] = reactExports.useState(null);
   const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
-  const getItems = useCollection(__scopeSelect);
+  const getItems = useCollection$2(__scopeSelect);
   const shouldExpandOnScrollRef = reactExports.useRef(false);
   const shouldRepositionRef = reactExports.useRef(true);
   const { viewport, selectedItem, selectedItemText, focusSelectedItem } = contentContext;
@@ -14943,7 +15014,7 @@ var SelectPopperPosition = reactExports.forwardRef((props, forwardedRef) => {
     collisionPadding = CONTENT_MARGIN,
     ...popperProps
   } = props;
-  const popperScope = usePopperScope$1(__scopeSelect);
+  const popperScope = usePopperScope$2(__scopeSelect);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Content,
     {
@@ -14969,7 +15040,7 @@ var SelectPopperPosition = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 SelectPopperPosition.displayName = POPPER_POSITION_NAME;
-var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME$2, {});
+var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME$4, {});
 var VIEWPORT_NAME$1 = "SelectViewport";
 var SelectViewport = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -14988,7 +15059,7 @@ var SelectViewport = reactExports.forwardRef(
           nonce
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.Slot, { scope: __scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$2.Slot, { scope: __scopeSelect, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         Primitive$1.div,
         {
           "data-radix-select-viewport": "",
@@ -15038,8 +15109,8 @@ var SelectViewport = reactExports.forwardRef(
   }
 );
 SelectViewport.displayName = VIEWPORT_NAME$1;
-var GROUP_NAME = "SelectGroup";
-var [SelectGroupContextProvider, useSelectGroupContext] = createSelectContext(GROUP_NAME);
+var GROUP_NAME$2 = "SelectGroup";
+var [SelectGroupContextProvider, useSelectGroupContext] = createSelectContext(GROUP_NAME$2);
 var SelectGroup$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, ...groupProps } = props;
@@ -15047,18 +15118,18 @@ var SelectGroup$1 = reactExports.forwardRef(
     return /* @__PURE__ */ jsxRuntimeExports.jsx(SelectGroupContextProvider, { scope: __scopeSelect, id: groupId, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { role: "group", "aria-labelledby": groupId, ...groupProps, ref: forwardedRef }) });
   }
 );
-SelectGroup$1.displayName = GROUP_NAME;
-var LABEL_NAME = "SelectLabel";
+SelectGroup$1.displayName = GROUP_NAME$2;
+var LABEL_NAME$2 = "SelectLabel";
 var SelectLabel$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, ...labelProps } = props;
-    const groupContext = useSelectGroupContext(LABEL_NAME, __scopeSelect);
+    const groupContext = useSelectGroupContext(LABEL_NAME$2, __scopeSelect);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { id: groupContext.id, ...labelProps, ref: forwardedRef });
   }
 );
-SelectLabel$1.displayName = LABEL_NAME;
-var ITEM_NAME = "SelectItem";
-var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME);
+SelectLabel$1.displayName = LABEL_NAME$2;
+var ITEM_NAME$2 = "SelectItem";
+var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME$2);
 var SelectItem$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -15068,8 +15139,8 @@ var SelectItem$1 = reactExports.forwardRef(
       textValue: textValueProp,
       ...itemProps
     } = props;
-    const context = useSelectContext(ITEM_NAME, __scopeSelect);
-    const contentContext = useSelectContentContext(ITEM_NAME, __scopeSelect);
+    const context = useSelectContext(ITEM_NAME$2, __scopeSelect);
+    const contentContext = useSelectContentContext(ITEM_NAME$2, __scopeSelect);
     const isSelected = context.value === value;
     const [textValue, setTextValue] = reactExports.useState(textValueProp ?? "");
     const [isFocused, setIsFocused] = reactExports.useState(false);
@@ -15102,7 +15173,7 @@ var SelectItem$1 = reactExports.forwardRef(
           setTextValue((prevTextValue) => prevTextValue || (node?.textContent ?? "").trim());
         }, []),
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Collection.ItemSlot,
+          Collection$2.ItemSlot,
           {
             scope: __scopeSelect,
             value,
@@ -15148,7 +15219,7 @@ var SelectItem$1 = reactExports.forwardRef(
                 onKeyDown: composeEventHandlers(itemProps.onKeyDown, (event) => {
                   const isTypingAhead = contentContext.searchRef?.current !== "";
                   if (isTypingAhead && event.key === " ") return;
-                  if (SELECTION_KEYS.includes(event.key)) handleSelect();
+                  if (SELECTION_KEYS$1.includes(event.key)) handleSelect();
                   if (event.key === " ") event.preventDefault();
                 })
               }
@@ -15159,7 +15230,7 @@ var SelectItem$1 = reactExports.forwardRef(
     );
   }
 );
-SelectItem$1.displayName = ITEM_NAME;
+SelectItem$1.displayName = ITEM_NAME$2;
 var ITEM_TEXT_NAME = "SelectItemText";
 var SelectItemText = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -15192,15 +15263,15 @@ var SelectItemText = reactExports.forwardRef(
   }
 );
 SelectItemText.displayName = ITEM_TEXT_NAME;
-var ITEM_INDICATOR_NAME = "SelectItemIndicator";
+var ITEM_INDICATOR_NAME$1 = "SelectItemIndicator";
 var SelectItemIndicator = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, ...itemIndicatorProps } = props;
-    const itemContext = useSelectItemContext(ITEM_INDICATOR_NAME, __scopeSelect);
+    const itemContext = useSelectItemContext(ITEM_INDICATOR_NAME$1, __scopeSelect);
     return itemContext.isSelected ? /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.span, { "aria-hidden": true, ...itemIndicatorProps, ref: forwardedRef }) : null;
   }
 );
-SelectItemIndicator.displayName = ITEM_INDICATOR_NAME;
+SelectItemIndicator.displayName = ITEM_INDICATOR_NAME$1;
 var SCROLL_UP_BUTTON_NAME = "SelectScrollUpButton";
 var SelectScrollUpButton$1 = reactExports.forwardRef((props, forwardedRef) => {
   const contentContext = useSelectContentContext(SCROLL_UP_BUTTON_NAME, props.__scopeSelect);
@@ -15272,7 +15343,7 @@ var SelectScrollButtonImpl = reactExports.forwardRef((props, forwardedRef) => {
   const { __scopeSelect, onAutoScroll, ...scrollIndicatorProps } = props;
   const contentContext = useSelectContentContext("SelectScrollButton", __scopeSelect);
   const autoScrollTimerRef = reactExports.useRef(null);
-  const getItems = useCollection(__scopeSelect);
+  const getItems = useCollection$2(__scopeSelect);
   const clearAutoScrollTimer = reactExports.useCallback(() => {
     if (autoScrollTimerRef.current !== null) {
       window.clearInterval(autoScrollTimerRef.current);
@@ -15310,25 +15381,25 @@ var SelectScrollButtonImpl = reactExports.forwardRef((props, forwardedRef) => {
     }
   );
 });
-var SEPARATOR_NAME = "SelectSeparator";
+var SEPARATOR_NAME$2 = "SelectSeparator";
 var SelectSeparator$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, ...separatorProps } = props;
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { "aria-hidden": true, ...separatorProps, ref: forwardedRef });
   }
 );
-SelectSeparator$1.displayName = SEPARATOR_NAME;
-var ARROW_NAME$1 = "SelectArrow";
+SelectSeparator$1.displayName = SEPARATOR_NAME$2;
+var ARROW_NAME$3 = "SelectArrow";
 var SelectArrow = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, ...arrowProps } = props;
-    const popperScope = usePopperScope$1(__scopeSelect);
-    const context = useSelectContext(ARROW_NAME$1, __scopeSelect);
-    const contentContext = useSelectContentContext(ARROW_NAME$1, __scopeSelect);
+    const popperScope = usePopperScope$2(__scopeSelect);
+    const context = useSelectContext(ARROW_NAME$3, __scopeSelect);
+    const contentContext = useSelectContentContext(ARROW_NAME$3, __scopeSelect);
     return context.open && contentContext.position === "popper" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow, { ...popperScope, ...arrowProps, ref: forwardedRef }) : null;
   }
 );
-SelectArrow.displayName = ARROW_NAME$1;
+SelectArrow.displayName = ARROW_NAME$3;
 var BUBBLE_INPUT_NAME$1 = "SelectBubbleInput";
 var SelectBubbleInput = reactExports.forwardRef(
   ({ __scopeSelect, value, ...props }, forwardedRef) => {
@@ -15394,7 +15465,7 @@ function findNextItem(items2, search, currentItem) {
   const isRepeated = search.length > 1 && Array.from(search).every((char) => char === search[0]);
   const normalizedSearch = isRepeated ? search[0] : search;
   const currentItemIndex = currentItem ? items2.indexOf(currentItem) : -1;
-  let wrappedItems = wrapArray(items2, Math.max(currentItemIndex, 0));
+  let wrappedItems = wrapArray$2(items2, Math.max(currentItemIndex, 0));
   const excludeCurrentItem = normalizedSearch.length === 1;
   if (excludeCurrentItem) wrappedItems = wrappedItems.filter((v) => v !== currentItem);
   const nextItem = wrappedItems.find(
@@ -15402,24 +15473,24 @@ function findNextItem(items2, search, currentItem) {
   );
   return nextItem !== currentItem ? nextItem : void 0;
 }
-function wrapArray(array, startIndex) {
+function wrapArray$2(array, startIndex) {
   return array.map((_, index2) => array[(startIndex + index2) % array.length]);
 }
 var Root2$2 = Select$1;
-var Trigger$1 = SelectTrigger$1;
+var Trigger$2 = SelectTrigger$1;
 var Value = SelectValue$1;
 var Icon = SelectIcon;
-var Portal$1 = SelectPortal;
-var Content2$2 = SelectContent$1;
+var Portal$2 = SelectPortal;
+var Content2$4 = SelectContent$1;
 var Viewport$1 = SelectViewport;
-var Group = SelectGroup$1;
-var Label = SelectLabel$1;
+var Group$1 = SelectGroup$1;
+var Label$1 = SelectLabel$1;
 var Item = SelectItem$1;
 var ItemText = SelectItemText;
-var ItemIndicator = SelectItemIndicator;
+var ItemIndicator$1 = SelectItemIndicator;
 var ScrollUpButton = SelectScrollUpButton$1;
 var ScrollDownButton = SelectScrollDownButton$1;
-var Separator = SelectSeparator$1;
+var Separator$1 = SelectSeparator$1;
 function Select({
   ...props
 }) {
@@ -15466,12 +15537,12 @@ function SelectContent({
   align = "center",
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$1, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Content2$2,
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$2, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    Content2$4,
     {
       "data-slot": "select-content",
       className: cn$1(
-        "lsd:bg-lsd-surface-primary lsd:text-lsd-text lsd:border-lsd-border lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2 lsd:relative lsd:z-50 lsd:max-h-(--radix-select-content-available-height) lsd:min-w-[8rem] origin-(--radix-select-content-transform-origin) lsd:overflow-x-hidden lsd:overflow-y-auto lsd:border",
+        "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:border-lsd-border lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2 lsd:relative lsd:z-50 lsd:max-h-(--radix-select-content-available-height) lsd:min-w-[8rem] origin-(--radix-select-content-transform-origin) lsd:overflow-x-hidden lsd:overflow-y-auto lsd:border",
         position === "popper" && "lsd:data-[side=bottom]:translate-y-1 lsd:data-[side=left]:-translate-x-1 lsd:data-[side=right]:translate-x-1 lsd:data-[side=top]:-translate-y-1",
         className
       ),
@@ -15498,7 +15569,7 @@ function SelectContent({
 function SelectGroup({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Group, { "data-slot": "select-group", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Group$1, { "data-slot": "select-group", ...props });
 }
 function SelectItem({
   className,
@@ -15510,12 +15581,12 @@ function SelectItem({
     {
       "data-slot": "select-item",
       className: cn$1(
-        "lsd:focus:bg-lsd-surface-secondary lsd:focus:text-lsd-text lsd:[&_svg:not([class*='text-'])]:text-lsd-icon-primary lsd:relative lsd:flex lsd:w-full lsd:cursor-pointer lsd:items-center lsd:gap-2 lsd:py-1.5 lsd:pr-8 lsd:pl-2 lsd:text-sm lsd:outline-hidden lsd:select-none lsd:data-[disabled]:pointer-events-none lsd:data-[disabled]:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4 lsd:*:[span]:last:flex lsd:*:[span]:last:items-center lsd:*:[span]:last:gap-2",
+        "lsd:focus:bg-lsd-surface lsd:focus:text-lsd-text-primary lsd:[&_svg:not([class*='text-'])]:text-lsd-icon-primary lsd:relative lsd:flex lsd:w-full lsd:cursor-pointer lsd:items-center lsd:gap-2 lsd:py-1.5 lsd:pr-8 lsd:pl-2 lsd:text-sm lsd:outline-hidden lsd:select-none lsd:data-[disabled]:pointer-events-none lsd:data-[disabled]:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4 lsd:*:[span]:last:flex lsd:*:[span]:last:items-center lsd:*:[span]:last:gap-2 lsd:hover:underline lsd:focus:underline lsd:data-highlighted:underline",
         className
       ),
       ...props,
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:absolute lsd:right-2 lsd:flex lsd:size-3.5 lsd:items-center lsd:justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicator, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "lsd:size-4 lsd:text-lsd-icon-primary" }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:absolute lsd:right-2 lsd:flex lsd:size-3.5 lsd:items-center lsd:justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicator$1, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "lsd:size-4 lsd:text-lsd-icon-primary" }) }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(ItemText, { children })
       ]
     }
@@ -15526,7 +15597,7 @@ function SelectLabel({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Label,
+    Label$1,
     {
       "data-slot": "select-label",
       className: cn$1(
@@ -15542,7 +15613,7 @@ function SelectSeparator({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Separator,
+    Separator$1,
     {
       "data-slot": "select-separator",
       className: cn$1(
@@ -15560,12 +15631,12 @@ function SelectTrigger({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Trigger$1,
+    Trigger$2,
     {
       "data-slot": "select-trigger",
       "data-size": size2,
       className: cn$1(
-        "lsd:cursor-pointer lsd:border-lsd-border lsd:bg-lsd-surface-secondary lsd:text-lsd-text lsd:data-[placeholder]:text-lsd-text-secondary lsd:[&_svg:not([class*='text-'])]:text-lsd-icon-primary lsd:focus-visible:border-lsd-border aria-invalid:lsd:ring-lsd-destructive/20 dark:aria-invalid:lsd:ring-lsd-destructive/40 aria-invalid:lsd:border-lsd-destructive dark:lsd:bg-lsd-surface-secondary/30 dark:lsd:hover:bg-lsd-surface-secondary/50 lsd:flex lsd:w-fit lsd:items-center lsd:justify-between lsd:gap-2 lsd:border lsd:px-3 lsd:py-2 lsd:text-sm lsd:whitespace-nowrap lsd:transition-[color,border] lsd:outline-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50 lsd:data-[size=default]:h-9 lsd:data-[size=sm]:h-8 *:lsd:data-[slot=select-value]:line-clamp-1 *:lsd:data-[slot=select-value]:flex *:lsd:data-[slot=select-value]:items-center *:lsd:data-[slot=select-value]:gap-2 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
+        "lsd:cursor-pointer lsd:border-lsd-border lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:data-[placeholder]:text-lsd-text-secondary lsd:[&_svg:not([class*='text-'])]:text-lsd-icon-primary lsd:focus-visible:border-lsd-border aria-invalid:lsd:ring-lsd-destructive/20 dark:aria-invalid:lsd:ring-lsd-destructive/40 aria-invalid:lsd:border-lsd-destructive dark:lsd:bg-lsd-surface/30 dark:lsd:hover:bg-lsd-surface/50 lsd:flex lsd:w-fit lsd:items-center lsd:justify-between lsd:gap-2 lsd:border lsd:px-3 lsd:py-2 lsd:text-sm lsd:whitespace-nowrap lsd:transition-[color,border] lsd:outline-none lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50 lsd:data-[size=default]:h-9 lsd:data-[size=sm]:h-8 *:lsd:data-[slot=select-value]:line-clamp-1 *:lsd:data-[slot=select-value]:flex *:lsd:data-[slot=select-value]:items-center *:lsd:data-[slot=select-value]:gap-2 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
         className
       ),
       ...props,
@@ -15600,6 +15671,7 @@ const languages = [
 const Select_fixture = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
   ] }),
   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -16754,6 +16826,7 @@ function ScrollAreaFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -17010,11 +17083,11 @@ var Progress$1 = reactExports.forwardRef(
   }
 );
 Progress$1.displayName = PROGRESS_NAME;
-var INDICATOR_NAME$1 = "ProgressIndicator";
+var INDICATOR_NAME$2 = "ProgressIndicator";
 var ProgressIndicator = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeProgress, ...indicatorProps } = props;
-    const context = useProgressContext(INDICATOR_NAME$1, __scopeProgress);
+    const context = useProgressContext(INDICATOR_NAME$2, __scopeProgress);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive.div,
       {
@@ -17027,7 +17100,7 @@ var ProgressIndicator = reactExports.forwardRef(
     );
   }
 );
-ProgressIndicator.displayName = INDICATOR_NAME$1;
+ProgressIndicator.displayName = INDICATOR_NAME$2;
 function defaultGetValueLabel(value, max2) {
   return `${Math.round(value / max2 * 100)}%`;
 }
@@ -17089,14 +17162,14 @@ const Progress = reactExports.forwardRef(
     ) : "lsd:w-full";
     const labelText = showLabel ? `${value ?? 0}%` : null;
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:w-full", children: [
-      showLabel && labelText && labelPosition === "top" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:mb-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text lsd:text-center", children: labelText }),
+      showLabel && labelText && labelPosition === "top" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:mb-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text-primary lsd:text-center", children: labelText }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         Root,
         {
           ref,
           "data-slot": "progress",
           className: cn$1(
-            "lsd:relative lsd:w-full lsd:overflow-hidden lsd:rounded-none lsd:bg-lsd-surface-secondary lsd:border lsd:border-lsd-border-primary",
+            "lsd:relative lsd:w-full lsd:overflow-hidden lsd:rounded-none lsd:bg-lsd-surface lsd:border lsd:border-lsd-border",
             sizeClasses[size2],
             className
           ),
@@ -17116,7 +17189,7 @@ const Progress = reactExports.forwardRef(
           )
         }
       ),
-      showLabel && labelText && labelPosition === "bottom" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:mt-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text lsd:text-center", children: labelText })
+      showLabel && labelText && labelPosition === "bottom" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:mt-0.5 lsd:text-sm lsd:font-medium lsd:text-lsd-text-primary lsd:text-center", children: labelText })
     ] });
   }
 );
@@ -17127,6 +17200,7 @@ function ProgressFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -17461,7 +17535,7 @@ var POPOVER_NAME = "Popover";
 var [createPopoverContext] = createContextScope$1(POPOVER_NAME, [
   createPopperScope
 ]);
-var usePopperScope = createPopperScope();
+var usePopperScope$1 = createPopperScope();
 var [PopoverProvider, usePopoverContext] = createPopoverContext(POPOVER_NAME);
 var Popover$1 = (props) => {
   const {
@@ -17472,7 +17546,7 @@ var Popover$1 = (props) => {
     onOpenChange,
     modal = false
   } = props;
-  const popperScope = usePopperScope(__scopePopover);
+  const popperScope = usePopperScope$1(__scopePopover);
   const triggerRef = reactExports.useRef(null);
   const [hasCustomAnchor, setHasCustomAnchor] = reactExports.useState(false);
   const [open, setOpen] = useControllableState({
@@ -17499,12 +17573,12 @@ var Popover$1 = (props) => {
   ) });
 };
 Popover$1.displayName = POPOVER_NAME;
-var ANCHOR_NAME = "PopoverAnchor";
+var ANCHOR_NAME$1 = "PopoverAnchor";
 var PopoverAnchor = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopePopover, ...anchorProps } = props;
-    const context = usePopoverContext(ANCHOR_NAME, __scopePopover);
-    const popperScope = usePopperScope(__scopePopover);
+    const context = usePopoverContext(ANCHOR_NAME$1, __scopePopover);
+    const popperScope = usePopperScope$1(__scopePopover);
     const { onCustomAnchorAdd, onCustomAnchorRemove } = context;
     reactExports.useEffect(() => {
       onCustomAnchorAdd();
@@ -17513,13 +17587,13 @@ var PopoverAnchor = reactExports.forwardRef(
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Anchor, { ...popperScope, ...anchorProps, ref: forwardedRef });
   }
 );
-PopoverAnchor.displayName = ANCHOR_NAME;
-var TRIGGER_NAME$2 = "PopoverTrigger";
+PopoverAnchor.displayName = ANCHOR_NAME$1;
+var TRIGGER_NAME$3 = "PopoverTrigger";
 var PopoverTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopePopover, ...triggerProps } = props;
-    const context = usePopoverContext(TRIGGER_NAME$2, __scopePopover);
-    const popperScope = usePopperScope(__scopePopover);
+    const context = usePopoverContext(TRIGGER_NAME$3, __scopePopover);
+    const popperScope = usePopperScope$1(__scopePopover);
     const composedTriggerRef = useComposedRefs(forwardedRef, context.triggerRef);
     const trigger = /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive$1.button,
@@ -17537,31 +17611,31 @@ var PopoverTrigger$1 = reactExports.forwardRef(
     return context.hasCustomAnchor ? trigger : /* @__PURE__ */ jsxRuntimeExports.jsx(Anchor, { asChild: true, ...popperScope, children: trigger });
   }
 );
-PopoverTrigger$1.displayName = TRIGGER_NAME$2;
-var PORTAL_NAME$1 = "PopoverPortal";
-var [PortalProvider, usePortalContext] = createPopoverContext(PORTAL_NAME$1, {
+PopoverTrigger$1.displayName = TRIGGER_NAME$3;
+var PORTAL_NAME$3 = "PopoverPortal";
+var [PortalProvider$1, usePortalContext$1] = createPopoverContext(PORTAL_NAME$3, {
   forceMount: void 0
 });
 var PopoverPortal = (props) => {
   const { __scopePopover, forceMount, children, container } = props;
-  const context = usePopoverContext(PORTAL_NAME$1, __scopePopover);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider, { scope: __scopePopover, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { asChild: true, container, children }) }) });
+  const context = usePopoverContext(PORTAL_NAME$3, __scopePopover);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider$1, { scope: __scopePopover, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$5, { asChild: true, container, children }) }) });
 };
-PopoverPortal.displayName = PORTAL_NAME$1;
-var CONTENT_NAME$1 = "PopoverContent";
+PopoverPortal.displayName = PORTAL_NAME$3;
+var CONTENT_NAME$3 = "PopoverContent";
 var PopoverContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const portalContext = usePortalContext(CONTENT_NAME$1, props.__scopePopover);
+    const portalContext = usePortalContext$1(CONTENT_NAME$3, props.__scopePopover);
     const { forceMount = portalContext.forceMount, ...contentProps } = props;
-    const context = usePopoverContext(CONTENT_NAME$1, props.__scopePopover);
+    const context = usePopoverContext(CONTENT_NAME$3, props.__scopePopover);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: context.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(PopoverContentModal, { ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(PopoverContentNonModal, { ...contentProps, ref: forwardedRef }) });
   }
 );
-PopoverContent$1.displayName = CONTENT_NAME$1;
-var Slot = /* @__PURE__ */ createSlot$1("PopoverContent.RemoveScroll");
+PopoverContent$1.displayName = CONTENT_NAME$3;
+var Slot$1 = /* @__PURE__ */ createSlot$1("PopoverContent.RemoveScroll");
 var PopoverContentModal = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = usePopoverContext(CONTENT_NAME$1, props.__scopePopover);
+    const context = usePopoverContext(CONTENT_NAME$3, props.__scopePopover);
     const contentRef = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, contentRef);
     const isRightClickOutsideRef = reactExports.useRef(false);
@@ -17569,7 +17643,7 @@ var PopoverContentModal = reactExports.forwardRef(
       const content = contentRef.current;
       if (content) return hideOthers(content);
     }, []);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$1, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       PopoverContentImpl,
       {
         ...props,
@@ -17601,7 +17675,7 @@ var PopoverContentModal = reactExports.forwardRef(
 );
 var PopoverContentNonModal = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = usePopoverContext(CONTENT_NAME$1, props.__scopePopover);
+    const context = usePopoverContext(CONTENT_NAME$3, props.__scopePopover);
     const hasInteractedOutsideRef = reactExports.useRef(false);
     const hasPointerDownOutsideRef = reactExports.useRef(false);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -17653,8 +17727,8 @@ var PopoverContentImpl = reactExports.forwardRef(
       onInteractOutside,
       ...contentProps
     } = props;
-    const context = usePopoverContext(CONTENT_NAME$1, __scopePopover);
-    const popperScope = usePopperScope(__scopePopover);
+    const context = usePopoverContext(CONTENT_NAME$3, __scopePopover);
+    const popperScope = usePopperScope$1(__scopePopover);
     useFocusGuards();
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       FocusScope,
@@ -17719,36 +17793,36 @@ var PopoverClose = reactExports.forwardRef(
   }
 );
 PopoverClose.displayName = CLOSE_NAME;
-var ARROW_NAME = "PopoverArrow";
+var ARROW_NAME$2 = "PopoverArrow";
 var PopoverArrow = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopePopover, ...arrowProps } = props;
-    const popperScope = usePopperScope(__scopePopover);
+    const popperScope = usePopperScope$1(__scopePopover);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow, { ...popperScope, ...arrowProps, ref: forwardedRef });
   }
 );
-PopoverArrow.displayName = ARROW_NAME;
+PopoverArrow.displayName = ARROW_NAME$2;
 function getState$1(open) {
   return open ? "open" : "closed";
 }
 var Root2$1 = Popover$1;
-var Trigger = PopoverTrigger$1;
-var Portal = PopoverPortal;
-var Content2$1 = PopoverContent$1;
+var Trigger$1 = PopoverTrigger$1;
+var Portal$1 = PopoverPortal;
+var Content2$3 = PopoverContent$1;
 function PopoverContent({
   className,
   align = "center",
   sideOffset = 4,
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Content2$1,
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$1, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Content2$3,
     {
       "data-slot": "popover-content",
       align,
       sideOffset,
       className: cn$1(
-        "lsd:bg-lsd-surface-primary lsd:text-lsd-text lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2 lsd:z-50 lsd:w-72 origin-(--radix-popover-content-transform-origin) lsd:border lsd:border-lsd-border lsd:p-4 lsd:shadow-md lsd:outline-hidden",
+        "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2 lsd:z-50 lsd:w-72 origin-(--radix-popover-content-transform-origin) lsd:border lsd:border-lsd-border lsd:p-4 lsd:shadow-md lsd:outline-hidden",
         className
       ),
       ...props
@@ -17758,7 +17832,7 @@ function PopoverContent({
 function PopoverTrigger({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger, { "data-slot": "popover-trigger", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$1, { "data-slot": "popover-trigger", ...props });
 }
 function Popover({
   ...props
@@ -17769,6 +17843,7 @@ function PopoverFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -17864,7 +17939,7 @@ function PopoverFixture() {
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:gap-2", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "width", children: "Width" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: "width", children: "Width" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     Input,
                     {
@@ -17874,7 +17949,7 @@ function PopoverFixture() {
                   )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "maxWidth", children: "Max. width" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: "maxWidth", children: "Max. width" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     Input,
                     {
@@ -17884,7 +17959,7 @@ function PopoverFixture() {
                   )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "height", children: "Height" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: "height", children: "Height" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     Input,
                     {
@@ -17894,7 +17969,7 @@ function PopoverFixture() {
                   )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:grid lsd:grid-cols-3 lsd:items-center lsd:gap-4", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "maxHeight", children: "Max. height" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: "maxHeight", children: "Max. height" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     Input,
                     {
@@ -17979,6 +18054,143 @@ const fixture12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePro
   __proto__: null,
   default: PopoverFixture
 }, Symbol.toStringTag, { value: "Module" }));
+var ROOT_NAME = "AlertDialog";
+var [createAlertDialogContext] = createContextScope$1(ROOT_NAME, [
+  createDialogScope
+]);
+var useDialogScope = createDialogScope();
+var AlertDialog$1 = (props) => {
+  const { __scopeAlertDialog, ...alertDialogProps } = props;
+  const dialogScope = useDialogScope(__scopeAlertDialog);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root$6, { ...dialogScope, ...alertDialogProps, modal: true });
+};
+AlertDialog$1.displayName = ROOT_NAME;
+var TRIGGER_NAME$2 = "AlertDialogTrigger";
+var AlertDialogTrigger$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, ...triggerProps } = props;
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$4, { ...dialogScope, ...triggerProps, ref: forwardedRef });
+  }
+);
+AlertDialogTrigger$1.displayName = TRIGGER_NAME$2;
+var PORTAL_NAME$2 = "AlertDialogPortal";
+var AlertDialogPortal$1 = (props) => {
+  const { __scopeAlertDialog, ...portalProps } = props;
+  const dialogScope = useDialogScope(__scopeAlertDialog);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { ...dialogScope, ...portalProps });
+};
+AlertDialogPortal$1.displayName = PORTAL_NAME$2;
+var OVERLAY_NAME = "AlertDialogOverlay";
+var AlertDialogOverlay$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, ...overlayProps } = props;
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Overlay, { ...dialogScope, ...overlayProps, ref: forwardedRef });
+  }
+);
+AlertDialogOverlay$1.displayName = OVERLAY_NAME;
+var CONTENT_NAME$2 = "AlertDialogContent";
+var [AlertDialogContentProvider, useAlertDialogContentContext] = createAlertDialogContext(CONTENT_NAME$2);
+var Slottable = /* @__PURE__ */ createSlottable("AlertDialogContent");
+var AlertDialogContent$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, children, ...contentProps } = props;
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    const contentRef = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, contentRef);
+    const cancelRef = reactExports.useRef(null);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      WarningProvider,
+      {
+        contentName: CONTENT_NAME$2,
+        titleName: TITLE_NAME,
+        docsSlug: "alert-dialog",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogContentProvider, { scope: __scopeAlertDialog, cancelRef, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Content$1,
+          {
+            role: "alertdialog",
+            ...dialogScope,
+            ...contentProps,
+            ref: composedRefs,
+            onOpenAutoFocus: composeEventHandlers(contentProps.onOpenAutoFocus, (event) => {
+              event.preventDefault();
+              cancelRef.current?.focus({ preventScroll: true });
+            }),
+            onPointerDownOutside: (event) => event.preventDefault(),
+            onInteractOutside: (event) => event.preventDefault(),
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Slottable, { children }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DescriptionWarning, { contentRef })
+            ]
+          }
+        ) })
+      }
+    );
+  }
+);
+AlertDialogContent$1.displayName = CONTENT_NAME$2;
+var TITLE_NAME = "AlertDialogTitle";
+var AlertDialogTitle$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, ...titleProps } = props;
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Title, { ...dialogScope, ...titleProps, ref: forwardedRef });
+  }
+);
+AlertDialogTitle$1.displayName = TITLE_NAME;
+var DESCRIPTION_NAME = "AlertDialogDescription";
+var AlertDialogDescription$1 = reactExports.forwardRef((props, forwardedRef) => {
+  const { __scopeAlertDialog, ...descriptionProps } = props;
+  const dialogScope = useDialogScope(__scopeAlertDialog);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Description, { ...dialogScope, ...descriptionProps, ref: forwardedRef });
+});
+AlertDialogDescription$1.displayName = DESCRIPTION_NAME;
+var ACTION_NAME = "AlertDialogAction";
+var AlertDialogAction$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, ...actionProps } = props;
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Close, { ...dialogScope, ...actionProps, ref: forwardedRef });
+  }
+);
+AlertDialogAction$1.displayName = ACTION_NAME;
+var CANCEL_NAME = "AlertDialogCancel";
+var AlertDialogCancel$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAlertDialog, ...cancelProps } = props;
+    const { cancelRef } = useAlertDialogContentContext(CANCEL_NAME, __scopeAlertDialog);
+    const dialogScope = useDialogScope(__scopeAlertDialog);
+    const ref = useComposedRefs(forwardedRef, cancelRef);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Close, { ...dialogScope, ...cancelProps, ref });
+  }
+);
+AlertDialogCancel$1.displayName = CANCEL_NAME;
+var DescriptionWarning = ({ contentRef }) => {
+  const MESSAGE = `\`${CONTENT_NAME$2}\` requires a description for the component to be accessible for screen reader users.
+
+You can add a description to the \`${CONTENT_NAME$2}\` by passing a \`${DESCRIPTION_NAME}\` component as a child, which also benefits sighted users by adding visible context to the dialog.
+
+Alternatively, you can use your own component as a description by assigning it an \`id\` and passing the same value to the \`aria-describedby\` prop in \`${CONTENT_NAME$2}\`. If the description is confusing or duplicative for sighted users, you can use the \`@radix-ui/react-visually-hidden\` primitive as a wrapper around your description component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/alert-dialog`;
+  reactExports.useEffect(() => {
+    const hasDescription = document.getElementById(
+      contentRef.current?.getAttribute("aria-describedby")
+    );
+    if (!hasDescription) console.warn(MESSAGE);
+  }, [MESSAGE, contentRef]);
+  return null;
+};
+var Root2 = AlertDialog$1;
+var Trigger2 = AlertDialogTrigger$1;
+var Portal2$1 = AlertDialogPortal$1;
+var Overlay2 = AlertDialogOverlay$1;
+var Content2$2 = AlertDialogContent$1;
+var Action = AlertDialogAction$1;
+var Cancel = AlertDialogCancel$1;
+var Title2 = AlertDialogTitle$1;
+var Description2 = AlertDialogDescription$1;
 var CHECKBOX_NAME = "Checkbox";
 var [createCheckboxContext] = createContextScope$1(CHECKBOX_NAME);
 var [CheckboxProviderImpl, useCheckboxContext] = createCheckboxContext(CHECKBOX_NAME);
@@ -18021,7 +18233,7 @@ function CheckboxProvider(props) {
     value,
     hasConsumerStoppedPropagationRef,
     required,
-    defaultChecked: isIndeterminate(defaultChecked) ? false : defaultChecked,
+    defaultChecked: isIndeterminate$1(defaultChecked) ? false : defaultChecked,
     isFormControl,
     bubbleInput,
     setBubbleInput
@@ -18065,7 +18277,7 @@ var CheckboxTrigger = reactExports.forwardRef(
       {
         type: "button",
         role: "checkbox",
-        "aria-checked": isIndeterminate(checked) ? "mixed" : checked,
+        "aria-checked": isIndeterminate$1(checked) ? "mixed" : checked,
         "aria-required": required,
         "data-state": getState(checked),
         "data-disabled": disabled ? "" : void 0,
@@ -18077,7 +18289,7 @@ var CheckboxTrigger = reactExports.forwardRef(
           if (event.key === "Enter") event.preventDefault();
         }),
         onClick: composeEventHandlers(onClick, (event) => {
-          setChecked((prevChecked) => isIndeterminate(prevChecked) ? true : !prevChecked);
+          setChecked((prevChecked) => isIndeterminate$1(prevChecked) ? true : !prevChecked);
           if (bubbleInput && isFormControl) {
             hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
             if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
@@ -18135,15 +18347,15 @@ var Checkbox$1 = reactExports.forwardRef(
   }
 );
 Checkbox$1.displayName = CHECKBOX_NAME;
-var INDICATOR_NAME = "CheckboxIndicator";
+var INDICATOR_NAME$1 = "CheckboxIndicator";
 var CheckboxIndicator = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeCheckbox, forceMount, ...indicatorProps } = props;
-    const context = useCheckboxContext(INDICATOR_NAME, __scopeCheckbox);
+    const context = useCheckboxContext(INDICATOR_NAME$1, __scopeCheckbox);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Presence,
       {
-        present: forceMount || isIndeterminate(context.checked) || context.checked === true,
+        present: forceMount || isIndeterminate$1(context.checked) || context.checked === true,
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           Primitive$1.span,
           {
@@ -18158,7 +18370,7 @@ var CheckboxIndicator = reactExports.forwardRef(
     );
   }
 );
-CheckboxIndicator.displayName = INDICATOR_NAME;
+CheckboxIndicator.displayName = INDICATOR_NAME$1;
 var BUBBLE_INPUT_NAME = "CheckboxBubbleInput";
 var CheckboxBubbleInput = reactExports.forwardRef(
   ({ __scopeCheckbox, ...props }, forwardedRef) => {
@@ -18190,12 +18402,12 @@ var CheckboxBubbleInput = reactExports.forwardRef(
       const bubbles = !hasConsumerStoppedPropagationRef.current;
       if (prevChecked !== checked && setChecked) {
         const event = new Event("click", { bubbles });
-        input.indeterminate = isIndeterminate(checked);
-        setChecked.call(input, isIndeterminate(checked) ? false : checked);
+        input.indeterminate = isIndeterminate$1(checked);
+        setChecked.call(input, isIndeterminate$1(checked) ? false : checked);
         input.dispatchEvent(event);
       }
     }, [bubbleInput, prevChecked, checked, hasConsumerStoppedPropagationRef]);
-    const defaultCheckedRef = reactExports.useRef(isIndeterminate(checked) ? false : checked);
+    const defaultCheckedRef = reactExports.useRef(isIndeterminate$1(checked) ? false : checked);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive$1.input,
       {
@@ -18230,12 +18442,1792 @@ CheckboxBubbleInput.displayName = BUBBLE_INPUT_NAME;
 function isFunction(value) {
   return typeof value === "function";
 }
-function isIndeterminate(checked) {
+function isIndeterminate$1(checked) {
   return checked === "indeterminate";
 }
 function getState(checked) {
+  return isIndeterminate$1(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
+}
+var SELECTION_KEYS = ["Enter", " "];
+var FIRST_KEYS = ["ArrowDown", "PageUp", "Home"];
+var LAST_KEYS = ["ArrowUp", "PageDown", "End"];
+var FIRST_LAST_KEYS = [...FIRST_KEYS, ...LAST_KEYS];
+var SUB_OPEN_KEYS = {
+  ltr: [...SELECTION_KEYS, "ArrowRight"],
+  rtl: [...SELECTION_KEYS, "ArrowLeft"]
+};
+var SUB_CLOSE_KEYS = {
+  ltr: ["ArrowLeft"],
+  rtl: ["ArrowRight"]
+};
+var MENU_NAME$1 = "Menu";
+var [Collection$1, useCollection$1, createCollectionScope$1] = createCollection(MENU_NAME$1);
+var [createMenuContext, createMenuScope] = createContextScope$1(MENU_NAME$1, [
+  createCollectionScope$1,
+  createPopperScope,
+  createRovingFocusGroupScope
+]);
+var usePopperScope = createPopperScope();
+var useRovingFocusGroupScope$1 = createRovingFocusGroupScope();
+var [MenuProvider, useMenuContext] = createMenuContext(MENU_NAME$1);
+var [MenuRootProvider, useMenuRootContext] = createMenuContext(MENU_NAME$1);
+var Menu$1 = (props) => {
+  const { __scopeMenu, open = false, children, dir, onOpenChange, modal = true } = props;
+  const popperScope = usePopperScope(__scopeMenu);
+  const [content, setContent] = reactExports.useState(null);
+  const isUsingKeyboardRef = reactExports.useRef(false);
+  const handleOpenChange = useCallbackRef$1(onOpenChange);
+  const direction = useDirection(dir);
+  reactExports.useEffect(() => {
+    const handleKeyDown = () => {
+      isUsingKeyboardRef.current = true;
+      document.addEventListener("pointerdown", handlePointer, { capture: true, once: true });
+      document.addEventListener("pointermove", handlePointer, { capture: true, once: true });
+    };
+    const handlePointer = () => isUsingKeyboardRef.current = false;
+    document.addEventListener("keydown", handleKeyDown, { capture: true });
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown, { capture: true });
+      document.removeEventListener("pointerdown", handlePointer, { capture: true });
+      document.removeEventListener("pointermove", handlePointer, { capture: true });
+    };
+  }, []);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$3, { ...popperScope, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MenuProvider,
+    {
+      scope: __scopeMenu,
+      open,
+      onOpenChange: handleOpenChange,
+      content,
+      onContentChange: setContent,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        MenuRootProvider,
+        {
+          scope: __scopeMenu,
+          onClose: reactExports.useCallback(() => handleOpenChange(false), [handleOpenChange]),
+          isUsingKeyboardRef,
+          dir: direction,
+          modal,
+          children
+        }
+      )
+    }
+  ) });
+};
+Menu$1.displayName = MENU_NAME$1;
+var ANCHOR_NAME = "MenuAnchor";
+var MenuAnchor = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, ...anchorProps } = props;
+    const popperScope = usePopperScope(__scopeMenu);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Anchor, { ...popperScope, ...anchorProps, ref: forwardedRef });
+  }
+);
+MenuAnchor.displayName = ANCHOR_NAME;
+var PORTAL_NAME$1 = "MenuPortal";
+var [PortalProvider, usePortalContext] = createMenuContext(PORTAL_NAME$1, {
+  forceMount: void 0
+});
+var MenuPortal = (props) => {
+  const { __scopeMenu, forceMount, children, container } = props;
+  const context = useMenuContext(PORTAL_NAME$1, __scopeMenu);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider, { scope: __scopeMenu, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$5, { asChild: true, container, children }) }) });
+};
+MenuPortal.displayName = PORTAL_NAME$1;
+var CONTENT_NAME$1 = "MenuContent";
+var [MenuContentProvider, useMenuContentContext] = createMenuContext(CONTENT_NAME$1);
+var MenuContent = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const portalContext = usePortalContext(CONTENT_NAME$1, props.__scopeMenu);
+    const { forceMount = portalContext.forceMount, ...contentProps } = props;
+    const context = useMenuContext(CONTENT_NAME$1, props.__scopeMenu);
+    const rootContext = useMenuRootContext(CONTENT_NAME$1, props.__scopeMenu);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Provider, { scope: props.__scopeMenu, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Slot, { scope: props.__scopeMenu, children: rootContext.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(MenuRootContentModal, { ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(MenuRootContentNonModal, { ...contentProps, ref: forwardedRef }) }) }) });
+  }
+);
+var MenuRootContentModal = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const context = useMenuContext(CONTENT_NAME$1, props.__scopeMenu);
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, ref);
+    reactExports.useEffect(() => {
+      const content = ref.current;
+      if (content) return hideOthers(content);
+    }, []);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuContentImpl,
+      {
+        ...props,
+        ref: composedRefs,
+        trapFocus: context.open,
+        disableOutsidePointerEvents: context.open,
+        disableOutsideScroll: true,
+        onFocusOutside: composeEventHandlers(
+          props.onFocusOutside,
+          (event) => event.preventDefault(),
+          { checkForDefaultPrevented: false }
+        ),
+        onDismiss: () => context.onOpenChange(false)
+      }
+    );
+  }
+);
+var MenuRootContentNonModal = reactExports.forwardRef((props, forwardedRef) => {
+  const context = useMenuContext(CONTENT_NAME$1, props.__scopeMenu);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MenuContentImpl,
+    {
+      ...props,
+      ref: forwardedRef,
+      trapFocus: false,
+      disableOutsidePointerEvents: false,
+      disableOutsideScroll: false,
+      onDismiss: () => context.onOpenChange(false)
+    }
+  );
+});
+var Slot = /* @__PURE__ */ createSlot$1("MenuContent.ScrollLock");
+var MenuContentImpl = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const {
+      __scopeMenu,
+      loop = false,
+      trapFocus,
+      onOpenAutoFocus,
+      onCloseAutoFocus,
+      disableOutsidePointerEvents,
+      onEntryFocus,
+      onEscapeKeyDown,
+      onPointerDownOutside,
+      onFocusOutside,
+      onInteractOutside,
+      onDismiss,
+      disableOutsideScroll,
+      ...contentProps
+    } = props;
+    const context = useMenuContext(CONTENT_NAME$1, __scopeMenu);
+    const rootContext = useMenuRootContext(CONTENT_NAME$1, __scopeMenu);
+    const popperScope = usePopperScope(__scopeMenu);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeMenu);
+    const getItems = useCollection$1(__scopeMenu);
+    const [currentItemId, setCurrentItemId] = reactExports.useState(null);
+    const contentRef = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, contentRef, context.onContentChange);
+    const timerRef = reactExports.useRef(0);
+    const searchRef = reactExports.useRef("");
+    const pointerGraceTimerRef = reactExports.useRef(0);
+    const pointerGraceIntentRef = reactExports.useRef(null);
+    const pointerDirRef = reactExports.useRef("right");
+    const lastPointerXRef = reactExports.useRef(0);
+    const ScrollLockWrapper = disableOutsideScroll ? ReactRemoveScroll : reactExports.Fragment;
+    const scrollLockWrapperProps = disableOutsideScroll ? { as: Slot, allowPinchZoom: true } : void 0;
+    const handleTypeaheadSearch = (key) => {
+      const search = searchRef.current + key;
+      const items2 = getItems().filter((item) => !item.disabled);
+      const currentItem = document.activeElement;
+      const currentMatch = items2.find((item) => item.ref.current === currentItem)?.textValue;
+      const values = items2.map((item) => item.textValue);
+      const nextMatch = getNextMatch(values, search, currentMatch);
+      const newItem = items2.find((item) => item.textValue === nextMatch)?.ref.current;
+      (function updateSearch(value) {
+        searchRef.current = value;
+        window.clearTimeout(timerRef.current);
+        if (value !== "") timerRef.current = window.setTimeout(() => updateSearch(""), 1e3);
+      })(search);
+      if (newItem) {
+        setTimeout(() => newItem.focus());
+      }
+    };
+    reactExports.useEffect(() => {
+      return () => window.clearTimeout(timerRef.current);
+    }, []);
+    useFocusGuards();
+    const isPointerMovingToSubmenu = reactExports.useCallback((event) => {
+      const isMovingTowards = pointerDirRef.current === pointerGraceIntentRef.current?.side;
+      return isMovingTowards && isPointerInGraceArea(event, pointerGraceIntentRef.current?.area);
+    }, []);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuContentProvider,
+      {
+        scope: __scopeMenu,
+        searchRef,
+        onItemEnter: reactExports.useCallback(
+          (event) => {
+            if (isPointerMovingToSubmenu(event)) event.preventDefault();
+          },
+          [isPointerMovingToSubmenu]
+        ),
+        onItemLeave: reactExports.useCallback(
+          (event) => {
+            if (isPointerMovingToSubmenu(event)) return;
+            contentRef.current?.focus();
+            setCurrentItemId(null);
+          },
+          [isPointerMovingToSubmenu]
+        ),
+        onTriggerLeave: reactExports.useCallback(
+          (event) => {
+            if (isPointerMovingToSubmenu(event)) event.preventDefault();
+          },
+          [isPointerMovingToSubmenu]
+        ),
+        pointerGraceTimerRef,
+        onPointerGraceIntentChange: reactExports.useCallback((intent) => {
+          pointerGraceIntentRef.current = intent;
+        }, []),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ScrollLockWrapper, { ...scrollLockWrapperProps, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          FocusScope,
+          {
+            asChild: true,
+            trapped: trapFocus,
+            onMountAutoFocus: composeEventHandlers(onOpenAutoFocus, (event) => {
+              event.preventDefault();
+              contentRef.current?.focus({ preventScroll: true });
+            }),
+            onUnmountAutoFocus: onCloseAutoFocus,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              DismissableLayer,
+              {
+                asChild: true,
+                disableOutsidePointerEvents,
+                onEscapeKeyDown,
+                onPointerDownOutside,
+                onFocusOutside,
+                onInteractOutside,
+                onDismiss,
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Root$a,
+                  {
+                    asChild: true,
+                    ...rovingFocusGroupScope,
+                    dir: rootContext.dir,
+                    orientation: "vertical",
+                    loop,
+                    currentTabStopId: currentItemId,
+                    onCurrentTabStopIdChange: setCurrentItemId,
+                    onEntryFocus: composeEventHandlers(onEntryFocus, (event) => {
+                      if (!rootContext.isUsingKeyboardRef.current) event.preventDefault();
+                    }),
+                    preventScrollOnEntryFocus: true,
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Content,
+                      {
+                        role: "menu",
+                        "aria-orientation": "vertical",
+                        "data-state": getOpenState(context.open),
+                        "data-radix-menu-content": "",
+                        dir: rootContext.dir,
+                        ...popperScope,
+                        ...contentProps,
+                        ref: composedRefs,
+                        style: { outline: "none", ...contentProps.style },
+                        onKeyDown: composeEventHandlers(contentProps.onKeyDown, (event) => {
+                          const target = event.target;
+                          const isKeyDownInside = target.closest("[data-radix-menu-content]") === event.currentTarget;
+                          const isModifierKey = event.ctrlKey || event.altKey || event.metaKey;
+                          const isCharacterKey = event.key.length === 1;
+                          if (isKeyDownInside) {
+                            if (event.key === "Tab") event.preventDefault();
+                            if (!isModifierKey && isCharacterKey) handleTypeaheadSearch(event.key);
+                          }
+                          const content = contentRef.current;
+                          if (event.target !== content) return;
+                          if (!FIRST_LAST_KEYS.includes(event.key)) return;
+                          event.preventDefault();
+                          const items2 = getItems().filter((item) => !item.disabled);
+                          const candidateNodes = items2.map((item) => item.ref.current);
+                          if (LAST_KEYS.includes(event.key)) candidateNodes.reverse();
+                          focusFirst(candidateNodes);
+                        }),
+                        onBlur: composeEventHandlers(props.onBlur, (event) => {
+                          if (!event.currentTarget.contains(event.target)) {
+                            window.clearTimeout(timerRef.current);
+                            searchRef.current = "";
+                          }
+                        }),
+                        onPointerMove: composeEventHandlers(
+                          props.onPointerMove,
+                          whenMouse((event) => {
+                            const target = event.target;
+                            const pointerXHasChanged = lastPointerXRef.current !== event.clientX;
+                            if (event.currentTarget.contains(target) && pointerXHasChanged) {
+                              const newDir = event.clientX > lastPointerXRef.current ? "right" : "left";
+                              pointerDirRef.current = newDir;
+                              lastPointerXRef.current = event.clientX;
+                            }
+                          })
+                        )
+                      }
+                    )
+                  }
+                )
+              }
+            )
+          }
+        ) })
+      }
+    );
+  }
+);
+MenuContent.displayName = CONTENT_NAME$1;
+var GROUP_NAME$1 = "MenuGroup";
+var MenuGroup = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, ...groupProps } = props;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { role: "group", ...groupProps, ref: forwardedRef });
+  }
+);
+MenuGroup.displayName = GROUP_NAME$1;
+var LABEL_NAME$1 = "MenuLabel";
+var MenuLabel = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, ...labelProps } = props;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { ...labelProps, ref: forwardedRef });
+  }
+);
+MenuLabel.displayName = LABEL_NAME$1;
+var ITEM_NAME$1 = "MenuItem";
+var ITEM_SELECT = "menu.itemSelect";
+var MenuItem = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { disabled = false, onSelect, ...itemProps } = props;
+    const ref = reactExports.useRef(null);
+    const rootContext = useMenuRootContext(ITEM_NAME$1, props.__scopeMenu);
+    const contentContext = useMenuContentContext(ITEM_NAME$1, props.__scopeMenu);
+    const composedRefs = useComposedRefs(forwardedRef, ref);
+    const isPointerDownRef = reactExports.useRef(false);
+    const handleSelect = () => {
+      const menuItem = ref.current;
+      if (!disabled && menuItem) {
+        const itemSelectEvent = new CustomEvent(ITEM_SELECT, { bubbles: true, cancelable: true });
+        menuItem.addEventListener(ITEM_SELECT, (event) => onSelect?.(event), { once: true });
+        dispatchDiscreteCustomEvent(menuItem, itemSelectEvent);
+        if (itemSelectEvent.defaultPrevented) {
+          isPointerDownRef.current = false;
+        } else {
+          rootContext.onClose();
+        }
+      }
+    };
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuItemImpl,
+      {
+        ...itemProps,
+        ref: composedRefs,
+        disabled,
+        onClick: composeEventHandlers(props.onClick, handleSelect),
+        onPointerDown: (event) => {
+          props.onPointerDown?.(event);
+          isPointerDownRef.current = true;
+        },
+        onPointerUp: composeEventHandlers(props.onPointerUp, (event) => {
+          if (!isPointerDownRef.current) event.currentTarget?.click();
+        }),
+        onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+          const isTypingAhead = contentContext.searchRef.current !== "";
+          if (disabled || isTypingAhead && event.key === " ") return;
+          if (SELECTION_KEYS.includes(event.key)) {
+            event.currentTarget.click();
+            event.preventDefault();
+          }
+        })
+      }
+    );
+  }
+);
+MenuItem.displayName = ITEM_NAME$1;
+var MenuItemImpl = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, disabled = false, textValue, ...itemProps } = props;
+    const contentContext = useMenuContentContext(ITEM_NAME$1, __scopeMenu);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeMenu);
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, ref);
+    const [isFocused, setIsFocused] = reactExports.useState(false);
+    const [textContent, setTextContent] = reactExports.useState("");
+    reactExports.useEffect(() => {
+      const menuItem = ref.current;
+      if (menuItem) {
+        setTextContent((menuItem.textContent ?? "").trim());
+      }
+    }, [itemProps.children]);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Collection$1.ItemSlot,
+      {
+        scope: __scopeMenu,
+        disabled,
+        textValue: textValue ?? textContent,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Item$2, { asChild: true, ...rovingFocusGroupScope, focusable: !disabled, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Primitive$1.div,
+          {
+            role: "menuitem",
+            "data-highlighted": isFocused ? "" : void 0,
+            "aria-disabled": disabled || void 0,
+            "data-disabled": disabled ? "" : void 0,
+            ...itemProps,
+            ref: composedRefs,
+            onPointerMove: composeEventHandlers(
+              props.onPointerMove,
+              whenMouse((event) => {
+                if (disabled) {
+                  contentContext.onItemLeave(event);
+                } else {
+                  contentContext.onItemEnter(event);
+                  if (!event.defaultPrevented) {
+                    const item = event.currentTarget;
+                    item.focus({ preventScroll: true });
+                  }
+                }
+              })
+            ),
+            onPointerLeave: composeEventHandlers(
+              props.onPointerLeave,
+              whenMouse((event) => contentContext.onItemLeave(event))
+            ),
+            onFocus: composeEventHandlers(props.onFocus, () => setIsFocused(true)),
+            onBlur: composeEventHandlers(props.onBlur, () => setIsFocused(false))
+          }
+        ) })
+      }
+    );
+  }
+);
+var CHECKBOX_ITEM_NAME$1 = "MenuCheckboxItem";
+var MenuCheckboxItem = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { checked = false, onCheckedChange, ...checkboxItemProps } = props;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicatorProvider, { scope: props.__scopeMenu, checked, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuItem,
+      {
+        role: "menuitemcheckbox",
+        "aria-checked": isIndeterminate(checked) ? "mixed" : checked,
+        ...checkboxItemProps,
+        ref: forwardedRef,
+        "data-state": getCheckedState(checked),
+        onSelect: composeEventHandlers(
+          checkboxItemProps.onSelect,
+          () => onCheckedChange?.(isIndeterminate(checked) ? true : !checked),
+          { checkForDefaultPrevented: false }
+        )
+      }
+    ) });
+  }
+);
+MenuCheckboxItem.displayName = CHECKBOX_ITEM_NAME$1;
+var RADIO_GROUP_NAME$1 = "MenuRadioGroup";
+var [RadioGroupProvider, useRadioGroupContext] = createMenuContext(
+  RADIO_GROUP_NAME$1,
+  { value: void 0, onValueChange: () => {
+  } }
+);
+var MenuRadioGroup = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { value, onValueChange, ...groupProps } = props;
+    const handleValueChange = useCallbackRef$1(onValueChange);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(RadioGroupProvider, { scope: props.__scopeMenu, value, onValueChange: handleValueChange, children: /* @__PURE__ */ jsxRuntimeExports.jsx(MenuGroup, { ...groupProps, ref: forwardedRef }) });
+  }
+);
+MenuRadioGroup.displayName = RADIO_GROUP_NAME$1;
+var RADIO_ITEM_NAME$1 = "MenuRadioItem";
+var MenuRadioItem = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { value, ...radioItemProps } = props;
+    const context = useRadioGroupContext(RADIO_ITEM_NAME$1, props.__scopeMenu);
+    const checked = value === context.value;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicatorProvider, { scope: props.__scopeMenu, checked, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuItem,
+      {
+        role: "menuitemradio",
+        "aria-checked": checked,
+        ...radioItemProps,
+        ref: forwardedRef,
+        "data-state": getCheckedState(checked),
+        onSelect: composeEventHandlers(
+          radioItemProps.onSelect,
+          () => context.onValueChange?.(value),
+          { checkForDefaultPrevented: false }
+        )
+      }
+    ) });
+  }
+);
+MenuRadioItem.displayName = RADIO_ITEM_NAME$1;
+var ITEM_INDICATOR_NAME = "MenuItemIndicator";
+var [ItemIndicatorProvider, useItemIndicatorContext] = createMenuContext(
+  ITEM_INDICATOR_NAME,
+  { checked: false }
+);
+var MenuItemIndicator = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, forceMount, ...itemIndicatorProps } = props;
+    const indicatorContext = useItemIndicatorContext(ITEM_INDICATOR_NAME, __scopeMenu);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Presence,
+      {
+        present: forceMount || isIndeterminate(indicatorContext.checked) || indicatorContext.checked === true,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Primitive$1.span,
+          {
+            ...itemIndicatorProps,
+            ref: forwardedRef,
+            "data-state": getCheckedState(indicatorContext.checked)
+          }
+        )
+      }
+    );
+  }
+);
+MenuItemIndicator.displayName = ITEM_INDICATOR_NAME;
+var SEPARATOR_NAME$1 = "MenuSeparator";
+var MenuSeparator = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, ...separatorProps } = props;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive$1.div,
+      {
+        role: "separator",
+        "aria-orientation": "horizontal",
+        ...separatorProps,
+        ref: forwardedRef
+      }
+    );
+  }
+);
+MenuSeparator.displayName = SEPARATOR_NAME$1;
+var ARROW_NAME$1 = "MenuArrow";
+var MenuArrow = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenu, ...arrowProps } = props;
+    const popperScope = usePopperScope(__scopeMenu);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow, { ...popperScope, ...arrowProps, ref: forwardedRef });
+  }
+);
+MenuArrow.displayName = ARROW_NAME$1;
+var SUB_NAME$1 = "MenuSub";
+var [MenuSubProvider, useMenuSubContext] = createMenuContext(SUB_NAME$1);
+var MenuSub = (props) => {
+  const { __scopeMenu, children, open = false, onOpenChange } = props;
+  const parentMenuContext = useMenuContext(SUB_NAME$1, __scopeMenu);
+  const popperScope = usePopperScope(__scopeMenu);
+  const [trigger, setTrigger] = reactExports.useState(null);
+  const [content, setContent] = reactExports.useState(null);
+  const handleOpenChange = useCallbackRef$1(onOpenChange);
+  reactExports.useEffect(() => {
+    if (parentMenuContext.open === false) handleOpenChange(false);
+    return () => handleOpenChange(false);
+  }, [parentMenuContext.open, handleOpenChange]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$3, { ...popperScope, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MenuProvider,
+    {
+      scope: __scopeMenu,
+      open,
+      onOpenChange: handleOpenChange,
+      content,
+      onContentChange: setContent,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        MenuSubProvider,
+        {
+          scope: __scopeMenu,
+          contentId: useId(),
+          triggerId: useId(),
+          trigger,
+          onTriggerChange: setTrigger,
+          children
+        }
+      )
+    }
+  ) });
+};
+MenuSub.displayName = SUB_NAME$1;
+var SUB_TRIGGER_NAME$1 = "MenuSubTrigger";
+var MenuSubTrigger = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const context = useMenuContext(SUB_TRIGGER_NAME$1, props.__scopeMenu);
+    const rootContext = useMenuRootContext(SUB_TRIGGER_NAME$1, props.__scopeMenu);
+    const subContext = useMenuSubContext(SUB_TRIGGER_NAME$1, props.__scopeMenu);
+    const contentContext = useMenuContentContext(SUB_TRIGGER_NAME$1, props.__scopeMenu);
+    const openTimerRef = reactExports.useRef(null);
+    const { pointerGraceTimerRef, onPointerGraceIntentChange } = contentContext;
+    const scope = { __scopeMenu: props.__scopeMenu };
+    const clearOpenTimer = reactExports.useCallback(() => {
+      if (openTimerRef.current) window.clearTimeout(openTimerRef.current);
+      openTimerRef.current = null;
+    }, []);
+    reactExports.useEffect(() => clearOpenTimer, [clearOpenTimer]);
+    reactExports.useEffect(() => {
+      const pointerGraceTimer = pointerGraceTimerRef.current;
+      return () => {
+        window.clearTimeout(pointerGraceTimer);
+        onPointerGraceIntentChange(null);
+      };
+    }, [pointerGraceTimerRef, onPointerGraceIntentChange]);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(MenuAnchor, { asChild: true, ...scope, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuItemImpl,
+      {
+        id: subContext.triggerId,
+        "aria-haspopup": "menu",
+        "aria-expanded": context.open,
+        "aria-controls": subContext.contentId,
+        "data-state": getOpenState(context.open),
+        ...props,
+        ref: composeRefs(forwardedRef, subContext.onTriggerChange),
+        onClick: (event) => {
+          props.onClick?.(event);
+          if (props.disabled || event.defaultPrevented) return;
+          event.currentTarget.focus();
+          if (!context.open) context.onOpenChange(true);
+        },
+        onPointerMove: composeEventHandlers(
+          props.onPointerMove,
+          whenMouse((event) => {
+            contentContext.onItemEnter(event);
+            if (event.defaultPrevented) return;
+            if (!props.disabled && !context.open && !openTimerRef.current) {
+              contentContext.onPointerGraceIntentChange(null);
+              openTimerRef.current = window.setTimeout(() => {
+                context.onOpenChange(true);
+                clearOpenTimer();
+              }, 100);
+            }
+          })
+        ),
+        onPointerLeave: composeEventHandlers(
+          props.onPointerLeave,
+          whenMouse((event) => {
+            clearOpenTimer();
+            const contentRect = context.content?.getBoundingClientRect();
+            if (contentRect) {
+              const side = context.content?.dataset.side;
+              const rightSide = side === "right";
+              const bleed = rightSide ? -5 : 5;
+              const contentNearEdge = contentRect[rightSide ? "left" : "right"];
+              const contentFarEdge = contentRect[rightSide ? "right" : "left"];
+              contentContext.onPointerGraceIntentChange({
+                area: [
+                  // Apply a bleed on clientX to ensure that our exit point is
+                  // consistently within polygon bounds
+                  { x: event.clientX + bleed, y: event.clientY },
+                  { x: contentNearEdge, y: contentRect.top },
+                  { x: contentFarEdge, y: contentRect.top },
+                  { x: contentFarEdge, y: contentRect.bottom },
+                  { x: contentNearEdge, y: contentRect.bottom }
+                ],
+                side
+              });
+              window.clearTimeout(pointerGraceTimerRef.current);
+              pointerGraceTimerRef.current = window.setTimeout(
+                () => contentContext.onPointerGraceIntentChange(null),
+                300
+              );
+            } else {
+              contentContext.onTriggerLeave(event);
+              if (event.defaultPrevented) return;
+              contentContext.onPointerGraceIntentChange(null);
+            }
+          })
+        ),
+        onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+          const isTypingAhead = contentContext.searchRef.current !== "";
+          if (props.disabled || isTypingAhead && event.key === " ") return;
+          if (SUB_OPEN_KEYS[rootContext.dir].includes(event.key)) {
+            context.onOpenChange(true);
+            context.content?.focus();
+            event.preventDefault();
+          }
+        })
+      }
+    ) });
+  }
+);
+MenuSubTrigger.displayName = SUB_TRIGGER_NAME$1;
+var SUB_CONTENT_NAME$1 = "MenuSubContent";
+var MenuSubContent = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const portalContext = usePortalContext(CONTENT_NAME$1, props.__scopeMenu);
+    const { forceMount = portalContext.forceMount, ...subContentProps } = props;
+    const context = useMenuContext(CONTENT_NAME$1, props.__scopeMenu);
+    const rootContext = useMenuRootContext(CONTENT_NAME$1, props.__scopeMenu);
+    const subContext = useMenuSubContext(SUB_CONTENT_NAME$1, props.__scopeMenu);
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, ref);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Provider, { scope: props.__scopeMenu, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection$1.Slot, { scope: props.__scopeMenu, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuContentImpl,
+      {
+        id: subContext.contentId,
+        "aria-labelledby": subContext.triggerId,
+        ...subContentProps,
+        ref: composedRefs,
+        align: "start",
+        side: rootContext.dir === "rtl" ? "left" : "right",
+        disableOutsidePointerEvents: false,
+        disableOutsideScroll: false,
+        trapFocus: false,
+        onOpenAutoFocus: (event) => {
+          if (rootContext.isUsingKeyboardRef.current) ref.current?.focus();
+          event.preventDefault();
+        },
+        onCloseAutoFocus: (event) => event.preventDefault(),
+        onFocusOutside: composeEventHandlers(props.onFocusOutside, (event) => {
+          if (event.target !== subContext.trigger) context.onOpenChange(false);
+        }),
+        onEscapeKeyDown: composeEventHandlers(props.onEscapeKeyDown, (event) => {
+          rootContext.onClose();
+          event.preventDefault();
+        }),
+        onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+          const isKeyDownInside = event.currentTarget.contains(event.target);
+          const isCloseKey = SUB_CLOSE_KEYS[rootContext.dir].includes(event.key);
+          if (isKeyDownInside && isCloseKey) {
+            context.onOpenChange(false);
+            subContext.trigger?.focus();
+            event.preventDefault();
+          }
+        })
+      }
+    ) }) }) });
+  }
+);
+MenuSubContent.displayName = SUB_CONTENT_NAME$1;
+function getOpenState(open) {
+  return open ? "open" : "closed";
+}
+function isIndeterminate(checked) {
+  return checked === "indeterminate";
+}
+function getCheckedState(checked) {
   return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
 }
+function focusFirst(candidates) {
+  const PREVIOUSLY_FOCUSED_ELEMENT = document.activeElement;
+  for (const candidate of candidates) {
+    if (candidate === PREVIOUSLY_FOCUSED_ELEMENT) return;
+    candidate.focus();
+    if (document.activeElement !== PREVIOUSLY_FOCUSED_ELEMENT) return;
+  }
+}
+function wrapArray$1(array, startIndex) {
+  return array.map((_, index2) => array[(startIndex + index2) % array.length]);
+}
+function getNextMatch(values, search, currentMatch) {
+  const isRepeated = search.length > 1 && Array.from(search).every((char) => char === search[0]);
+  const normalizedSearch = isRepeated ? search[0] : search;
+  const currentMatchIndex = currentMatch ? values.indexOf(currentMatch) : -1;
+  let wrappedValues = wrapArray$1(values, Math.max(currentMatchIndex, 0));
+  const excludeCurrentMatch = normalizedSearch.length === 1;
+  if (excludeCurrentMatch) wrappedValues = wrappedValues.filter((v) => v !== currentMatch);
+  const nextMatch = wrappedValues.find(
+    (value) => value.toLowerCase().startsWith(normalizedSearch.toLowerCase())
+  );
+  return nextMatch !== currentMatch ? nextMatch : void 0;
+}
+function isPointInPolygon(point, polygon) {
+  const { x: x2, y } = point;
+  let inside = false;
+  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+    const ii = polygon[i];
+    const jj = polygon[j];
+    const xi = ii.x;
+    const yi = ii.y;
+    const xj = jj.x;
+    const yj = jj.y;
+    const intersect = yi > y !== yj > y && x2 < (xj - xi) * (y - yi) / (yj - yi) + xi;
+    if (intersect) inside = !inside;
+  }
+  return inside;
+}
+function isPointerInGraceArea(event, area) {
+  if (!area) return false;
+  const cursorPos = { x: event.clientX, y: event.clientY };
+  return isPointInPolygon(cursorPos, area);
+}
+function whenMouse(handler) {
+  return (event) => event.pointerType === "mouse" ? handler(event) : void 0;
+}
+var Root3$1 = Menu$1;
+var Anchor2 = MenuAnchor;
+var Portal = MenuPortal;
+var Content2$1 = MenuContent;
+var Group = MenuGroup;
+var Label = MenuLabel;
+var Item2 = MenuItem;
+var CheckboxItem = MenuCheckboxItem;
+var RadioGroup = MenuRadioGroup;
+var RadioItem = MenuRadioItem;
+var ItemIndicator = MenuItemIndicator;
+var Separator = MenuSeparator;
+var Arrow2 = MenuArrow;
+var Sub = MenuSub;
+var SubTrigger = MenuSubTrigger;
+var SubContent = MenuSubContent;
+var MENUBAR_NAME = "Menubar";
+var [Collection, useCollection, createCollectionScope] = createCollection(MENUBAR_NAME);
+var [createMenubarContext] = createContextScope$1(MENUBAR_NAME, [
+  createCollectionScope,
+  createRovingFocusGroupScope
+]);
+var useMenuScope = createMenuScope();
+var useRovingFocusGroupScope = createRovingFocusGroupScope();
+var [MenubarContextProvider, useMenubarContext] = createMenubarContext(MENUBAR_NAME);
+var Menubar$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const {
+      __scopeMenubar,
+      value: valueProp,
+      onValueChange,
+      defaultValue,
+      loop = true,
+      dir,
+      ...menubarProps
+    } = props;
+    const direction = useDirection(dir);
+    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeMenubar);
+    const [value, setValue] = useControllableState({
+      prop: valueProp,
+      onChange: onValueChange,
+      defaultProp: defaultValue ?? "",
+      caller: MENUBAR_NAME
+    });
+    const [currentTabStopId, setCurrentTabStopId] = reactExports.useState(null);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenubarContextProvider,
+      {
+        scope: __scopeMenubar,
+        value,
+        onMenuOpen: reactExports.useCallback(
+          (value2) => {
+            setValue(value2);
+            setCurrentTabStopId(value2);
+          },
+          [setValue]
+        ),
+        onMenuClose: reactExports.useCallback(() => setValue(""), [setValue]),
+        onMenuToggle: reactExports.useCallback(
+          (value2) => {
+            setValue((prevValue) => prevValue ? "" : value2);
+            setCurrentTabStopId(value2);
+          },
+          [setValue]
+        ),
+        dir: direction,
+        loop,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.Provider, { scope: __scopeMenubar, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.Slot, { scope: __scopeMenubar, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Root$a,
+          {
+            asChild: true,
+            ...rovingFocusGroupScope,
+            orientation: "horizontal",
+            loop,
+            dir: direction,
+            currentTabStopId,
+            onCurrentTabStopIdChange: setCurrentTabStopId,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive$1.div, { role: "menubar", ...menubarProps, ref: forwardedRef })
+          }
+        ) }) })
+      }
+    );
+  }
+);
+Menubar$1.displayName = MENUBAR_NAME;
+var MENU_NAME = "MenubarMenu";
+var [MenubarMenuProvider, useMenubarMenuContext] = createMenubarContext(MENU_NAME);
+var MenubarMenu$1 = (props) => {
+  const { __scopeMenubar, value: valueProp, ...menuProps } = props;
+  const autoValue = useId();
+  const value = valueProp || autoValue || "LEGACY_REACT_AUTO_VALUE";
+  const context = useMenubarContext(MENU_NAME, __scopeMenubar);
+  const menuScope = useMenuScope(__scopeMenubar);
+  const triggerRef = reactExports.useRef(null);
+  const wasKeyboardTriggerOpenRef = reactExports.useRef(false);
+  const open = context.value === value;
+  reactExports.useEffect(() => {
+    if (!open) wasKeyboardTriggerOpenRef.current = false;
+  }, [open]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MenubarMenuProvider,
+    {
+      scope: __scopeMenubar,
+      value,
+      triggerId: useId(),
+      triggerRef,
+      contentId: useId(),
+      wasKeyboardTriggerOpenRef,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Root3$1,
+        {
+          ...menuScope,
+          open,
+          onOpenChange: (open2) => {
+            if (!open2) context.onMenuClose();
+          },
+          modal: false,
+          dir: context.dir,
+          ...menuProps
+        }
+      )
+    }
+  );
+};
+MenubarMenu$1.displayName = MENU_NAME;
+var TRIGGER_NAME = "MenubarTrigger";
+var MenubarTrigger$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, disabled = false, ...triggerProps } = props;
+    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeMenubar);
+    const menuScope = useMenuScope(__scopeMenubar);
+    const context = useMenubarContext(TRIGGER_NAME, __scopeMenubar);
+    const menuContext = useMenubarMenuContext(TRIGGER_NAME, __scopeMenubar);
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, ref, menuContext.triggerRef);
+    const [isFocused, setIsFocused] = reactExports.useState(false);
+    const open = context.value === menuContext.value;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Collection.ItemSlot, { scope: __scopeMenubar, value: menuContext.value, disabled, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Item$2,
+      {
+        asChild: true,
+        ...rovingFocusGroupScope,
+        focusable: !disabled,
+        tabStopId: menuContext.value,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Anchor2, { asChild: true, ...menuScope, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Primitive$1.button,
+          {
+            type: "button",
+            role: "menuitem",
+            id: menuContext.triggerId,
+            "aria-haspopup": "menu",
+            "aria-expanded": open,
+            "aria-controls": open ? menuContext.contentId : void 0,
+            "data-highlighted": isFocused ? "" : void 0,
+            "data-state": open ? "open" : "closed",
+            "data-disabled": disabled ? "" : void 0,
+            disabled,
+            ...triggerProps,
+            ref: composedRefs,
+            onPointerDown: composeEventHandlers(props.onPointerDown, (event) => {
+              if (!disabled && event.button === 0 && event.ctrlKey === false) {
+                context.onMenuOpen(menuContext.value);
+                if (!open) event.preventDefault();
+              }
+            }),
+            onPointerEnter: composeEventHandlers(props.onPointerEnter, () => {
+              const menubarOpen = Boolean(context.value);
+              if (menubarOpen && !open) {
+                context.onMenuOpen(menuContext.value);
+                ref.current?.focus();
+              }
+            }),
+            onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+              if (disabled) return;
+              if (["Enter", " "].includes(event.key)) context.onMenuToggle(menuContext.value);
+              if (event.key === "ArrowDown") context.onMenuOpen(menuContext.value);
+              if (["Enter", " ", "ArrowDown"].includes(event.key)) {
+                menuContext.wasKeyboardTriggerOpenRef.current = true;
+                event.preventDefault();
+              }
+            }),
+            onFocus: composeEventHandlers(props.onFocus, () => setIsFocused(true)),
+            onBlur: composeEventHandlers(props.onBlur, () => setIsFocused(false))
+          }
+        ) })
+      }
+    ) });
+  }
+);
+MenubarTrigger$1.displayName = TRIGGER_NAME;
+var PORTAL_NAME = "MenubarPortal";
+var MenubarPortal$1 = (props) => {
+  const { __scopeMenubar, ...portalProps } = props;
+  const menuScope = useMenuScope(__scopeMenubar);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal, { ...menuScope, ...portalProps });
+};
+MenubarPortal$1.displayName = PORTAL_NAME;
+var CONTENT_NAME = "MenubarContent";
+var MenubarContent$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, align = "start", ...contentProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    const context = useMenubarContext(CONTENT_NAME, __scopeMenubar);
+    const menuContext = useMenubarMenuContext(CONTENT_NAME, __scopeMenubar);
+    const getItems = useCollection(__scopeMenubar);
+    const hasInteractedOutsideRef = reactExports.useRef(false);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Content2$1,
+      {
+        id: menuContext.contentId,
+        "aria-labelledby": menuContext.triggerId,
+        "data-radix-menubar-content": "",
+        ...menuScope,
+        ...contentProps,
+        ref: forwardedRef,
+        align,
+        onCloseAutoFocus: composeEventHandlers(props.onCloseAutoFocus, (event) => {
+          const menubarOpen = Boolean(context.value);
+          if (!menubarOpen && !hasInteractedOutsideRef.current) {
+            menuContext.triggerRef.current?.focus();
+          }
+          hasInteractedOutsideRef.current = false;
+          event.preventDefault();
+        }),
+        onFocusOutside: composeEventHandlers(props.onFocusOutside, (event) => {
+          const target = event.target;
+          const isMenubarTrigger = getItems().some((item) => item.ref.current?.contains(target));
+          if (isMenubarTrigger) event.preventDefault();
+        }),
+        onInteractOutside: composeEventHandlers(props.onInteractOutside, () => {
+          hasInteractedOutsideRef.current = true;
+        }),
+        onEntryFocus: (event) => {
+          if (!menuContext.wasKeyboardTriggerOpenRef.current) event.preventDefault();
+        },
+        onKeyDown: composeEventHandlers(
+          props.onKeyDown,
+          (event) => {
+            if (["ArrowRight", "ArrowLeft"].includes(event.key)) {
+              const target = event.target;
+              const targetIsSubTrigger = target.hasAttribute("data-radix-menubar-subtrigger");
+              const isKeyDownInsideSubMenu = target.closest("[data-radix-menubar-content]") !== event.currentTarget;
+              const prevMenuKey = context.dir === "rtl" ? "ArrowRight" : "ArrowLeft";
+              const isPrevKey = prevMenuKey === event.key;
+              const isNextKey = !isPrevKey;
+              if (isNextKey && targetIsSubTrigger) return;
+              if (isKeyDownInsideSubMenu && isPrevKey) return;
+              const items2 = getItems().filter((item) => !item.disabled);
+              let candidateValues = items2.map((item) => item.value);
+              if (isPrevKey) candidateValues.reverse();
+              const currentIndex = candidateValues.indexOf(menuContext.value);
+              candidateValues = context.loop ? wrapArray(candidateValues, currentIndex + 1) : candidateValues.slice(currentIndex + 1);
+              const [nextValue] = candidateValues;
+              if (nextValue) context.onMenuOpen(nextValue);
+            }
+          },
+          { checkForDefaultPrevented: false }
+        ),
+        style: {
+          ...props.style,
+          // re-namespace exposed content custom properties
+          ...{
+            "--radix-menubar-content-transform-origin": "var(--radix-popper-transform-origin)",
+            "--radix-menubar-content-available-width": "var(--radix-popper-available-width)",
+            "--radix-menubar-content-available-height": "var(--radix-popper-available-height)",
+            "--radix-menubar-trigger-width": "var(--radix-popper-anchor-width)",
+            "--radix-menubar-trigger-height": "var(--radix-popper-anchor-height)"
+          }
+        }
+      }
+    );
+  }
+);
+MenubarContent$1.displayName = CONTENT_NAME;
+var GROUP_NAME = "MenubarGroup";
+var MenubarGroup$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...groupProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Group, { ...menuScope, ...groupProps, ref: forwardedRef });
+  }
+);
+MenubarGroup$1.displayName = GROUP_NAME;
+var LABEL_NAME = "MenubarLabel";
+var MenubarLabel$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...labelProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { ...menuScope, ...labelProps, ref: forwardedRef });
+  }
+);
+MenubarLabel$1.displayName = LABEL_NAME;
+var ITEM_NAME = "MenubarItem";
+var MenubarItem$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...itemProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Item2, { ...menuScope, ...itemProps, ref: forwardedRef });
+  }
+);
+MenubarItem$1.displayName = ITEM_NAME;
+var CHECKBOX_ITEM_NAME = "MenubarCheckboxItem";
+var MenubarCheckboxItem$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...checkboxItemProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(CheckboxItem, { ...menuScope, ...checkboxItemProps, ref: forwardedRef });
+  }
+);
+MenubarCheckboxItem$1.displayName = CHECKBOX_ITEM_NAME;
+var RADIO_GROUP_NAME = "MenubarRadioGroup";
+var MenubarRadioGroup$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...radioGroupProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(RadioGroup, { ...menuScope, ...radioGroupProps, ref: forwardedRef });
+  }
+);
+MenubarRadioGroup$1.displayName = RADIO_GROUP_NAME;
+var RADIO_ITEM_NAME = "MenubarRadioItem";
+var MenubarRadioItem$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...radioItemProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(RadioItem, { ...menuScope, ...radioItemProps, ref: forwardedRef });
+  }
+);
+MenubarRadioItem$1.displayName = RADIO_ITEM_NAME;
+var INDICATOR_NAME = "MenubarItemIndicator";
+var MenubarItemIndicator = reactExports.forwardRef((props, forwardedRef) => {
+  const { __scopeMenubar, ...itemIndicatorProps } = props;
+  const menuScope = useMenuScope(__scopeMenubar);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicator, { ...menuScope, ...itemIndicatorProps, ref: forwardedRef });
+});
+MenubarItemIndicator.displayName = INDICATOR_NAME;
+var SEPARATOR_NAME = "MenubarSeparator";
+var MenubarSeparator$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...separatorProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Separator, { ...menuScope, ...separatorProps, ref: forwardedRef });
+  }
+);
+MenubarSeparator$1.displayName = SEPARATOR_NAME;
+var ARROW_NAME = "MenubarArrow";
+var MenubarArrow = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...arrowProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Arrow2, { ...menuScope, ...arrowProps, ref: forwardedRef });
+  }
+);
+MenubarArrow.displayName = ARROW_NAME;
+var SUB_NAME = "MenubarSub";
+var MenubarSub$1 = (props) => {
+  const { __scopeMenubar, children, open: openProp, onOpenChange, defaultOpen } = props;
+  const menuScope = useMenuScope(__scopeMenubar);
+  const [open, setOpen] = useControllableState({
+    prop: openProp,
+    defaultProp: defaultOpen ?? false,
+    onChange: onOpenChange,
+    caller: SUB_NAME
+  });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Sub, { ...menuScope, open, onOpenChange: setOpen, children });
+};
+MenubarSub$1.displayName = SUB_NAME;
+var SUB_TRIGGER_NAME = "MenubarSubTrigger";
+var MenubarSubTrigger$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...subTriggerProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      SubTrigger,
+      {
+        "data-radix-menubar-subtrigger": "",
+        ...menuScope,
+        ...subTriggerProps,
+        ref: forwardedRef
+      }
+    );
+  }
+);
+MenubarSubTrigger$1.displayName = SUB_TRIGGER_NAME;
+var SUB_CONTENT_NAME = "MenubarSubContent";
+var MenubarSubContent$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeMenubar, ...subContentProps } = props;
+    const menuScope = useMenuScope(__scopeMenubar);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      SubContent,
+      {
+        ...menuScope,
+        "data-radix-menubar-content": "",
+        ...subContentProps,
+        ref: forwardedRef,
+        style: {
+          ...props.style,
+          // re-namespace exposed content custom properties
+          ...{
+            "--radix-menubar-content-transform-origin": "var(--radix-popper-transform-origin)",
+            "--radix-menubar-content-available-width": "var(--radix-popper-available-width)",
+            "--radix-menubar-content-available-height": "var(--radix-popper-available-height)",
+            "--radix-menubar-trigger-width": "var(--radix-popper-anchor-width)",
+            "--radix-menubar-trigger-height": "var(--radix-popper-anchor-height)"
+          }
+        }
+      }
+    );
+  }
+);
+MenubarSubContent$1.displayName = SUB_CONTENT_NAME;
+function wrapArray(array, startIndex) {
+  return array.map((_, index2) => array[(startIndex + index2) % array.length]);
+}
+var Root3 = Menubar$1;
+var Menu = MenubarMenu$1;
+var Trigger = MenubarTrigger$1;
+var Portal2 = MenubarPortal$1;
+var Content2 = MenubarContent$1;
+var Group2 = MenubarGroup$1;
+var Label2 = MenubarLabel$1;
+var Item3 = MenubarItem$1;
+var CheckboxItem2 = MenubarCheckboxItem$1;
+var RadioGroup2 = MenubarRadioGroup$1;
+var RadioItem2 = MenubarRadioItem$1;
+var ItemIndicator2 = MenubarItemIndicator;
+var Separator2 = MenubarSeparator$1;
+var Sub2 = MenubarSub$1;
+var SubTrigger2 = MenubarSubTrigger$1;
+var SubContent2 = MenubarSubContent$1;
+const menubarVariants = cva(
+  "lsd:flex lsd:h-9 lsd:items-center lsd:gap-1 lsd:border lsd:border-lsd-border lsd:bg-lsd-surface lsd:p-1 lsd:shadow-xs"
+);
+const menubarTriggerVariants = cva(
+  "lsd:cursor-pointer lsd:flex lsd:items-center lsd:px-2 lsd:py-1 lsd:text-sm lsd:font-medium lsd:outline-none lsd:select-none lsd:text-lsd-text-primary lsd:bg-lsd-surface lsd:hover:underline lsd:focus:underline lsd:data-[state=open]:bg-lsd-surface-secondary lsd:data-[state=open]:text-lsd-text-primary lsd:transition-colors"
+);
+const menubarItemVariants = cva(
+  "lsd:relative lsd:flex lsd:cursor-pointer lsd:items-center lsd:gap-2 lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:outline-none lsd:select-none lsd:text-lsd-text-primary lsd:bg-lsd-surface lsd:disabled:pointer-events-none lsd:disabled:opacity-50 lsd:transition-colors lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      variant: {
+        default: "",
+        destructive: "lsd:text-lsd-destructive lsd:focus:bg-lsd-destructive/10 lsd:focus:text-lsd-destructive lsd:[&_svg]:!text-lsd-destructive"
+      },
+      inset: {
+        true: "lsd:pl-8"
+      }
+    },
+    defaultVariants: {
+      variant: "default",
+      inset: false
+    }
+  }
+);
+const menubarSeparatorVariants = cva(
+  "lsd:bg-lsd-border lsd:-mx-1 lsd:my-1 lsd:h-px"
+);
+const menubarLabelVariants = cva(
+  "lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:font-bold lsd:text-lsd-text-primary",
+  {
+    variants: {
+      inset: {
+        true: "lsd:pl-8"
+      }
+    },
+    defaultVariants: {
+      inset: false
+    }
+  }
+);
+const menubarContentVariants = cva(
+  "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:z-50 lsd:min-w-[12rem] lsd:overflow-hidden lsd:border lsd:border-lsd-border lsd:p-1 lsd:shadow-lg lsd:data-[state=open]:animate-in lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2"
+);
+const menubarSubTriggerVariants = cva(
+  "lsd:flex lsd:cursor-pointer lsd:items-center lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:outline-none lsd:select-none lsd:text-lsd-text-primary lsd:bg-lsd-surface lsd:data-[state=open]:bg-lsd-surface-secondary lsd:data-[state=open]:text-lsd-text-primary lsd:transition-colors",
+  {
+    variants: {
+      inset: {
+        true: "lsd:pl-8"
+      }
+    },
+    defaultVariants: {
+      inset: false
+    }
+  }
+);
+const menubarSubContentVariants = cva(
+  "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:z-50 lsd:min-w-[8rem] lsd:overflow-hidden lsd:border lsd:border-lsd-border lsd:p-1 lsd:shadow-lg lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:data-[side=bottom]:slide-in-from-top-2 lsd:data-[side=left]:slide-in-from-right-2 lsd:data-[side=right]:slide-in-from-left-2 lsd:data-[side=top]:slide-in-from-bottom-2"
+);
+const menubarCheckboxItemVariants = cva(
+  "lsd:relative lsd:flex lsd:cursor-pointer lsd:items-center lsd:gap-2 lsd:py-1.5 lsd:pr-2 lsd:pl-8 lsd:text-sm lsd:outline-none lsd:select-none lsd:text-lsd-text-primary lsd:bg-lsd-surface lsd:disabled:pointer-events-none lsd:disabled:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4"
+);
+const menubarRadioItemVariants = cva(
+  "lsd:relative lsd:flex lsd:cursor-pointer lsd:items-center lsd:gap-2 lsd:py-1.5 lsd:pr-2 lsd:pl-8 lsd:text-sm lsd:outline-none lsd:select-none lsd:text-lsd-text-primary lsd:bg-lsd-surface lsd:disabled:pointer-events-none lsd:disabled:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4"
+);
+function Menubar({ className, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Root3,
+    {
+      "data-slot": "menubar",
+      className: cn$1(menubarVariants(), className),
+      ...props
+    }
+  );
+}
+function MenubarCheckboxItem({
+  className,
+  children,
+  checked,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    CheckboxItem2,
+    {
+      "data-slot": "menubar-checkbox-item",
+      className: cn$1(menubarCheckboxItemVariants(), "lsd:group", className),
+      checked,
+      ...props,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:pointer-events-none lsd:absolute lsd:left-2 lsd:flex lsd:size-3.5 lsd:items-center lsd:justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicator2, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "lsd:size-4" }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:group-hover:underline lsd:group-focus:underline", children })
+      ]
+    }
+  );
+}
+function MenubarPortal({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal2, { "data-slot": "menubar-portal", ...props });
+}
+function MenubarContent({
+  className,
+  align = "start",
+  alignOffset = -4,
+  sideOffset = 8,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarPortal, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Content2,
+    {
+      "data-slot": "menubar-content",
+      align,
+      alignOffset,
+      sideOffset,
+      className: cn$1(menubarContentVariants(), className),
+      ...props
+    }
+  ) });
+}
+function MenubarGroup({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Group2, { "data-slot": "menubar-group", ...props });
+}
+function MenubarItem({
+  className,
+  inset,
+  variant = "default",
+  shortcut,
+  children,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    Item3,
+    {
+      "data-slot": "menubar-item",
+      "data-inset": inset,
+      "data-variant": variant,
+      className: cn$1(
+        menubarItemVariants({ variant, inset }),
+        "lsd:group",
+        className
+      ),
+      ...props,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:group-hover:underline lsd:group-focus:underline", children }),
+        shortcut && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:text-lsd-text-secondary lsd:ml-auto lsd:text-xs lsd:tracking-widest", children: shortcut })
+      ]
+    }
+  );
+}
+function MenubarLabel({ className, inset, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Label2,
+    {
+      "data-slot": "menubar-label",
+      "data-inset": inset,
+      className: cn$1(menubarLabelVariants({ inset }), className),
+      ...props
+    }
+  );
+}
+function MenubarMenu({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { "data-slot": "menubar-menu", ...props });
+}
+function MenubarRadioGroup({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(RadioGroup2, { "data-slot": "menubar-radio-group", ...props });
+}
+function MenubarRadioItem({
+  className,
+  children,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    RadioItem2,
+    {
+      "data-slot": "menubar-radio-item",
+      className: cn$1(menubarRadioItemVariants(), "lsd:group", className),
+      ...props,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:pointer-events-none lsd:absolute lsd:left-2 lsd:flex lsd:size-3.5 lsd:items-center lsd:justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ItemIndicator2, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Circle, { className: "lsd:size-2 lsd:fill-current" }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:group-hover:underline lsd:group-focus:underline", children })
+      ]
+    }
+  );
+}
+function MenubarSeparator({ className, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Separator2,
+    {
+      "data-slot": "menubar-separator",
+      className: cn$1(menubarSeparatorVariants(), className),
+      ...props
+    }
+  );
+}
+function MenubarSub({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Sub2, { "data-slot": "menubar-sub", ...props });
+}
+function MenubarSubContent({ className, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    SubContent2,
+    {
+      "data-slot": "menubar-sub-content",
+      className: cn$1(menubarSubContentVariants(), className),
+      ...props
+    }
+  );
+}
+function MenubarSubTrigger({
+  className,
+  inset,
+  children,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    SubTrigger2,
+    {
+      "data-slot": "menubar-sub-trigger",
+      "data-inset": inset,
+      className: cn$1(
+        menubarSubTriggerVariants({ inset }),
+        "lsd:group",
+        className
+      ),
+      ...props,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:group-hover:underline lsd:group-focus:underline", children }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { className: "lsd:ml-auto lsd:h-4 lsd:w-4" })
+      ]
+    }
+  );
+}
+function MenubarTrigger({ className, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Trigger,
+    {
+      "data-slot": "menubar-trigger",
+      className: cn$1(menubarTriggerVariants(), className),
+      ...props
+    }
+  );
+}
+const Menubar_fixture = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
+  ] }),
+  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "lsd:text-2xl lsd:font-bold", children: "Menubar Component" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "lsd:text-lsd-text-secondary", children: "A horizontally stacked set of menus that provides access to a consistent set of commands or actions." })
+  ] }),
+  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-semibold", children: "Basic Usage" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CodeExample,
+        {
+          title: "Menubar Basic Usage",
+          code: `<Menubar>
+  <MenubarMenu>
+    <MenubarTrigger>File</MenubarTrigger>
+    <MenubarContent>
+      <MenubarItem shortcut="⌘T">New Tab</MenubarItem>
+      <MenubarItem shortcut="⌘N">New Window</MenubarItem>
+      <MenubarItem disabled>New Incognito Window</MenubarItem>
+      <MenubarSeparator />
+      <MenubarSub>
+        <MenubarSubTrigger>Share</MenubarSubTrigger>
+        <MenubarSubContent>
+          <MenubarItem>Email link</MenubarItem>
+          <MenubarItem>Messages</MenubarItem>
+          <MenubarItem>Notes</MenubarItem>
+        </MenubarSubContent>
+      </MenubarSub>
+      <MenubarSeparator />
+      <MenubarItem shortcut="⌘P">Print...</MenubarItem>
+    </MenubarContent>
+  </MenubarMenu>
+  <MenubarMenu>
+    <MenubarTrigger>Edit</MenubarTrigger>
+    <MenubarContent>
+      <MenubarItem shortcut="⌘Z">Undo</MenubarItem>
+      <MenubarItem shortcut="⇧⌘Z">Redo</MenubarItem>
+      <MenubarSeparator />
+      <MenubarItem shortcut="⌘X">Cut</MenubarItem>
+      <MenubarItem shortcut="⌘C">Copy</MenubarItem>
+      <MenubarItem shortcut="⌘V">Paste</MenubarItem>
+    </MenubarContent>
+  </MenubarMenu>
+</Menubar>`,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Menubar, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "File" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘T", children: "New Tab" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘N", children: "New Window" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { disabled: true, children: "New Incognito Window" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSub, { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSubTrigger, { children: "Share" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSubContent, { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Email link" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Messages" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Notes" })
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘P", children: "Print..." })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "Edit" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘Z", children: "Undo" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⇧⌘Z", children: "Redo" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘X", children: "Cut" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘C", children: "Copy" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { shortcut: "⌘V", children: "Paste" })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "View" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarCheckboxItem, { checked: true, children: "Always Show Bookmarks Bar" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarCheckboxItem, { children: "Always Show Full URLs" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { inset: true, shortcut: "⌘R", children: "Reload" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { disabled: true, inset: true, shortcut: "⇧⌘R", children: "Force Reload" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { inset: true, children: "Toggle Full Screen" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { inset: true, children: "Hide Sidebar" })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "Profiles" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarRadioGroup, { value: "ben", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "andy", children: "Andy" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "ben", children: "Ben" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "luis", children: "Luis" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Edit..." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Add Profile..." })
+              ] })
+            ] })
+          ] })
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-semibold", children: "With Groups and Labels" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CodeExample,
+        {
+          title: "Menubar With Groups and Labels",
+          code: `<Menubar>
+  <MenubarMenu>
+    <MenubarTrigger>Actions</MenubarTrigger>
+    <MenubarContent>
+      <MenubarGroup>
+        <MenubarLabel>File Actions</MenubarLabel>
+        <MenubarItem>New File</MenubarItem>
+        <MenubarItem>Open File</MenubarItem>
+        <MenubarItem>Save File</MenubarItem>
+      </MenubarGroup>
+      <MenubarSeparator />
+      <MenubarGroup>
+        <MenubarLabel>Edit Actions</MenubarLabel>
+        <MenubarItem>Cut</MenubarItem>
+        <MenubarItem>Copy</MenubarItem>
+        <MenubarItem>Paste</MenubarItem>
+      </MenubarGroup>
+    </MenubarContent>
+  </MenubarMenu>
+</Menubar>`,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Menubar, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "Actions" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarGroup, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarLabel, { children: "File Actions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "New File" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Open File" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Save File" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarGroup, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarLabel, { children: "Edit Actions" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Cut" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Copy" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Paste" })
+              ] })
+            ] })
+          ] }) })
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-semibold", children: "Destructive Variant" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CodeExample,
+        {
+          title: "Menubar Destructive Item",
+          code: `<Menubar>
+  <MenubarMenu>
+    <MenubarTrigger>File</MenubarTrigger>
+    <MenubarContent>
+      <MenubarItem>New File</MenubarItem>
+      <MenubarItem>Save</MenubarItem>
+      <MenubarSeparator />
+      <MenubarItem variant="destructive">
+        Delete File
+      </MenubarItem>
+    </MenubarContent>
+  </MenubarMenu>
+</Menubar>`,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Menubar, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "File" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "New File" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Save" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { variant: "destructive", children: "Delete File" })
+            ] })
+          ] }) })
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-semibold", children: "Nested Submenus" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CodeExample,
+        {
+          title: "Menubar Nested Submenus",
+          code: `<Menubar>
+  <MenubarMenu>
+    <MenubarTrigger>Preferences</MenubarTrigger>
+    <MenubarContent>
+      <MenubarSub>
+        <MenubarSubTrigger>Appearance</MenubarSubTrigger>
+        <MenubarSubContent>
+          <MenubarItem>Theme</MenubarItem>
+          <MenubarItem>Font Size</MenubarItem>
+          <MenubarSub>
+            <MenubarSubTrigger>Color Scheme</MenubarSubTrigger>
+            <MenubarSubContent>
+              <MenubarItem>Light</MenubarItem>
+              <MenubarItem>Dark</MenubarItem>
+              <MenubarItem>System</MenubarItem>
+            </MenubarSubContent>
+          </MenubarSub>
+        </MenubarSubContent>
+      </MenubarSub>
+      <MenubarSub>
+        <MenubarSubTrigger>Settings</MenubarSubTrigger>
+        <MenubarSubContent>
+          <MenubarItem>General</MenubarItem>
+          <MenubarItem>Keyboard</MenubarItem>
+          <MenubarItem>Language</MenubarItem>
+        </MenubarSubContent>
+      </MenubarSub>
+    </MenubarContent>
+  </MenubarMenu>
+</Menubar>`,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Menubar, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "Preferences" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSub, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSubTrigger, { children: "Appearance" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSubContent, { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Theme" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Font Size" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSub, { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSubTrigger, { children: "Color Scheme" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSubContent, { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Light" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Dark" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "System" })
+                    ] })
+                  ] })
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSub, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSubTrigger, { children: "Settings" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarSubContent, { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "General" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Keyboard" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarItem, { children: "Language" })
+                ] })
+              ] })
+            ] })
+          ] }) })
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "lsd:text-lg lsd:font-semibold", children: "Checkbox and Radio Items" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CodeExample,
+        {
+          title: "Menubar Checkbox and Radio Items",
+          code: `<Menubar>
+  <MenubarMenu>
+    <MenubarTrigger>Options</MenubarTrigger>
+    <MenubarContent>
+      <MenubarCheckboxItem checked>Show Toolbar</MenubarCheckboxItem>
+      <MenubarCheckboxItem>Show Status Bar</MenubarCheckboxItem>
+      <MenubarCheckboxItem>Show Ruler</MenubarCheckboxItem>
+      <MenubarSeparator />
+      <MenubarLabel inset>Zoom Level</MenubarLabel>
+      <MenubarRadioGroup value="100">
+        <MenubarRadioItem value="50">50%</MenubarRadioItem>
+        <MenubarRadioItem value="100">100%</MenubarRadioItem>
+        <MenubarRadioItem value="150">150%</MenubarRadioItem>
+        <MenubarRadioItem value="200">200%</MenubarRadioItem>
+      </MenubarRadioGroup>
+    </MenubarContent>
+  </MenubarMenu>
+</Menubar>`,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Menubar, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarMenu, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarTrigger, { children: "Options" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarContent, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarCheckboxItem, { checked: true, children: "Show Toolbar" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarCheckboxItem, { children: "Show Status Bar" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarCheckboxItem, { children: "Show Ruler" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarSeparator, {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarLabel, { inset: true, children: "Zoom Level" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(MenubarRadioGroup, { value: "100", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "50", children: "50%" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "100", children: "100%" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "150", children: "150%" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MenubarRadioItem, { value: "200", children: "200%" })
+              ] })
+            ] })
+          ] }) })
+        }
+      )
+    ] })
+  ] })
+] });
+const fixture13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: Menubar_fixture
+}, Symbol.toStringTag, { value: "Module" }));
 function Checkbox({
   className,
   ...props
@@ -18245,7 +20237,7 @@ function Checkbox({
     {
       "data-slot": "checkbox",
       className: cn$1(
-        "peer lsd:border-lsd-border dark:lsd:bg-lsd-surface-secondary/30 lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=checked]:text-lsd-surface-primary dark:lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=checked]:border-lsd-primary focus-visible:lsd:border-lsd-border-primary focus-visible:lsd:ring-lsd-text/50 aria-invalid:lsd:ring-lsd-destructive/20 dark:aria-invalid:lsd:ring-lsd-destructive/40 aria-invalid:lsd:border-lsd-destructive lsd:size-5 lsd:shrink-0 lsd:border lsd:shadow-xs lsd:transition-shadow lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50",
+        "peer lsd:border-lsd-border dark:lsd:bg-lsd-surface/30 lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=checked]:text-lsd-surface dark:lsd:data-[state=checked]:bg-lsd-primary lsd:data-[state=checked]:border-lsd-primary focus-visible:lsd:border-lsd-border focus-visible:lsd:ring-lsd-text/50 aria-invalid:lsd:ring-lsd-destructive/20 dark:aria-invalid:lsd:ring-lsd-destructive/40 aria-invalid:lsd:border-lsd-destructive lsd:size-5 lsd:shrink-0 lsd:border lsd:shadow-xs lsd:transition-shadow lsd:outline-none focus-visible:lsd:ring-[3px] lsd:cursor-pointer lsd:disabled:cursor-not-allowed lsd:disabled:opacity-50",
         className
       ),
       ...props,
@@ -18276,6 +20268,7 @@ function LabelFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -18294,7 +20287,7 @@ function LabelFixture() {
 </div>`,
           children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: defaultCheckboxId }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: defaultCheckboxId, children: "Default Label" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: defaultCheckboxId, children: "Default Label" })
           ] })
         }
       )
@@ -18322,11 +20315,11 @@ function LabelFixture() {
           children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: primaryCheckboxId }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { variant: "default", htmlFor: primaryCheckboxId, children: "Primary Label (Default)" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { variant: "default", htmlFor: primaryCheckboxId, children: "Primary Label (Default)" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: secondaryCheckboxId }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { variant: "secondary", htmlFor: secondaryCheckboxId, children: "Secondary Label" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { variant: "secondary", htmlFor: secondaryCheckboxId, children: "Secondary Label" })
             ] })
           ] })
         }
@@ -18361,15 +20354,15 @@ function LabelFixture() {
           children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: smallCheckboxId }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { size: "sm", htmlFor: smallCheckboxId, children: "Small Label" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { size: "sm", htmlFor: smallCheckboxId, children: "Small Label" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: mediumCheckboxId }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { size: "md", htmlFor: mediumCheckboxId, children: "Medium Label (Default)" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { size: "md", htmlFor: mediumCheckboxId, children: "Medium Label (Default)" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: largeCheckboxId }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { size: "lg", htmlFor: largeCheckboxId, children: "Large Label" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { size: "lg", htmlFor: largeCheckboxId, children: "Large Label" })
             ] })
           ] })
         }
@@ -18402,15 +20395,15 @@ function LabelFixture() {
           children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: checkbox1Id }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: checkbox1Id, children: "Accept terms and conditions" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: checkbox1Id, children: "Accept terms and conditions" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: checkbox2Id }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { variant: "secondary", htmlFor: checkbox2Id, children: "Subscribe to newsletter" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { variant: "secondary", htmlFor: checkbox2Id, children: "Subscribe to newsletter" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: checkbox3Id, disabled: true }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: checkbox3Id, className: "lsd:opacity-50", children: "Disabled option" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: checkbox3Id, className: "lsd:opacity-50", children: "Disabled option" })
             ] })
           ] })
         }
@@ -18439,11 +20432,11 @@ function LabelFixture() {
           children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: combo1Id }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { variant: "secondary", size: "sm", htmlFor: combo1Id, children: "Secondary Small Label" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { variant: "secondary", size: "sm", htmlFor: combo1Id, children: "Secondary Small Label" })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: combo2Id }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { variant: "default", size: "lg", htmlFor: combo2Id, children: "Primary Large Label" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { variant: "default", size: "lg", htmlFor: combo2Id, children: "Primary Large Label" })
             ] })
           ] })
         }
@@ -18465,14 +20458,14 @@ function LabelFixture() {
 </div>`,
           children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lsd:space-y-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:items-center lsd:space-x-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Checkbox, { id: disabledCheckboxId, disabled: true }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: disabledCheckboxId, className: "lsd:opacity-50", children: "Disabled Label" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Label$2, { htmlFor: disabledCheckboxId, className: "lsd:opacity-50", children: "Disabled Label" })
           ] }) })
         }
       )
     ] })
   ] });
 }
-const fixture13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: LabelFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -18481,6 +20474,7 @@ function InputFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -18761,7 +20755,7 @@ function InputFixture() {
     ] })
   ] });
 }
-const fixture14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: InputFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -18794,7 +20788,7 @@ function DialogOverlay({
 function DialogPortal({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$3, { "data-slot": "dialog-portal", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$4, { "data-slot": "dialog-portal", ...props });
 }
 function DialogContent({
   className,
@@ -18809,7 +20803,7 @@ function DialogContent({
       {
         "data-slot": "dialog-content",
         className: cn$1(
-          "lsd:bg-lsd-surface-primary lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg",
+          "lsd:bg-lsd-surface lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg",
           className
         ),
         ...props,
@@ -18819,7 +20813,7 @@ function DialogContent({
             DialogClose,
             {
               "data-slot": "dialog-close",
-              className: "lsd:p-2 focus:lsd:outline-hidden lsd:data-[state=open]:bg-lsd-surface-secondary lsd:data-[state=open]:text-lsd-text lsd:absolute lsd:top-4 lsd:right-4 lsd:rounded-xs lsd:opacity-70 lsd:transition-opacity lsd:hover:opacity-100 lsd:disabled:pointer-events-none lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4 lsd:cursor-pointer",
+              className: "lsd:p-2 focus:lsd:outline-hidden lsd:data-[state=open]:bg-lsd-surface lsd:data-[state=open]:text-lsd-text-primary lsd:absolute lsd:top-4 lsd:right-4 lsd:rounded-xs lsd:opacity-70 lsd:transition-opacity lsd:hover:opacity-100 lsd:disabled:pointer-events-none lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4 lsd:cursor-pointer",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(X$1, {}),
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "lsd:sr-only", children: "Close" })
@@ -18839,7 +20833,7 @@ function DialogDescription({
     Description,
     {
       "data-slot": "dialog-description",
-      className: cn$1("lsd:text-lsd-text lsd:text-sm", className),
+      className: cn$1("lsd:text-lsd-text-primary lsd:text-sm", className),
       ...props
     }
   );
@@ -18889,7 +20883,7 @@ function DialogTitle({
 function DialogTrigger({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$3, { "data-slot": "dialog-trigger", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$4, { "data-slot": "dialog-trigger", ...props });
 }
 function DialogFixture() {
   const [showBasicDialog, setShowBasicDialog] = reactExports.useState(false);
@@ -18898,6 +20892,7 @@ function DialogFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -19081,7 +21076,7 @@ function DialogFixture() {
     ] })
   ] });
 }
-const fixture15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: DialogFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -19328,7 +21323,7 @@ var N = '[cmdk-group=""]', Y = '[cmdk-group-items=""]', be = '[cmdk-group-headin
   }, []), reactExports.createElement(Primitive.div, { ref: composeRefs(d, o), ...c, "cmdk-list": "", role: "listbox", tabIndex: -1, "aria-activedescendant": p2, "aria-label": u2, id: b.listId }, B(r2, (m2) => reactExports.createElement("div", { ref: composeRefs(f, b.listInnerRef), "cmdk-list-sizer": "" }, m2)));
 }), xe = reactExports.forwardRef((r2, o) => {
   let { open: n, onOpenChange: u2, overlayClassName: c, contentClassName: d, container: f, ...p2 } = r2;
-  return reactExports.createElement(Root$6, { open: n, onOpenChange: u2 }, reactExports.createElement(Portal$3, { container: f }, reactExports.createElement(Overlay, { "cmdk-overlay": "", className: c }), reactExports.createElement(Content$1, { "aria-label": r2.label, "cmdk-dialog": "", className: d }, reactExports.createElement(me, { ref: o, ...p2 }))));
+  return reactExports.createElement(Root$6, { open: n, onOpenChange: u2 }, reactExports.createElement(Portal$4, { container: f }, reactExports.createElement(Overlay, { "cmdk-overlay": "", className: c }), reactExports.createElement(Content$1, { "aria-label": r2.label, "cmdk-dialog": "", className: d }, reactExports.createElement(me, { ref: o, ...p2 }))));
 }), Ie = reactExports.forwardRef((r2, o) => P((u2) => u2.filtered.count === 0) ? reactExports.createElement(Primitive.div, { ref: o, ...r2, "cmdk-empty": "", role: "presentation" }) : null), Pe = reactExports.forwardRef((r2, o) => {
   let { progress: n, children: u2, label: c = "Loading...", ...d } = r2;
   return reactExports.createElement(Primitive.div, { ref: o, ...d, "cmdk-loading": "", role: "progressbar", "aria-valuenow": n, "aria-valuemin": 0, "aria-valuemax": 100, "aria-label": c }, B(r2, (f) => reactExports.createElement("div", { "aria-hidden": true }, f)));
@@ -19401,7 +21396,7 @@ function Command({
     {
       "data-slot": "command",
       className: cn$1(
-        "lsd:bg-lsd-surface-primary lsd:text-lsd-text lsd:flex lsd:h-full lsd:w-full lsd:flex-col lsd:overflow-hidden",
+        "lsd:bg-lsd-surface lsd:text-lsd-text-primary lsd:flex lsd:h-full lsd:w-full lsd:flex-col lsd:overflow-hidden",
         className
       ),
       ...props
@@ -19426,7 +21421,7 @@ function CommandDialog({
       {
         className: cn$1("lsd:overflow-hidden lsd:p-0", className),
         showCloseButton,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Command, { className: "lsd:[&_[cmdk-group-heading]]:text-lsd-text lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:font-medium lsd:[&_[cmdk-group]]:px-2 lsd:[&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 lsd:[&_[cmdk-input-wrapper]_svg]:h-5 lsd:[&_[cmdk-input-wrapper]_svg]:w-5 lsd:[&_[cmdk-input]]:h-12 lsd:[&_[cmdk-item]]:px-2 lsd:[&_[cmdk-item]]:py-3 lsd:[&_[cmdk-item]_svg]:h-5 lsd:[&_[cmdk-item]_svg]:w-5", children })
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Command, { className: "lsd:[&_[cmdk-group-heading]]:text-lsd-text-primary lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:font-medium lsd:[&_[cmdk-group]]:px-2 lsd:[&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 lsd:[&_[cmdk-input-wrapper]_svg]:h-5 lsd:[&_[cmdk-input-wrapper]_svg]:w-5 lsd:[&_[cmdk-input]]:h-12 lsd:[&_[cmdk-item]]:px-2 lsd:[&_[cmdk-item]]:py-3 lsd:[&_[cmdk-item]_svg]:h-5 lsd:[&_[cmdk-item]_svg]:w-5", children })
       }
     )
   ] });
@@ -19452,7 +21447,7 @@ function CommandGroup({
     {
       "data-slot": "command-group",
       className: cn$1(
-        "lsd:text-lsd-text lsd:[&_[cmdk-group-heading]]:text-lsd-text lsd:overflow-hidden lsd:p-1 lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:py-1.5 lsd:[&_[cmdk-group-heading]]:text-xs lsd:[&_[cmdk-group-heading]]:font-medium",
+        "lsd:text-lsd-text-primary lsd:[&_[cmdk-group-heading]]:text-lsd-text-primary lsd:overflow-hidden lsd:p-1 lsd:[&_[cmdk-group-heading]]:px-2 lsd:[&_[cmdk-group-heading]]:py-1.5 lsd:[&_[cmdk-group-heading]]:text-xs lsd:[&_[cmdk-group-heading]]:font-medium",
         className
       ),
       ...props
@@ -19494,7 +21489,7 @@ function CommandItem({
     {
       "data-slot": "command-item",
       className: cn$1(
-        "lsd:data-[selected=true]:bg-lsd-surface-secondary lsd:data-[selected=true]:text-lsd-text lsd:[&_svg:not([class*='text-'])]:text-lsd-text lsd:relative lsd:flex lsd:cursor-default lsd:items-center lsd:gap-2 lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:outline-hidden lsd:select-none lsd:data-[disabled=true]:pointer-events-none lsd:data-[disabled=true]:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
+        "lsd:data-[selected=true]:bg-lsd-surface lsd:data-[selected=true]:text-lsd-text-primary lsd:[&_svg:not([class*='text-'])]:text-lsd-text-primary lsd:relative lsd:flex lsd:cursor-default lsd:items-center lsd:gap-2 lsd:px-2 lsd:py-1.5 lsd:text-sm lsd:outline-hidden lsd:select-none lsd:data-[disabled=true]:pointer-events-none lsd:data-[disabled=true]:opacity-50 lsd:[&_svg]:pointer-events-none lsd:[&_svg]:shrink-0 lsd:[&_svg:not([class*='size-'])]:size-4",
         className
       ),
       ...props
@@ -19539,7 +21534,7 @@ function CommandShortcut({
     {
       "data-slot": "command-shortcut",
       className: cn$1(
-        "lsd:text-lsd-text lsd:ml-auto lsd:text-xs lsd:tracking-widest",
+        "lsd:text-lsd-text-primary lsd:ml-auto lsd:text-xs lsd:tracking-widest",
         className
       ),
       ...props
@@ -19550,6 +21545,7 @@ function CommandFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -19713,7 +21709,7 @@ function CommandDialogDemo() {
     ] })
   ] });
 }
-const fixture16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: CommandFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -19733,6 +21729,7 @@ function CheckboxFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -19940,7 +21937,7 @@ function CheckboxFixture() {
     ] })
   ] });
 }
-const fixture17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: CheckboxFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -19948,6 +21945,7 @@ function CardFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -20162,7 +22160,7 @@ function CardFixture() {
     ] })
   ] });
 }
-const fixture18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: CardFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -20197,7 +22195,7 @@ const ButtonGroup = reactExports.forwardRef(
 ButtonGroup.displayName = "ButtonGroup";
 const ButtonGroupSeparator = reactExports.forwardRef(({ className, orientation = "vertical", ...props }, ref) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Separator$1,
+    Separator$2,
     {
       ref,
       "data-slot": "button-group-separator",
@@ -20213,7 +22211,7 @@ const ButtonGroupSeparator = reactExports.forwardRef(({ className, orientation =
 ButtonGroupSeparator.displayName = "ButtonGroupSeparator";
 const ButtonGroupText = reactExports.forwardRef(
   ({ className, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot$2 : "div";
+    const Comp = asChild ? Slot$3 : "div";
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Comp,
       {
@@ -20232,6 +22230,7 @@ function ButtonGroupFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -20295,7 +22294,7 @@ function ButtonGroupFixture() {
     ] })
   ] });
 }
-const fixture19 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ButtonGroupFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -20303,6 +22302,7 @@ function ButtonFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -20536,16 +22536,16 @@ function ButtonFixture() {
     ] })
   ] });
 }
-const fixture20 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ButtonFixture
 }, Symbol.toStringTag, { value: "Module" }));
 const badgeVariants = cva(
-  "lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:border-lsd-icon-primary lsd:rounded-[20px] lsd:w-fit lsd:whitespace-nowrap lsd:shrink-0 lsd:[&>svg]:size-3 lsd:[&>svg]:pointer-events-none lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:transition-colors lsd:overflow-hidden",
+  "lsd:inline-flex lsd:items-center lsd:justify-center lsd:border lsd:border-lsd-border lsd:rounded-[20px] lsd:w-fit lsd:whitespace-nowrap lsd:shrink-0 lsd:[&>svg]:size-3 lsd:[&>svg]:pointer-events-none lsd:hover:underline lsd:focus:underline lsd:cursor-pointer lsd:transition-colors lsd:overflow-hidden",
   {
     variants: {
       variant: {
-        filled: "lsd:bg-lsd-primary lsd:text-lsd-surface-primary",
+        filled: "lsd:bg-lsd-primary lsd:text-lsd-surface",
         outlined: "lsd:bg-transparent lsd:text-lsd-text-primary",
         destructive: "lsd:bg-lsd-destructive lsd:text-white lsd:border-lsd-destructive",
         success: "lsd:bg-lsd-success lsd:text-white lsd:border-lsd-success",
@@ -20599,7 +22599,7 @@ function Badge({
   children,
   ...props
 }) {
-  const Comp = asChild ? Slot$2 : "span";
+  const Comp = asChild ? Slot$3 : "span";
   const isClickable = Boolean(onClick);
   const isDot = dot || variant === "dot";
   const handleKeyDown = (e) => {
@@ -20735,6 +22735,7 @@ function BadgeFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -21070,7 +23071,7 @@ function BadgeFixture() {
     ] })
   ] });
 }
-const fixture21 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: BadgeFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -21089,7 +23090,7 @@ function AutocompleteContent({
     {
       className: cn$1(
         "lsd:w-full lsd:p-0",
-        "lsd:bg-lsd-surface-primary lsd:border-lsd-border-primary"
+        "lsd:bg-lsd-surface lsd:border-lsd-border"
       ),
       align: "start",
       sideOffset: 0,
@@ -21287,7 +23288,7 @@ const Autocomplete = reactExports.forwardRef(
                 className: cn$1(
                   "lsd:flex lsd:justify-between",
                   currentSize.inputContainer,
-                  variant === "outlined" ? disabled ? "lsd:border lsd:border-lsd-text-secondary" : "lsd:border lsd:border-lsd-border-primary" : disabled ? "lsd:border lsd:border-transparent lsd:border-b-lsd-text-secondary" : "lsd:border lsd:border-transparent lsd:border-b-lsd-border-primary",
+                  variant === "outlined" ? disabled ? "lsd:border lsd:border-lsd-text-secondary" : "lsd:border lsd:border-lsd-border" : disabled ? "lsd:border lsd:border-transparent lsd:border-b-lsd-text-secondary" : "lsd:border lsd:border-transparent lsd:border-b-lsd-border",
                   disabled ? "lsd:cursor-not-allowed" : "lsd:cursor-pointer"
                 ),
                 children: [
@@ -21304,9 +23305,9 @@ const Autocomplete = reactExports.forwardRef(
                       className: cn$1(
                         "lsd:border-none lsd:outline-none lsd:bg-none lsd:w-full lsd:text-[14px]",
                         currentSize.input,
-                        disabled ? "lsd:text-lsd-text-secondary" : "lsd:text-lsd-text-primary",
+                        disabled ? "lsd:text-lsd-text-secondary lsd:cursor-not-allowed" : "lsd:text-lsd-text-primary",
                         error && "lsd:line-through",
-                        "lsd:[&::placeholder]:text-lsd-text-primary lsd:[&::placeholder]:opacity-30"
+                        "lsd:placeholder:text-lsd-text-primary lsd:placeholder:opacity-30"
                       )
                     }
                   ),
@@ -21373,6 +23374,7 @@ const frameworks = [
 const Autocomplete_fixture = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
   ] }),
   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -21911,147 +23913,10 @@ function ExternalLoadingExample() {
     ] })
   ] });
 }
-const fixture22 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Autocomplete_fixture
 }, Symbol.toStringTag, { value: "Module" }));
-var ROOT_NAME = "AlertDialog";
-var [createAlertDialogContext] = createContextScope$1(ROOT_NAME, [
-  createDialogScope
-]);
-var useDialogScope = createDialogScope();
-var AlertDialog$1 = (props) => {
-  const { __scopeAlertDialog, ...alertDialogProps } = props;
-  const dialogScope = useDialogScope(__scopeAlertDialog);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root$6, { ...dialogScope, ...alertDialogProps, modal: true });
-};
-AlertDialog$1.displayName = ROOT_NAME;
-var TRIGGER_NAME = "AlertDialogTrigger";
-var AlertDialogTrigger$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, ...triggerProps } = props;
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Trigger$3, { ...dialogScope, ...triggerProps, ref: forwardedRef });
-  }
-);
-AlertDialogTrigger$1.displayName = TRIGGER_NAME;
-var PORTAL_NAME = "AlertDialogPortal";
-var AlertDialogPortal$1 = (props) => {
-  const { __scopeAlertDialog, ...portalProps } = props;
-  const dialogScope = useDialogScope(__scopeAlertDialog);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$3, { ...dialogScope, ...portalProps });
-};
-AlertDialogPortal$1.displayName = PORTAL_NAME;
-var OVERLAY_NAME = "AlertDialogOverlay";
-var AlertDialogOverlay$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, ...overlayProps } = props;
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Overlay, { ...dialogScope, ...overlayProps, ref: forwardedRef });
-  }
-);
-AlertDialogOverlay$1.displayName = OVERLAY_NAME;
-var CONTENT_NAME = "AlertDialogContent";
-var [AlertDialogContentProvider, useAlertDialogContentContext] = createAlertDialogContext(CONTENT_NAME);
-var Slottable = /* @__PURE__ */ createSlottable("AlertDialogContent");
-var AlertDialogContent$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, children, ...contentProps } = props;
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    const contentRef = reactExports.useRef(null);
-    const composedRefs = useComposedRefs(forwardedRef, contentRef);
-    const cancelRef = reactExports.useRef(null);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      WarningProvider,
-      {
-        contentName: CONTENT_NAME,
-        titleName: TITLE_NAME,
-        docsSlug: "alert-dialog",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogContentProvider, { scope: __scopeAlertDialog, cancelRef, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          Content$1,
-          {
-            role: "alertdialog",
-            ...dialogScope,
-            ...contentProps,
-            ref: composedRefs,
-            onOpenAutoFocus: composeEventHandlers(contentProps.onOpenAutoFocus, (event) => {
-              event.preventDefault();
-              cancelRef.current?.focus({ preventScroll: true });
-            }),
-            onPointerDownOutside: (event) => event.preventDefault(),
-            onInteractOutside: (event) => event.preventDefault(),
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Slottable, { children }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(DescriptionWarning, { contentRef })
-            ]
-          }
-        ) })
-      }
-    );
-  }
-);
-AlertDialogContent$1.displayName = CONTENT_NAME;
-var TITLE_NAME = "AlertDialogTitle";
-var AlertDialogTitle$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, ...titleProps } = props;
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Title, { ...dialogScope, ...titleProps, ref: forwardedRef });
-  }
-);
-AlertDialogTitle$1.displayName = TITLE_NAME;
-var DESCRIPTION_NAME = "AlertDialogDescription";
-var AlertDialogDescription$1 = reactExports.forwardRef((props, forwardedRef) => {
-  const { __scopeAlertDialog, ...descriptionProps } = props;
-  const dialogScope = useDialogScope(__scopeAlertDialog);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Description, { ...dialogScope, ...descriptionProps, ref: forwardedRef });
-});
-AlertDialogDescription$1.displayName = DESCRIPTION_NAME;
-var ACTION_NAME = "AlertDialogAction";
-var AlertDialogAction$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, ...actionProps } = props;
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Close, { ...dialogScope, ...actionProps, ref: forwardedRef });
-  }
-);
-AlertDialogAction$1.displayName = ACTION_NAME;
-var CANCEL_NAME = "AlertDialogCancel";
-var AlertDialogCancel$1 = reactExports.forwardRef(
-  (props, forwardedRef) => {
-    const { __scopeAlertDialog, ...cancelProps } = props;
-    const { cancelRef } = useAlertDialogContentContext(CANCEL_NAME, __scopeAlertDialog);
-    const dialogScope = useDialogScope(__scopeAlertDialog);
-    const ref = useComposedRefs(forwardedRef, cancelRef);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(Close, { ...dialogScope, ...cancelProps, ref });
-  }
-);
-AlertDialogCancel$1.displayName = CANCEL_NAME;
-var DescriptionWarning = ({ contentRef }) => {
-  const MESSAGE = `\`${CONTENT_NAME}\` requires a description for the component to be accessible for screen reader users.
-
-You can add a description to the \`${CONTENT_NAME}\` by passing a \`${DESCRIPTION_NAME}\` component as a child, which also benefits sighted users by adding visible context to the dialog.
-
-Alternatively, you can use your own component as a description by assigning it an \`id\` and passing the same value to the \`aria-describedby\` prop in \`${CONTENT_NAME}\`. If the description is confusing or duplicative for sighted users, you can use the \`@radix-ui/react-visually-hidden\` primitive as a wrapper around your description component.
-
-For more information, see https://radix-ui.com/primitives/docs/components/alert-dialog`;
-  reactExports.useEffect(() => {
-    const hasDescription = document.getElementById(
-      contentRef.current?.getAttribute("aria-describedby")
-    );
-    if (!hasDescription) console.warn(MESSAGE);
-  }, [MESSAGE, contentRef]);
-  return null;
-};
-var Root2 = AlertDialog$1;
-var Trigger2 = AlertDialogTrigger$1;
-var Portal2 = AlertDialogPortal$1;
-var Overlay2 = AlertDialogOverlay$1;
-var Content2 = AlertDialogContent$1;
-var Action = AlertDialogAction$1;
-var Cancel = AlertDialogCancel$1;
-var Title2 = AlertDialogTitle$1;
-var Description2 = AlertDialogDescription$1;
 function AlertDialog({
   ...props
 }) {
@@ -22100,7 +23965,7 @@ function AlertDialogOverlay({
 function AlertDialogPortal({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal2, { "data-slot": "alert-dialog-portal", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal2$1, { "data-slot": "alert-dialog-portal", ...props });
 }
 function AlertDialogContent({
   className,
@@ -22109,11 +23974,11 @@ function AlertDialogContent({
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(AlertDialogPortal, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(AlertDialogOverlay, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Content2,
+      Content2$2,
       {
         "data-slot": "alert-dialog-content",
         className: cn$1(
-          "lsd:bg-lsd-surface-primary lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg",
+          "lsd:bg-lsd-surface lsd:data-[state=open]:animate-in lsd:data-[state=closed]:animate-out lsd:data-[state=closed]:fade-out-0 lsd:data-[state=open]:fade-in-0 lsd:data-[state=closed]:zoom-out-95 lsd:data-[state=open]:zoom-in-95 lsd:fixed lsd:top-[50%] lsd:left-[50%] lsd:z-50 lsd:grid lsd:w-full lsd:max-w-[calc(100%-2rem)] lsd:translate-x-[-50%] lsd:translate-y-[-50%] lsd:gap-4 lsd:border lsd:border-lsd-border lsd:p-6 lsd:shadow-lg lsd:duration-200 lsd:sm:max-w-lg",
           className
         ),
         ...props
@@ -22194,6 +24059,7 @@ function AlertDialogFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -22379,7 +24245,7 @@ function AlertDialogFixture() {
     ] })
   ] });
 }
-const fixture23 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: AlertDialogFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -22387,6 +24253,7 @@ function AccordionFixture() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:p-8 lsd:w-full lsd:space-y-8", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:flex lsd:justify-end lsd:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeToggle, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeAccentToggle, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(FontToggle, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lsd:space-y-4", children: [
@@ -22657,7 +24524,7 @@ function AccordionFixture() {
     ] })
   ] });
 }
-const fixture24 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fixture25 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: AccordionFixture
 }, Symbol.toStringTag, { value: "Module" }));
@@ -22679,18 +24546,19 @@ const fixtures = {
   "src/__cosmos__/fixtures/ScrollArea.fixture.tsx": { module: fixture10 },
   "src/__cosmos__/fixtures/Progress.fixture.tsx": { module: fixture11 },
   "src/__cosmos__/fixtures/Popover.fixture.tsx": { module: fixture12 },
-  "src/__cosmos__/fixtures/Label.fixture.tsx": { module: fixture13 },
-  "src/__cosmos__/fixtures/Input.fixture.tsx": { module: fixture14 },
-  "src/__cosmos__/fixtures/Dialog.fixture.tsx": { module: fixture15 },
-  "src/__cosmos__/fixtures/Command.fixture.tsx": { module: fixture16 },
-  "src/__cosmos__/fixtures/Checkbox.fixture.tsx": { module: fixture17 },
-  "src/__cosmos__/fixtures/Card.fixture.tsx": { module: fixture18 },
-  "src/__cosmos__/fixtures/ButtonGroup.fixture.tsx": { module: fixture19 },
-  "src/__cosmos__/fixtures/Button.fixture.tsx": { module: fixture20 },
-  "src/__cosmos__/fixtures/Badge.fixture.tsx": { module: fixture21 },
-  "src/__cosmos__/fixtures/Autocomplete.fixture.tsx": { module: fixture22 },
-  "src/__cosmos__/fixtures/AlertDialog.fixture.tsx": { module: fixture23 },
-  "src/__cosmos__/fixtures/Accordion.fixture.tsx": { module: fixture24 }
+  "src/__cosmos__/fixtures/Menubar.fixture.tsx": { module: fixture13 },
+  "src/__cosmos__/fixtures/Label.fixture.tsx": { module: fixture14 },
+  "src/__cosmos__/fixtures/Input.fixture.tsx": { module: fixture15 },
+  "src/__cosmos__/fixtures/Dialog.fixture.tsx": { module: fixture16 },
+  "src/__cosmos__/fixtures/Command.fixture.tsx": { module: fixture17 },
+  "src/__cosmos__/fixtures/Checkbox.fixture.tsx": { module: fixture18 },
+  "src/__cosmos__/fixtures/Card.fixture.tsx": { module: fixture19 },
+  "src/__cosmos__/fixtures/ButtonGroup.fixture.tsx": { module: fixture20 },
+  "src/__cosmos__/fixtures/Button.fixture.tsx": { module: fixture21 },
+  "src/__cosmos__/fixtures/Badge.fixture.tsx": { module: fixture22 },
+  "src/__cosmos__/fixtures/Autocomplete.fixture.tsx": { module: fixture23 },
+  "src/__cosmos__/fixtures/AlertDialog.fixture.tsx": { module: fixture24 },
+  "src/__cosmos__/fixtures/Accordion.fixture.tsx": { module: fixture25 }
 };
 const decorators = {};
 const moduleWrappers = {
