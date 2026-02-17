@@ -103,6 +103,7 @@ The design system uses CSS custom properties that you can override:
 | Dialog | Modal overlay for focused content |
 | Input | Text input field |
 | Label | Form field label |
+| Menubar | Horizontal menu bar with dropdown menus |
 | Popover | Floating content anchored to trigger |
 | Progress | Visual indicator of completion |
 | ScrollArea | Custom scrollbar container |
