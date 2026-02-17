@@ -10,21 +10,27 @@ pnpm add @nipsys/shadcn-lsd
 
 ## Usage
 
-### Import the CSS
+### Import Components
 
-First, import the stylesheet in your application entry point:
+```tsx
+import { Dialog, DialogTrigger, DialogContent, Button } from "@nipsys/shadcn-lsd";
+```
+
+### Optional: Manual CSS Import
+
+The CSS is automatically injected when you import components, but if you prefer to import the stylesheet explicitly, you can use:
 
 ```tsx
 import '@nipsys/shadcn-lsd/css';
 ```
 
-You can also import it in CSS:
+Or in CSS:
 
 ```css
 @import "@nipsys/shadcn-lsd/css";
 ```
 
-### Import Components
+### Example
 
 ```tsx
 import { Dialog, DialogTrigger, DialogContent, Button } from "@nipsys/shadcn-lsd";
@@ -32,7 +38,7 @@ import { Dialog, DialogTrigger, DialogContent, Button } from "@nipsys/shadcn-lsd
 function App() {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button>Open</Button>
       </DialogTrigger>
       <DialogContent>
